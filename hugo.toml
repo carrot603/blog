@@ -1,0 +1,6 @@
+baseURL = 'https://carrot.tw/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "PaperMod"
+
+        
