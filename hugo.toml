@@ -7,7 +7,7 @@ theme = "PaperMod"
         favicon = "/favicon.png"
 [params.profileMode]
     enabled = true
-    title = "Carrot"
+    title = "我是一根蘿蔔🥕"
  [[menu.main]]
     name = "首頁"
     url = "/"
@@ -17,8 +17,4 @@ theme = "PaperMod"
     name = "文章"
     url = "/posts/"
     weight = 20
-
-[[menu.main]]
-    name = "搜尋"
-    url = "/search/"
-    weight = 30      
+ 
