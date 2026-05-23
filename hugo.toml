@@ -1,13 +1,27 @@
 baseURL = 'https://carrot.tw/'
-languageCode = 'en-us'
+languageCode = 'zh-tw'
 title = 'Carrot'
 theme = "PaperMod"
 
+[pagination]
+  pagerSize = 10
+
+[params]
+ 
+  defaultTheme = "dark"
+  
+  # 閱讀體驗優化
+  ShowReadingTime = true   
+  ShowShareButtons = false   
+  ShowCodeCopyButtons = true
+
 [params.assets]
         favicon = "/favicon.png"
+
 [params.profileMode]
-    enabled = false
+    enabled = true
     title = "我是一根蘿蔔🥕"
+
  [[menu.main]]
     name = "首頁"
     url = "/"
@@ -24,7 +38,7 @@ theme = "PaperMod"
     weight = 30
  
 [[menu.main]]
-    name = "關於"
+    name = "筆記"
     url = "/notes/"
     weight = 40
 
