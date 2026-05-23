@@ -17,4 +17,15 @@ theme = "PaperMod"
     name = "文章"
     url = "/posts/"
     weight = 20
+
+[[menu.main]]
+    name = "🎹"
+    url = "/"
+    weight = 30
  
+[[menu.main]]
+    name = "關於"
+    url = "/"
+    weight = 40
+
+
