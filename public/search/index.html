@@ -5,12 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>posts | Carrot</title>
+<title>搜尋 | Carrot</title>
 <meta name="keywords" content="">
-<meta name="description" content="posts - Carrot">
+<meta name="description" content="搜尋 - Carrot">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
+<link rel="canonical" href="http://localhost:1313/search/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style"><link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+<script defer crossorigin="anonymous" src="/assets/js/search.72f11bbe88529ed74b1b71ae311a522a02a61734512b826ad2a212c66e36a439.js" integrity="sha256-cvEbvohSntdLG3GuMRpSKgKmFzRRK4Jq0qISxm42pDk="></script>
 <link rel="icon" href="http://localhost:1313/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -18,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/search/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,7 +72,7 @@
             </li>
             <li>
                 <a href="http://localhost:1313/posts/" title="📝">
-                    <span class="active">📝</span>
+                    <span>📝</span>
                 </a>
             </li>
             <li>
@@ -81,35 +82,29 @@
             </li>
             <li>
                 <a href="http://localhost:1313/search/" title="🔎">
-                    <span>🔎</span>
+                    <span class="active">🔎</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
 <main class="main">
+
 <header class="page-header">
-    <h1>posts</h1>
+    <h1>搜尋 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    <div class="post-meta"></div>
 </header>
 
-<div class="pure-text-archive" style="margin-top: 30px;">
-    
-    <div style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center;">
-        
-        <span style="color: var(--secondary); font-size: 0.9em; width: 110px; font-family: monospace; flex-shrink: 0;">
-            2026-05-23
-        </span>
-        
-        <a href="http://localhost:1313/posts/hello/" style="font-weight: 500; text-decoration: none; color: var(--primary); line-height: 1.5;">
-            你好
-        </a>
-        
-        
-        
-    </div>
-    
+<div id="searchbox" class="searchbox">
+    <input id="searchInput" disabled placeholder="搜尋 ↵"
+        aria-label="search" type="search" autocomplete="off" maxlength="64">
+    <ul id="searchResults" class="searchResults" aria-label="search results"></ul>
 </div>
-
     </main>
     
 <footer class="footer">

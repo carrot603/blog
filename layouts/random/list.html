@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div style="text-align: center; margin-top: 100px; color: var(--secondary);">
+    <p>正在為您翻閱下一本讀什麼...</p>
+</div>
+
+<script>
+    // 1. 利用 Hugo 語法，在編譯時將全站所有公開文章的「網址」打包成一個 JS 陣列
+    const allPosts = [
+        {{ range (where .Site.RegularPages "Section" "posts") }}
+            "{{ .Permalink }}",
+        {{ end }}
+    ];
+
+    // 2. 瀏覽器端的隨機抽籤邏輯
+    if (allPosts.length > 0) {
+        // 隨機產生一個陣列索引 index
+        const randomIndex = Math.floor(Math.random() * allPosts.length);
+        // 取得隨機文章的完整網址
+        const randomPostUrl = allPosts[randomIndex];
+        
+        // 瞬間跳轉過去！
+        window.location.href = randomPostUrl;
+    } else {
+        // 如果連一篇文章都沒有，就退回首頁
+        window.location.href = "/";
+    }
+</script>
+{{ end }}

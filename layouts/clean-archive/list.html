@@ -1,0 +1,25 @@
+{{ define "main" }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+</header>
+
+<div class="pure-text-archive" style="margin-top: 30px;">
+    {{ range .Pages.ByDate.Reverse }}
+    <div style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center;">
+        
+        <span style="color: var(--secondary); font-size: 0.9em; width: 110px; font-family: monospace; flex-shrink: 0;">
+            {{ .Date.Format "2006-01-02" }}
+        </span>
+        
+        <a href="{{ .Permalink }}" style="font-weight: 500; text-decoration: none; color: var(--primary); line-height: 1.5;">
+            {{ .Title }}
+        </a>
+        
+        {{ if .Draft }}
+        <span style="color: #ff4d4f; font-size: 0.75em; margin-left: 10px; border: 1px solid #ff4d4f; padding: 0px 4px; border-radius: 3px; flex-shrink: 0;">Draft</span>
+        {{ end }}
+        
+    </div>
+    {{ end }}
+</div>
+{{ end }}

@@ -5,11 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>posts | Carrot</title>
+<title>關於 | Carrot</title>
 <meta name="keywords" content="">
-<meta name="description" content="posts - Carrot">
+<meta name="description" content="我是江俊佑，生於臺灣臺中市，今年十九歲。興趣是彈鋼琴、閱讀跟探索世界。我每天都會出門散步、運動，讀幾頁追憶似水年華。
+在高中的時候參加儀隊跟弦樂社，涉略滿廣泛的（？
+我是重考生，目前錄取
+我喜歡吃紅蘿蔔，你也可以叫我蘿蔔🥕
+我比較內向，如果想認識我可以到 carrot603@proton.me">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/posts/about/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +22,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/about/">
 <noscript>
     <style>
         #theme-toggle,
@@ -35,7 +39,7 @@
 
 </script>
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
@@ -71,7 +75,17 @@
             </li>
             <li>
                 <a href="http://localhost:1313/posts/" title="📝">
-                    <span class="active">📝</span>
+                    <span>📝</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/carrotu.be/" title="🎹">
+                    <span>🎹</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/about/" title="👤">
+                    <span class="active">👤</span>
                 </a>
             </li>
             <li>
@@ -88,28 +102,33 @@
     </nav>
 </header>
 <main class="main">
-<header class="page-header">
-    <h1>posts</h1>
-</header>
 
-<div class="pure-text-archive" style="margin-top: 30px;">
+<article class="post-single">
+  <header class="post-header">
     
-    <div style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center;">
-        
-        <span style="color: var(--secondary); font-size: 0.9em; width: 110px; font-family: monospace; flex-shrink: 0;">
-            2026-05-23
-        </span>
-        
-        <a href="http://localhost:1313/posts/hello/" style="font-weight: 500; text-decoration: none; color: var(--primary); line-height: 1.5;">
-            你好
-        </a>
-        
-        
-        
-    </div>
-    
+    <h1 class="post-title entry-hint-parent">
+      關於
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-05-24 06:00:00 +0800 CST'>May 24, 2026</span>&nbsp;·&nbsp;<span>1 min</span>
+
 </div>
+  </header> 
+  <div class="post-content md-content"><p>我是江俊佑，生於臺灣臺中市，今年十九歲。興趣是彈鋼琴、閱讀跟探索世界。我每天都會出門散步、運動，讀幾頁追憶似水年華。</p>
+<p>在高中的時候參加儀隊跟弦樂社，涉略滿廣泛的（？</p>
+<p>我是重考生，目前錄取</p>
+<p>我喜歡吃紅蘿蔔，你也可以叫我蘿蔔🥕</p>
+<p>我比較內向，如果想認識我可以到 <a href="mailto:carrot603@proton.me">carrot603@proton.me</a></p>
 
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
@@ -189,6 +208,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>posts | Carrot</title>
+<title>文章列表 | Carrot</title>
 <meta name="keywords" content="">
-<meta name="description" content="posts - Carrot">
+<meta name="description" content="文章列表 - Carrot">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/timeline/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/timeline/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/timeline/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,7 +72,12 @@
             </li>
             <li>
                 <a href="http://localhost:1313/posts/" title="📝">
-                    <span class="active">📝</span>
+                    <span>📝</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/carrotu.be/" title="🎹">
+                    <span>🎹</span>
                 </a>
             </li>
             <li>
@@ -79,36 +85,59 @@
                     <span>🎲</span>
                 </a>
             </li>
-            <li>
-                <a href="http://localhost:1313/search/" title="🔎">
-                    <span>🔎</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
 <main class="main">
 <header class="page-header">
-    <h1>posts</h1>
+    <h1>文章列表</h1>
+    
+    
+    <button id="random-btn" style="margin-top: 15px; padding: 8px 16px; background: var(--theme); color: var(--primary); border: 1px solid var(--border); border-radius: 4px; cursor: pointer; font-family: 'Taipei Sans TC', sans-serif; font-weight: 500; transition: all 0.2s;">
+        🎲 
+    </button>
 </header>
 
-<div class="pure-text-archive" style="margin-top: 30px;">
+<div class="my-clean-list" style="margin-top: 20px;">
     
-    <div style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center;">
-        
-        <span style="color: var(--secondary); font-size: 0.9em; width: 110px; font-family: monospace; flex-shrink: 0;">
-            2026-05-23
+    <div style="padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <span style="color: var(--secondary); font-size: 0.9em; margin-right: 15px; font-family: monospace;">
+                [2026-05-23]
+            </span>
+            <a href="http://localhost:1313/posts/hello/" style="font-weight: 500; text-decoration: none; color: var(--primary);">
+                你好
+            </a>
+            
+        </div>
+        <span style="color: var(--secondary); font-size: 0.85em;">
+            2 字
         </span>
-        
-        <a href="http://localhost:1313/posts/hello/" style="font-weight: 500; text-decoration: none; color: var(--primary); line-height: 1.5;">
-            你好
-        </a>
-        
-        
-        
     </div>
     
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    
+    const allPosts = [
+        
+            "http:\/\/localhost:1313\/posts\/hello\/",
+        
+    ];
+
+    
+    document.getElementById("random-btn").addEventListener("click", function() {
+        if (allPosts.length === 0) {
+            alert("目前還沒有發布的文章可以漫遊喔！");
+            return;
+        }
+        
+        const randomIndex = Math.floor(Math.random() * allPosts.length);
+        window.location.href = allPosts[randomIndex];
+    });
+});
+</script>
 
     </main>
     

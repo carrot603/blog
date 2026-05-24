@@ -1,0 +1,14 @@
+name: "每天定時觸發 Cloudflare 更新"
+
+on:
+  schedule:
+ 
+    - cron: '0 22 * * *'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "觸發 Webhook 讓 Cloudflare 重新編譯"
+        run: |
+          curl -X POST "${{ secrets.CLOUDFLARE_HOOK_URL }}"
