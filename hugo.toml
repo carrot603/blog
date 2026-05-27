@@ -3,6 +3,10 @@ languageCode = 'zh-tw'
 title = 'Carrot'
 theme = "PaperMod"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]
@@ -50,3 +54,4 @@ theme = "PaperMod"
     showScores = false
     secure = false
     mainSections = ["posts"]
+

@@ -6,14 +6,428 @@
     <description>Recent content on Carrot</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 23 May 2026 17:47:10 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 15:40:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>carrot 3D</title>
+      <link>http://localhost:1313/posts/carrot3d/</link>
+      <pubDate>Wed, 27 May 2026 15:40:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/carrot3d/</guid>
+      <description>&lt;style&gt;
+.carrot-container {
+  width: 100%;
+  height: 500px; /* 給予它一個固定的展示舞台高度 */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    #7fd8ff 0%,
+    #dff7ff 55%,
+    #8fdd73 55%,
+    #5cb84f 100%
+  );
+  perspective: 1600px;
+  border-radius: 12px; /* 讓它像一個精緻的展示外框 */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin: 20px 0;
+}
+
+.cloud-inner {
+  position: absolute;
+  background: white;
+  border-radius: 999px;
+  opacity: 0.8;
+  animation: cloudMoveInner linear infinite;
+}
+.cloud-inner::before, .cloud-inner::after {
+  content: &#34;&#34;;
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+.cloud-i1 { width: 120px; height: 40px; top: 10%; left: -150px; animation-duration: 20s; }
+.cloud-i1::before { width: 50px; height: 50px; top: -20px; left: 15px; }
+.cloud-i1::after { width: 60px; height: 60px; top: -25px; right: 15px; }
+
+@keyframes cloudMoveInner {
+  from { transform: translateX(0); }
+  to { transform: translateX(600px); }
+}
+
+.scene-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.float-inner {
+  animation: floatInner 3s ease-in-out infinite;
+}
+
+.stage3d-inner {
+  width: 200px;
+  height: 200px;
+  perspective: 1200px;
+  perspective-origin: 50% 20%;
+}
+
+.spin-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg);
+  animation: spinInner 6s linear infinite;
+}
+
+.carrot-3d-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cone-side-inner {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  width: 80px;
+  height: 160px;
+  background: linear-gradient(to bottom, #ff7b23, #ff9f43);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.side-f  { transform: rotateY(0deg) translateZ(12px) rotateX(4deg); background: #ff6b0b; }
+.side-b  { transform: rotateY(180deg) translateZ(12px) rotateX(4deg); background: #d95300; }
+.side-l  { transform: rotateY(-90deg) translateZ(12px) rotateX(4deg); background: #e65c00; }
+.side-r  { transform: rotateY(90deg) translateZ(12px) rotateX(4deg); background: #ffa64d; }
+
+.cone-top-inner {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  width: 80px;
+  height: 24px;
+  background: #d95300;
+  transform: rotateX(90deg) translateZ(12px);
+  border-radius: 4px;
+}
+
+.leaf-inner {
+  position: absolute;
+  top: -40px;
+  left: 85px;
+  width: 30px;
+  height: 60px;
+  background: linear-gradient(to top, #4b983f, #a2f28d);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform-origin: bottom center;
+}
+.leaf-i1 { transform: rotateY(0deg) rotateZ(15deg) translateZ(2px); }
+.leaf-i2 { transform: rotateY(90deg) rotateZ(-10deg) translateZ(2px); }
+.leaf-i3 { transform: rotateY(180deg) rotateZ(20deg) translateZ(-2px); }
+.leaf-i4 { transform: rotateY(270deg) rotateZ(-15deg) translateZ(-2px); }
+
+.title-3d {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #d96b1f;
+  text-shadow: 0 2px 5px rgba(255,255,255,0.8);
+  font-weight: bold;
+}
+
+@keyframes floatInner {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes spinInner {
+  from { transform: rotateX(-15deg) rotateY(0deg); }
+  to { transform: rotateX(-15deg) rotateY(360deg); }
+}
+&lt;/style&gt;
+&lt;div class=&#34;carrot-container&#34;&gt;
+  &lt;div class=&#34;cloud-inner cloud-i1&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;scene-inner&#34;&gt;
+    &lt;div class=&#34;float-inner&#34;&gt;
+      &lt;div class=&#34;stage3d-inner&#34;&gt;
+        &lt;div class=&#34;spin-inner&#34;&gt;
+          &lt;div class=&#34;carrot-3d-inner&#34;&gt;
+            &lt;div class=&#34;leaf-inner leaf-i1&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;leaf-inner leaf-i2&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;leaf-inner leaf-i3&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;leaf-inner leaf-i4&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cone-top-inner&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cone-side-inner side-f&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cone-side-inner side-b&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cone-side-inner side-l&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cone-side-inner side-r&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;title-3d&#34;&gt;REAL 3D CARROT&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
     <item>
       <title>你好</title>
       <link>http://localhost:1313/posts/hello/</link>
       <pubDate>Sat, 23 May 2026 17:47:10 +0800</pubDate>
       <guid>http://localhost:1313/posts/hello/</guid>
       <description>&lt;p&gt;你好我叫江俊佑，很高興認識你。歡迎來到我的 blog，這是我給自己的十九歲生日禮物，也是我的秘密基地。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/carrot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/carrot/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;zh-Hant&#34;&gt;
+&lt;head&gt;
+&lt;meta charset=&#34;UTF-8&#34; /&gt;
+&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;/&gt;
+&lt;title&gt;3D Carrot World&lt;/title&gt;
+&lt;style&gt;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-family:sans-serif;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #7fd8ff 0%,
+      #dff7ff 55%,
+      #8fdd73 55%,
+      #5cb84f 100%
+    );
+
+  perspective:1200px;
+}
+
+/* 雲 */
+
+.cloud{
+  position:absolute;
+  background:white;
+  border-radius:999px;
+  opacity:0.9;
+
+  animation:cloudMove linear infinite;
+}
+
+.cloud::before,
+.cloud::after{
+  content:&#34;&#34;;
+  position:absolute;
+  background:white;
+  border-radius:50%;
+}
+
+.cloud1{
+  width:180px;
+  height:60px;
+
+  top:10%;
+  left:-220px;
+
+  animation-duration:28s;
+}
+
+.cloud1::before{
+  width:70px;
+  height:70px;
+
+  top:-30px;
+  left:25px;
+}
+
+.cloud1::after{
+  width:90px;
+  height:90px;
+
+  top:-40px;
+  right:20px;
+}
+
+.cloud2{
+  width:140px;
+  height:50px;
+
+  top:25%;
+  left:-180px;
+
+  animation-duration:40s;
+}
+
+.cloud2::before{
+  width:55px;
+  height:55px;
+
+  top:-20px;
+  left:18px;
+}
+
+.cloud2::after{
+  width:70px;
+  height:70px;
+
+  top:-28px;
+  right:15px;
+}
+
+@keyframes cloudMove{
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(140vw);
+  }
+}
+
+/* 草地 */
+
+.ground{
+  position:absolute;
+  bottom:0;
+
+  width:100%;
+  height:38%;
+
+  background:
+    linear-gradient(
+      to top,
+      #4b983f,
+      #79d36d
+    );
+}
+
+/* 主場景 */
+
+.scene{
+  position:relative;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* 漂浮 */
+
+.float{
+  animation:float 3s ease-in-out infinite;
+}
+
+/* 3D旋轉 */
+
+.spin{
+  transform-style:preserve-3d;
+  animation:spin 7s linear infinite;
+}
+
+/* 胡蘿蔔 */
+
+.carrot{
+  font-size:180px;
+
+  filter:
+    drop-shadow(
+      0 25px 18px rgba(0,0,0,0.22)
+    );
+}
+
+h1{
+  margin-top:24px;
+
+  font-size:42px;
+  color:#d96b1f;
+
+  text-shadow:
+    0 4px 10px rgba(255,255,255,0.7);
+}
+
+p{
+  margin-top:8px;
+
+  font-size:20px;
+  color:#47663f;
+}
+
+/* 動畫 */
+
+@keyframes float{
+
+  0%{
+    transform:
+      translateY(0px);
+  }
+
+  50%{
+    transform:
+      translateY(-35px);
+  }
+
+  100%{
+    transform:
+      translateY(0px);
+  }
+}
+
+@keyframes spin{
+
+  from{
+    transform:
+      rotateY(0deg);
+  }
+
+  to{
+    transform:
+      rotateY(360deg);
+  }
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- 雲 --&gt;
+&lt;div class=&#34;cloud cloud1&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;cloud cloud2&#34;&gt;&lt;/div&gt;
+&lt;!-- 主體 --&gt;
+&lt;div class=&#34;scene&#34;&gt;
+  &lt;div class=&#34;float&#34;&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;spin&amp;quot;&amp;gt;
+
+  &amp;lt;div class=&amp;quot;carrot&amp;quot;&amp;gt;
+    🥕
+  &amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;h1&gt;3D CARROT&lt;/h1&gt;
+  &lt;p&gt;
+    floating in the sky...
+  &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
