@@ -2,7 +2,7 @@ baseURL = 'https://carrot.tw/'
 languageCode = 'zh-tw'
 title = 'Carrot'
 theme = "PaperMod"
-
+hasCJKLanguage = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
