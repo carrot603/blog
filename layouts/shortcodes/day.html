@@ -1,0 +1,62 @@
+{{/* 1. 取得所有文章日期與計數 */}}
+{{ $dates := dict }}
+{{ range .Site.RegularPages }}
+    {{ $dateStr := .Date.Format "2006-01-02" }}
+    {{ $count := index $dates $dateStr | default 0 }}
+    {{ $dates = merge $dates (dict $dateStr (add $count 1)) }}
+{{ end }}
+
+{{/* 2. 定義時間軸範圍（確保總天數能被 7 整除，排版才會完美對齊） */}}
+{{ $now := now }}
+{{ $startOffset := -147 }} {{/* 往前 21 週 */}}
+{{ $endOffset := 41 }}     {{/* 往後 6 週，捕捉下個月的預寫排程 */}}
+
+<div class="github-calendar-container" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Monospace; font-size: 12px; margin: 30px 0; display: flex; gap: 8px; align-items: flex-start;">
+    
+    {{/* 右側：主日曆本體 */}}
+    <div style="flex-grow: 1;">
+        {{/* 這裡我們將 grid 欄數改為 27 欄（每欄代表一週 7 天） */}}
+        <div style="display: grid; grid-template-columns: repeat(27, 1fr); grid-auto-flow: column; grid-template-rows: repeat(7, 1fr); gap: 4px;">
+            
+            {{ range seq $startOffset $endOffset }}
+                {{ $targetDate := $now.AddDate 0 0 . }}
+                {{ $targetDateStr := $targetDate.Format "2006-01-02" }}
+                {{ $articleCount := index $dates $targetDateStr | default 0 }}
+                
+                {{ $isFuture := $targetDate.After $now }}
+                {{ $isToday := eq $targetDateStr ($now.Format "2006-01-02") }}
+
+                {{/* 顏色演算法 */}}
+                {{ $bgColor := "#ebedf0" }}
+                {{ if gt $articleCount 0 }}
+                    {{ if $isFuture }}
+                        {{ $bgColor = "#8dd792" }} {{/* 下月預寫：輕盈的綠色 */}}
+                    {{ else }}
+                        {{ $bgColor = "#216e39" }} {{/* 已發布：紮實的深綠 */}}
+                    {{ end }}
+                {{ else if $isToday }}
+                    {{ $bgColor = "#fff9db" }}
+                {{ end }}
+
+               {{/* 💡 終極方案：移除 title，改用 onclick 彈窗，徹底粉碎主題 CSS 的干擾 */}}
+                <div onclick="alert('📅 日期：{{ $targetDateStr }}\n✍️ 狀態：{{ if gt $articleCount 0 }}有 {{ $articleCount }} 篇文章{{ else }}無文章{{ end }}{{ if $isFuture }} [預寫排程]{{ end }}{{ if $isToday }} [今天]{{ end }}')" 
+                     style="background-color: {{ $bgColor }}; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important; {{/* 強制恢復滑鼠事件主權 */}}
+                            {{ if $isToday }}border: 2px solid #ffc107; box-sizing: border-box;{{ end }}"
+                     class="calendar-square">
+                </div>
+            {{ end }}
+        </div>
+
+        {{/* 下方：精緻的顏色圖例說明 */}}
+        <div style="display: flex; gap: 15px; margin-top: 12px; color: var(--secondary); justify-content: flex-end; font-size: 11px; align-items: center;">
+            <div><span style="background: #ebedf0; display:inline-block; width:10px; height:10px; border-radius:2px; vertical-align: middle; margin-right: 4px;"></span>無文章</div>
+            <div><span style="background: #216e39; display:inline-block; width:10px; height:10px; border-radius:2px; vertical-align: middle; margin-right: 4px;"></span>已發布</div>
+            <div><span style="background: #8dd792; display:inline-block; width:10px; height:10px; border-radius:2px; vertical-align: middle; margin-right: 4px;"></span>預寫排程 (下月)</div>
+            <div><span style="background: #fff9db; display:inline-block; width:10px; height:10px; border-radius:2px; border:1px solid #ffc107; vertical-align: middle; margin-right: 4px;"></span>今天</div>
+        </div>
+    </div>
+</div>

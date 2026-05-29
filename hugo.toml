@@ -18,7 +18,11 @@ hasCJKLanguage = true
   ShowReadingTime = true   
   ShowShareButtons = false   
   ShowCodeCopyButtons = true
-
+  ShowPostNavLinks = true
+  ShowWordCount = true
+  hideMeta = false
+  ShowBreadCrumbs = true
+  
 [params.assets]
         favicon = "/favicon.png"
 

@@ -6,8 +6,16 @@
     <description>Recent content on Carrot</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 27 May 2026 15:40:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 10:53:47 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Now</title>
+      <link>http://localhost:1313/now/</link>
+      <pubDate>Fri, 29 May 2026 10:53:47 +0800</pubDate>
+      <guid>http://localhost:1313/now/</guid>
+      <description>&lt;p&gt;💡 這是我的 /now 頁面，最後更新於：2026-05-29。&lt;/p&gt;
+&lt;p&gt;正在讀的書&lt;/p&gt;</description>
+    </item>
     <item>
       <title>3D🥕</title>
       <link>http://localhost:1313/posts/carrot3d/</link>
@@ -181,14 +189,6 @@
       <pubDate>Sat, 23 May 2026 17:47:10 +0800</pubDate>
       <guid>http://localhost:1313/posts/hello/</guid>
       <description>&lt;p&gt;你好我叫江俊佑，很高興認識你。歡迎來到我的 blog，這是我給自己的十九歲生日禮物，也是我的秘密基地。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>圖書館</title>
-      <link>http://localhost:1313/posts/library/</link>
-      <pubDate>Fri, 15 May 2026 06:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/library/</guid>
-      <description>&lt;p&gt;我覺得圖書館是世界上最慈善的地方，不只有優質的環境，還有高品質的內容（大部分啦），重點是一切都是免費的！&lt;/p&gt;
-&lt;p&gt;很多好書就躺在那裡等你來借，不要浪費這個大好機會，趕快放下手機，動身前往最近的圖書館吧！&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
