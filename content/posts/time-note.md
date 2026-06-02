@@ -3,7 +3,7 @@ date = '2026-06-24T06:00:00+08:00'
 draft = false
 title = '一些時間管理的筆記'
 +++
-去年整理的，有些瑣碎，反正我想放什麼放什麼。如果有一個受用的建議，那這份筆記就值得了！
+去年整理的，有些瑣碎，反正我想放什麼放什麼。如果能有一個受用的建議，那這份筆記就值得了！
 ### [《把時間當作朋友》](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=389171)
 
 不拖延（面對困難<br>
@@ -18,7 +18,7 @@ title = '一些時間管理的筆記'
 
 ### [《時間都到哪裡去了》](https://findbook.com.tw/9789869744591)
 
-**時間毒素** 浪費你時間的東西：<br>
+**時間毒素**——浪費你時間的東西：<br>
  科技<br>
  人<br>
  地<br>
@@ -28,7 +28,7 @@ title = '一些時間管理的筆記'
  思緒<br>
  意外<br>
 
-**時間報酬** 投資時間在這些方面：<br>
+**時間報酬**——投資時間在這些方面：<br>
  家庭<br>
  人際<br>
  健康<br>
@@ -85,6 +85,6 @@ title = '一些時間管理的筆記'
 拒絕邀約：<span style="background: linear-gradient(to top, rgba(143, 221, 115, 0.5) 40%, transparent 40%);">給每個人的藉口要一致</span><br>
 
 
-[^1]: 再次呼籲各位不要滑手機 https://wiwi.video/w/8k8awyDw6obosYvUZK51Da<br>
-[^2]: https://zh.wikipedia.org/zh-tw/%E5%B8%95%E9%87%91%E6%A3%AE%E5%AE%9A%E5%BE%8B<br>
+[^1]: 再次呼籲各位不要滑手機 https://wiwi.video/w/8k8awyDw6obosYvUZK51Da <br>
+[^2]: https://zh.wikipedia.org/zh-tw/%E5%B8%95%E9%87%91%E6%A3%AE%E5%AE%9A%E5%BE%8B <br>
 [^3]: [《黑天鵝語錄》]({{< relref "taleb.md" >}})：「你如果走路的時候一定要聽音樂，那就別走路；也請不要聽音樂。」<br>
