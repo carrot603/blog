@@ -6,8 +6,15 @@
     <description>Recent content on Carrot</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 03 Jun 2026 06:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 06:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>駕照</title>
+      <link>http://localhost:1313/posts/license/</link>
+      <pubDate>Thu, 04 Jun 2026 06:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/license/</guid>
+      <description>&lt;p&gt;經過一次重考，我終於拿到汽車駕照了🥹🥹🥹筆試 100，場考 90，路考只有 80🥲呼籲大家上路時不要搶快，注意行人來車，安全第一。變換車道的時候不要鬼切，我第一次路考就是這樣被刷掉的😢&lt;/p&gt;</description>
+    </item>
     <item>
       <title>🎂</title>
       <link>http://localhost:1313/posts/birthday/</link>
