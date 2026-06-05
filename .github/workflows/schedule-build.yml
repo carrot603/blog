@@ -2,12 +2,10 @@ name: 定時自動編譯與發布
 
 on:
   schedule:
-    # 22 代表 22 點（UTC 22:00 = 台灣時間隔天早上 06:00）
-    # 00 代表 00 分
-    # 如果你想精準在早上 6 點整觸發，就設定 '0 22 * * *'
+   
     - cron: '0 22 * * *'
 
-  # 保留手動觸發按鈕
+
   workflow_dispatch:
 
 jobs:
@@ -15,16 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 1. 檢出(Checkout)網站原始碼
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
-          submodules: true  # 如果你的主題是用 git submodule 引入的，這行非常重要
-          fetch-depth: 0    # 抓取完整歷史紀錄以利 Hugo 計算正確時間
+          submodules: true  
+          fetch-depth: 0    
 
       - name: 2. 在虛擬主機安裝 Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest' # 自動安裝最新穩定版 Hugo
-          extended: true         # 啟用 Extended 版以支援 SASS/SCSS 編譯
+          hugo-version: 'latest'
+          extended: true         
 
       - name: 3. 執行 Hugo 編譯產出靜態網頁（驗證測試）
         run: hugo --gc --minify
