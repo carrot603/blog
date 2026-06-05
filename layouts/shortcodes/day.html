@@ -1,4 +1,4 @@
-{{/* 1. 取得所有文章日期與計數 */}}
+{{/* 1. 取得所有文章日期與計數 (維持不變) */}}
 {{ $dates := dict }}
 {{ range .Site.RegularPages }}
     {{ $dateStr := .Date.Format "2006-01-02" }}
@@ -6,16 +6,34 @@
     {{ $dates = merge $dates (dict $dateStr (add $count 1)) }}
 {{ end }}
 
-{{/* 2. 定義時間軸範圍（確保總天數能被 7 整除，排版才會完美對齊） */}}
+{{/* 2. 【核心大改版】智能對齊時間軸範圍，確保第一行永遠是週一 */}}
 {{ $now := now }}
-{{ $startOffset := -147 }} {{/* 往前 21 週 */}}
-{{ $endOffset := 41 }}     {{/* 往後 6 週，捕捉下個月的預寫排程 */}}
+
+{{/* 計算 147 天前的那一天 */}}
+{{ $rawStartDate := $now.AddDate 0 0 -147 }}
+{{/* 取得那一天是星期幾（Hugo 預設：Sunday=0, Monday=1, ..., Saturday=6） */}}
+{{ $startWeekday := int $rawStartDate.Weekday }}
+
+{{/* 計算需要再額外往前推幾天，才能強行退回到週一 */}}
+{{ $daysToMonday := 0 }}
+{{ if eq $startWeekday 0 }}
+    {{ $daysToMonday = 6 }} {{/* 如果是週日，往前推 6 天到週一 */}}
+{{ else }}
+    {{ $daysToMonday = sub $startWeekday 1 }} {{/* 其他日子，減 1 就是距離週一的天數 */}}
+{{ end }}
+
+{{/* 算出最終完美的動態起始點 */}}
+{{ $startOffset := sub -147 $daysToMonday }}
+
+{{/* 為了讓總格數是 7 的倍數（整齊填滿 27 欄），我們需要總天數為 189 天 (27 * 7) */}}
+{{/* 總格數 = endOffset - startOffset + 1 = 189 -> endOffset = 188 + startOffset */}}
+{{ $endOffset := add 188 $startOffset }}
 
 <div class="github-calendar-container" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Monospace; font-size: 12px; margin: 30px 0; display: flex; gap: 8px; align-items: flex-start;">
     
+
     {{/* 右側：主日曆本體 */}}
     <div style="flex-grow: 1;">
-        {{/* 這裡我們將 grid 欄數改為 27 欄（每欄代表一週 7 天） */}}
         <div style="display: grid; grid-template-columns: repeat(27, 1fr); grid-auto-flow: column; grid-template-rows: repeat(7, 1fr); gap: 4px;">
             
             {{ range seq $startOffset $endOffset }}
@@ -26,32 +44,31 @@
                 {{ $isFuture := $targetDate.After $now }}
                 {{ $isToday := eq $targetDateStr ($now.Format "2006-01-02") }}
 
-                {{/* 顏色演算法 */}}
+                {{/* 顏色演算法 (維持不變) */}}
                 {{ $bgColor := "#ebedf0" }}
                 {{ if gt $articleCount 0 }}
                     {{ if $isFuture }}
-                        {{ $bgColor = "#8dd792" }} {{/* 下月預寫：輕盈的綠色 */}}
+                        {{ $bgColor = "#8dd792" }}
                     {{ else }}
-                        {{ $bgColor = "#216e39" }} {{/* 已發布：紮實的深綠 */}}
+                        {{ $bgColor = "#216e39" }}
                     {{ end }}
                 {{ else if $isToday }}
                     {{ $bgColor = "#fff9db" }}
                 {{ end }}
 
-               {{/* 💡 終極方案：移除 title，改用 onclick 彈窗，徹底粉碎主題 CSS 的干擾 */}}
                 <div onclick="alert('📅 日期：{{ $targetDateStr }}\n✍️ 狀態：{{ if gt $articleCount 0 }}有 {{ $articleCount }} 篇文章{{ else }}無文章{{ end }}{{ if $isFuture }} [預寫排程]{{ end }}{{ if $isToday }} [今天]{{ end }}')" 
                      style="background-color: {{ $bgColor }}; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
-                            pointer-events: auto !important; {{/* 強制恢復滑鼠事件主權 */}}
+                            pointer-events: auto !important;
                             {{ if $isToday }}border: 2px solid #ffc107; box-sizing: border-box;{{ end }}"
                      class="calendar-square">
                 </div>
             {{ end }}
         </div>
 
-        {{/* 下方：精緻的顏色圖例說明 */}}
+        {{/* 下方：精緻的顏色圖例說明 (維持不變) */}}
         <div style="display: flex; gap: 15px; margin-top: 12px; color: var(--secondary); justify-content: flex-end; font-size: 11px; align-items: center;">
             <div><span style="background: #ebedf0; display:inline-block; width:10px; height:10px; border-radius:2px; vertical-align: middle; margin-right: 4px;"></span>無文章</div>
             <div><span style="background: #216e39; display:inline-block; width:10px; height:10px; border-radius:2px; vertical-align: middle; margin-right: 4px;"></span>已發布</div>

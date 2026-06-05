@@ -2,3 +2,22 @@
 .breadcrumbs {
     margin-bottom: 10px !important; 
 }
+/* 1. 預設狀態：淺色模式（Light Mode）的 Wiwi 框框 */
+.hugo-note {
+    padding: 18px 24px;
+    margin: 25px 0;
+    background-color: #f4f7f9;   /* 淺色：淡灰藍 */
+    border: 1px solid #e1e6eb;   /* 淺色：淡灰邊框 */
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #4a5568;              /* 淺色：知性深灰字 */
+    line-height: 1.6;
+    transition: background 0.3s, border 0.3s, color 0.3s; /* 讓切換時有平滑的淡入淡出感 */
+}
+
+/* 2. 進階狀態：當使用者切換到深色模式（Dark Mode）時自動變身 */
+.dark .hugo-note {
+    background-color: #1e2530;   /* 深色：極低調的暗夜灰藍 */
+    border: 1px solid #2d3748;   /* 深色：暗灰色邊框 */
+    color: #cbd5e0;              /* 深色：溫和不刺眼的亮灰字，絕對不隱形！ */
+}

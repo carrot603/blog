@@ -4,6 +4,10 @@ draft = false
 title = '關於'
 +++
 
+{{% note %}}
+💡本頁面正式掛上主選單，日後將不定期更新。
+{{% /note %}}
+
 我是江俊佑，生於臺灣臺中市，今年十九歲。興趣是彈鋼琴、閱讀跟探索世界。我每天都會出門散步、運動，讀幾頁[追憶似水年華]({{< relref "proust.md" >}})。
 
 在高中的時候參加[儀隊](https://www.instagram.com/thunder_living/)跟[弦樂社](https://www.instagram.com/tcfshso_3rd/)，涉略滿廣泛的（？

@@ -31,6 +31,16 @@
       <description>&lt;p&gt;今天是我生日。&lt;/p&gt;</description>
     </item>
     <item>
+      <title>關於</title>
+      <link>http://localhost:1313/posts/about/</link>
+      <pubDate>Sat, 30 May 2026 06:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/about/</guid>
+      <description>&lt;div class=&#34;hugo-note&#34;&gt;本頁面正式掛上主選單，日後將不定期更新。&lt;/div&gt;
+&lt;p&gt;我是江俊佑，生於臺灣臺中市，今年十九歲。興趣是彈鋼琴、閱讀跟探索世界。我每天都會出門散步、運動，讀幾頁[追憶似水年華]&lt;/p&gt;
+&lt;p&gt;在高中的時候參加&lt;a href=&#34;https://www.instagram.com/thunder_living/&#34;&gt;儀隊&lt;/a&gt;跟&lt;a href=&#34;https://www.instagram.com/tcfshso_3rd/&#34;&gt;弦樂社&lt;/a&gt;，涉略滿廣泛的（？&lt;/p&gt;
+&lt;p&gt;我是重考生，目前錄取&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Now</title>
       <link>http://localhost:1313/now/</link>
       <pubDate>Fri, 29 May 2026 10:53:47 +0800</pubDate>
