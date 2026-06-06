@@ -21,3 +21,27 @@
     border: 1px solid #2d3748;   /* 深色：暗灰色邊框 */
     color: #cbd5e0;              /* 深色：溫和不刺眼的亮灰字，絕對不隱形！ */
 }
+
+/* --- 關於頁面照片樣式 (不滿板 + 知性風格) --- */
+.about-photo-wrapper {
+    margin: 30px auto;        /* 垂直留白，水平自動居中 */
+    text-align: center;       /* 確保圖片本身在容器內置中 */
+    max-width: 250px;         /* 【關鍵】限制圖片最大寬度，避免滿板 */
+    width: 100%;              /* 在小螢幕下自動縮放，不大於 max-width */
+}
+
+.about-photo-wrapper img {
+    width: 100%;              /* 讓圖片填滿父容器 (最大就是 250px) */
+    height: auto;             /* 維持圖片原始寬高比 */
+    border-radius: 50%;       /* 圓形照片 (如果你想要方形，就改成 8px 微圓角) */
+    border: 3px solid #e1e6eb; /* 淺色模式下的淡灰邊框，更有質感 */
+    object-fit: cover;        /* 確保如果是方形圖也能完美裁切成圓形 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* 微妙的陰影，創造立體感 */
+    transition: border 0.3s ease; /* 深淺色切換時的平滑過場 */
+}
+
+/* --- 深色模式 (Dark Mode) 相容 --- */
+.dark .about-photo-wrapper img {
+    border: 3px solid #3d4655; /* 深色：暗灰色邊框 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* 深色：更紮實的陰影 */
+}

@@ -6,8 +6,23 @@
     <description>Recent content on Carrot</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 05 Jun 2026 06:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 15:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>學習歷程檔案</title>
+      <link>http://localhost:1313/posts/portfolio/</link>
+      <pubDate>Sat, 06 Jun 2026 15:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/portfolio/</guid>
+      <description>&lt;p&gt;練習嵌入 PDF。高二多元選修做的，明知自己的科系完全用不到，但為了不枉費老師的用心良苦，在二上寒假的小年夜硬是趕出來了！每個字都是我嘔心瀝血擠出來的，當時還不知道有生成式 AI，就這麼寫了七、八小時！除了欣賞原片之外，多看看我的心得，讓少有人走的路被更多人看見。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>我的腳踏車</title>
+      <link>http://localhost:1313/posts/bike/</link>
+      <pubDate>Sat, 06 Jun 2026 06:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/bike/</guid>
+      <description>&lt;p&gt;原本是爸爸買的，但現在是我的了！在路上都備受關注，其實真的不貴！而且很好騎呢😁&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/bike.jpg&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>倉頡</title>
       <link>http://localhost:1313/posts/cangjie/</link>
@@ -29,16 +44,6 @@
       <pubDate>Wed, 03 Jun 2026 06:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/birthday/</guid>
       <description>&lt;p&gt;今天是我生日。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>關於</title>
-      <link>http://localhost:1313/posts/about/</link>
-      <pubDate>Sat, 30 May 2026 06:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/about/</guid>
-      <description>&lt;div class=&#34;hugo-note&#34;&gt;本頁面正式掛上主選單，日後將不定期更新。&lt;/div&gt;
-&lt;p&gt;我是江俊佑，生於臺灣臺中市，今年十九歲。興趣是彈鋼琴、閱讀跟探索世界。我每天都會出門散步、運動，讀幾頁[追憶似水年華]&lt;/p&gt;
-&lt;p&gt;在高中的時候參加&lt;a href=&#34;https://www.instagram.com/thunder_living/&#34;&gt;儀隊&lt;/a&gt;跟&lt;a href=&#34;https://www.instagram.com/tcfshso_3rd/&#34;&gt;弦樂社&lt;/a&gt;，涉略滿廣泛的（？&lt;/p&gt;
-&lt;p&gt;我是重考生，目前錄取&lt;/p&gt;</description>
     </item>
     <item>
       <title>Now</title>

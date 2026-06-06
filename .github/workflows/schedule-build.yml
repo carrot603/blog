@@ -1,31 +1,17 @@
-name: 定時自動編譯與發布
+name: "定時自動編譯與發布"
 
 on:
   schedule:
    
     - cron: '0 22 * * *'
-
-
+  
+  
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  trigger-cloudflare:
     runs-on: ubuntu-latest
     steps:
-      - name: 1. 檢出(Checkout)網站原始碼
-        uses: actions/checkout@v5
-        with:
-          submodules: true  
-          fetch-depth: 0    
-
-      - name: 2. 在虛擬主機安裝 Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: 'latest'
-          extended: true         
-
-      - name: 3. 執行 Hugo 編譯產出靜態網頁（驗證測試）
-        run: hugo --gc --minify
-
-      - name: 4. 通知 Cloudflare Pages 重新編譯
-        run: curl -X POST "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/84bc2165-18d8-4674-8519-10a4a0ba7062"
+      - name: "通知 Cloudflare Pages 重新編譯與發布"
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/84bc2165-18d8-4674-8519-10a4a0ba7062"
