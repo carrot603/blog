@@ -19,6 +19,10 @@ title = '推坑'
 
 隨時隨地都可以上到臺大的課，種類多元，我覺得[魏晉南北朝史](https://ocw.aca.ntu.edu.tw/courses/112S202)和[刑法分則](https://ocw.aca.ntu.edu.tw/courses/113S201)都很好看，全部都是免費的。
 
+### [閱讀前哨站](https://readingoutpost.com/)
+
+去年發現的說書 Podcast，也有部落格跟電子報可以閱讀。真佩服瓦基每一集都能找到來自各領域的來賓分享好書，我聽得深受鼓舞。
+
 ### [電子書閱讀器](https://ebook.hyread.com.tw/activity/201902gaze/productList.jsp) 
 
 螢幕本身不會發光，與盯著手機螢幕看比起來舒服很多；機身輕薄，通勤時隨手拿起來也很方便。除了買電子書，多多利用[公共圖書館]({{< relref "findbook.md" >}})的資源也是支持數位閱讀的一個方式。

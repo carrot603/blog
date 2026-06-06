@@ -1,3 +1,26 @@
 <div class="pdf-container" style="margin: 25px 0; text-align: center;">
-    <embed src="{{ .Get "src" }}" type="application/pdf" width="100%" height="600px" style="border: 1px solid var(--border, #e1e6eb); border-radius: 6px;" />
+    
+    <div class="pdf-desktop-preview">
+        <embed src="{{ .Get "src" }}" type="application/pdf" width="100%" height="600px" style="border: 1px solid var(--border, #e1e6eb); border-radius: 6px;" />
+    </div>
+
+    <div class="pdf-mobile-fallback" style="padding: 20px; border: 1px dashed var(--border, #e1e6eb); border-radius: 6px; background: var(--entry, #f5f5f5);">
+        <p style="margin: 0 0 12px 0; font-size: 14px; color: var(--secondary);">📱 偵測到行動裝置，瀏覽器暫不支援內嵌預覽</p>
+        <a href="{{ .Get "src" }}" target="_blank" rel="noopener noreferrer" 
+           style="display: inline-block; padding: 10px 20px; background: #216e39; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: 500; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+           📥 點此在新分頁打開 / 下載 PDF 檔案
+        </a>
+    </div>
 </div>
+
+<style>
+/* 預設在電腦上：隱藏手機按鈕 */
+.pdf-mobile-fallback { display: none !important; }
+.pdf-desktop-preview { display: block; }
+
+/* 當螢幕寬度小於 768px (手機/平板) 時：切換顯示狀態 */
+@media screen and (max-width: 768px) {
+    .pdf-desktop-preview { display: none !important; }
+    .pdf-mobile-fallback { display: block !important; }
+}
+</style>

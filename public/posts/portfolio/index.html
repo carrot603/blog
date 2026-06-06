@@ -108,14 +108,37 @@
     </h1>
     <div class="post-meta">
 
-<span title='2026-06-06 15:00:00 +0800 CST'>June 6, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>130 words</span>
+<span title='2026-06-06 15:00:00 +0800 CST'>June 6, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>165 words</span>
 
 </div>
   </header> 
   <div class="post-content md-content"><p>練習嵌入 PDF。高二多元選修做的，明知自己的科系完全用不到，但為了不枉費老師的用心良苦，在二上寒假的小年夜硬是趕出來了！每個字都是我嘔心瀝血擠出來的，當時還不知道有生成式 AI，就這麼寫了七、八小時！除了欣賞原片之外，多看看我的心得，讓少有人走的路被更多人看見。</p>
 <div class="pdf-container" style="margin: 25px 0; text-align: center;">
-    <embed src="/files/portfolio.pdf" type="application/pdf" width="100%" height="600px" style="border: 1px solid var(--border, #e1e6eb); border-radius: 6px;" />
+    
+    <div class="pdf-desktop-preview">
+        <embed src="/files/portfolio.pdf" type="application/pdf" width="100%" height="600px" style="border: 1px solid var(--border, #e1e6eb); border-radius: 6px;" />
+    </div>
+
+    <div class="pdf-mobile-fallback" style="padding: 20px; border: 1px dashed var(--border, #e1e6eb); border-radius: 6px; background: var(--entry, #f5f5f5);">
+        <p style="margin: 0 0 12px 0; font-size: 14px; color: var(--secondary);">📱 偵測到行動裝置，瀏覽器暫不支援內嵌預覽</p>
+        <a href="/files/portfolio.pdf" target="_blank" rel="noopener noreferrer" 
+           style="display: inline-block; padding: 10px 20px; background: #216e39; color: #ffffff; text-decoration: none; border-radius: 4px; font-weight: 500; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+           📥 點此在新分頁打開 / 下載 PDF 檔案
+        </a>
+    </div>
 </div>
+
+<style>
+ 
+.pdf-mobile-fallback { display: none !important; }
+.pdf-desktop-preview { display: block; }
+
+ 
+@media screen and (max-width: 768px) {
+    .pdf-desktop-preview { display: none !important; }
+    .pdf-mobile-fallback { display: block !important; }
+}
+</style>
 
 
 
