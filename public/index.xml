@@ -46,14 +46,6 @@
       <description>&lt;p&gt;今天是我生日。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Now</title>
-      <link>http://localhost:1313/now/</link>
-      <pubDate>Fri, 29 May 2026 10:53:47 +0800</pubDate>
-      <guid>http://localhost:1313/now/</guid>
-      <description>&lt;p&gt;💡 這是我的 /now 頁面，最後更新於：2026-05-29。&lt;/p&gt;
-&lt;p&gt;正在讀的書&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>3D🥕</title>
       <link>http://localhost:1313/posts/carrot3d/</link>
       <pubDate>Wed, 27 May 2026 15:40:00 +0800</pubDate>
@@ -226,6 +218,20 @@
       <pubDate>Sat, 23 May 2026 17:47:10 +0800</pubDate>
       <guid>http://localhost:1313/posts/hello/</guid>
       <description>&lt;p&gt;你好我叫江俊佑，很高興認識你。歡迎來到我的 blog，這是我給自己的十九歲生日禮物，也是我的秘密基地。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>健康</title>
+      <link>http://localhost:1313/posts/health/</link>
+      <pubDate>Fri, 22 May 2026 06:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/health/</guid>
+      <description>&lt;h1 id=&#34;睡眠&#34;&gt;睡眠&lt;/h1&gt;
+&lt;p&gt;一定睡滿 7.5 小時：21:00 睡著，&lt;a href=&#34;https://findbook.com.tw/9789861756769&#34;&gt;4:30 起床&lt;/a&gt;。還要[午睡]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://findbook.com.tw/9789863702658&#34;&gt;《縮時睡眠》&lt;/a&gt;提到：&lt;strong&gt;回籠覺毫無意義&lt;/strong&gt;。不如早點上床，一開始就睡飽。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://findbook.com.tw/9786269613946&#34;&gt;《好好睡一覺》&lt;/a&gt;：入睡前最清醒（為了提高警戒），所以睡前想很多是正常的，不妨把隔天的待辦清單先寫好，比較能安心入睡。&lt;/p&gt;
+&lt;h1 id=&#34;飲食&#34;&gt;飲食&lt;/h1&gt;
+&lt;p&gt;計算我的&lt;a href=&#34;https://tools.heho.com.tw/bmr/&#34;&gt;基礎代謝率&lt;/a&gt;（以身體活動程度正常計算）約 2200 大卡，但我通常都吃不了這麼多。&lt;/p&gt;
+&lt;p&gt;只能吃七分飽，細嚼慢嚥，吃飯時不看螢幕。&lt;/p&gt;
+&lt;p&gt;盡量吃原型食物，不重油重鹹。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
