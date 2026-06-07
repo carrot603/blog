@@ -6,8 +6,24 @@
     <description>Recent content on Carrot</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 07 Jun 2026 06:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 05:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《追憶似水年華》</title>
+      <link>http://localhost:1313/posts/proust/</link>
+      <pubDate>Mon, 08 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/proust/</guid>
+      <description>&lt;p&gt;忘了我是從哪裡知道它的存在，也忘了我是從什麼時候開始閱讀，不知不覺中我已迷上普魯斯特的悠長和綿延。&lt;/p&gt;
+&lt;p&gt;說難聽一點就是囉唆和冗長，但普魯斯特就是有本事，讓句子具備精密邏輯的同時，又能完全表現出豐沛的情感。撇開精巧的譬喻和一語中的的內心戲不說，光是其作者投入畢生精力成就如此曠世巨著，就讓人讚嘆不已！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>下大雨了啦</title>
+      <link>http://localhost:1313/posts/rain/</link>
+      <pubDate>Sun, 07 Jun 2026 19:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/rain/</guid>
+      <description>&lt;p&gt;剛剛出門遇到大雨，根本是用倒的！撐傘也沒用，雨滴會以完美的角度斜斜灌進來，衣服鞋子全溼了！&lt;/p&gt;
+&lt;p&gt;以前下雨就不想出門，又悶又溼又黏，交通會打結，路會看不到，既麻煩又不便！而今天淋了雨發現，其實也沒什麼，涼涼的還滿舒服的。但我怕風一吹會失溫，就只好狼狽地回家了！&lt;/p&gt;</description>
+    </item>
     <item>
       <title>一中圖書館借閱紀錄</title>
       <link>http://localhost:1313/posts/tcfsh-loan/</link>
