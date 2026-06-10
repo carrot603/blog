@@ -22,9 +22,9 @@ hasCJKLanguage = true
   ShowWordCount = true
   hideMeta = false
   ShowBreadCrumbs = true
-  
+  logo = "favicon.ico"
 [params.assets]
-        favicon = "/favicon.png"
+        favicon = "/favicon.ico"
 
 [params.profileMode]
     enabled = true
