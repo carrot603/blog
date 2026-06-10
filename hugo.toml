@@ -23,9 +23,15 @@ hasCJKLanguage = true
   hideMeta = false
   ShowBreadCrumbs = true
   logo = "favicon.ico"
-[params.assets]
-        favicon = "/favicon.ico"
+[params.label]
+    text = "Carrot"
+    textWithIcon = true
 
+[params.assets]
+  favicon = "/favicon.ico"
+  favicon16x16 = "/favicon.ico"
+  favicon32x32 = "/favicon.ico"
+  appleTouchIcon = "/favicon.ico"
 [params.profileMode]
     enabled = true
     title = "我是一根蘿蔔🥕"
