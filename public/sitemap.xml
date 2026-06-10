@@ -3,10 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-13T05:00:00+08:00</lastmod>
+    <lastmod>2026-07-15T05:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-07-13T05:00:00+08:00</lastmod>
+    <lastmod>2026-07-15T05:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/personal-ritual/</loc>
+    <lastmod>2026-06-10T08:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/morning/</loc>
+    <lastmod>2026-06-10T06:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/coffee/</loc>
+    <lastmod>2026-06-09T05:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/proust/</loc>
     <lastmod>2026-06-08T05:00:00+08:00</lastmod>
@@ -34,12 +43,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/birthday/</loc>
     <lastmod>2026-06-03T06:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/book-category/</loc>
-    <lastmod>2026-06-01T05:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/reading-note/</loc>
-    <lastmod>2026-06-01T05:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/now/</loc>
     <lastmod>2026-05-29T10:53:47+08:00</lastmod>

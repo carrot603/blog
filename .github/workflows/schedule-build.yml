@@ -2,10 +2,7 @@ name: "定時自動編譯與發布"
 
 on:
   schedule:
-   
-    - cron: '0 21 * * *'
-  
-  
+    - cron: '5 21 * * *'
   workflow_dispatch:
 
 jobs:
