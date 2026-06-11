@@ -3,17 +3,18 @@ languageCode = 'zh-tw'
 title = 'Carrot'
 theme = "PaperMod"
 hasCJKLanguage = true
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-        unsafe = true
+      unsafe = true
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]
   section = ["HTML"]
 
 [params]
- 
   defaultTheme = "dark"
   ShowReadingTime = true   
   ShowShareButtons = false   
@@ -22,46 +23,44 @@ hasCJKLanguage = true
   ShowWordCount = true
   hideMeta = false
   ShowBreadCrumbs = true
-  logo = "favicon.ico"
+
+
 [params.label]
-    text = "Carrot"
-    textWithIcon = true
+  text = "Carrot" 
+  textWithIcon = false
 
 [params.assets]
   favicon = "/favicon.ico"
   favicon16x16 = "/favicon.ico"
   favicon32x32 = "/favicon.ico"
   appleTouchIcon = "/favicon.ico"
+
 [params.profileMode]
-    enabled = true
-    title = "我是一根蘿蔔🥕"
-
- [[menu.main]]
-    name = "🥕"
-    url = "/"
-    weight = 10
+  enabled = true
+  title = "我是一根蘿蔔🥕"
 
 [[menu.main]]
-    name = "📝"
-    url = "/posts/"
-    weight = 20
-
-
-
+  name = "🥕"
+  url = "/"
+  weight = 10
 
 [[menu.main]]
-    name = "🎲"
-    url = "/random/"
-    weight = 50
+  name = "📝"
+  url = "/posts/"
+  weight = 20
 
 [[menu.main]]
-    name = "🔎"
-    url = "/search/"
-    weight = 60
+  name = "🎲"
+  url = "/random/"
+  weight = 50
+
+[[menu.main]]
+  name = "🔎"
+  url = "/search/"
+  weight = 60
 
 [params.searchApp]
-    limit = 20          
-    showScores = false
-    secure = false
-    mainSections = ["posts"]
-
+  limit = 20          
+  showScores = false
+  secure = false
+  mainSections = ["posts"]
