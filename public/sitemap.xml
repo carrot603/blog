@@ -8,6 +8,9 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-07-15T05:00:00+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/habit/</loc>
+    <lastmod>2026-06-12T05:00:00+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/utaipei-announce/</loc>
     <lastmod>2026-06-11T09:00:00+08:00</lastmod>
   </url><url>
@@ -46,6 +49,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/birthday/</loc>
     <lastmod>2026-06-03T06:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/about/</loc>
+    <lastmod>2026-05-30T05:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/now/</loc>
     <lastmod>2026-05-29T10:53:47+08:00</lastmod>

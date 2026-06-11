@@ -4,6 +4,11 @@
     <title>Tags on Carrot</title>
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Carrot</description>
+    <image>
+      <title>Carrot</title>
+      <url>http://localhost:1313/share.png</url>
+      <link>http://localhost:1313/share.png</link>
+    </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />

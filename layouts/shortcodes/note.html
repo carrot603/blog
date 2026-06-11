@@ -1,1 +1,7 @@
-<div class="hugo-note">{{ .Inner | markdownify }}</div>
+<div class="note-box">
+    {{ if .Get "title" }}
+    <div class="note-title">{{ .Get "title" }}</div>
+    {{ end }}
+          {{ .Inner | markdownify }}
+
+</div>

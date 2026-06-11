@@ -45,3 +45,24 @@
     border: 3px solid #3d4655; /* 深色：暗灰色邊框 */
     box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* 深色：更紮實的陰影 */
 }
+/* 自訂提示框框樣式 (Wiwi 風格) */
+.note-box {
+    background-color: var(--code-bg); /* 自動跟隨 PaperMod 的深淺色背景 */
+    border-left: 4px solid #ff8a3d;   /* 左側粗線，使用胡蘿蔔橘色 */
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.note-box .note-title {
+    font-weight: bold;
+    color: #ff8a3d;                   /* 標題橘色 */
+    margin-bottom: 5px;
+    font-size: 1.05em;
+}
+
+.note-box p:last-child {
+    margin-bottom: 0;
+}

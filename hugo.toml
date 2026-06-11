@@ -23,7 +23,7 @@ hasCJKLanguage = true
   ShowWordCount = true
   hideMeta = false
   ShowBreadCrumbs = true
-
+  images = ["/share.png"]
 
 [params.label]
   text = "Carrot" 
