@@ -30,7 +30,7 @@ hasCJKLanguage = true
   textWithIcon = false
 
 [params.assets]
-  favicon = "/favicon.ico"
+  favicon = "/favicon.png"
   apple_touch_icon = "/apple-touch-icon.png"
 
 [params.profileMode]
