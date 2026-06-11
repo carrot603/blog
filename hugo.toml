@@ -31,9 +31,7 @@ hasCJKLanguage = true
 
 [params.assets]
   favicon = "/favicon.ico"
-  favicon16x16 = "/favicon.ico"
-  favicon32x32 = "/favicon.ico"
-  appleTouchIcon = "/favicon.ico"
+  apple_touch_icon = "/apple-touch-icon.png"
 
 [params.profileMode]
   enabled = true
