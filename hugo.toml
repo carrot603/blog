@@ -1,6 +1,6 @@
 baseURL = 'https://carrot.tw/'
 languageCode = 'zh-tw'
-title = 'Carrot'
+title = 'Carrot Blog'
 theme = "PaperMod"
 hasCJKLanguage = true
 
