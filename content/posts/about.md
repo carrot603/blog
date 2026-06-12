@@ -11,7 +11,7 @@ title = '關於'
     
 在高中的時候參加[儀隊](https://www.instagram.com/thunder_living/)跟[弦樂社](https://www.instagram.com/tcfshso_3rd/)，涉略滿廣泛的（？
 
-我是重考生，目前錄取[臺北市立大學音樂學系](https://music.utaipei.edu.tw/)
+我是重考生，目前錄取[臺北市立大學音樂學系](https://music.utaipei.edu.tw/)。
 
 我喜歡吃紅蘿蔔，你也可以叫我蘿蔔🥕
 
