@@ -11,8 +11,31 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 12 Jun 2026 05:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 05:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>埔里音樂藝術節</title>
+      <link>http://localhost:1313/posts/puli/</link>
+      <pubDate>Sun, 14 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/puli/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;昨日下午於埔里藝文中心，舉辦盛大的「埔里音樂藝術節」。演出團體包含埔里國中弦樂團、臺中一中弦樂社、曉明女中弦樂團、曉明女中直笛團、忠孝國小弦樂團和忠孝國小合唱團，由張家綸老師擔任總監。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>午睡</title>
+      <link>http://localhost:1313/posts/nap/</link>
+      <pubDate>Sat, 13 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/nap/</guid>
+      <description>&lt;p&gt;每次午睡起來，我都會有一種恍如隔世、彷彿我不屬於這個世界的感覺。我會懷疑這個世界是真的嗎？要如何定義真實？我又要追求什麼？什麼是有意義的？我突然覺得我身邊的一切，也不過如此！我彷彿站在上帝視角觀看世間的一切，包括我自己的行為；同時，我又能告訴自己，要多體會美好的當下，進而創造出回味無窮的美好回憶！但十分鐘後又恢復如常。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Carrot Blog</title>
+      <link>http://localhost:1313/posts/carrot-blog/</link>
+      <pubDate>Fri, 12 Jun 2026 08:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/carrot-blog/</guid>
+      <description>&lt;p&gt;本來叫 Carrot，但第一眼看到會覺得意義不明，我又不是賣菜的；再者只有 carrot 也不容易搜尋，像是 &lt;a href=&#34;https://carrot.com&#34;&gt;https://carrot.com&lt;/a&gt; 或 &lt;a href=&#34;https://www.carrot.com.tw/&#34;&gt;https://www.carrot.com.tw/&lt;/a&gt; 也都叫 carrot。&lt;/p&gt;
+&lt;p&gt;Title 多了 blog 定位明確，希望用了 &lt;a href=&#34;https://search.google.com/search-console/about&#34;&gt;Google Search Console&lt;/a&gt; 之後能讓我的 blog 有更多曝光。但我不追求流量，我不願被數字綁架。期待點進來的每個人，不論是經過搜尋引擎、偶然發現或者被我推銷，都能找到庸庸碌碌的社會中的一點平靜和樂趣。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>習慣</title>
       <link>http://localhost:1313/posts/habit/</link>
