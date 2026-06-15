@@ -11,8 +11,25 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 14 Jun 2026 05:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自傳</title>
+      <link>http://localhost:1313/posts/me/</link>
+      <pubDate>Mon, 15 Jun 2026 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/me/</guid>
+      <description>&lt;p&gt;給市北的個人自傳，強迫推銷這個 blog 😂&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我熱愛音樂，未來想當個音樂家。平時的興趣是看書跟散步，我的座右銘是活在當下、順其自然、致虛守靜、放下執著。同時我有經營 blog，在 &lt;a href=&#34;https://carrot.tw/&#34;&gt;https://carrot.tw/&lt;/a&gt; ，歡迎來逛逛！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>圖書館</title>
+      <link>http://localhost:1313/posts/library/</link>
+      <pubDate>Mon, 15 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/library/</guid>
+      <description>&lt;p&gt;我覺得圖書館是世界上最慈善的地方，不只有優質的環境，還有高品質的內容（大部分啦），重點是一切都是&lt;strong&gt;免費的！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;很多好書就躺在那裡等你來借，不要浪費這個大好機會，趕快放下手機，動身前往最近的圖書館吧！&lt;/p&gt;</description>
+    </item>
     <item>
       <title>埔里音樂藝術節</title>
       <link>http://localhost:1313/posts/puli/</link>

@@ -8,6 +8,12 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-07-15T05:00:00+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/me/</loc>
+    <lastmod>2026-06-15T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/library/</loc>
+    <lastmod>2026-06-15T05:00:00+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/puli/</loc>
     <lastmod>2026-06-14T05:00:00+08:00</lastmod>
   </url><url>

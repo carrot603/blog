@@ -17,6 +17,10 @@ title = '關於'
 
 我比較內向，如果想認識我可以到 carrot603@proton.me
 
+想訂閱我可以到（點擊複製）：
+```text
+https://carrot.tw/index.xml
+```
 ---
 避免大家不知道我長怎樣，先放一張獨照在這👀
 
