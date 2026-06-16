@@ -11,8 +11,41 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 15 Jun 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 07:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>成語</title>
+      <link>http://localhost:1313/posts/idiom/</link>
+      <pubDate>Wed, 17 Jun 2026 07:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/idiom/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;或許德．夏呂斯先生曉得德．嘉拉爾東夫人對他的習性有所懷疑，又忍不住想&lt;span style=&#34;text-emphasis: filled circle; text-emphasis-position: over; -webkit-text-emphasis: filled circle; -webkit-text-emphasis-position: over;&#34;&gt;含沙射影&lt;/span&gt;藉此取樂，才存心使她無法渲染她姪兒受到了如何親切的接待，同時也在大聲宣告他對年輕人不感興趣；（……）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>光照之處</title>
+      <link>http://localhost:1313/posts/light/</link>
+      <pubDate>Wed, 17 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/light/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;以下是學測前寫的&lt;a href=&#34;https://www.sanmin.com.tw/product/index/011881869&#34;&gt;國文 4568&lt;/a&gt; 的作文題目。Gemini 給我 23 分😃我自己不敢再看但還是丟上來吧……&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;生命中不可或缺的的是陽光、空氣和水。光可以是夏日高掛天際曝曬的暢飲，也可以是冬天從雲縫中透出的微醺；如燭光搖曳，又像幻燈片般通透。光無處不在，又或者說有了光，我們才得以感知世界，嘗盡人情冷暖，也許它排第一個也其來有自。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>人生劇本</title>
+      <link>http://localhost:1313/posts/lifetime/</link>
+      <pubDate>Tue, 16 Jun 2026 07:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/lifetime/</guid>
+      <description>&lt;p&gt;傳統觀念認為：小時候努力念書，長大後找好工作，辛苦賺錢四十年，到老就可以快樂地死掉了！&lt;/p&gt;
+&lt;p&gt;問題出在於努力不一定有好工作，好工作不一定賺錢，賺到錢也不一定快樂。再說一個人連活不活得到老也不知道，萬一英年早逝何來的享受人生？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>影片 v.s. 書</title>
+      <link>http://localhost:1313/posts/video-vs-book/</link>
+      <pubDate>Tue, 16 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/video-vs-book/</guid>
+      <description>&lt;p&gt;影片對我來說只是一種媒體的形式。我反而覺得文字才有效率，步調可以自己掌控，也不用擔心錯過任何細節。&lt;/p&gt;
+&lt;p&gt;也許是我沒耐心把影片看完，大概是資訊量太大了！看的同時又要聽；而 &lt;a href=&#34;https://podcasts.apple.com/tw/podcast/%E6%B2%90%E5%BE%8Cyeh%E5%9C%A8%E8%81%8A/id1680322310&#34;&gt;Podcast&lt;/a&gt; 就沒有這個問題，我可以一邊磨&lt;a href=&#34;http://localhost:1313/posts/coffee/&#34;&gt;咖啡豆&lt;/a&gt;一邊笑到不行！&lt;/p&gt;</description>
+    </item>
     <item>
       <title>自傳</title>
       <link>http://localhost:1313/posts/me/</link>
