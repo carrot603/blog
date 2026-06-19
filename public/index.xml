@@ -11,8 +11,28 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 18 Jun 2026 05:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 11:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>能量管理</title>
+      <link>http://localhost:1313/posts/energy/</link>
+      <pubDate>Fri, 19 Jun 2026 11:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/energy/</guid>
+      <description>&lt;p&gt;比起金錢，更重要的資源是&lt;a href=&#34;http://localhost:1313/posts/time/&#34;&gt;時間&lt;/a&gt;；但比時間更重要的，是&lt;strong&gt;注意力&lt;/strong&gt;。一天中的注意力極其有限，早上六點跟晚上六點的精神狀況差距之大，當中的時間並非等值。例如早上寫文章只要二十分鐘，換到晚上可能要耗上一小時！因此必須根據自己的腦力遞減，分配不同專注程度的任務。&lt;/p&gt;
+&lt;p&gt;像我自己，在早上就必須把該做的事情全部做完，例如練曲子、研究哲學、更新 blog（很樂在其中）；下午可以做機械式的找音，或者輸入溫和的內容（比如看小說）；晚上超累，就不會給自己找罪受，跟家人聊聊天就很不錯！整理靈感、回顧今日、安排明天，最重要的就是營造溫馨的氛圍，好讓自己能安心睡去。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>時間管理</title>
+      <link>http://localhost:1313/posts/time/</link>
+      <pubDate>Fri, 19 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/time/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;「時間是相對的；唯有當我們在其間做了些什麼，時間才有價值。」──愛因斯坦&lt;/p&gt;&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;時間估計&lt;/strong&gt;：以實際作業時間安排。僅填滿一天中 60% 時間，保持彈性，適度&lt;strong&gt;留白&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>《吾聲的記憶》鋼琴五重奏音樂會</title>
       <link>http://localhost:1313/posts/quintet/</link>
