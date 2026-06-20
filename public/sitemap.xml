@@ -3,10 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-15T05:00:00+08:00</lastmod>
+    <lastmod>2026-07-26T05:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-07-15T05:00:00+08:00</lastmod>
+    <lastmod>2026-07-26T05:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/clean-shelf/</loc>
+    <lastmod>2026-06-20T14:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/puli-photo/</loc>
+    <lastmod>2026-06-20T07:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ask-the-past/</loc>
+    <lastmod>2026-06-20T06:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/energy/</loc>
     <lastmod>2026-06-19T11:00:00+08:00</lastmod>

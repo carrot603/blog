@@ -1,6 +1,6 @@
 +++
 title = '《文章作法》'
-date = '2026-07-01T05:00:00+08:00'
+date = '2026-07-23T05:00:00+08:00'
 draft = false
 +++
 [《文章作法》](https://findbook.com.tw/9786263177826)：附錄二　論記敘文中作者的地位並評現今小說界的文字（P.157）
@@ -8,3 +8,6 @@ draft = false
 
 像新聞報導就不適合加入主觀評斷；而像我的 blog，大家是因為我才來看的（應該吧？）所以我可以一直出現也沒關係😁
 
+---
+
+五南的[掌中書系列](https://www.kingstone.com.tw/bookpublish/publist/04004/?subkind=series&classname=%E6%8E%8C%E4%B8%AD%E6%9B%B8)含金量很高！像《國學概論》、《孔墨的思想》和《經典常談》都很好看。以書系來選書還不是第一次，我也有看[經典名著文庫](https://www.wunan.com.tw/booklist?code=31)，還有最經典的三民書局[古籍今注新譯](https://www.sanmin.com.tw/promote/sanmin/?id=sa0301)。

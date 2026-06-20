@@ -11,8 +11,58 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 19 Jun 2026 11:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 14:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>書櫃大掃除</title>
+      <link>http://localhost:1313/posts/clean-shelf/</link>
+      <pubDate>Sat, 20 Jun 2026 14:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/clean-shelf/</guid>
+      <description>&lt;p&gt;今天早上心血來潮把所有的書通通搬出來，板子有夠髒的！書上倒是沒什麼灰塵，可能書塞得滿滿的，灰塵就沒位子入侵了吧。
+&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/shelf1.jpg&#34;&gt;
+不曉得這樣拍不拍得出我的書有多多？已經賣掉不少書了，現在留的幾乎都是&lt;a href=&#34;https://www.mollie.com.tw/Mobile/Books.asp&#34;&gt;茉莉&lt;/a&gt;挖來的舊書。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>埔里的照片</title>
+      <link>http://localhost:1313/puli-photo/</link>
+      <pubDate>Sat, 20 Jun 2026 07:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/puli-photo/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli11.jpg&#34;&gt;
+&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli12.jpg&#34;&gt;
+臺中一中弦樂社&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli7.jpg&#34;&gt;
+&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli8.jpg&#34;&gt;
+&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli9.jpg&#34;&gt;
+&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli10.jpg&#34;&gt;
+以上舒曼&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli15.jpg&#34;&gt;
+我彈韋瓦第
+&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli14.jpg&#34;&gt;
+老師們的本色演出（？
+&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli16.jpg&#34;&gt;
+&lt;a href=&#34;http://localhost:1313/posts/quintet/&#34;&gt;社長&lt;/a&gt;宣傳我們的成發
+&lt;img alt=&#34;無法載入&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/puli13.jpg&#34;&gt;
+大合照&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>《餐桌上的中世紀冷笑話》</title>
+      <link>http://localhost:1313/posts/ask-the-past/</link>
+      <pubDate>Sat, 20 Jun 2026 06:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/ask-the-past/</guid>
+      <description>&lt;h3 id=&#34;如何殺死蛇&#34;&gt;如何殺死蛇&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;殺蛇和小青蛇：取一根&lt;a href=&#34;http://localhost:1313/posts/carrot3d/&#34;&gt;大蘿蔔&lt;/a&gt;，用之敲打蛇和小青蛇，一擊必能使之斃命。《家庭必備之書》（A Necessary Family Book）&lt;/p&gt;&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;如何讓人笑到死&#34;&gt;如何讓人笑到死&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;腋下有某些靜脈被稱為「笑穴」，如果被切斷了，會造成一個人笑到死。《解剖學》（Anatomia）&lt;/p&gt;&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;如何打贏官司&#34;&gt;如何打贏官司&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果有人身上帶著狼的牙齒、皮膚和眼睛，且有律師的話，他將在法庭上取得勝利，而且他將是各國的有錢人。《論動物》（De animalibus）&lt;/p&gt;</description>
+    </item>
     <item>
       <title>能量管理</title>
       <link>http://localhost:1313/posts/energy/</link>
@@ -153,7 +203,7 @@
 &lt;li&gt;閱讀實體書&lt;/li&gt;
 &lt;li&gt;鋼琴打開練音階&lt;/li&gt;
 &lt;li&gt;電腦打開寫 blog&lt;/li&gt;
-&lt;li&gt;去音樂廳聽演奏&lt;/li&gt;
+&lt;li&gt;去音樂廳聽&lt;a href=&#34;http://localhost:1313/posts/quintet/&#34;&gt;演奏&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;去電影院看電影&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;生活中需要儀式感，它讓我們從物理上切換模式，同時也是告訴自己，好好做事的一種方式。&lt;/p&gt;</description>
