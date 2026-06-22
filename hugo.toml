@@ -49,6 +49,11 @@ hasCJKLanguage = true
   weight = 20
 
 [[menu.main]]
+    name = "👤"
+    url = "/posts/about/"
+    weight = 30
+
+[[menu.main]]
   name = "🎲"
   url = "/random/"
   weight = 50
