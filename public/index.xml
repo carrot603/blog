@@ -11,8 +11,28 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 22 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 07:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>背景音</title>
+      <link>http://localhost:1313/posts/bgm/</link>
+      <pubDate>Tue, 23 Jun 2026 07:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/bgm/</guid>
+      <description>&lt;p&gt;有時在公共場合，例如書店，會播爵士樂或輕音樂。前者還可以接受，敲一些和弦或者薩克斯風的獨奏頗 chill；但是後者我完全無法接受！&lt;/p&gt;
+&lt;p&gt;什麼輕音樂或水晶音樂，都是高頻率的刺耳聲響，曲子單調呆板，毫無旋律的美感。更有甚者，古典音樂芭樂歌，像是聖母頌、C 大調卡農（最大受災戶，還不是 D 大調喔！）別人聽可能是放鬆，但我聽來是折磨！曲子本身沒有問題，問題是一直重複播放，也不想想當下的情境適不適合？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>《黑天鵝語錄》</title>
+      <link>http://localhost:1313/posts/taleb/</link>
+      <pubDate>Tue, 23 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/taleb/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://findbook.com.tw/9789865406684&#34;&gt;《黑天鵝語錄》&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;摘錄金句，有些加上註解，完成於 2025-05-10。&lt;/p&gt;
+&lt;h1 id=&#34;人生&#34;&gt;人生&lt;/h1&gt;
+&lt;p&gt;如果你在早上就能精準預知今天會發生什麼事，你就有點像死了一般——預知越精準死得越透。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;沒有變化的生活猶如一攤死水。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>關於</title>
       <link>http://localhost:1313/posts/about/</link>
@@ -58,7 +78,7 @@
       <link>http://localhost:1313/posts/summer-solstice/</link>
       <pubDate>Sun, 21 Jun 2026 05:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/summer-solstice/</guid>
-      <description>&lt;p&gt;今天過後白天就會越來越短了，有點感傷😭不知道冬天我還能不能那麼早起床？我睡前都會拉窗簾，日出的同時也就自然醒；雖然我都比太陽早起來就是了，什麼一覺到天亮，等到天亮的時候就太晚了（X&lt;/p&gt;</description>
+      <description>&lt;p&gt;今天過後白天就會越來越短了，有點感傷😭不知道冬天我還能不能&lt;a href=&#34;http://localhost:1313/posts/morning/&#34;&gt;那麼早起床&lt;/a&gt;？我睡前都會升起窗簾，日出的同時也就自然醒；雖然我都比太陽早起來就是了，什麼一覺到天亮，等到天亮的時候就太晚了（X&lt;/p&gt;</description>
     </item>
     <item>
       <title>書櫃大掃除</title>
