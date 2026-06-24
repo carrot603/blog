@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-26T05:00:00+08:00</lastmod>
+    <lastmod>2026-07-01T05:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-07-26T05:00:00+08:00</lastmod>
+    <lastmod>2026-06-24T05:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/time-note/</loc>
+    <lastmod>2026-06-24T05:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/bgm/</loc>
     <lastmod>2026-06-23T07:00:00+08:00</lastmod>
@@ -112,9 +115,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/birthday/</loc>
     <lastmod>2026-06-03T06:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/now/</loc>
-    <lastmod>2026-05-29T10:53:47+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/carrot3d/</loc>
     <lastmod>2026-05-27T15:40:00+08:00</lastmod>

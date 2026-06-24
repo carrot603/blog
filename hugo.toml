@@ -3,7 +3,7 @@ languageCode = 'zh-tw'
 title = 'Carrot Blog'
 theme = "PaperMod"
 hasCJKLanguage = true
-
+timeZone = "Asia/Taipei"
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

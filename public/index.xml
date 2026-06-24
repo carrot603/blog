@@ -11,8 +11,25 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 23 Jun 2026 07:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 05:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一些時間管理的筆記</title>
+      <link>http://localhost:1313/posts/time-note/</link>
+      <pubDate>Wed, 24 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/time-note/</guid>
+      <description>&lt;p&gt;去年整理的，有些瑣碎，反正我想放什麼放什麼。如果能有一個受用的建議，那這份筆記就值得了！&lt;/p&gt;
+&lt;h3 id=&#34;把時間當作朋友&#34;&gt;&lt;a href=&#34;https://one.ebook.hyread.com.tw/bookDetail.jsp?id=389171&#34;&gt;《把時間當作朋友》&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;不拖延（面對困難&lt;br&gt;
+不急燥&lt;br&gt;
+不求完美&lt;br&gt;
+不求甚解（但不忽略問題&lt;br&gt;
+不怕枯燥&lt;br&gt;
+計畫具體可行&lt;br&gt;
+&lt;strong&gt;一定會低估所需時間&lt;/strong&gt;&lt;br&gt;
+事情做好才會有興趣&lt;br&gt;
+善用零碎時間、時間統計法&lt;/p&gt;</description>
+    </item>
     <item>
       <title>背景音</title>
       <link>http://localhost:1313/posts/bgm/</link>
@@ -5628,18 +5645,6 @@
       <pubDate>Wed, 03 Jun 2026 06:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/birthday/</guid>
       <description>&lt;p&gt;今天是我生日。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Now</title>
-      <link>http://localhost:1313/now/</link>
-      <pubDate>Fri, 29 May 2026 10:53:47 +0800</pubDate>
-      <guid>http://localhost:1313/now/</guid>
-      <description>&lt;p&gt;💡 這是我的 /now 頁面，最後更新於：2026-05-29。&lt;/p&gt;
-&lt;p&gt;人生的階段：&lt;/p&gt;
-&lt;p&gt;正在讀的書：&lt;/p&gt;
-&lt;p&gt;在練的曲子：&lt;/p&gt;
-&lt;p&gt;想去哪裡玩：&lt;/p&gt;
-&lt;p&gt;最近的感嘆：&lt;/p&gt;</description>
     </item>
     <item>
       <title>3D🥕</title>
