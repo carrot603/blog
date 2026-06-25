@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 24 Jun 2026 05:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 05:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do Nothing</title>
+      <link>http://localhost:1313/posts/do-nothing/</link>
+      <pubDate>Thu, 25 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/do-nothing/</guid>
+      <description>&lt;p&gt;世界上每個人都在教你做事，卻沒有人叫你不要做事。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://findbook.com.tw/9789863601067&#34;&gt;《閒暇與無聊》&lt;/a&gt;提到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;人類的不幸或諸如此類的煩惱，不論何者其實都是因為人類沒辦法老老實實地待在房子裡所導致的。要是可以乖乖待在房子裡就好了，卻做不到。為此沒事找事地給自己添了不幸。——巴斯卡&lt;/p&gt;</description>
+    </item>
     <item>
       <title>一些時間管理的筆記</title>
       <link>http://localhost:1313/posts/time-note/</link>

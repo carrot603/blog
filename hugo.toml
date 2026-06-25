@@ -24,7 +24,7 @@ timeZone = "Asia/Taipei"
   hideMeta = false
   ShowBreadCrumbs = true
   images = ["/share.png"]
-
+  math = true
 [params.label]
   text = "Carrot" 
   textWithIcon = false
