@@ -54,6 +54,11 @@ timeZone = "Asia/Taipei"
     weight = 30
 
 [[menu.main]]
+    name = "💡"
+    url = "/now/"
+    weight = 40
+
+[[menu.main]]
   name = "🎲"
   url = "/random/"
   weight = 50
