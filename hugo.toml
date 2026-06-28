@@ -38,6 +38,10 @@ timeZone = "Asia/Taipei"
   enabled = true
   title = "我是一根蘿蔔🥕"
 
+[minify]
+  minifyOutput = true
+  disableXML = false
+
 [[menu.main]]
   name = "🥕"
   url = "/"

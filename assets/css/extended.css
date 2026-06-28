@@ -1,18 +1,3 @@
-@font-face {
-    font-family: 'Taipei Sans TC';
-    src: url('/fonts/TaipeiSansTCBeta-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Taipei Sans TC';
-    src: url('/fonts/TaipeiSansTCBeta-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/* 後半段改為這個最安全的極致宣告 */
-*:not(code):not(pre) {
-    font-family: 'Taipei Sans TC', "PingFang TC", "Heiti TC", "Apple LiGothic Medium", "Microsoft JhengHei", sans-serif !important;
+body:not(code):not(pre) {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", "Hiragino Sans GB", "Microsoft JhengHei", sans-serif;
 }

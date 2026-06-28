@@ -13,3 +13,16 @@ $$100 \div 55000 \approx 0.0018$$
 除了資訊爆炸，還有工作、運動、陪家人等等方面，都會消耗寶貴的時間。如果你希望人生精彩，就不該把力氣浪費在 [Bullshit Jobs](https://findbook.com.tw/9786263187665)、大魚大肉、吵架上面。
 
 我相信過去的經驗造就了如今的我；而當下的選擇，關乎到深遠的未來。從今天開始過濾雜訊，把時間留給你覺得真正值得的人和事。
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ],
+    throwOnError : false
+  });
+"></script>
