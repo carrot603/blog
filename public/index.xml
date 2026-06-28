@@ -11,8 +11,51 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 26 Jun 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 05:01:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人生的有限性</title>
+      <link>http://localhost:1313/posts/finitude/</link>
+      <pubDate>Sun, 28 Jun 2026 05:01:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/finitude/</guid>
+      <description>&lt;p&gt;若一週可以讀兩本書，一年算五十二週，一年可以讀 $2 \times 52 = 104$ 本書，為方便計算取整百。根據&lt;a href=&#34;https://isbn.ncl.edu.tw/NEW_ISBNNet/main_ProcessLevel3.php?Ptarget=253&#34;&gt;國際標準編碼申辦整合服務平臺&lt;/a&gt;，114 年新書共 55,016 種，大約 55,000 種。$$100 \div 55000 \approx 0.0018$$在茫茫書海中，只能挑不到千分之二的內容。因此一定要慎選輸入的資訊，才不致虛度光陰。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>取代手機的四樣東西</title>
+      <link>http://localhost:1313/posts/phone-use/</link>
+      <pubDate>Sun, 28 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/phone-use/</guid>
+      <description>&lt;h3 id=&#34;1-鬧鐘&#34;&gt;1. 鬧鐘&lt;/h3&gt;
+&lt;p&gt;買一個實體的鬧鐘，這樣一起床才不會被手機所干擾。放在房間的最角落會更好，才有理由下床。&lt;/p&gt;
+&lt;h3 id=&#34;2-手錶&#34;&gt;2. 手錶&lt;/h3&gt;
+&lt;p&gt;在外面看時間不要一直掏出手機，明明就有發明一個更輕、更直覺、更方便的東西，直接綁在你手上。而且戴手錶的人，看起來比較守時（嗎？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>比較不是永續之道</title>
+      <link>http://localhost:1313/posts/do-not-compare/</link>
+      <pubDate>Sat, 27 Jun 2026 05:01:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/do-not-compare/</guid>
+      <description>&lt;p&gt;《金剛經》告訴我們不要比較。&lt;/p&gt;
+&lt;p&gt;如果成就感是來源於比較，那你永遠比不完。除非你是第一名，否則你永遠都不會快樂；但是當第一名也有壓力，因為怕被比過去。所以這個&lt;a href=&#34;https://readingoutpost.com/system-thinking/&#34;&gt;系統&lt;/a&gt;本身就是壓抑不幸福的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>週計劃</title>
+      <link>http://localhost:1313/posts/weekly-plan/</link>
+      <pubDate>Sat, 27 Jun 2026 05:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/weekly-plan/</guid>
+      <description>&lt;p&gt;一天中的&lt;a href=&#34;http://localhost:1313/posts/energy/&#34;&gt;精力&lt;/a&gt;有限，其實做不了很多事，比如我讀《莊子》或是練蕭邦，很難在一天內就得出像樣的成果。最理想的方式就是，分段每天專心攻克，並且隔天要複習之前的東西好以加深印象，一週七天累積起來就能學到不少東西。&lt;/p&gt;
+&lt;p&gt;因此最晚到週日，我就會開始規劃下一週的所有行程。每天分配：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;睡眠 9 小時&lt;/strong&gt;：晚上 8 小時，午睡 20 分鐘，加上醒腦跟醞釀的時間。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;音樂 6 小時&lt;/strong&gt;：音階、巴哈、曲子，有時會聽唱片或讀譜。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;閱讀 3 小時&lt;/strong&gt;：&lt;a href=&#34;http://localhost:1313/posts/proust/&#34;&gt;《追憶》&lt;/a&gt;、哲學、blog，看點英文。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;生活 2 小時&lt;/strong&gt;：運動 30 分鐘，洗漱 30 分鐘，三餐一餐各 20 分鐘。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;家人 1 小時&lt;/strong&gt;：好好陪伴家人，聊聊天之類的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;彈性 3 小時&lt;/strong&gt;：通勤、緩衝、休息，&lt;a href=&#34;http://localhost:1313/posts/do-nothing/&#34;&gt;什麼都不做&lt;/a&gt;也是一種享受。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;我會空出完整的一天，把練琴跟看書的時間挪來小小的旅行，一週就多了 9 小時可以利用！我可以去書店、&lt;a href=&#34;http://localhost:1313/posts/library/&#34;&gt;圖書館&lt;/a&gt;，偶爾跟朋友聚聚也不錯。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>注音狂想曲</title>
       <link>http://localhost:1313/posts/bopomofo/</link>
@@ -33,15 +76,17 @@
       <guid>http://localhost:1313/now/</guid>
       <description>&lt;div class=&#34;note-box&#34;&gt;
     
-          &lt;p&gt;💡 這是我的 /now 頁面，最後更新於：2026-06-26。&lt;/p&gt;
+          &lt;p&gt;💡 這是我的 /now 頁面，最後更新於：2026-06-28。&lt;/p&gt;
 &lt;p&gt;本頁面同時投稿到 &lt;a href=&#34;https://nownownow.com/&#34;&gt;https://nownownow.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在這裡： &lt;a href=&#34;https://nownownow.com/p/01LE&#34;&gt;https://nownownow.com/p/01LE&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;/div&gt;
 
 &lt;p&gt;這跟 &lt;a href=&#34;http://localhost:1313/posts/about/&#34;&gt;about&lt;/a&gt; 有什麼差別，老實說我也不清楚。我想 Now 的更新會更頻繁吧！&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;6/26：Derek Sivers 回覆我了耶耶耶！！！&lt;/p&gt;</description>
+&lt;p&gt;6/26：Derek Sivers 回覆我了耶耶耶！！！&lt;br&gt;
+我發現只有我名字打中文，但算了沒關係，可能有一天搜尋江俊佑這個頁面就會跑出來了，我似乎是第 39 個臺灣人。&lt;/p&gt;</description>
     </item>
     <item>
       <title>屬七和弦</title>

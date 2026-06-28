@@ -1,14 +1,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 
-<style>
-  .katex {
-    font-size: 0.98em !important;   /* 將字體稍微縮小到原本的 95% */
-    letter-spacing: 0.02em;         /* 稍微拉開字距，避免數字太擠 */
-  }
-</style>
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="
+<script defer src="{{ "js/katex.min.js" | relURL }}"></script>
+<script defer src="{{ "js/auto-render.min.js" | relURL }}" onload="
   renderMathInElement(document.body, {
     delimiters: [
       {left: '$$', right: '$$', display: true},
@@ -18,3 +11,10 @@
     throwOnError : false
   });
 "></script>
+
+<style>
+  .katex {
+    font-size: 0.95em !important;
+    letter-spacing: 0.02em;
+  }
+</style>
