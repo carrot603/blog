@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sun, 28 Jun 2026 05:01:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>人生的有限性</title><link>http://localhost:1313/posts/finitude/</link><pubDate>Sun, 28 Jun 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/finitude/</guid><description>&lt;p>若一週可以讀兩本書，一年算五十二週，一年可以讀 104 本書，為方便計算取整百。根據&lt;a href="https://isbn.ncl.edu.tw/NEW_ISBNNet/main_ProcessLevel3.php?Ptarget=253">國際標準編碼申辦整合服務平臺&lt;/a>，114 年新書共 55,016 種，大約 55,000 種。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Mon, 29 Jun 2026 05:01:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>極簡與《佛教經濟學》</title><link>http://localhost:1313/posts/minimalism/</link><pubDate>Mon, 29 Jun 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/minimalism/</guid><description>&lt;p>極簡不是風格，它是一種生活態度。&lt;/p>
+&lt;h3 id="極簡的底層邏輯">極簡的底層邏輯&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>自我意識&lt;/strong>：不被潮流廣告牽著走，主動選擇所愛。&lt;/li>
+&lt;li>&lt;strong>減少選擇&lt;/strong>：&lt;a href="http://localhost:1313/posts/time/">固定日常&lt;/a>，保留決策腦力給重要事情。&lt;/li>
+&lt;li>&lt;strong>關注本質&lt;/strong>：重視體驗與價值，而非品牌與所有權。&lt;/li>
+&lt;li>&lt;strong>適當留白&lt;/strong>：減少佔據空間、時間、注意力的雜訊。&lt;/li>
+&lt;li>&lt;strong>活在當下&lt;/strong>：不後悔過去、擔憂未來，關注於現在。&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h3 id="佛教經濟學">&lt;a href="https://findbook.com.tw/9786263181731">《佛教經濟學》&lt;/a>&lt;/h3>
+&lt;p>經濟學家舒馬赫（E. F. Schumacher）寫過《小即是美》（&lt;em>Small Is Beautiful&lt;/em>），第四章就叫「佛教經濟學」，比較了兩種截然不同的經濟邏輯：&lt;strong>傳統經濟學&lt;/strong>致力於滿足最大可能的欲望；而&lt;strong>佛教經濟學&lt;/strong>則是&lt;span style="color: #fff; text-shadow: 0 0 5px #ff7b23, 0 0 10px #ff7b23, 0 0 15px #ff6b0b;">去除不必要的「想要」&lt;/span>。&lt;/p></description></item><item><title>數位生活</title><link>http://localhost:1313/posts/digital-life/</link><pubDate>Mon, 29 Jun 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/digital-life/</guid><description>&lt;p>我以最小化使用為目標，反正我不會被演算法誘惑，也不必拘泥要把螢幕使用時間降到多少。&lt;/p>
+&lt;p>規定自己，每天兩小時檢查一次手機——希望能進步到四小時，一天只看一次信箱、Line，身邊不少人也都已讀不回我🥲不看也不會怎樣，我就是不想被打擾。真正緊急的事情，家人會打電話或者用 &lt;a href="https://signal.org/">Signal&lt;/a> 跟我聯絡😇一天最多開一次電腦，主要都是為了更新 blog。&lt;/p></description></item><item><title>人生的有限性</title><link>http://localhost:1313/posts/finitude/</link><pubDate>Sun, 28 Jun 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/finitude/</guid><description>&lt;p>若一週可以讀兩本書，一年算五十二週，一年可以讀 104 本書，為方便計算取整百。根據&lt;a href="https://isbn.ncl.edu.tw/NEW_ISBNNet/main_ProcessLevel3.php?Ptarget=253">國際標準編碼申辦整合服務平臺&lt;/a>，114 年新書共 55,016 種，大約 55,000 種。&lt;/p>
 &lt;p>$$100 \div 55000 \approx 0.0018$$&lt;/p>
 &lt;p>在茫茫書海中，只能挑不到千分之二的內容。因此一定要&lt;strong>慎選輸入的資訊&lt;/strong>，才不致虛度光陰。&lt;/p></description></item><item><title>取代手機的四樣東西</title><link>http://localhost:1313/posts/phone-use/</link><pubDate>Sun, 28 Jun 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/phone-use/</guid><description>&lt;h3 id="1-鬧鐘">1. 鬧鐘&lt;/h3>
 &lt;p>買一個實體的鬧鐘，這樣一起床才不會被手機所干擾。放在房間的最角落會更好，才有理由下床。&lt;/p>
@@ -19,14 +31,12 @@
 這是我的「&lt;a href="https://blogblog.club/party/">&lt;strong>BlogBlog 同樂會 - 2026 年 7 月&lt;/strong>&lt;/a> 」的投稿文章。本月主題是「&lt;a href="https://shuaixin.cc/Fun-Fact/">&lt;strong>有趣的小知識或冷門概念&lt;/strong>&lt;/a>」，由&lt;a href="https://shuaixin.cc/">劉昕&lt;/a>主持。如果你有自己的部落格，歡迎一起來參加！
 &lt;/div>
 &lt;p>注音符號其實相當年輕，1912 年制定，1918 年發表，在 1930 年以前還叫做「注音字母」。&lt;/p></description></item><item><title>/now</title><link>http://localhost:1313/now/</link><pubDate>Fri, 26 Jun 2026 06:00:00 +0800</pubDate><guid>http://localhost:1313/now/</guid><description>&lt;div class="note-box">
-&lt;p>💡 這是我的 /now 頁面，最後更新於：2026-06-28。&lt;/p>
+&lt;p>💡 這是我的 /now 頁面，最後更新於：2026-06-29。&lt;/p>
 &lt;p>本頁面同時投稿到 &lt;a href="https://nownownow.com/">https://nownownow.com/&lt;/a>&lt;/p>
-&lt;p>在這裡： &lt;a href="https://nownownow.com/p/01LE">https://nownownow.com/p/01LE&lt;/a>&lt;/p>
 &lt;/div>
-&lt;p>這跟 &lt;a href="http://localhost:1313/posts/about/">about&lt;/a> 有什麼差別，老實說我也不清楚。我想 Now 的更新會更頻繁吧！&lt;/p>
+&lt;p>這跟 &lt;a href="http://localhost:1313/posts/about/">about&lt;/a> 有什麼差別，老實說我也不清楚。我想 /now 的更新會更頻繁吧！&lt;/p>
 &lt;blockquote>
-&lt;p>6/26：Derek Sivers 回覆我了耶耶耶！！！&lt;br>
-我發現只有我名字打中文，但算了沒關係，可能有一天搜尋江俊佑這個頁面就會跑出來了，我似乎是第 39 個臺灣人🇹🇼&lt;/p></description></item><item><title>屬七和弦</title><link>http://localhost:1313/posts/dominant-7th-chord/</link><pubDate>Fri, 26 Jun 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/dominant-7th-chord/</guid><description>&lt;p>以下出自&lt;a href="https://ipac.nlpi.edu.tw/bookDetail/294339">《密集和聲與題庫》&lt;/a> 第十章 屬七和弦：&lt;/p>
+&lt;p>6/26：Derek Sivers 回覆我了耶耶耶！！！&lt;/p></description></item><item><title>屬七和弦</title><link>http://localhost:1313/posts/dominant-7th-chord/</link><pubDate>Fri, 26 Jun 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/dominant-7th-chord/</guid><description>&lt;p>以下出自&lt;a href="https://ipac.nlpi.edu.tw/bookDetail/294339">《密集和聲與題庫》&lt;/a> 第十章 屬七和弦：&lt;/p>
 &lt;blockquote>
 &lt;p>屬七和弦，在古典時期，絕對被認爲不協和。據說，有天晚上，莫扎特作曲，作得太晚，第二天起不來，朋友找他，他就是不起床。這時，他的朋友，連續在鋼琴上，彈了幾個屬七和弦，而不彈解決和弦。莫札特非常難過，只好披著睡衣，走到鋼琴前，彈一個主和弦，再回床上睡覺。&lt;/p></description></item><item><title>找書</title><link>http://localhost:1313/posts/findbook/</link><pubDate>Fri, 26 Jun 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/findbook/</guid><description>&lt;p>&lt;a href="https://findbook.com.tw/">FindBook 找書網&lt;/a> 連結各大書店，不只能比價，也能導引至各大圖書館。我引用書目的所有連結也從這裡，比較客觀。&lt;/p>
 &lt;p>&lt;a href="https://one.ebook.hyread.com.tw/searchList.jsp">Hyread One&lt;/a> 支援全國各縣市的公共圖書館。偷偷說，大部分的書在上面都找得到，用不著去買或者去借實體書。電子書有分兩種：計次借閱沒有流通量的問題，只會扣掉你的額度；若是圖書館原本的館藏，就沒有次數限制，就算遇到很多人預約，也可以&lt;strong>線上瀏覽&lt;/strong>，省著排隊。再極端一點，怕書不夠看就註冊所有你想得到的圖書館，只需要身份證字號就行了，或者開通&lt;a href="https://allpass.nlpi.edu.tw/#/home">國資圖一證通&lt;/a>，非常方便！&lt;/p></description></item><item><title>Do Nothing</title><link>http://localhost:1313/posts/do-nothing/</link><pubDate>Thu, 25 Jun 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/do-nothing/</guid><description>&lt;p>世界上每個人都在教你做事，卻沒有人叫你不要做事。&lt;/p>

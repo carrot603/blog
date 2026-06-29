@@ -14,10 +14,10 @@ title = '數位生活'
 
 - Samsung 27吋 S3 曲面顯示器 C366
 - TUF Gaming 桌機
-- 作業系統：[Linux Mint](https://linuxmint.com/)
+- （作業系統：[Linux Mint](https://linuxmint.com/)）
 
 - Google Pixel 10a
-- 作業系統：[GrapheneOS](https://grapheneos.org/)
+- （作業系統：[GrapheneOS](https://grapheneos.org/)）
 
 - iPad 8th 
 - 電子書閱讀器：[Gaze mini+ 6吋](https://ebook.hyread.com.tw/activity/201902gaze/productList.jsp)
@@ -29,4 +29,4 @@ title = '數位生活'
 - 瀏覽器：[Brave](https://brave.com/) 
 
 ---
-我不是 Geek，只是受到 [Wiwi](https://wiwi.blog/) 的傳教，開啟了自由軟體之路，Pixel 也是因為他在用才買的。在當今大企業猖獗的時代，讓我們一起守護最後的淨土，用行動支持科技獨立。
+我不是 Geek，只是被 [Wiwi](https://wiwi.blog/) 傳教，開啟了自由軟體之路，Pixel 也是因為他在用才買的。在當今大企業猖獗的時代，讓我們一起守護最後的淨土，用行動支持科技獨立。
