@@ -20,7 +20,7 @@ title = '/now'
 
 ---
 
-[廣告（詳情點我）]({{< relref "frei-aber-froh.md" >}})：
+[廣告（詳情點我）]({{< relref "ad-frei.md" >}})：
 
 <div class="marquee-container">
   <div class="marquee-text">
