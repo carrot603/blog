@@ -7,7 +7,7 @@ title = '推坑'
 
 最棒的精神糧食，沒有之一。我從 2022 年才開始聽，至今已循環了不知多少次，怎麼聽都聽不膩。兩位主持人為我的價值觀塑造貢獻不少。
 
-###  wiwi.blog
+### [wiwi.blog](https://wiwi.blog/)
 
 時代的先驅，革命的領袖（？每天早上都期待 Wiwi 更新。
 
@@ -33,7 +33,7 @@ title = '推坑'
 
 ### 升降桌 
 
-每個人身高、臂長都不同，適合的桌面高度也不同。與其煩惱如何選擇，不如一開始就買張升降桌，不只工作坐累了可以站著，也可以隨時調整最舒服的高度。（我買 [IKEA](https://www.ikea.com.tw/zh/products/office-workspace/office-desks-and-tables/mittzon-spr-89530280)的因為比較便宜
+每個人身高、臂長都不同，適合的桌面高度也不同。與其煩惱如何選擇，不如一開始就買張升降桌，不只工作坐累了可以站著，也可以隨時調整最舒服的高度。（我買 [IKEA](https://www.ikea.com.tw/zh/products/office-workspace/office-desks-and-tables/mittzon-spr-89530280) 的因為比較便宜
 
 ### [Krispy Kreme](http://www.krispykreme.com.tw/)
 
