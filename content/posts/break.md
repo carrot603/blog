@@ -3,7 +3,7 @@ date = '2026-07-04T05:00:00+08:00'
 draft = false
 title = '破題'
 +++
-之所以會想要架網站，完全是受到 [Wiwi](wiwi.blog) 的感召（？[好檸檬](https://wiwi.video/c/nicelemon/videos)的潛移默化自然不需多言。真正的動力來自於覺得自己夠成熟了，也有錢可以買網址😆
+之所以會想要架網站，完全是受到 [Wiwi](https://wiwi.blog/blog/dont-abandon-your-home/) 的感召（？[好檸檬](https://wiwi.video/c/nicelemon/videos)的潛移默化自然不需多言。真正的動力來自於覺得自己夠成熟了，也有錢可以買網址😆
 
 所有的手續跟程式，都是我問 [Gemini](https://gemini.google.com/) 一步步試錯所累積起來的。也沒有想像中複雜，一個下午就全部架好了，5/23 就是這個 blog 的生日，也就是[第一篇文章]({{< relref "hello.md" >}})上傳的日子！
 

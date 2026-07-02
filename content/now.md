@@ -60,6 +60,61 @@ title = '/now'
 把圖書館的書還掉  
 練一首 Concerto  
 （希望能夠達成）
+
+---
+
+### 🏃 2026 年 7 月跑步紀錄
+
+|               一                |               二                |               三                |                      四                      |               五                |               六                |               日                |
+| :----------------------------: | :----------------------------: | :----------------------------: | :-----------------------------------------: | :----------------------------: | :----------------------------: | :----------------------------: |
+|                                |                                | <span class="no-run">1</span>  | <span class="run-done">2<br>**2.8k**</span> | <span class="no-run">3</span>  | <span class="no-run">4</span>  | <span class="no-run">5</span>  |
+| <span class="no-run">6</span>  | <span class="no-run">7</span>  | <span class="no-run">8</span>  |        <span class="no-run">9</span>        | <span class="no-run">10</span> | <span class="no-run">11</span> | <span class="no-run">12</span> |
+| <span class="no-run">13</span> | <span class="no-run">14</span> | <span class="no-run">15</span> |       <span class="no-run">16</span>        | <span class="no-run">17</span> | <span class="no-run">18</span> | <span class="no-run">19</span> |
+| <span class="no-run">20</span> | <span class="no-run">21</span> | <span class="no-run">22</span> |       <span class="no-run">23</span>        | <span class="no-run">24</span> | <span class="no-run">25</span> | <span class="no-run">26</span> |
+| <span class="no-run">27</span> | <span class="no-run">28</span> | <span class="no-run">29</span> |       <span class="no-run">30</span>        | <span class="no-run">31</span> |                                |                                |
+
+<style>
+  /* 1. 強制解除主題可能加在表格外層的捲軸限制 */
+  .post-content table, 
+  table {
+      display: table !important; /* 確保它維持傳統表格行為，不被變成 flex 或 block */
+      width: 100% !important;   /* 寬度百分之百鋪開 */
+      max-width: 100% !important;
+      overflow: visible !important; /* 拒絕產生捲軸 */
+  }
+
+  /* 如果主題有幫 table 包一層 div 限制，強制解除該 div 的捲軸 */
+  .post-content .table-wrapper,
+  div {
+      overflow-x: visible !important; 
+  }
+
+  /* 2. 日曆格子的調整 */
+  .post-content th, .post-content td {
+      border: 1px solid #e0e0e0;
+      padding: 12px 4px;
+      width: 14.28% !important; /* 七天嚴格平分 100% 寬度 */
+      height: auto;             /* 讓高度隨文字多寡自動伸展，避免垂直捲軸 */
+      min-height: 60px;
+      vertical-align: top;
+      font-size: 0.9rem;
+      word-break: break-all;    /* 如果文字太長，強制換行，不撐開表格 */
+  }
+
+  .no-run { color: #999; }
+  
+  .run-done {
+      display: block;
+      background-color: #e6f4ea;
+      color: #137333;
+      border-radius: 4px;
+      padding: 4px;
+      /* 取消原本的負 margin，改用正常排列，防止撐開格子 */
+      margin: 0; 
+      height: 100%;
+  }
+</style>
+
 <style>
 /* 跑馬燈的外框：限制寬度並隱藏超出範圍的文字 */
 .marquee-container {
