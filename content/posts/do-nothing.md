@@ -15,7 +15,7 @@ title = 'Do Nothing'
 
 >十九世紀的資本主義找到了把人類的肉體轉換為資本的方法。二十世紀的資本主義則是找到了把餘暇轉化為資本的方法。
 
-大家都在追求效率，連[零碎時間](https://www.ceec.edu.tw/xmdoc/cont?xsmsid=0J071624926253508127&sid=0O088660248459885780)都企圖利用。零碎時間會存在是有理由的，人需要休息、需要[切換]({{< relref "personal-ritual.md" >}})，[留白]({{< relref "minimalism.md" >}})的意義就體現於此。
+大家都在追求[效率]({{< relref "saving-time.md" >}})，連[零碎時間](https://www.ceec.edu.tw/xmdoc/cont?xsmsid=0J071624926253508127&sid=0O088660248459885780)都企圖利用。零碎時間會存在是有理由的，人需要休息、需要[切換]({{< relref "personal-ritual.md" >}})，[留白]({{< relref "minimalism.md" >}})的意義就體現於此。
 
 在庸庸碌碌的世界中，隨波逐流很簡單，反而是沒有機會停下來好好面對自己。
 
