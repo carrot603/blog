@@ -1,0 +1,4 @@
+/* 隱藏 PaperMod 導覽列外部連結的小箭頭圖示 */
+.menu a[href^="http"] svg {
+    display: none !important;
+}

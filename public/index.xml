@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Mon, 06 Jul 2026 05:01:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>2026 上半年好書推薦</title><link>http://localhost:1313/posts/2026-book/</link><pubDate>Mon, 06 Jul 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/2026-book/</guid><description>&lt;p>共 65 本。六個月下來當然沒有看那麼少，以下是去蕪存菁的結果：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Thu, 09 Jul 2026 12:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>📚＆🎹</title><link>http://localhost:1313/posts/button/</link><pubDate>Thu, 09 Jul 2026 12:00:00 +0800</pubDate><guid>http://localhost:1313/posts/button/</guid><description>&lt;p>今天早上我又加了兩個按鈕。&lt;a href="http://localhost:1313/books/">📚&lt;/a>把閱讀心得單獨列出來，希望以後能加入「千本好書」，羅列我這輩子看過的所有好書。&lt;/p>
+&lt;p>&lt;a href="https://www.youtube.com/@carrot603">🎹&lt;/a>則是我的 YouTube 頻道，中午剛上傳我彈的巴哈 Sinfonia No. 3。為什麼突然想拍影片呢？因為我要讀音樂系了，這個 blog 應該也要多點音樂氣息，否則只是紙上談兵罷了！&lt;/p></description></item><item><title>輸入法</title><link>http://localhost:1313/posts/input-method/</link><pubDate>Thu, 09 Jul 2026 09:00:00 +0800</pubDate><guid>http://localhost:1313/posts/input-method/</guid><description>&lt;p>早上想要收集靈感，點開 Gboard 的語音輸入，它居然說沒有網路不給用！我可以理解語音辨識需要厲害的模型才跑得動，但就是這個阻礙讓我不爽，同時又對自己有些失望，因為我對手機不能完全掌控。&lt;/p></description></item><item><title>books</title><link>http://localhost:1313/books/</link><pubDate>Thu, 09 Jul 2026 08:00:00 +0800</pubDate><guid>http://localhost:1313/books/</guid><description>&lt;p>&lt;div class="note-box">
+我的閱讀筆記，不想看廢文的話就來看些有營養的。最後更新於：2026-07-09。
+&lt;/div>
+&lt;a href="http://localhost:1313/posts/proust/">《追憶似水年華》&lt;/a> 唯一推薦！&lt;/p>
+&lt;hr>
+&lt;p>2026-06-20 &lt;a href="http://localhost:1313/posts/ask-the-past/">《餐桌上的中世紀冷笑話》&lt;/a>&lt;br>
+2026-06-23 &lt;a href="http://localhost:1313/posts/taleb/">《黑天鵝語錄》 &lt;/a>&lt;br>
+2026-06-24 &lt;a href="http://localhost:1313/posts/time-note/"> 一些時間管理的筆記 &lt;/a>&lt;br>
+2026-06-25 &lt;a href="http://localhost:1313/posts/do-nothing/">《閒暇與無聊》 &lt;/a>&lt;br>
+2026-06-29 &lt;a href="http://localhost:1313/posts/minimalism/">《佛教經濟學》 &lt;/a>&lt;br>
+2026-07-08 &lt;a href="http://localhost:1313/posts/saving-time/">《解放時間》 &lt;/a>&lt;/p></description></item><item><title>部署文章捷徑</title><link>http://localhost:1313/posts/lns/</link><pubDate>Thu, 09 Jul 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/lns/</guid><description>&lt;p>我都用 &lt;a href="https://obsidian.md/">Obsidian&lt;/a> 收集寫作素材。軟體內建的 markdown 語法會自動幫你設定好，讓編輯過程變得有效率許多。&lt;/p>
+&lt;p>昨天睡前我在想，要怎麼讓部署也更快速？我原本會跑到檔案總管 Obsidian 的資料夾，把文章剪下來，然後貼在 blog 的資料夾裡面。這樣有點麻煩，但我想藉由&lt;a href="http://localhost:1313/posts/personal-ritual/">這個過程&lt;/a>，留時間讓自己好好想想，確保每篇貼文都是堪讀的。&lt;/p></description></item><item><title>超連結</title><link>http://localhost:1313/posts/hyperlink/</link><pubDate>Thu, 09 Jul 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/hyperlink/</guid><description>&lt;p>文章中的超連結會讓人分心嗎？一定會的，因此我們要抗拒點進去的欲望，先好好把文章看過一次，再回頭點開所有的連結，最後把吸收到的分支內容嵌入文脈中再讀一遍。這樣不只能彰顯作者知識之廣博，如果作者連結到自己的其他文章，更能大大增加其觸及率！最重要的，一篇文章至少就被讀了三次，也算是把價值發揮到極致了！&lt;/p></description></item><item><title>《解放時間》</title><link>http://localhost:1313/posts/saving-time/</link><pubDate>Wed, 08 Jul 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/saving-time/</guid><description>&lt;p>去年年底讀到&lt;a href="https://findbook.com.tw/9786267397749">《解放時間》&lt;/a>，驚為天人！看書名似乎又是一本商管書，但它不是方法論，它是在點醒你不要想提昇時間的效率、生產……blablabla。&lt;/p>
+&lt;p>說來慚愧，當初在圖書館看到這個標題，還以為是要教我更厲害的&lt;a href="http://localhost:1313/posts/time/">時間管理法&lt;/a>。正好相反，作者 Jenny Odell 人間清醒，呼籲大家還給自己應得的時間，不要落入效率的陷阱！&lt;/p>
+&lt;p>「效率」這個概念只是資本家為了壓榨員工，產出更多產品賣更多錢，才灌輸給人們的假 KPI。機器可以追求效率，但人不是機器，我們的價值不在生產重複性的東西。&lt;/p></description></item><item><title>斷捨離</title><link>http://localhost:1313/posts/declutter/</link><pubDate>Tue, 07 Jul 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/declutter/</guid><description>&lt;p>斷捨離可以有效利用空間，讓環境看起來整齊有精神。&lt;/p>
+&lt;h3 id="物品分類">物品分類&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>分類&lt;/th>
+&lt;th>意義&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>✅ 保留（Keep）&lt;/td>
+&lt;td>真正使用、喜愛、有意義的物品&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🛍️ 轉送（Give）&lt;/td>
+&lt;td>可捐贈、送人的好物&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>💰 賣出（Sell）&lt;/td>
+&lt;td>尚有價值但自己不需的&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>🗑️ 丟棄（Trash）&lt;/td>
+&lt;td>壞了、過期、沒必要再留的東西&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="極簡原則">極簡原則&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>平面不堆東西&lt;/strong>：尤其桌面、牆壁角落。&lt;/li>
+&lt;li>&lt;strong>用完歸位&lt;/strong>：找東西最浪費時間了！&lt;/li>
+&lt;li>&lt;strong>一進一出&lt;/strong>：維持定量的封閉系統。&lt;/li>
+&lt;li>&lt;strong>定時整理&lt;/strong>：用不到就送人或丟掉。&lt;/li>
+&lt;li>&lt;strong>一物多用&lt;/strong>：瑞士刀、&lt;a href="http://localhost:1313/posts/promote/">光鳴燈&lt;/a>之類。&lt;/li>
+&lt;li>&lt;strong>終身耐用&lt;/strong>：頂級的實用物品是值得的。&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;p>不是什麼都需要斷掉。紀念品、遺物，你覺得有意義的東西就該留著。把物品拍照保存也是一種紀念方式。別忘了&lt;a href="http://localhost:1313/posts/digital-life/">數位生活&lt;/a>也需要整頓！（媽媽累積了 200 GB 的照片……）有系統或一致性的收藏也值得留念，像我有一堆蘿蔔週邊商品，每天看了都開心😆&lt;/p></description></item><item><title>2026 上半年好書推薦</title><link>http://localhost:1313/posts/2026-book/</link><pubDate>Mon, 06 Jul 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/2026-book/</guid><description>&lt;p>共 65 本。六個月下來當然沒有看那麼少，以下是去蕪存菁的結果：&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;a href="https://webpac.taichung.gov.tw/bookDetail/874851">大指揮家與古典音樂&lt;/a>&lt;/p>
@@ -100,7 +153,7 @@
 這是我的「&lt;a href="https://blogblog.club/party/">&lt;strong>BlogBlog 同樂會 - 2026 年 7 月&lt;/strong>&lt;/a> 」的投稿文章。本月主題是「&lt;a href="https://shuaixin.cc/Fun-Fact/">&lt;strong>有趣的小知識或冷門概念&lt;/strong>&lt;/a>」，由&lt;a href="https://shuaixin.cc/">劉昕&lt;/a>主持。如果你有自己的部落格，歡迎一起來參加！
 &lt;/div>
 &lt;p>注音符號其實相當年輕，1912 年制定，1918 年發表，在 1930 年以前還叫做「注音字母」。&lt;/p></description></item><item><title>/now</title><link>http://localhost:1313/now/</link><pubDate>Fri, 26 Jun 2026 06:00:00 +0800</pubDate><guid>http://localhost:1313/now/</guid><description>&lt;div class="note-box">
-&lt;p>💡 這是我的 /now 頁面，最後更新於：2026-07-06。&lt;/p>
+&lt;p>💡 這是我的 /now 頁面，最後更新於：2026-07-08。&lt;/p>
 &lt;p>本頁面同時投稿到 &lt;a href="https://nownownow.com/">https://nownownow.com/&lt;/a>&lt;/p>
 &lt;/div>
 &lt;p>這跟 &lt;a href="http://localhost:1313/posts/about/">about&lt;/a> 有什麼差別，老實說我也不清楚。我想 /now 的更新會更頻繁吧！&lt;/p>

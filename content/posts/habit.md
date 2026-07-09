@@ -11,6 +11,6 @@ title = '習慣'
 
 [好檸檬](https://wiwi.video/c/nicelemon/videos)某一集曾經提過：戒除壞習慣的方法，比起告訴自己不能做，不如想像若持續壞習慣將會有什麼後果。（希望未來能補上連結跟時間軸
 
-我自己在今年也成功養成每天[運動]({{< relref "bike.md" >}})、讀[Taipei Times](https://www.taipeitimes.com/)，早起來一段[追憶]({{< relref "proust.md" >}})，最重要的是我能夠早睡早起了，可喜可賀！
+我自己在今年也成功養成每天[運動]({{< relref "bike.md" >}})、讀 [Taipei Times](https://www.taipeitimes.com/)，早起來一段[追憶]({{< relref "proust.md" >}})，最重要的是我能夠早睡早起了，可喜可賀！
 
 習慣不需要養成，你想做就會去做。
