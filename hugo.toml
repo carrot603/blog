@@ -55,32 +55,32 @@ timeZone = "Asia/Taipei"
 [[menu.main]]
   name = "📚"
   url = "/books/"
-  weight = 21
+  weight = 30
 
 [[menu.main]]
   name = "🎹"
   url = "https://www.youtube.com/@carrot603/"
-  weight = 22
+  weight = 40
 
 [[menu.main]]
     name = "👤"
     url = "/posts/about/"
-    weight = 30
+    weight = 50
 
 [[menu.main]]
     name = "💡"
     url = "/now/"
-    weight = 40
+    weight = 60
 
 [[menu.main]]
   name = "🎲"
   url = "/random/"
-  weight = 50
+  weight = 70
 
 [[menu.main]]
   name = "🔎"
   url = "/search/"
-  weight = 60
+  weight = 80
 
 [params.searchApp]
   limit = 20          

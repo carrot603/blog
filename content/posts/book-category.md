@@ -6,7 +6,7 @@ title = '書的分類'
 比起[中文圖書分類法](https://catweb.ncl.edu.tw/class2007/96-1-1.htm)，我自己更偏好把書分成這六種：
 
 **文學**：例如普魯斯特、托爾斯泰。<br>
-**英文**：多讀原文書，訓練閱讀能力，我有一本英文版《悲慘世界》。<br>
+**英文**：多讀原文書，訓練閱讀能力。我有一本英文版《悲慘世界》。<br>
 **工具**：商管、科普、論文等等，若我想靠[主題閱讀](https://readingoutpost.com/how-to-read-a-book/)鑽研一個領域也會放這。<br>
 **史哲**：維根斯坦、[《亞洲人物史》](https://events.linkingbooks.com.tw/LNB/top/2025/great-figures_in-the-history-of-asia/index.html)。<br>
 **閒書**：雜七雜八的有的沒的。<br>
