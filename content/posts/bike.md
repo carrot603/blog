@@ -5,4 +5,4 @@ title = '我的腳踏車'
 +++
 原本是爸爸買的，但現在是我的了！在路上都備受關注，其實真的不貴！而且很好騎呢😁
 
-![無法載入](/images/bike.jpg)
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/bike.jpg)

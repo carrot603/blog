@@ -11,9 +11,9 @@ title = '明信片'
 
 以下是去年六月到奧地利玩買的一些明信片：
 
-![無法載入](/images/postcard1.jpg)
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/postcard1.jpg)
 媽媽很喜歡[克林姆的《吻》](https://zh.wikipedia.org/zh-tw/%E5%90%BB_(%E5%8F%A4%E6%96%AF%E5%A1%94%E5%A4%AB%C2%B7%E5%85%8B%E9%87%8C%E5%A7%86%E7%89%B9))，雖然來不及看到本尊。
 
-![無法載入](/images/postcard2.jpg)
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/postcard2.jpg)
 整整齊齊，妥妥貼貼，明信片大多是 A6 大小，放在 A5 的活頁筆記本再適合不過。
 

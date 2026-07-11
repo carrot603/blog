@@ -26,7 +26,7 @@ https://carrot.tw/index.xml
 ---
 避免大家不知道我長怎樣，先放一張獨照在這👀
 
-![無法載入](/images/me.jpg)
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg)
 
 2023 年七月第一次出國去日本，有🥕，那時候還好年輕（？
 

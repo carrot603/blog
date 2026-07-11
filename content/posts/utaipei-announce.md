@@ -5,4 +5,4 @@ draft = false
 +++
 如題。感謝老師用心栽培，讓我在這一年有長足的進步，深刻了解了音樂的意義😇謝謝我的父母，還有阿公阿嬤，我能有今天的成就，都要歸功於家人無限的愛跟支持🥰
 
-![無法載入](/images/university.jpg)
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/university.jpg)

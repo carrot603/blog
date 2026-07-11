@@ -16,4 +16,4 @@ title = '《追憶似水年華》'
 普魯斯特體驗過他的人生，為世界留下了《追憶》。我在想活過了這輩子，我能為世界留下什麼？
 <br>
 
-![無法載入](/images/proust.jpg)
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/proust.jpg)
