@@ -15,4 +15,4 @@ draft = false
 ---
 
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/shelf3.jpg)
-完工！由下往上數第二層有[普魯斯特]({{< relref "proust.md" >}})的相關資料，全都是我的寶貝！可惜以後去臺北沒得帶書，幸好有[臺北市立圖書館](https://book.tpml.edu.tw/)的龐大館藏可以利用。學校旁邊就是[國家圖書館](https://www.ncl.edu.tw/)，對面有[表演藝術圖書館](https://webpac.npac-ntch.org/)，迫不及待想逛逛了！
+完工！由下往上數第二層有[普魯斯特](/posts/proust)的相關資料，全都是我的寶貝！可惜以後去臺北沒得帶書，幸好有[臺北市立圖書館](https://book.tpml.edu.tw/)的龐大館藏可以利用。學校旁邊就是[國家圖書館](https://www.ncl.edu.tw/)，對面有[表演藝術圖書館](https://webpac.npac-ntch.org/)，迫不及待想逛逛了！

@@ -10,7 +10,7 @@ title = '/now'
 
 {{< /note >}}
 
-這跟 [about]({{< relref "about.md" >}}) 有什麼差別，老實說我也不清楚。我想 /now 的更新會更頻繁吧！
+這跟 [about](/posts/about) 有什麼差別，老實說我也不清楚。我想 /now 的更新會更頻繁吧！
 
 >6/26：Derek Sivers 回覆我了耶耶耶！！！
 
@@ -21,7 +21,7 @@ title = '/now'
 ---
 
 ### 人生的階段
-即將成為[市北]({{< relref "utaipei-announce.md" >}})音樂系大一新生🥳
+即將成為[市北](/posts/utaipei-announce)音樂系大一新生🥳
 
 ### 正在讀的書
 - 《莊子》  

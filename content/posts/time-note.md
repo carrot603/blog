@@ -87,4 +87,4 @@ title = '一些時間管理的筆記'
 
 [^1]: 再次呼籲各位不要滑手機 https://wiwi.video/w/8k8awyDw6obosYvUZK51Da <br>
 [^2]: https://zh.wikipedia.org/zh-tw/%E5%B8%95%E9%87%91%E6%A3%AE%E5%AE%9A%E5%BE%8B <br>
-[^3]: [《黑天鵝語錄》]({{< relref "taleb.md" >}})：「你如果走路的時候一定要聽音樂，那就別走路；也請不要聽音樂。」<br>
+[^3]: [《黑天鵝語錄》](/posts/taleb)：「你如果走路的時候一定要聽音樂，那就別走路；也請不要聽音樂。」<br>

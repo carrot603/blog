@@ -1,12 +1,12 @@
 +++
-date = '2026-07-15T05:00:00+08:00'
+date = '2026-07-14T05:00:00+08:00'
 draft = false
 title = '商管＆心理書推薦'
 +++
 
 > 商管書不是書，大眾心理學不是心理學—— 2026 我說的。
 
-[罵完商管書]({{< relref "business-book.md" >}})，覺得一味否定人家也不好！還是有很多值得細細品味的好作品。以下分享我親自認證過的好書，有空可以去[電子書平台]({{< relref "findbook.md" >}})線上瀏覽：
+[罵完商管書](/posts/business-book)，覺得一味否定人家也不好！還是有很多值得細細品味的好作品。以下分享我親自認證過的好書，有空可以去[電子書平台](/posts/findbook)線上瀏覽：
 
 ---
 
@@ -16,9 +16,9 @@ title = '商管＆心理書推薦'
   用高中數學理性看世界。
 
 - [**《離線練習》**](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=290849) ／ 安藤美冬作，林美琪譯
-  以為只是叫我放下手機，想不到是人生指南。不需要與世隔絕，但請[留時間給自己]({{< relref "do-nothing.md" >}})。
+  以為只是叫我放下手機，想不到是人生指南。不需要與世隔絕，但請[留時間給自己](/posts/do-nothing)。
 
-- [**《黑天鵝語錄》**](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=209247)  ／ [Nassim Nicholas Taleb]({{< relref "taleb.md" >}})著，席玉蘋、趙盛慈譯
+- [**《黑天鵝語錄》**](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=209247)  ／ [Nassim Nicholas Taleb](/posts/taleb)著，席玉蘋、趙盛慈譯
   至理名言，幽默而諷刺。
 
 - [**《生存所需的行政事務》**](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=458854) ／ 坂口恭平,道草晴子 著 , 李貞慧 譯 , 道草晴子 繪
@@ -35,7 +35,7 @@ title = '商管＆心理書推薦'
   日本人寫的方法論合集，一樣請[瓦基](https://readingoutpost.com/power-of-input/)介紹。輸出才是最終目標。
 
 - [**《高效海綿閱讀法》**](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=394031) ／ 李小墨
-  看書名不以為然，一讀驚為天人！是我看過關於[閱讀]({{< relref "reading-note.md" >}})，最貼近生活又有系統的中文書。每章都有心智圖重點整理，可以截圖收藏。
+  看書名不以為然，一讀驚為天人！是我看過關於[閱讀](/posts/reading-note)，最貼近生活又有系統的中文書。每章都有心智圖重點整理，可以截圖收藏。
 
 - [**《知識複利筆記術》**](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=343700)／ 朱騏
   教你運用卡片盒筆記法，建立自己的知識庫。我自己有訂閱 [Obsidian](https://obsidian.md/)，線上工具的好處是可以任意連結跟全文檢索。

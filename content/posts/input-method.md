@@ -5,7 +5,7 @@ title = '語音輸入之亂'
 +++
 早上想要收集靈感，點開 Gboard 的語音輸入，它居然說沒有網路不給用！我可以理解語音辨識需要厲害的模型才跑得動，但就是這個阻礙讓我不爽，同時又對自己有些失望，因為我對手機不能完全掌控。
 
-問 Gemini 有什麼自由的鍵盤，它推薦 [Heliboard](https://github.com/heliborg/heliboard) 和 [Fcitx5 Android](https://github.com/fcitx5-android/fcitx5-android)，後者是我的 [Linux Mint]({{< relref "digital-life.md" >}}) 也在用的。為此還需要透過 [F-Droid](https://f-droid.org/) 才可以下載，不曉得是不是 free-android 的意思？
+問 Gemini 有什麼自由的鍵盤，它推薦 [Heliboard](https://github.com/heliborg/heliboard) 和 [Fcitx5 Android](https://github.com/fcitx5-android/fcitx5-android)，後者是我的 [Linux Mint](/posts/digital-life) 也在用的。為此還需要透過 [F-Droid](https://f-droid.org/) 才可以下載，不曉得是不是 free-android 的意思？
 
 問題來了，Heliboard 我打不開；Fcitx5 是有注音，但切換之後鍵盤仍然顯示英文字母，記位置也沒用，ㄣ、ㄤ、ㄥ、ㄦ根本沒有鍵給它打！
 
@@ -15,7 +15,7 @@ title = '語音輸入之亂'
 
 最後，想不到最好的折衷辦法，還是 Google 自己的 Gemini 給出的答案——下載Gboard 自帶的「離線語音辨識」 (Offline speech recognition)，然後把網路權限永久關閉，就不會受到大企業的監視了！好的解法可以省去我早上折騰的一小時，剛試錯完我就想一定要寫成 blog，不然太不甘心了！我美好的早晨啊！
 
->7/10 註：根本找不到離線下載的按鈕！決定投降用回 Gboard，把資料回傳通通關掉。反正上網也不是太麻煩，精準的大數據值得我花力氣。順便抱怨一下，[市北]({{< relref "utaipei.md" >}})新生的調查表單是 Google 的，只能用 Google 帳號，你以為大家都想用 Google 喔？這還不夠，宣佈事情只用 Facebook 粉專，實在無奈！還好我記得密碼。<br>堅持拒絕 bigtech 跟我的升學比起來，還是妥協的好！
+>7/10 註：根本找不到離線下載的按鈕！決定投降用回 Gboard，把資料回傳通通關掉。反正上網也不是太麻煩，精準的大數據值得我花力氣。順便抱怨一下，[市北](/posts/utaipei)新生的調查表單是 Google 的，只能用 Google 帳號，你以為大家都想用 Google 喔？這還不夠，宣佈事情只用 Facebook 粉專，實在無奈！還好我記得密碼。<br>堅持拒絕 bigtech 跟我的升學比起來，還是妥協的好！<br>打開iPad才發現，最優雅最方便的語音輸入，就在我用了15年的iOS系統。不只能離線、支援多國語言、輸入標點符號，用鍵盤手動修改時，麥克風也不會關掉。不知道Siri會不會竊聽我？總之我寧願把權限交給Apple，頂多把iPad鎖進櫃子裡而已！
 ---
 
 以上只是表面的想法，這個經驗還可以再升華。為什麼想用語音輸入呢？因為想要更快產出，但創作這種東西不是快就好，重要的是價值和體驗。想寫出一篇耐讀的好文章，一定要花時間琢磨，各種遣詞用字，情節排列都需要不斷思考，甚至想法本身在寫作時就會產生更多化學變化。學習和創造，是很值得花時間去做的，或者說一定要投入大量時間，才能學有所成。

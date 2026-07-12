@@ -22,6 +22,6 @@ draft = false
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/puli14.jpg)
 老師們的本色演出（？
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/puli16.jpg)
-[社長]({{< relref "quintet.md" >}})宣傳我們的成發
+[社長](/posts/quintet)宣傳我們的成發
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/puli13.jpg)
 大合照
