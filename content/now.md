@@ -4,7 +4,7 @@ draft = false
 title = '/now'
 +++
 {{< note >}}
-💡 這是我的 /now 頁面，最後更新於：2026-07-08。
+💡 這是我的 /now 頁面，最後更新於：2026-07-15。
 
 本頁面同時投稿到 https://nownownow.com/
 
@@ -59,7 +59,7 @@ title = '/now'
 | :----------------------------: | :----------------------------: | :----------------------------: | :-----------------------------------------: | :----------------------------: | :----------------------------: | :----------------------------: |
 |                                |                                | <span class="no-run">1</span>  | <span class="run-done">2<br>**2.8k**</span> | <span class="no-run">3</span>  | <span class="run-done">4<br>**2.4k**</span>   | <span class="no-run">5</span>  |
 | <span class="run-done">6<br>**2.8k**</span> | <span class="run-done">7<br>**1.8k**</span>  | <span class="no-run">8</span>  |        <span class="no-run">9</span>        | <span class="no-run">10</span> | <span class="no-run">11</span> | <span class="no-run">12</span> |
-| <span class="no-run">13</span> | <span class="no-run">14</span> | <span class="no-run">15</span> |       <span class="no-run">16</span>        | <span class="no-run">17</span> | <span class="no-run">18</span> | <span class="no-run">19</span> |
+| <span class="no-run">13</span> | <span class="no-run">14</span> | <span class="run-done">15<br>🚲**38k**</span> |       <span class="no-run">16</span>        | <span class="no-run">17</span> | <span class="no-run">18</span> | <span class="no-run">19</span> |
 | <span class="no-run">20</span> | <span class="no-run">21</span> | <span class="no-run">22</span> |       <span class="no-run">23</span>        | <span class="no-run">24</span> | <span class="no-run">25</span> | <span class="no-run">26</span> |
 | <span class="no-run">27</span> | <span class="no-run">28</span> | <span class="no-run">29</span> |       <span class="no-run">30</span>        | <span class="no-run">31</span> |                                |                                |
 
