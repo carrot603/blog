@@ -9,7 +9,7 @@ title = '最後一次'
 
 太陽下山以後，是我的自由時間，通常我都拿來[看書](/posts/ideal-daily)；但書可以以後再看，家人不能不陪！每天晚上都是跟家人珍貴的相處時光。
 
-我要[去臺北念書](/posts/utaipei-announce)了，離最後一次說晚安的日子也近了😭
+我要[去臺北念書了](/posts/utaipei-announce)，離最後一次說晚安的日子也近了😭
 
 ---
 延伸閱讀：[好檸檬 Ep. 90](https://wiwi.video/w/ujw8XX45LgDjg6TJNeMAtp)
