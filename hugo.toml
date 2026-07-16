@@ -72,10 +72,6 @@ timeZone = "Asia/Taipei"
   url = "/random/"
   weight = 70
 
-[[menu.main]]
-  name = "🔎"
-  url = "/search/"
-  weight = 80
 
 [params.searchApp]
   limit = 20          
