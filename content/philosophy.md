@@ -64,6 +64,8 @@ title = '哲學'
 
 [蘇菲的世界知識漫畫. 1](https://webpac.taichung.gov.tw/bookDetail/1027117)
 
+[蘇菲的世界知識漫畫. 2, 從笛卡兒到當代的哲學史](https://webpac.taichung.gov.tw/bookDetail/1027138)
+
 [漫畫禪宗思想](https://webpac.taichung.gov.tw/bookDetail/758182)
 
 [新譯老子解義](https://webpac.taichung.gov.tw/bookDetail/1043335)
@@ -73,7 +75,24 @@ title = '哲學'
 [中國佛教史](https://webpac.taichung.gov.tw/bookDetail/947822)
 
 [哲學與宗教全史 : 人類三千年的思考之旅 = A world history of philosophy and religion](https://ipac.nlpi.edu.tw/bookDetail/753731)
-
 [文化哲學](https://ipac.nlpi.edu.tw/bookDetail/826961)
 
+[金剛經白話講座 : 放下的人生修行](https://webpac.taichung.gov.tw/bookDetail/1046413)
 
+[我們在存在主義咖啡館 : 那些關於自由、哲學家與存在主義的故事](https://webpac.taichung.gov.tw/bookDetail/689750)
+
+[聖經與古蘭經 : 認識猶太教、基督宗教與伊斯蘭教的第一本書](https://webpac.taichung.gov.tw/bookDetail/791756)
+
+[心經超圖解 : 看圖就懂 史上最強般若智慧解析](https://webpac.taichung.gov.tw/bookDetail/986104)
+
+[古書今讀法](https://webpac.taichung.gov.tw/bookDetail/884469)
+
+[國學概論](https://webpac.taichung.gov.tw/bookDetail/999648)
+
+[孔墨的思想](https://webpac.taichung.gov.tw/bookDetail/988941)
+
+[經典常談](https://webpac.taichung.gov.tw/bookDetail/897909)
+
+[文章作法](https://webpac.taichung.gov.tw/bookDetail/948698)
+
+[The four Chinese classics : Tao Te Ching, Chuang Tzu, Analects, Mencius](https://webpac.taichung.gov.tw/bookDetail/1048367)

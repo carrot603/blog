@@ -25,6 +25,8 @@ timeZone = "Asia/Taipei"
   ShowBreadCrumbs = true
   images = ["/share.png"]
   math = true
+  ShowFullTextinRSS = true
+
 [params.label]
   text = "Carrot" 
   textWithIcon = false
@@ -73,8 +75,3 @@ timeZone = "Asia/Taipei"
   weight = 70
 
 
-[params.searchApp]
-  limit = 20          
-  showScores = false
-  secure = false
-  mainSections = ["posts"]

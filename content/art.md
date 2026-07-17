@@ -111,6 +111,9 @@ title = '藝術'
 
 [周善祥 : 天賦與音樂的多重變奏](https://webpac.taichung.gov.tw/bookDetail/1058375)
 
+[鍵與之外︰音樂是心靈的純淨狀態](https://findbook.com.tw/9786264332002)
+
+[The complete classical music guide](https://webpac.taichung.gov.tw/bookDetail/995248)
 ### 建築
 
 [現代室內設計裝修事典](https://ipac.nlpi.edu.tw/bookDetail/699200)
@@ -132,6 +135,8 @@ title = '藝術'
 [人本建築](https://webpac.taichung.gov.tw/bookDetail/1034952)
 
 [精細圖解!建築結構學](https://webpac.taichung.gov.tw/bookDetail/1047054)
+
+[王大閎 永恆的建築詩人](https://webpac.taichung.gov.tw/bookDetail/1041649)
 
 ### 美術
 
@@ -174,6 +179,12 @@ title = '藝術'
 [臺灣美術兩百年. 上, 摩登時代](https://webpac.taichung.gov.tw/bookDetail/938142)
 
 [臺灣美術兩百年. 下, 島嶼呼喚](https://webpac.taichung.gov.tw/bookDetail/944289)
+
+[守護者](https://webpac.taichung.gov.tw/bookDetail/947618)
+
+[白先勇說崑曲](https://webpac.taichung.gov.tw/bookDetail/1031975)
+
+[鏡頭之後 : 電影攝影的張力、敘事與創意](https://webpac.taichung.gov.tw/bookDetail/1054167)
 
 ### 中文文學
 
@@ -322,6 +333,10 @@ title = '藝術'
 [譯者即叛徒?](https://webpac.taichung.gov.tw/bookDetail/968741)
 
 [世界上最透明的故事](https://webpac.taichung.gov.tw/bookDetail/1043230)
+
+[嘔吐](https://webpac.taichung.gov.tw/bookDetail/998967)
+
+[創作者的日常生活](https://webpac.taichung.gov.tw/bookDetail/758469)
 
 ### 圖書
 

@@ -189,6 +189,8 @@ title = '社會'
 
 [中國通史. ・上古篇](https://ipac.nlpi.edu.tw/bookDetail/195558)
 
+[思考中國 : 不一樣的中國通史](https://webpac.taichung.gov.tw/bookDetail/1047046)
+
 ### 其他
 
 [遊戲化實戰全書](https://webpac.taichung.gov.tw/bookDetail/802114)
@@ -310,7 +312,14 @@ title = '社會'
 
 [觀光人類學](https://webpac.taichung.gov.tw/bookDetail/871086)
 
+[辶反田野 : 人類學異托邦故事集](https://webpac.taichung.gov.tw/bookDetail/835239)
+
 [你愛看什麼書? : 談教育、經典、赫欽斯](https://webpac.taichung.gov.tw/bookDetail/846981)
 
 [餐桌上的中世紀冷笑話](https://webpac.taichung.gov.tw/bookDetail/1035080)
 
+[佛教經濟學 : 以智慧為依歸. 永續的經濟學](https://webpac.taichung.gov.tw/bookDetail/938393)
+
+[總統的親戚 : 揭開台灣權貴家族的臍帶與裙帶關係](https://webpac.taichung.gov.tw/bookDetail/952868)
+
+[長得好看能當飯吃嗎? : 掌握底層邏輯, 提升認知高度的33個經濟學常識問答](https://webpac.taichung.gov.tw/bookDetail/1002002)

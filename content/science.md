@@ -146,3 +146,13 @@ title = '科學'
 [科學作為探索](https://ipac.nlpi.edu.tw/bookDetail/816723)
 
 [蘋果才沒有砸在牛頓頭上!](https://webpac.taichung.gov.tw/bookDetail/1038114)
+
+[戶外活動實用繩結圖解全書](https://webpac.taichung.gov.tw/bookDetail/984210)
+
+[都市生存手冊 : 從地震、火災到暴力犯罪, 我們第一時間該如何求生自保?](https://webpac.taichung.gov.tw/bookDetail/969878)
+
+[數學女孩 : 費馬最後定理](https://webpac.taichung.gov.tw/bookDetail/806164)
+
+[量子糾纏 : 黑爾戈蘭島的奇幻旅程](https://webpac.taichung.gov.tw/bookDetail/1011957)
+
+[時間的秩序 : 用最尖端物理學, 顛覆常識與直覺, 探索時間的本質](https://webpac.taichung.gov.tw/bookDetail/923055)
