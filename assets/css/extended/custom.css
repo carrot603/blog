@@ -66,3 +66,43 @@
 .note-box p:last-child {
     margin-bottom: 0;
 }
+
+.newspaper-figure {
+    float: left;
+    width: 60%;             /* 佔據文章寬度的 40% */
+    max-width: 400px;       /* 電腦版大螢幕上不超過 400px */
+    min-width: 220px;       /* 手機版不縮到太小 */
+    margin: 10px 24px 10px 0; /* 調整外距，特別讓右邊留空給文字呼吸 (上 右 下 左) */
+    padding: 6px;
+    border: 1px solid var(--border, #ddd); /* 使用 PaperMod 內建邊框色 */
+    background-color: var(--theme, #fff);  /* 使用 PaperMod 內建背景色（黑夜白天自動切換） */
+    border-radius: 4px;
+}
+
+/* 靠右繞排的變體 */
+.newspaper-figure.align-right {
+    float: right;
+    margin: 10px 0 10px 24px; /* 讓左邊留空給文字呼吸 */
+}
+
+/* 圖片本體設定 */
+.newspaper-figure img {
+    width: 100%;            
+    height: auto;
+    display: block;
+    border-radius: 2px;
+}
+
+/* 圖底下的說明文字 */
+.newspaper-caption {
+    font-size: 0.85rem;     
+    color: var(--content, #666); /* 自動切換 PaperMod 的內文字體顏色 */
+    text-align: center;     
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+/* 清除浮動（強迫下一段落換行，不被繞排影響） */
+.clear-float {
+    clear: both;
+}
