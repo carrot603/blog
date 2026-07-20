@@ -20,7 +20,10 @@ title = 'books'
 2026-06-29 [《佛教經濟學》 ](/posts/minimalism)  
 2026-07-08 [《解放時間》 ](/posts/saving-time)  
 2026-07-12 [關於閱讀的筆記](/posts/reading-note)  
-2026-07-14 [商管＆心理書推薦](/posts/business-inspirational)
+2026-07-14 [商管＆心理書推薦](/posts/business-inspirational)  
+2026-07-17 [學習法](/posts/learning)  
+2026-07-19 [沉沒成本與《停損的勝算》](/posts/sunk-cost)  
+2026-07-20 [《深度學習的技術》](/posts/deeper-learning)
 
 ---
 
