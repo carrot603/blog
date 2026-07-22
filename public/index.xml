@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Wed, 22 Jul 2026 05:01:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>送禮的藝術</title><link>http://localhost:1313/posts/book-gift/</link><pubDate>Wed, 22 Jul 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/book-gift/</guid><description>&lt;p>不知道該送別人什麼嗎？那就送書吧！&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Thu, 23 Jul 2026 06:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>推廣網站大事記</title><link>http://localhost:1313/posts/promote-blog/</link><pubDate>Thu, 23 Jul 2026 06:00:00 +0800</pubDate><guid>http://localhost:1313/posts/promote-blog/</guid><description>&lt;p>記錄 blog 大事的時間軸。&lt;/p>
+&lt;hr>
+&lt;h3 id="2026-05-23">2026-05-23&lt;/h3>
+&lt;p>架站，&lt;a href="http://localhost:1313/posts/hello">第一篇文章&lt;/a>。&lt;/p>
+&lt;h3 id="2026-06-08">2026-06-08&lt;/h3>
+&lt;p>登錄在 Google Search Console。&lt;/p>
+&lt;h3 id="2026-06-12">2026-06-12&lt;/h3>
+&lt;p>製作網站 Favicon。（目前是用 .png，因為 .ico 不一定每支手機都認得出來）&lt;br>
+&lt;a href="https://carrot.tw/favicon.png">網站小圖標&lt;/a>。&lt;br>
+&lt;a href="https://carrot.tw/share.png">分享預設滿版圖片&lt;/a>（例如在 &lt;a href="https://feedly.com">Feedly&lt;/a> 上會顯示）&lt;/p>
+&lt;h3 id="2026-06-21">2026-06-21&lt;/h3>
+&lt;p>在&lt;a href="https://blogblog.club/party/"> BlogBlog 同樂會&lt;/a>投稿六月主題「&lt;a href="http://localhost:1313/posts/music-and-memories">論音樂與記憶&lt;/a>」。&lt;/p></description><content:encoded><![CDATA[<p>記錄 blog 大事的時間軸。</p>
+<hr>
+<h3 id="2026-05-23">2026-05-23</h3>
+<p>架站，<a href="/posts/hello">第一篇文章</a>。</p>
+<h3 id="2026-06-08">2026-06-08</h3>
+<p>登錄在 Google Search Console。</p>
+<h3 id="2026-06-12">2026-06-12</h3>
+<p>製作網站 Favicon。（目前是用 .png，因為 .ico 不一定每支手機都認得出來）<br>
+<a href="https://carrot.tw/favicon.png">網站小圖標</a>。<br>
+<a href="https://carrot.tw/share.png">分享預設滿版圖片</a>（例如在 <a href="https://feedly.com">Feedly</a> 上會顯示）</p>
+<h3 id="2026-06-21">2026-06-21</h3>
+<p>在<a href="https://blogblog.club/party/"> BlogBlog 同樂會</a>投稿六月主題「<a href="/posts/music-and-memories">論音樂與記憶</a>」。</p>
+<h3 id="2026-06-26">2026-06-26</h3>
+<p>又投稿七月主題冷知識「<a href="/posts/bopomofo">注音狂想曲</a>」。</p>
+<p>在 <a href="https://nownownow.com/">nownownow.com</a> 上登錄，收到 <a href="https://sive.rs/">Derek Sivers</a> 的回覆。</p>
+<h3 id="2026-07-18">2026-07-18</h3>
+<p>受邀加入 <a href="https://indieping.giveanornot.com/">IndiePing</a>🎉</p>
+<h3 id="2026-07-21">2026-07-21</h3>
+<p>登錄在 <a href="https://archive.org/">archive.org</a>，有<a href="https://web.archive.org/web/20260721074618/https://carrot.tw/">首頁</a>跟<a href="https://web.archive.org/web/20260722044259/https://carrot.tw/index.xml"> index</a>。在我之前，carrot.tw 的網域還有 2009 跟 2011 的記錄，但它說沒有 IE 不給開，我猜應該是賣產品的網站吧！</p>
+]]></content:encoded></item><item><title>《文章作法》</title><link>http://localhost:1313/posts/narrative/</link><pubDate>Thu, 23 Jul 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/narrative/</guid><description>&lt;p>&lt;a href="https://findbook.com.tw/9786263177826">《文章作法》&lt;/a>〈附錄二　論記敘文中作者的地位並評現今小說界的文字〉（P.157）：&lt;/p>
+&lt;blockquote>
+&lt;p>記敘文在文字的形式上，要看不出有作者在，才能令人讀了如目見身歷，得到純粹的印象。一經作者逐處加入說明或議論，就可減殺讀者的趣味。其情形正如戀愛男女喁喁情話著，媒介者突然露出面影來羼入障害一樣。凡是好的記敘文，大都是在形式上看不出有作者的。&lt;/p></description><content:encoded><![CDATA[<p><a href="https://findbook.com.tw/9786263177826">《文章作法》</a>〈附錄二　論記敘文中作者的地位並評現今小說界的文字〉（P.157）：</p>
+<blockquote>
+<p>記敘文在文字的形式上，要看不出有作者在，才能令人讀了如目見身歷，得到純粹的印象。一經作者逐處加入說明或議論，就可減殺讀者的趣味。其情形正如戀愛男女喁喁情話著，媒介者突然露出面影來羼入障害一樣。凡是好的記敘文，大都是在形式上看不出有作者的。</p></blockquote>
+<p>像新聞報導就不適合加入主觀評斷；而像我的 blog，大家是因為我才來看的（應該吧？）所以我可以一直出現也沒關係😁</p>
+<hr>
+<p>五南的<a href="https://www.kingstone.com.tw/bookpublish/publist/04004/?subkind=series&amp;classname=%E6%8E%8C%E4%B8%AD%E6%9B%B8">掌中書系列</a>含金量很高！像《國學概論》、《孔墨的思想》和《經典常談》都很好看。以書系來選書還不是第一次，我也有看<a href="https://www.wunan.com.tw/booklist?code=31">經典名著文庫</a>，還有最經典的三民書局<a href="https://www.sanmin.com.tw/promote/sanmin/?id=sa0301">古籍今注新譯</a>。</p>
+]]></content:encoded></item><item><title>遊戲化</title><link>http://localhost:1313/posts/gamification/</link><pubDate>Thu, 23 Jul 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/gamification/</guid><description>&lt;p>有人說把人生當遊戲，一關一關克服，會更有動力也更好玩；其實是遊戲像人生一樣精彩，所以才變得有趣。&lt;/p>
+&lt;p>生活從來就不缺乏趣味與隨機性，舉凡學習、旅行或練琴，它們本身就是一種享受。所謂&lt;a href="https://findbook.com.tw/9789869468084">遊戲化的元素&lt;/a>只是工具，真正的樂趣不是強求得來的。&lt;/p></description><content:encoded><![CDATA[<p>有人說把人生當遊戲，一關一關克服，會更有動力也更好玩；其實是遊戲像人生一樣精彩，所以才變得有趣。</p>
+<p>生活從來就不缺乏趣味與隨機性，舉凡學習、旅行或練琴，它們本身就是一種享受。所謂<a href="https://findbook.com.tw/9789869468084">遊戲化的元素</a>只是工具，真正的樂趣不是強求得來的。</p>
+<p>要是我們真的活在虛擬世界，那為什麼不先玩好這局人生呢？</p>
+]]></content:encoded></item><item><title>送禮的藝術</title><link>http://localhost:1313/posts/book-gift/</link><pubDate>Wed, 22 Jul 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/book-gift/</guid><description>&lt;p>不知道該送別人什麼嗎？那就送書吧！&lt;/p>
 &lt;p>一本書可以是期望，像是&lt;a href="https://findbook.com.tw/9786264178419">《情境智慧》&lt;/a>，面對人生難關也不會迷茫。&lt;br>
 一本書可以是感謝，像是&lt;a href="https://findbook.com.tw/9789865549367">《幸運遇見你》&lt;/a>，珍惜所有得來不易的緣份。&lt;br>
 一本書可以是祝福，像是&lt;a href="https://findbook.com.tw/9786267752111">《金剛經白話講座》&lt;/a>，希望大家放下執著和貪念。&lt;br>
@@ -1330,12 +1372,12 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
 <p>以上只是表面的想法，這個經驗還可以再升華。為什麼想用語音輸入呢？因為想要更快產出，但創作這種東西不是快就好，重要的是價值和體驗。想寫出一篇耐讀的好文章，一定要花時間琢磨，各種遣詞用字，情節排列都需要不斷思考，甚至想法本身在寫作時就會產生更多化學變化。學習和創造，是很值得花時間去做的，或者說一定要投入大量時間，才能學有所成。</p>
 <p>我標題剛下的時候，也想不到會有這一段。看來還是好好地把一個一個字敲出來，凝練成的才是好作品吧！</p>
 ]]></content:encoded></item><item><title>books</title><link>http://localhost:1313/books/</link><pubDate>Thu, 09 Jul 2026 08:00:00 +0800</pubDate><guid>http://localhost:1313/books/</guid><description>&lt;div class="note-box">
-我的閱讀筆記，不想看廢文的話就來看些有營養的。最後更新於：2026-07-17。
+我的閱讀筆記，不想看廢文的話就來看些有營養的。最後更新於：2026-07-23。
 &lt;/div>
 &lt;div id="custom-toc">&lt;/div>
 &lt;hr>
 &lt;h3 id="閱讀心得">閱讀心得&lt;/h3>
-&lt;p>2026-06-20 &lt;a href="http://localhost:1313/posts/ask-the-past">《餐桌上的中世紀冷笑話》&lt;/a>&lt;br>
+&lt;h2 id="2026-07-23-文章作法">2026-06-20 &lt;a href="http://localhost:1313/posts/ask-the-past">《餐桌上的中世紀冷笑話》&lt;/a>&lt;br>
 2026-06-23 &lt;a href="http://localhost:1313/posts/taleb">《黑天鵝語錄》 &lt;/a>&lt;br>
 2026-06-24 &lt;a href="http://localhost:1313/posts/time-note"> 一些時間管理的筆記 &lt;/a>&lt;br>
 2026-06-25 &lt;a href="http://localhost:1313/posts/do-nothing">《閒暇與無聊》 &lt;/a>&lt;br>
@@ -1346,19 +1388,19 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
 2026-07-17 &lt;a href="http://localhost:1313/posts/learning">學習法&lt;/a>&lt;br>
 2026-07-19 &lt;a href="http://localhost:1313/posts/sunk-cost">沉沒成本與《停損的勝算》&lt;/a>&lt;br>
 2026-07-20 &lt;a href="http://localhost:1313/posts/deeper-learning">《深度學習的技術》&lt;/a>&lt;br>
-2026-07-22 &lt;a href="http://localhost:1313/posts/deadline">《死線已是十天前》&lt;/a>&lt;/p>
-&lt;hr>
+2026-07-22 &lt;a href="http://localhost:1313/posts/deadline">《死線已是十天前》&lt;/a>&lt;br>
+2026-07-23 &lt;a href="http://localhost:1313/posts/narrative">《文章作法》&lt;/a>&lt;/h2>
 &lt;h3 id="千本好書">千本好書&lt;/h3>
 &lt;p>&lt;a href="http://localhost:1313/posts/proust">《追憶似水年華》&lt;/a> 唯一推薦！&lt;/p></description><content:encoded><![CDATA[<div class="note-box">
     
-          我的閱讀筆記，不想看廢文的話就來看些有營養的。最後更新於：2026-07-17。
+          我的閱讀筆記，不想看廢文的話就來看些有營養的。最後更新於：2026-07-23。
 
 </div>
 
 <div id="custom-toc"></div>
 <hr>
 <h3 id="閱讀心得">閱讀心得</h3>
-<p>2026-06-20 <a href="/posts/ask-the-past">《餐桌上的中世紀冷笑話》</a><br>
+<h2 id="2026-07-23-文章作法">2026-06-20 <a href="/posts/ask-the-past">《餐桌上的中世紀冷笑話》</a><br>
 2026-06-23 <a href="/posts/taleb">《黑天鵝語錄》 </a><br>
 2026-06-24  <a href="/posts/time-note"> 一些時間管理的筆記 </a><br>
 2026-06-25 <a href="/posts/do-nothing">《閒暇與無聊》 </a><br>
@@ -1369,8 +1411,8 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
 2026-07-17 <a href="/posts/learning">學習法</a><br>
 2026-07-19 <a href="/posts/sunk-cost">沉沒成本與《停損的勝算》</a><br>
 2026-07-20 <a href="/posts/deeper-learning">《深度學習的技術》</a><br>
-2026-07-22 <a href="/posts/deadline">《死線已是十天前》</a></p>
-<hr>
+2026-07-22 <a href="/posts/deadline">《死線已是十天前》</a><br>
+2026-07-23 <a href="/posts/narrative">《文章作法》</a></h2>
 <h3 id="千本好書">千本好書</h3>
 <p><a href="/posts/proust">《追憶似水年華》</a> 唯一推薦！</p>
 <p>參考<a href="https://catweb.ncl.edu.tw/class2007/96-1-1.htm">中文圖書分類法</a>，列成五大清單：</p>
@@ -2656,6 +2698,18 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
 <p>我的更新日曆：</p>
 
 
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
 
     
     
@@ -6407,13 +6461,13 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
                     
                 
 
-                <div onclick="alert('📅 日期：2026-07-22\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-07-22\n✍️ 狀態：有 2 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -6427,14 +6481,18 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-07-23\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-07-23\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             

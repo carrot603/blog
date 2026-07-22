@@ -4,7 +4,7 @@ draft = false
 title = 'books'
 +++
 {{< note >}}
-我的閱讀筆記，不想看廢文的話就來看些有營養的。最後更新於：2026-07-17。
+我的閱讀筆記，不想看廢文的話就來看些有營養的。最後更新於：2026-07-23。
 {{< /note >}}
 
 <div id="custom-toc"></div>
@@ -24,8 +24,8 @@ title = 'books'
 2026-07-17 [學習法](/posts/learning)  
 2026-07-19 [沉沒成本與《停損的勝算》](/posts/sunk-cost)  
 2026-07-20 [《深度學習的技術》](/posts/deeper-learning)  
-2026-07-22 [《死線已是十天前》](/posts/deadline)
-
+2026-07-22 [《死線已是十天前》](/posts/deadline)  
+2026-07-23 [《文章作法》](/posts/narrative)
 ---
 
 ### 千本好書
