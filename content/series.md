@@ -1,10 +1,10 @@
 +++
 date = '2026-07-09T08:00:00+08:00'
 draft = false
-title = 'books'
+title = 'series'
 +++
 {{< note >}}
-我的閱讀筆記，不想看廢文的話就來看些有營養的。最後更新於：2026-07-23。
+本來叫 books，只是我的閱讀筆記，建立於 2026-07-09。但我需要幫文章分類，所以現在這裡是我的系列文章總目錄！2026-07-24 留。
 {{< /note >}}
 
 <div id="custom-toc"></div>
@@ -26,11 +26,12 @@ title = 'books'
 2026-07-20 [《深度學習的技術》](/posts/deeper-learning)  
 2026-07-22 [《死線已是十天前》](/posts/deadline)  
 2026-07-23 [《文章作法》](/posts/narrative)
+
 ---
 
 ### 千本好書
 
-[《追憶似水年華》](/posts/proust) 唯一推薦！
+<span style="background: linear-gradient(to top, rgba(143, 221, 115, 0.5) 40%, transparent 40%);">[《追憶似水年華》](/posts/proust) </span>唯一推薦！
 
 參考[中文圖書分類法](https://catweb.ncl.edu.tw/class2007/96-1-1.htm)，列成五大清單：
 
@@ -40,46 +41,63 @@ title = 'books'
 - [**工具**](/tool)：177 勵志書、494 商管書之類
 - [**藝術**](/art)：000 總類、800 文學、900 藝術
 
----
-
-### 蘿蔔書單🥕
-
->沒什麼特別的，只是因為有蘿蔔。
-
 <br>
 
-[紅蘿蔔蛋糕](https://webpac.taichung.gov.tw/bookDetail/865218)：在[茉莉](https://www.mollie.com.tw/Mobile/Books.asp)買的第一本二手書，意義非凡
+- [蘿蔔書單🥕](/posts/carrot-book)
 
-[吃胡蘿蔔的七種方法](https://webpac.taichung.gov.tw/bookDetail/779041)
+---
 
-[我種出了一個好朋友](https://taichunggov.ebook.hyread.com.tw/bookDetail.jsp?id=481685)
-
-[透明的紅蘿蔔](https://ipac.nlpi.edu.tw/bookDetail/566901)：莫言的中篇小說集
-
-[紅蘿蔔的煩惱](https://findbook.com.tw/9789863331391)
-
-[一起吃胡蘿蔔餅乾](https://findbook.com.tw/9786267405482)
-
-[胡蘿蔔妖怪](https://findbook.com.tw/4713482022304)
-
-[紅蘿蔔幼稚園](https://findbook.com.tw/9786263144880)
-
-[動物模仿遊戲](https://findbook.com.tw/9786267429334)：在誠品一看到封面馬上就買了！超級無敵可愛！
 <style>
-  /* 目錄的極簡樣式 */
+  /* 目錄的極簡樣式（橘色系 + 字體加大） */
   #custom-toc {
       background-color: var(--theme, #f5f5f5); /* 自動適應 PaperMod 暗黑/白天模式 */
-      border-left: 4px solid #137333;
-      padding: 15px 20px;
-      margin: 20px 0;
-      border-radius: 4px;
+      border-left: 5px solid #ff8a3d; /* 左側邊條改為質感深橘色 */
+      padding: 18px 24px;
+      margin: 24px 0;
+      border-radius: 6px;
   }
-  #custom-toc h4 { margin: 0 0 10px 0; color: inherit; }
-  #custom-toc ul { list-style-type: none; padding-left: 20px; margin: 0; }
-  #custom-toc li { margin: 8px 0; }
-  #custom-toc a { text-decoration: none; color: #137333; font-weight: 500; }
-  #custom-toc a:hover { text-decoration: underline; }
-  .toc-h3 { padding-left: 15px; font-size: 0.95rem; opacity: 0.85; }
+  
+  /* 目錄標題（加大一級） */
+  #custom-toc h4 { 
+      margin: 0 0 12px 0; 
+      color: #ff8a3d; 
+      font-size: 1.25rem; /* 字體加大 */
+      font-weight: 600;
+  }
+  
+  #custom-toc ul { 
+      list-style-type: none; 
+      padding-left: 15px; 
+      margin: 0; 
+  }
+  
+  #custom-toc li { 
+      margin: 10px 0; 
+  }
+  
+  /* H2 對應連結（橘色 + 字體加大） */
+  #custom-toc a { 
+      text-decoration: none; 
+      color: #ff8a3d; /* 亮橘色文字 */
+      font-weight: 500; 
+      font-size: 1.1rem; /* 主標題字體加大至 1.1rem */
+      transition: color 0.2s ease;
+  }
+  
+  #custom-toc a:hover { 
+      text-decoration: underline; 
+      color: #BF360C; /* 滑鼠移上去變深橘色 */
+  }
+  
+  /* H3 次標題縮排連結（字體比 H2 稍微小一點點，但依然加大一級） */
+  .toc-h3 { 
+      padding-left: 18px; 
+  }
+  
+  .toc-h3 a {
+      font-size: 1.0rem; /* 次標題字體加大至 1.0rem */
+      opacity: 0.9;
+  }
 </style>
 
 <script>
