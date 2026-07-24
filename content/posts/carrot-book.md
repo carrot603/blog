@@ -5,9 +5,13 @@ title = '蘿蔔書單🥕'
 +++
 >沒什麼特別的，只是因為有蘿蔔。
 
-<br>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot-book1.jpg" style="width: 50%; max-width: 100%; height: auto;">
 
-[紅蘿蔔蛋糕](https://webpac.taichung.gov.tw/bookDetail/865218)：在[茉莉](https://www.mollie.com.tw/Mobile/Books.asp)買的第一本二手書，意義非凡
+>[動物模仿遊戲](https://findbook.com.tw/9786267429334)：在誠品一看到封面馬上就買了！超級無敵可愛！
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot-book2.jpg" style="width: 50%; max-width: 100%; height: auto;">
+
+>[紅蘿蔔蛋糕](https://webpac.taichung.gov.tw/bookDetail/865218)：在[茉莉](https://www.mollie.com.tw/Mobile/Books.asp)買的第一本二手書，意義非凡
 
 [吃胡蘿蔔的七種方法](https://webpac.taichung.gov.tw/bookDetail/779041)
 
@@ -23,6 +27,8 @@ title = '蘿蔔書單🥕'
 
 [紅蘿蔔幼稚園](https://findbook.com.tw/9786263144880)
 
-[動物模仿遊戲](https://findbook.com.tw/9786267429334)：在誠品一看到封面馬上就買了！超級無敵可愛！
-
 ---
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot-book.jpg" style="width: 50%; max-width: 100%; height: auto;">
+
+這本繪本也超可愛！我 2024 年有去四張犁看過展覽。
