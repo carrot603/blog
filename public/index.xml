@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 24 Jul 2026 06:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>蘿蔔書單🥕</title><link>http://localhost:1313/posts/carrot-book/</link><pubDate>Fri, 24 Jul 2026 06:00:00 +0800</pubDate><guid>http://localhost:1313/posts/carrot-book/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 24 Jul 2026 12:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>搶票</title><link>http://localhost:1313/posts/argerich/</link><pubDate>Fri, 24 Jul 2026 12:00:00 +0800</pubDate><guid>http://localhost:1313/posts/argerich/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/argerich.jpg" style="width: 50%; max-width: 100%; height: auto;">
+&lt;p>只來得及搶到一張🥲&lt;/p>
+&lt;p>學校就在兩廳院對面卻買不到😭😭😭&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/argerich.jpg" style="width: 50%; max-width: 100%; height: auto;">
+<p>只來得及搶到一張🥲</p>
+<p>學校就在兩廳院對面卻買不到😭😭😭</p>
+]]></content:encoded></item><item><title>蘿蔔書單🥕</title><link>http://localhost:1313/posts/carrot-book/</link><pubDate>Fri, 24 Jul 2026 06:00:00 +0800</pubDate><guid>http://localhost:1313/posts/carrot-book/</guid><description>&lt;blockquote>
 &lt;p>沒什麼特別的，只是因為有蘿蔔。&lt;/p>&lt;/blockquote>
 &lt;br>
 &lt;p>&lt;a href="https://webpac.taichung.gov.tw/bookDetail/865218">紅蘿蔔蛋糕&lt;/a>：在&lt;a href="https://www.mollie.com.tw/Mobile/Books.asp">茉莉&lt;/a>買的第一本二手書，意義非凡&lt;/p>
@@ -140,6 +145,10 @@ ShowShareButtons = false
 <p>在 <a href="/posts/about">/about</a> 有放，學 Github 的，如下所示：</p>
 
 
+
+    
+    
+    
 
     
     
@@ -3973,7 +3982,7 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-07-24\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-07-24\n✍️ 狀態：有 4 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
@@ -4800,7 +4809,7 @@ ShowShareButtons = false
 <p>又投稿七月主題冷知識「<a href="/posts/bopomofo">注音狂想曲</a>」。</p>
 <p>在 <a href="https://nownownow.com/">nownownow.com</a> 上登錄，收到 <a href="https://sive.rs/">Derek Sivers</a> 的回覆。</p>
 <h3 id="2026-07-18">2026-07-18</h3>
-<p>受邀加入 <a href="https://indieping.giveanornot.com/">IndiePing</a>🎉</p>
+<p>榮登 <a href="https://indieping.giveanornot.com/">IndiePing</a>🎉</p>
 <h3 id="2026-07-21">2026-07-21</h3>
 <p>登錄在 <a href="https://archive.org/">archive.org</a>，有<a href="https://web.archive.org/web/20260721074618/https://carrot.tw/">首頁</a>跟<a href="https://web.archive.org/web/20260722044259/https://carrot.tw/index.xml"> index</a>。在我之前，carrot.tw 的網域還有 2009 跟 2011 的記錄，但它說沒有 IE 不給開，我猜應該是賣產品的網站吧！</p>
 ]]></content:encoded></item><item><title>《文章作法》</title><link>http://localhost:1313/posts/narrative/</link><pubDate>Thu, 23 Jul 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/narrative/</guid><description>&lt;p>&lt;a href="https://findbook.com.tw/9786263177826">《文章作法》&lt;/a>〈附錄二　論記敘文中作者的地位並評現今小說界的文字〉（P.157）：&lt;/p>
@@ -7910,6 +7919,10 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
     
     
 
+    
+    
+    
+
 
 
 
@@ -11338,7 +11351,7 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
                     
                 
 
-                <div onclick="alert('📅 日期：2026-07-24\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-07-24\n✍️ 狀態：有 4 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
