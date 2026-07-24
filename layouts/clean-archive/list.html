@@ -4,6 +4,9 @@
 </header>
 
 <div class="pure-text-archive" style="margin-top: 30px;">
+<div class="archive-description">
+  {{ .Content }}
+</div>
     {{ range .Pages.ByDate.Reverse }}
     <div style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center;">
         

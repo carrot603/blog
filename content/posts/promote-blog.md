@@ -27,7 +27,7 @@ title = '推廣網站大事記'
 在 [nownownow.com](https://nownownow.com/) 上登錄，收到 [Derek Sivers](https://sive.rs/) 的回覆。
 ### 2026-07-18
 
-受邀加入 [IndiePing](https://indieping.giveanornot.com/)🎉
+榮登 [IndiePing](https://indieping.giveanornot.com/)🎉
 ### 2026-07-21
 
 登錄在 [archive.org](https://archive.org/)，有[首頁](https://web.archive.org/web/20260721074618/https://carrot.tw/)跟[ index](https://web.archive.org/web/20260722044259/https://carrot.tw/index.xml)。在我之前，carrot.tw 的網域還有 2009 跟 2011 的記錄，但它說沒有 IE 不給開，我猜應該是賣產品的網站吧！

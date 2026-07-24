@@ -25,7 +25,8 @@ title = 'series'
 2026-07-19 [沉沒成本與《停損的勝算》](/posts/sunk-cost)  
 2026-07-20 [《深度學習的技術》](/posts/deeper-learning)  
 2026-07-22 [《死線已是十天前》](/posts/deadline)  
-2026-07-23 [《文章作法》](/posts/narrative)
+2026-07-23 [《文章作法》](/posts/narrative)  
+2026-07-24 [《時間的秩序》](/posts/L'ordine-del-tempo)
 
 ---
 

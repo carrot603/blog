@@ -4,15 +4,11 @@ draft = false
 title = '/now'
 +++
 {{< note >}}
-💡 這是我的 /now 頁面，最後更新於：2026-07-15。
+💡 這是我的 /now 頁面，最後更新於：2026-07-23。
 
 本頁面同時投稿到 https://nownownow.com/
 
 {{< /note >}}
-
-這跟 [about](/posts/about) 有什麼差別，老實說我也不清楚。我想 /now 的更新會更頻繁吧！
-
->6/26：Derek Sivers 回覆我了耶耶耶！！！
 
 >我發現只有我名字打中文，但算了沒關係，可能有一天搜尋[江俊佑](https://nownownow.com/p/01LE)這個頁面就會跑出來了。我似乎是第 39 個臺灣人🇹🇼
 
@@ -30,7 +26,6 @@ title = '/now'
 - 聯經的[聯經中國史](https://events.linkingbooks.com.tw/LNB/top/2024/historyofchina/index.html)系列
 
 ### 在練的曲子
-- Bach: Sinfonia No.3  
 - Bach: BWV 846 Fugue  
 - Chopin: Etude Op. 10 No.5  
 - Rachmaninoff: Prelude Op. 23 No. 5  
@@ -39,8 +34,17 @@ title = '/now'
 ### 想去哪裡玩
 我想要看星星🤩
 
-### 最近的感嘆
-希望有人來看我的 blog🥺
+### 最近忙什麼
+
+參加[一中弦樂成發](/posts/frei-aber-froh)  
+去[潭雅神騎車](/posts/tanyashen)，維持練跑，體力顯著提昇！  
+獲得資工小廢物 - JN 推薦[《深度學習的技術》](/posts/deeper-learning)  
+去[臺南](/posts/tainan)玩  
+即將搬到臺北……
+討論[閱讀](/posts/business-book)、寫寫[程式](/posts/backlink)
+
+---
+
 
 ### 七月計劃
 

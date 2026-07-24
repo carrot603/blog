@@ -17,7 +17,7 @@ title = '關於'
 
 我比較內向，如果想認識我可以到 carrot603@proton.me
 
-我有投稿到[ BlogBlog 同樂會](https://blogblog.club/party)，感覺會有不少人來光顧，有話想對我說的話歡迎寫信給我，打個招呼也可以😊
+有話想對我說的話歡迎寫信給我，打個招呼也可以😊
 
 近況請看 [/now](/now)，[https://nownownow.com/](https://nownownow.com/) 上也有我的[頁面](https://nownownow.com/p/01LE)。
 
@@ -30,16 +30,13 @@ https://carrot.tw/index.xml
 
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg)
 
-2023 年七月第一次出國去日本，有🥕，那時候還好年輕（？
-
 ---
 
-我的[數位生活](/posts/digital-life)請看這裡。
+你也可以從這些方面了解我：
 
-最近去[潭雅神騎車](/posts/tanyashen)，維持練跑，體力顯著提昇！
+[數位生活](/posts/digital-life)
 
 ---
-
 我的更新日曆：
 
 {{< day >}}
