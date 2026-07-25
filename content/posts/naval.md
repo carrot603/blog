@@ -3,7 +3,9 @@ date = '2026-08-03T05:00:00+08:00'
 draft = false
 title = '《納瓦爾寶典》'
 +++
-[《納瓦爾寶典》](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=362484)，摘錄有感的金句，有些加上心得：
+[《納瓦爾寶典》](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=362484)Eric Jorgenson 著，謝佩妏譯。天下，2024-01。
+
+摘錄有感的金句，有些加上心得：
 
 **我們唯一擁有的是當下**。
 >人生座右銘——活在當下。
