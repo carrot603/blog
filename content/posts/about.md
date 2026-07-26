@@ -34,10 +34,12 @@ https://carrot.tw/index.xml
 
 你也可以從這些方面了解我：
 
-[數位生活](/posts/digital-life)
+[數位生活](/posts/digital-life)  
+[網站大事記](/posts/blog-milestone)
 
 ---
 我的更新日曆：
 
 {{< day >}}
 
+---

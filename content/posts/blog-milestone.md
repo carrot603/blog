@@ -1,7 +1,7 @@
 +++
 date = '2026-07-23T06:00:00+08:00'
 draft = false
-title = '推廣網站大事記'
+title = '網站大事記'
 +++
 記錄 blog 大事的時間軸。
 
@@ -11,7 +11,7 @@ title = '推廣網站大事記'
 架站，[第一篇文章](/posts/hello)。
 ### 2026-06-08
 
-登錄在 Google Search Console。
+登錄在 [Google Search Console](https://search.google.com/search-console/about)。
 ### 2026-06-12
 
 製作網站 Favicon。（目前是用 .png，因為 .ico 不一定每支手機都認得出來）  
@@ -32,5 +32,7 @@ title = '推廣網站大事記'
 
 登錄在 [archive.org](https://archive.org/)，有[首頁](https://web.archive.org/web/20260721074618/https://carrot.tw/)跟[ index](https://web.archive.org/web/20260722044259/https://carrot.tw/index.xml)。在我之前，carrot.tw 的網域還有 2009 跟 2011 的記錄，但它說沒有 IE 不給開，我猜應該是賣產品的網站吧！
 
+### 2026-07-26
 
+讓外部連結開啟新分頁。
 

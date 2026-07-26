@@ -156,3 +156,18 @@
     });
 </script>
 {{- end }}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // 抓取文章內容區域裡面的所有連結（可依據你主題的 class 調整，如 .post-content 或 article）
+    const links = document.querySelectorAll("article a, .post-content a, .content a, main a");
+    
+    links.forEach(link => {
+      // 判斷是否為外部連結 (網域不同且為 http/https)
+      if (link.hostname !== window.location.hostname && link.protocol.startsWith("http")) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer"); // 確保安全性與效能
+      }
+    });
+  });
+</script>

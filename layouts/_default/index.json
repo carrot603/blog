@@ -1,0 +1,12 @@
+[
+  {{- $pages := where site.RegularPages "RelPermalink" "ne" "" -}}
+  {{- range $i, $p := $pages -}}
+  {{- if $i }},{{ end -}}
+  {
+    "id": "{{ $p.RelPermalink }}",
+    "permalink": "{{ $p.Permalink }}",
+    "title": {{ $p.Title | jsonify }},
+    "content": {{ $p.Content | jsonify }}
+  }
+  {{- end -}}
+]

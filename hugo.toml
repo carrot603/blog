@@ -8,7 +8,10 @@ timeZone = "Asia/Taipei"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
+    [markup.goldmark.extensions]
+      table = true
+      strikethrough = true
+      taskList = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]

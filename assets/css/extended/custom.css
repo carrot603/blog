@@ -106,3 +106,36 @@
 .clear-float {
     clear: both;
 }
+
+/* 相簿容器：設定 3 欄網格 */
+.gallery {
+  display: grid !important;
+  grid-template-columns: repeat(3, 200px) !important;
+  gap: 12px !important;
+  justify-content: start;
+  margin: 20px 0;
+}
+
+/* 取消 Hugo 自動產生的 <p> 段落預設樣式 */
+.gallery p {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: contents; /* 關鍵：讓 <p> 標籤隱形，子元素直接參與外層 Grid 佈局 */
+}
+
+/* 照片格式設定：強制 150x150 正方形 */
+.gallery img {
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: block;
+}
+
+/* 滑鼠懸停效果 */
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

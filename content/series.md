@@ -27,6 +27,7 @@ title = 'series'
 2026-07-22 [《死線已是十天前》](/posts/deadline)  
 2026-07-23 [《文章作法》](/posts/narrative)  
 2026-07-24 [《時間的秩序》](/posts/L'ordine-del-tempo)
+2026-07-26 [《知識複利筆記術》](/posts/zettelkasten)
 
 ---
 
