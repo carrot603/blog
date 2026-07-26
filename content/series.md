@@ -11,6 +11,14 @@ title = 'series'
 
 ---
 
+### 知識圖譜
+
+{{< mini-graph >}}
+
+酷酷的圖，拖來拖去很好玩喔😁
+
+---
+
 ### 閱讀心得
 
 2026-06-20 [《餐桌上的中世紀冷笑話》](/posts/ask-the-past)  
@@ -26,7 +34,7 @@ title = 'series'
 2026-07-20 [《深度學習的技術》](/posts/deeper-learning)  
 2026-07-22 [《死線已是十天前》](/posts/deadline)  
 2026-07-23 [《文章作法》](/posts/narrative)  
-2026-07-24 [《時間的秩序》](/posts/L'ordine-del-tempo)
+2026-07-24 [《時間的秩序》](/posts/L'ordine-del-tempo)  
 2026-07-26 [《知識複利筆記術》](/posts/zettelkasten)
 
 ---

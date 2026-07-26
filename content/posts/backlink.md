@@ -20,3 +20,7 @@ after: [範例](/posts/example)
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/backlink1.jpg)
 
 如此便實現上週的圖表願望！看著密密麻麻的線連來連去，感覺自己腦內的神經也變得四通八達（？
+
+{{< note >}}
+2026-07-26 的我：我也畫出自己的[知識圖譜](/posts/graph-view)了！
+{{< /note >}}

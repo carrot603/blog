@@ -85,3 +85,179 @@
     });
 </script>
 {{ end }}
+
+<div id="popover-preview" class="popover-box">
+  <div class="popover-header">
+    <span class="popover-title" id="popover-title">載入中...</span>
+  </div>
+  <div class="popover-body" id="popover-body">
+    正在讀取文章摘要...
+  </div>
+</div>
+
+<style>
+  /* 預覽浮動卡片主體 */
+  .popover-box {
+    position: fixed;
+    width: 320px;
+    max-height: 220px;
+    background: var(--entry, #2e2e33);
+    color: var(--primary, #cccccc);
+    border: 1px solid var(--border, #444);
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* 避免滑鼠干擾卡片生成 */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateY(8px);
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+  }
+
+  /* 顯示狀態 */
+  .popover-box.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* 卡片標題 */
+  .popover-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--primary);
+    margin-bottom: 6px;
+    display: block;
+    border-bottom: 1px solid var(--border, #444);
+    padding-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* 卡片內文摘要 */
+  .popover-body {
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.85;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* 限制最多顯示 5 行摘要 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const popover = document.getElementById("popover-preview");
+    const popoverTitle = document.getElementById("popover-title");
+    const popoverBody = document.getElementById("popover-body");
+
+    let hoverTimer = null;
+    const cache = {}; // 快取機制，避免重複抓取同頁面內容
+
+    // 只針對文章內文 (.post-content) 裡面的超連結加載 Hover 預覽
+    const links = document.querySelectorAll(".post-content a");
+
+    links.forEach(link => {
+      // 1. 檢查是否為站內連結 (同一個 Domain)，且排除檔案或靜態資源
+      const href = link.getAttribute("href");
+      if (!href || href.startsWith("#") || href.startsWith("mailto:") || !link.hostname.includes(window.location.hostname)) {
+        return;
+      }
+
+      // 滑鼠移入：延遲 300ms 觸發，避免滑鼠快速劃過時頻繁彈窗
+      link.addEventListener("mouseenter", (e) => {
+        hoverTimer = setTimeout(() => {
+          showPopover(link, e);
+        }, 300);
+      });
+
+      // 滑鼠移出：取消定時器並隱藏卡片
+      link.addEventListener("mouseleave", () => {
+        clearTimeout(hoverTimer);
+        hidePopover();
+      });
+
+      // 滑鼠移動：讓卡片跟隨滑鼠位置（視需求調整）
+      link.addEventListener("mousemove", (e) => {
+        positionPopover(e);
+      });
+    });
+
+    // 🎯 顯示 Popover 並抓取內容
+    function showPopover(link, event) {
+      const targetUrl = link.href;
+
+      // 重設預設文字與位置
+      popoverTitle.textContent = link.innerText || "文章預覽";
+      popoverBody.textContent = "讀取中...";
+      positionPopover(event);
+      popover.classList.add("is-active");
+
+      // 先查快取
+      if (cache[targetUrl]) {
+        renderContent(cache[targetUrl]);
+        return;
+      }
+
+      // 沒有快取就使用 Fetch 抓取頁面 HTML
+      fetch(targetUrl)
+        .then(res => {
+          if (!res.ok) throw new Error("頁面載入失敗");
+          return res.text();
+        })
+        .then(html => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, "text/html");
+
+          // 解析目標文章的 Title 與 .post-content (或 meta description)
+          const title = doc.querySelector(".post-title")?.innerText || doc.title;
+          let bodyText = doc.querySelector(".post-content")?.innerText || "";
+          
+          // 清除多餘換行，精簡摘要
+          bodyText = bodyText.replace(/\s+/g, ' ').trim();
+
+          const data = { title, bodyText };
+          cache[targetUrl] = data; // 存入快取
+          renderContent(data);
+        })
+        .catch(() => {
+          popoverBody.textContent = "無法載入此頁面的預覽。";
+        });
+    }
+
+    // 🎯 填入解析後的內容
+    function renderContent(data) {
+      popoverTitle.textContent = data.title;
+      popoverBody.textContent = data.bodyText || "此文章尚無內文摘要。";
+    }
+
+    // 🎯 精準定位卡片位置 (避免超出螢幕邊界)
+    function positionPopover(e) {
+      const padding = 15;
+      let left = e.clientX + padding;
+      let top = e.clientY + padding;
+
+      // 如果太靠近右邊邊界，翻轉到滑鼠左側
+      if (left + 330 > window.innerWidth) {
+        left = e.clientX - 335;
+      }
+
+      // 如果太靠近下邊界，向上微調
+      if (top + 230 > window.innerHeight) {
+        top = e.clientY - 235;
+      }
+
+      popover.style.left = `${left}px`;
+      popover.style.top = `${top}px`;
+    }
+
+    function hidePopover() {
+      popover.classList.remove("is-active");
+    }
+  });
+</script>

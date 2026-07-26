@@ -1,0 +1,134 @@
+<div class="mini-graph-card" style="margin: 2.5rem 0; border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; background: var(--entry); box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem;">
+    <span style="font-weight: 700; font-size: 1rem; color: var(--primary); display: flex; align-items: center; gap: 0.5rem;">
+      我的知識圖譜 (Graph View)
+    </span>
+    <a href="/graph/" style="font-size: 0.85rem; color: var(--primary); opacity: 0.8; text-decoration: underline;">
+      進入全螢幕模式 →
+    </a>
+  </div>
+
+  <div id="mini-graph-container" style="width: 100%; height: 260px; border-radius: 8px; background: rgba(0,0,0,0.15); overflow: hidden; position: relative;"></div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById('mini-graph-container');
+    if (!container) return;
+
+    fetch('/index.json')
+      .then(res => res.json())
+      .then(data => {
+        const nodes = data.map(d => ({ id: d.id, title: d.title }));
+        const links = [];
+
+        data.forEach(source => {
+          if (!source.content) return;
+          const hrefMatches = [...source.content.matchAll(/href=["']([^"']+)["']/g)].map(m => m[1]);
+
+          data.forEach(target => {
+            if (source.id !== target.id) {
+              const targetRel = target.id.replace(/\/$/, "");
+              const targetFull = target.permalink ? target.permalink.replace(/\/$/, "") : "";
+
+              const isLinked = hrefMatches.some(url => {
+                const cleanUrl = url.replace(/\/$/, "");
+                return cleanUrl.includes(targetRel) || (targetFull && cleanUrl.includes(targetFull));
+              });
+
+              if (isLinked) {
+                links.push({ source: source.id, target: target.id });
+              }
+            }
+          });
+        });
+
+        const width = container.clientWidth || 600;
+        const height = 260;
+
+        const svg = d3.select("#mini-graph-container")
+          .append("svg")
+          .attr("width", width)
+          .attr("height", height);
+
+        const g = svg.append("g");
+
+        // 縮放與平移
+        const zoom = d3.zoom()
+          .scaleExtent([0.3, 3])
+          .on("zoom", (event) => g.attr("transform", event.transform));
+        svg.call(zoom);
+
+        // 迷你版力學模擬（較精簡的間距）
+        const simulation = d3.forceSimulation(nodes)
+          .force("link", d3.forceLink(links).id(d => d.id).distance(65))
+          .force("charge", d3.forceManyBody().strength(-90))
+          .force("center", d3.forceCenter(width / 2, height / 2))
+          .force("x", d3.forceX(width / 2).strength(0.1))
+          .force("y", d3.forceY(height / 2).strength(0.1))
+          .force("collide", d3.forceCollide().radius(20));
+
+        // 線條
+        const link = g.append("g")
+          .selectAll("line")
+          .data(links)
+          .enter().append("line")
+          .attr("stroke", "var(--primary)")
+          .attr("stroke-opacity", 0.2)
+          .attr("stroke-width", 2);
+
+        // 節點
+        const nodeGroup = g.append("g")
+          .selectAll("g")
+          .data(nodes)
+          .enter().append("g")
+          .style("cursor", "pointer")
+          .call(d3.drag()
+            .on("start", (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+            .on("drag", (e, d) => { d.fx = e.x; d.fy = e.y; })
+            .on("end", (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
+
+        nodeGroup.append("circle")
+          .attr("r", 5)
+          .attr("fill", "var(--primary)");
+
+        nodeGroup.append("text")
+          .text(d => d.title)
+          .attr("x", 8)
+          .attr("y", 3)
+          .attr("font-size", "11px")
+          .attr("fill", "var(--primary)")
+          .style("pointer-events", "none");
+
+        nodeGroup.on("click", (e, d) => {
+          window.location.href = d.id;
+        });
+
+        // 游標 Hover 亮燈效果
+        nodeGroup.on("mouseover", (event, d) => {
+          link.attr("stroke-opacity", 0.05);
+          nodeGroup.style("opacity", 0.2);
+          d3.select(event.currentTarget).style("opacity", 1);
+
+          link.filter(l => l.source.id === d.id || l.target.id === d.id)
+              .attr("stroke-opacity", 1)
+              .each(l => {
+                nodeGroup.filter(n => n.id === l.source.id || n.id === l.target.id).style("opacity", 1);
+              });
+        });
+
+        nodeGroup.on("mouseout", () => {
+          link.attr("stroke-opacity", 0.2);
+          nodeGroup.style("opacity", 1);
+        });
+
+        simulation.on("tick", () => {
+          link.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+              .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+          nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
+        });
+      })
+      .catch(err => console.error("Mini Graph Error:", err));
+  });
+</script>

@@ -29,6 +29,8 @@ title = '蘿蔔書單🥕'
 
 ---
 
+[《小豬找雨》](https://findbook.com.tw/9789862944042)
+
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot-book.jpg" style="width: 50%; max-width: 100%; height: auto;">
 
-這本繪本也超可愛！我 2024 年有去四張犁看過展覽。
+這本繪本也超可愛！我 [2023 年](/memories/20230422)有去四張犁看過展覽。

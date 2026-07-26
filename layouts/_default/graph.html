@@ -39,40 +39,101 @@
       font-weight: bold;
       font-size: 15px;
       transition: all 0.2s ease;
+      cursor: pointer;
     }
     .graph-back-btn:hover {
       background: var(--tertiary);
       transform: translateY(-2px);
     }
+
+    .graph-controls {
+      position: absolute;
+      top: 70px;
+      left: 25px;
+      z-index: 10000;
+      background: var(--entry, #2e2e33);
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 8px;
+      color: var(--primary);
+      font-size: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .graph-controls label {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      user-select: none;
+    }
+    .graph-controls input[type="checkbox"] {
+      cursor: pointer;
+      accent-color: var(--primary);
+      width: 16px;
+      height: 16px;
+    }
   </style>
 
   <div id="graph-fullscreen-wrapper">
-    <a href="/" class="graph-back-btn">← 返回首頁</a>
+    <a href="javascript:void(0);" onclick="goBackOrHome()" class="graph-back-btn">← 回上一頁</a>
+
+    <div class="graph-controls">
+      <label>
+        <input type="checkbox" id="toggle-orphans">
+        隱藏無連結文章
+      </label>
+    </div>
+
     <div id="graph-container" style="width: 100%; height: 100%;"></div>
+    
     <div class="graph-hint">
-      💡 滾輪縮放｜按住空白處拖拽｜點擊節點跳轉文章
+      💡 滾輪縮放｜按住拖拽｜鼠標聚焦｜點擊前往
     </div>
   </div>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
+    function goBackOrHome() {
+      if (document.referrer && document.referrer.includes(window.location.host)) {
+        history.back();
+      } else {
+        window.location.href = "/";
+      }
+    }
+
     document.addEventListener("DOMContentLoaded", function() {
+      // 🚫 【指定要排除的檔名 / 網址路徑】
+      // 請填入文章網址最後面的名稱（例如 content/posts/my-index.md 就填入 "my-index"）
+      const EXCLUDE_PATHS = [
+        "graph",       
+        "series", 
+      ];
+
       fetch('/index.json')
         .then(res => res.json())
         .then(data => {
-          const nodes = data.map(d => ({ id: d.id, title: d.title }));
-          const links = [];
-
-          // 🎯 終極超強連線比對：直接用正則抓取內文所有的 href 連結
-          data.forEach(source => {
-            if (!source.content) return;
+          // 精準匹配路徑排除
+          const filteredData = data.filter(d => {
+            // 清理網址，取出最末端檔名 slug (例如 /posts/my-index/ -> my-index)
+            const slug = d.id.replace(/\/$/, "").split('/').pop();
             
-            // 抓出 source 文章內所有 href="xxx" 的超連結目標
+            // 只要 slug 或完整 id 精準等於黑名單裡設定的檔名就擋掉
+            const isExcluded = EXCLUDE_PATHS.some(path => slug === path || d.id === path || d.id === `/${path}/`);
+            return !isExcluded;
+          });
+
+          const allNodes = filteredData.map(d => ({ id: d.id, title: d.title }));
+          const allLinks = [];
+
+          filteredData.forEach(source => {
+            if (!source.content) return;
             const hrefMatches = [...source.content.matchAll(/href=["']([^"']+)["']/g)].map(m => m[1]);
 
-            data.forEach(target => {
+            filteredData.forEach(target => {
               if (source.id !== target.id) {
-                // 檢查 href 裡面有沒有包含 target 的任何特徵 (ID、相對路徑、完整URL)
                 const targetRel = target.id.replace(/\/$/, "");
                 const targetFull = target.permalink ? target.permalink.replace(/\/$/, "") : "";
 
@@ -82,13 +143,11 @@
                 });
 
                 if (isLinked) {
-                  links.push({ source: source.id, target: target.id });
+                  allLinks.push({ source: source.id, target: target.id });
                 }
               }
             });
           });
-
-          console.log("偵測到的連線資料：", links); // 可以打開 F12 Console 查看是不是有抓到線
 
           const container = document.getElementById('graph-container');
           const width = window.innerWidth;
@@ -103,62 +162,119 @@
 
           const zoom = d3.zoom()
             .scaleExtent([0.1, 4])
-            .on("zoom", (event) => {
-              g.attr("transform", event.transform);
-            });
-
+            .on("zoom", (event) => g.attr("transform", event.transform));
           svg.call(zoom);
 
-          // 🎯 調整間距：distance 從 160 縮小到 70，排斥力 strength 從 -350 弱化到 -120，讓點陣緊湊在一起！
-          const simulation = d3.forceSimulation(nodes)
-            .force("link", d3.forceLink(links).id(d => d.id).distance(70)) 
-            .force("charge", d3.forceManyBody().strength(-120))          
-            .force("center", d3.forceCenter(width / 2, height / 2));
+          const linkGroup = g.append("g");
+          const nodeGroupParent = g.append("g");
 
-          const link = g.append("g")
-            .selectAll("line")
-            .data(links)
-            .enter().append("line")
-            .attr("stroke", "var(--primary)")
-            .attr("stroke-opacity", 0.6)
-            .attr("stroke-width", 2);
+          let simulation;
 
-          const nodeGroup = g.append("g")
-            .selectAll("g")
-            .data(nodes)
-            .enter().append("g")
-            .style("cursor", "pointer")
-            .call(d3.drag()
+          function updateGraph(hideOrphans) {
+            const connectedNodeIds = new Set();
+            allLinks.forEach(l => {
+              connectedNodeIds.add(typeof l.source === 'object' ? l.source.id : l.source);
+              connectedNodeIds.add(typeof l.target === 'object' ? l.target.id : l.target);
+            });
+
+            const currentNodes = hideOrphans 
+              ? allNodes.filter(n => connectedNodeIds.has(n.id))
+              : allNodes;
+
+            const currentNodeIds = new Set(currentNodes.map(n => n.id));
+            const currentLinks = allLinks.filter(l => {
+              const sId = typeof l.source === 'object' ? l.source.id : l.source;
+              const tId = typeof l.target === 'object' ? l.target.id : l.target;
+              return currentNodeIds.has(sId) && currentNodeIds.has(tId);
+            });
+
+            if (simulation) simulation.stop();
+
+            const link = linkGroup.selectAll("line")
+              .data(currentLinks, d => `${d.source.id || d.source}-${d.target.id || d.target}`);
+
+            link.exit().remove();
+
+            const linkEnter = link.enter().append("line")
+              .attr("stroke", "var(--primary)")
+              .attr("stroke-opacity", 0.15)
+              .attr("stroke-width", 2.5)
+              .style("transition", "stroke-opacity 0.25s ease");
+
+            const allLinkSelection = linkEnter.merge(link);
+
+            const node = nodeGroupParent.selectAll("g")
+              .data(currentNodes, d => d.id);
+
+            node.exit().remove();
+
+            const nodeEnter = node.enter().append("g")
+              .style("cursor", "pointer")
+              .style("transition", "opacity 0.25s ease");
+
+            nodeEnter.append("circle")
+              .attr("r", 8)
+              .attr("fill", "var(--primary)");
+
+            nodeEnter.append("text")
+              .text(d => d.title)
+              .attr("x", 12)
+              .attr("y", 4)
+              .attr("font-size", "15px")
+              .attr("font-weight", "600")
+              .attr("fill", "var(--primary)")
+              .style("pointer-events", "none");
+
+            const allNodeSelection = nodeEnter.merge(node);
+
+            allNodeSelection.call(d3.drag()
               .on("start", (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
               .on("drag", (e, d) => { d.fx = e.x; d.fy = e.y; })
               .on("end", (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
 
-          nodeGroup.append("circle")
-            .attr("r", 8)
-            .attr("fill", "var(--primary)");
+            allNodeSelection.on("click", (e, d) => window.location.href = d.id);
 
-          nodeGroup.append("text")
-            .text(d => d.title)
-            .attr("x", 12)
-            .attr("y", 4)
-            .attr("font-size", "15px")
-            .attr("font-weight", "600")
-            .attr("fill", "var(--primary)")
-            .style("pointer-events", "none");
+            allNodeSelection.on("mouseover", (event, d) => {
+              allLinkSelection.attr("stroke-opacity", 0.05);
+              allNodeSelection.style("opacity", 0.2);
+              d3.select(event.currentTarget).style("opacity", 1);
 
-          nodeGroup.on("click", (e, d) => {
-            window.location.href = d.id;
-          });
+              allLinkSelection.filter(l => l.source.id === d.id || l.target.id === d.id)
+                  .attr("stroke-opacity", 1)
+                  .attr("stroke-width", 3)
+                  .each(l => {
+                    allNodeSelection.filter(n => n.id === l.source.id || n.id === l.target.id).style("opacity", 1);
+                  });
+            });
 
-          simulation.on("tick", () => {
-            link
-              .attr("x1", d => d.source.x)
-              .attr("y1", d => d.source.y)
-              .attr("x2", d => d.target.x)
-              .attr("y2", d => d.target.y);
+            allNodeSelection.on("mouseout", () => {
+              allLinkSelection.attr("stroke-opacity", 0.15).attr("stroke-width", 2.5);
+              allNodeSelection.style("opacity", 1);
+            });
 
-            nodeGroup
-              .attr("transform", d => `translate(${d.x},${d.y})`);
+            simulation = d3.forceSimulation(currentNodes)
+              .force("link", d3.forceLink(currentLinks).id(d => d.id).distance(110))
+              .force("charge", d3.forceManyBody().strength(-140))
+              .force("center", d3.forceCenter(width / 2, height / 2))
+              .force("x", d3.forceX(width / 2).strength(0.08))
+              .force("y", d3.forceY(height / 2).strength(0.08))
+              .force("collide", d3.forceCollide().radius(35));
+
+            simulation.on("tick", () => {
+              allLinkSelection
+                .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+
+              allNodeSelection
+                .attr("transform", d => `translate(${d.x},${d.y})`);
+            });
+          }
+
+          const toggleCheckbox = document.getElementById("toggle-orphans");
+          updateGraph(toggleCheckbox.checked);
+
+          toggleCheckbox.addEventListener("change", (e) => {
+            updateGraph(e.target.checked);
           });
 
           window.addEventListener('resize', () => {
