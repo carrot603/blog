@@ -1,4 +1,485 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sun, 26 Jul 2026 12:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>知識圖譜</title><link>http://localhost:1313/posts/graph-view/</link><pubDate>Sun, 26 Jul 2026 12:00:00 +0800</pubDate><guid>http://localhost:1313/posts/graph-view/</guid><description>&lt;p>早上做了一個模仿 &lt;a href="http://localhost:1313/posts/backlink">Obsidian 的 graph view&lt;/a>，不只我自己能看到連結，讀者有興趣也可以玩玩看。有種站在全知視角觀察自己思考的感覺。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sun, 26 Jul 2026 19:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>30 個常用 HTML + CSS 小技巧</title><link>http://localhost:1313/posts/html/</link><pubDate>Sun, 26 Jul 2026 19:00:00 +0800</pubDate><guid>http://localhost:1313/posts/html/</guid><description>&lt;p>本來想寫 markdown 語法的，但官網已經說明得很清楚了，請看 &lt;a href="https://markdown.tw/">https://markdown.tw/&lt;/a>&lt;/p>
+&lt;p>所有的顏色跟文字都可以自行替換，祝大家玩得開心！&lt;/p>
+&lt;div id="custom-toc">&lt;/div>
+&lt;hr>
+&lt;h3 id="1-強調打點">1. 強調打點&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&amp;lt;span style=&amp;#34;text-emphasis: filled circle; -webkit-text-emphasis: filled circle;&amp;#34;&amp;gt;關鍵重點&amp;lt;/span&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>&lt;span style="text-emphasis: filled circle; -webkit-text-emphasis: filled circle;">關鍵重點&lt;/span>&lt;/p></description><content:encoded><![CDATA[<p>本來想寫 markdown 語法的，但官網已經說明得很清楚了，請看 <a href="https://markdown.tw/">https://markdown.tw/</a></p>
+<p>所有的顏色跟文字都可以自行替換，祝大家玩得開心！</p>
+<div id="custom-toc"></div>
+<hr>
+<h3 id="1-強調打點">1. 強調打點</h3>
+<pre tabindex="0"><code>&lt;span style=&#34;text-emphasis: filled circle; -webkit-text-emphasis: filled circle;&#34;&gt;關鍵重點&lt;/span&gt;
+</code></pre><p><span style="text-emphasis: filled circle; -webkit-text-emphasis: filled circle;">關鍵重點</span></p>
+<br>
+<h3 id="2-螢光筆">2. 螢光筆</h3>
+<pre tabindex="0"><code>&lt;span style=&#34;background: linear-gradient(to top, rgba(255, 138, 61, 0.4) 40%, transparent 40%);&#34;&gt;螢光筆畫線&lt;/span&gt;
+</code></pre><p><span style="background: linear-gradient(to top, rgba(143, 221, 115, 0.5) 40%, transparent 40%);">螢光筆畫線</span></p>
+<br>
+<h3 id="3-底線">3. 底線</h3>
+<pre tabindex="0"><code>&lt;span style=&#34;text-decoration: underline wavy #ff7675; text-underline-offset: 4px;&#34;&gt;波浪底線&lt;/span&gt;  
+&lt;span style=&#34;text-decoration: underline double #0984e3; text-underline-offset: 4px;&#34;&gt;雙重底線&lt;/span&gt;  
+&lt;span style=&#34;text-decoration: underline dotted #e17055; text-underline-offset: 4px;&#34;&gt;點點底線&lt;/span&gt;  
+&lt;span style=&#34;background: linear-gradient(90deg, #ff7675, #fdcb6e, #00b894); background-size: 100% 3px; background-repeat: no-repeat; background-position: bottom; padding-bottom: 3px;&#34;&gt;彩虹條紋底線&lt;/span&gt;
+</code></pre><p><span style="text-decoration: underline wavy #ff7675; text-underline-offset: 4px;">波浪底線</span><br>
+<span style="text-decoration: underline double #0984e3; text-underline-offset: 4px;">雙重底線</span><br>
+<span style="text-decoration: underline dotted #e17055; text-underline-offset: 4px;">點點底線</span><br>
+<span style="background: linear-gradient(90deg, #ff7675, #fdcb6e, #00b894); background-size: 100% 3px; background-repeat: no-repeat; background-position: bottom; padding-bottom: 3px;">彩虹條紋底線</span></p>
+<br>
+<h3 id="4-拼音標註">4. 拼音標註</h3>
+<pre tabindex="0"><code>&lt;ruby&gt;你&lt;rt&gt;ni&lt;/rt&gt;好&lt;rt&gt;how&lt;/rt&gt;&lt;/ruby&gt;
+</code></pre><p><ruby>你<rt>ni</rt>好<rt>how</rt></ruby></p>
+<blockquote>
+<p>但好像大家都<ruby>用<rt>抱</rt>來<rt>怨</rt></ruby>……</p></blockquote>
+<br>
+<h3 id="5-鍵盤按鍵">5. 鍵盤按鍵</h3>
+<pre tabindex="0"><code>&lt;kbd style=&#34;background-color: #eee; border: 1px solid #b4b4b4; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 2px 0 0 rgba(255,255,255,0.7) inset; color: #333; display: inline-block; font-size: 0.85em; font-weight: 700; line-height: 1; padding: 2px 6px;&#34;&gt;Ctrl&lt;/kbd&gt;
+</code></pre><p><kbd style="background-color: #eee; border: 1px solid #b4b4b4; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 2px 0 0 rgba(255,255,255,0.7) inset; color: #333; display: inline-block; font-size: 0.85em; font-weight: 700; line-height: 1; padding: 2px 6px;">Ctrl</kbd></p>
+<blockquote>
+<p><code>&lt;kbd&gt;Ctrl&lt;/kbd&gt;</code> 通常可以直接渲染。或者直接用前後的 ` 也有同樣框起來的效果。</p></blockquote>
+<br>
+<h3 id="6-漸層文字色">6. 漸層文字色</h3>
+<pre tabindex="0"><code>&lt;span style=&#34;background: linear-gradient(45deg, #f39c12, #e74c3c); -webkit-background-clip: text; color: transparent; font-weight: bold;&#34;&gt;漸層色彩文字&lt;/span&gt;
+</code></pre><p><span style="background: linear-gradient(45deg, #f39c12, #e74c3c); -webkit-background-clip: text; color: transparent; font-weight: bold;">漸層色彩文字</span></p>
+<br>
+<h3 id="7-發亮效果">7. 發亮效果</h3>
+<pre tabindex="0"><code>&lt;span style=&#34;color: #fff; text-shadow: 0 0 5px #ff7b23, 0 0 10px #ff7b23, 0 0 15px #ff6b0b;&#34;&gt;🥕&lt;/span&gt;
+</code></pre><p><span style="color: #fff; text-shadow: 0 0 5px #ff7b23, 0 0 10px #ff7b23, 0 0 15px #ff6b0b;">🥕</span></p>
+<br>
+<h3 id="8-自訂字距行距">8. 自訂字距行距</h3>
+<pre tabindex="0"><code>&lt;p style=&#34;letter-spacing: 2px; line-height: 1.8;&#34;&gt;這是一段字距寬，&lt;br&gt;閱讀舒適的文字。&lt;/p&gt;
+</code></pre><p style="letter-spacing: 2px; line-height: 1.8;">這是一段字距寬，<br>閱讀舒適的文字。</p>
+<blockquote>
+<p><code>&lt;br&gt;</code>是換行，以免有人不知道。</p></blockquote>
+<br>
+<h3 id="9-對齊文字">9. 對齊文字</h3>
+<pre tabindex="0"><code>&lt;p style=&#34;text-align: left;&#34;&gt;這是一段置左的文字&lt;/p&gt;
+
+&lt;p style=&#34;text-align: center;&#34;&gt;這是一段置中的文字&lt;/p&gt;
+
+&lt;p style=&#34;text-align: right;&#34;&gt;這是一段置右的文字&lt;/p&gt;
+</code></pre><p style="text-align: left;">這是一段置左的文字</p>
+<p style="text-align: center;">這是一段置中的文字</p>
+<p style="text-align: right;">這是一段置右的文字</p>
+<br>
+<h3 id="10-防雷效果">10. 防雷效果</h3>
+<pre tabindex="0"><code>&lt;span style=&#34;filter: blur(4px); transition: 0.3s;&#34; onmouseover=&#34;this.style.filter=&#39;none&#39;&#34; onmouseout=&#34;this.style.filter=&#39;blur(4px)&#39;&#34;&gt;不要看啦&lt;/span&gt;
+</code></pre><p><span style="filter: blur(4px); transition: 0.3s;" onmouseover="this.style.filter='none'" onmouseout="this.style.filter='blur(4px)'">不要看啦</span></p>
+<blockquote>
+<p>註：手機無此效果。
+<br></p></blockquote>
+<h3 id="11-摺疊內容">11. 摺疊內容</h3>
+<pre tabindex="0"><code>&lt;details style=&#34;border: 1px solid #ccc; padding: 10px; border-radius: 6px;&#34;&gt;
+  &lt;summary style=&#34;font-weight: bold; cursor: pointer;&#34;&gt;點擊展開詳細說明&lt;/summary&gt;
+  &lt;p&gt;哈囉！&lt;/p&gt;
+&lt;/details&gt;
+</code></pre><details style="border: 1px solid #ccc; padding: 10px; border-radius: 6px;">
+  <summary style="font-weight: bold; cursor: pointer;">點擊展開詳細說明</summary>
+  <p>哈囉！</p>
+</details>
+<br>
+<h3 id="12-警告方塊">12. 警告方塊</h3>
+<pre tabindex="0"><code>&lt;div style=&#34;background: #ffebee; border-left: 5px solid #ef5350; color: #c62828; padding: 12px 16px; border-radius: 4px;&#34;&gt;
+  ⚠️ &lt;b&gt;警告：&lt;/b&gt; 請看完本篇文章！
+&lt;/div&gt;
+</code></pre><div style="background: #ffebee; border-left: 5px solid #ef5350; color: #c62828; padding: 12px 16px; border-radius: 4px;">
+  ⚠️ <b>警告：</b> 請看完本篇文章！
+</div>
+<br>
+<h3 id="13-圓角標籤">13. 圓角標籤</h3>
+<pre tabindex="0"><code>&lt;span style=&#34;background: #ff8a3d; color: white; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: bold;&#34;&gt;新手教學&lt;/span&gt;
+</code></pre><p><span style="background: #ff8a3d; color: white; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: bold;">新手教學</span></p>
+<br>
+<h3 id="14-漂浮卡片">14. 漂浮卡片</h3>
+<pre tabindex="0"><code>&lt;div style=&#34;display:inline-block; padding:20px; border-radius:12px; background:#fff; color:#ff8a3d; font-weight:bold; border:1px solid rgba(255,138,61,0.3); box-shadow:0 4px 12px rgba(255,138,61,0.15); transition:.3s; cursor:pointer;&#34;
+ onmouseover=&#34;this.style.transform=&#39;translateY(-8px)&#39;;this.style.boxShadow=&#39;0 12px 25px rgba(255,138,61,0.35)&#39;&#34;
+ onmouseout=&#34;this.style.transform=&#39;translateY(0)&#39;;this.style.boxShadow=&#39;0 4px 12px rgba(255,138,61,0.15)&#39;&#34;&gt;✨ 滑鼠移過來看看&lt;/div&gt;
+</code></pre><br>
+<div style="display:inline-block; padding:20px; border-radius:12px; background:#fff; color:#ff8a3d; font-weight:bold; border:1px solid rgba(255,138,61,0.3); box-shadow:0 4px 12px rgba(255,138,61,0.15); transition:.3s; cursor:pointer;" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 12px 25px rgba(255,138,61,0.35)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 12px rgba(255,138,61,0.15)'">✨ 滑鼠移過來看看</div>
+<blockquote>
+<p>註：手機無此效果。</p></blockquote>
+<br>
+<h3 id="15-分隔線加文字">15. 分隔線加文字</h3>
+<pre tabindex="0"><code>&lt;div style=&#34;display: flex; align-items: center; text-align: center; color: #888; margin: 20px 0;&#34;&gt;
+  &lt;div style=&#34;flex: 1; border-bottom: 1px solid #ccc;&#34;&gt;&lt;/div&gt;
+  &lt;span style=&#34;padding: 0 10px;&#34;&gt;分隔文字&lt;/span&gt;
+  &lt;div style=&#34;flex: 1; border-bottom: 1px solid #ccc;&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><div style="display: flex; align-items: center; text-align: center; color: #888; margin: 20px 0;">
+  <div style="flex: 1; border-bottom: 1px solid #ccc;"></div>
+  <span style="padding: 0 10px;">分隔文字</span>
+  <div style="flex: 1; border-bottom: 1px solid #ccc;"></div>
+</div>
+<br>
+<h3 id="16-兩欄並排">16. 兩欄並排</h3>
+<pre tabindex="0"><code>&lt;div style=&#34;display: flex; gap: 15px;&#34;&gt;
+  &lt;div style=&#34;flex: 1; background: rgba(255, 138, 61, 0.08); padding: 12px; border-radius: 6px;&#34;&gt;左欄內容&lt;/div&gt;
+  &lt;div style=&#34;flex: 1; background: rgba(255, 138, 61, 0.08); padding: 12px; border-radius: 6px;&#34;&gt;右欄內容&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><div style="display: flex; gap: 15px;">
+  <div style="flex: 1; background: rgba(255, 138, 61, 0.08); padding: 12px; border-radius: 6px;">左欄內容</div>
+  <div style="flex: 1; background: rgba(255, 138, 61, 0.08); padding: 12px; border-radius: 6px;">右欄內容</div>
+</div>
+<br>
+<h3 id="17-毛玻璃卡片">17. 毛玻璃卡片</h3>
+<pre tabindex="0"><code>&lt;div style=&#34;background:rgba(255,138,61,0.08); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); 
+border:1px solid rgba(255,138,61,0.25); border-radius:12px; padding:20px; 
+color:#ff8a3d; font-weight:bold; box-shadow:0 8px 32px rgba(255,138,61,0.1);&#34;&gt;✨ bling bling&lt;/div&gt;
+</code></pre><div style="background:rgba(255,138,61,0.08); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid rgba(255,138,61,0.25); border-radius:12px; padding:20px; color:#ff8a3d; font-weight:bold; box-shadow:0 8px 32px rgba(255,138,61,0.1);">✨ bling bling</div>
+<br>
+<h3 id="18-日期選擇器">18. 日期選擇器</h3>
+<p>HTML</p>
+<pre tabindex="0"><code>&lt;label&gt;選擇日期：&lt;input type=&#34;date&#34; style=&#34;padding: 6px; border-radius: 4px; border: 1px solid #ccc;&#34;&gt;&lt;/label&gt;
+</code></pre><p><label>選擇日期：<input type="date" style="padding: 6px; border-radius: 4px; border: 1px solid #ccc;"></label></p>
+<br>
+<h3 id="19-顏色選擇器">19. 顏色選擇器</h3>
+<pre tabindex="0"><code>&lt;label&gt;挑選顏色：&lt;input type=&#34;color&#34; value=&#34;#ff8a3d&#34; style=&#34;border: none; cursor: pointer;&#34;&gt;&lt;/label&gt;
+</code></pre><p><label>挑選顏色：<input type="color" value="#ff8a3d" style="border: none; cursor: pointer;"></label></p>
+<br>
+<h3 id="20-進度條">20. 進度條</h3>
+<pre tabindex="0"><code>&lt;label&gt;寫作進度：&lt;progress value=&#34;70&#34; max=&#34;100&#34; style=&#34;width: 200px; accent-color: #ff8a3d;&#34;&gt;&lt;/progress&gt; 70%&lt;/label&gt;
+</code></pre><p><label>寫作進度：<progress value="70" max="100" style="width: 200px; accent-color: #ff8a3d;"></progress> 70%</label></p>
+<br>
+<h3 id="21-建議清單">21. 建議清單</h3>
+<pre tabindex="0"><code>&lt;input list=&#34;browsers&#34; placeholder=&#34;選擇瀏覽器...&#34;&gt;
+&lt;datalist id=&#34;browsers&#34;&gt;
+  &lt;option value=&#34;Chrome&#34;&gt;
+  &lt;option value=&#34;Firefox&#34;&gt;
+  &lt;option value=&#34;Safari&#34;&gt;
+  &lt;option value=&#34;Edge&#34;&gt;
+&lt;/datalist&gt;
+</code></pre><input list="browsers" placeholder="選擇瀏覽器...">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Safari">
+  <option value="Edge">
+</datalist>
+<br>
+<h3 id="22-延遲載入">22. 延遲載入</h3>
+<pre tabindex="0"><code>&lt;img src=&#34;http://localhost:1313/share.png&#34; alt=&#34;範例圖&#34; loading=&#34;lazy&#34;&gt;
+</code></pre><img src="/share.png" alt="範例圖" loading="lazy">
+<br>
+<blockquote>
+<p>lazy 的效果是快滾到下面才載入，適合圖片很多的文章，但實際是否生效仍取決於瀏覽器與網站設定。</p></blockquote>
+<br>
+<h3 id="23-限制圖片大小">23. 限制圖片大小</h3>
+<pre tabindex="0"><code>&lt;img src=&#34;http://localhost:1313/share.png&#34; style=&#34;width: 200px; height: 200px; object-fit: cover; border-radius: 8px;&#34;&gt;
+</code></pre><img src="/share.png" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px;">
+<blockquote>
+<p>裁切圖片以維持比例，不會拉伸變形。</p></blockquote>
+<br>
+<h3 id="24-懸停放大圖片">24. 懸停放大圖片</h3>
+<pre tabindex="0"><code>&lt;div style=&#34;overflow: hidden; border-radius: 8px; width: 300px;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/share.png&#34; style=&#34;width: 100%; transition: transform 0.3s;&#34; onmouseover=&#34;this.style.transform=&#39;scale(1.08)&#39;&#34; onmouseout=&#34;this.style.transform=&#39;scale(1)&#39;&#34;&gt;
+&lt;/div&gt;
+</code></pre><div style="overflow: hidden; border-radius: 8px; width: 300px;">
+  <img src="/share.png" style="width: 100%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+</div>
+<br>
+<h3 id="25-跑馬燈">25. 跑馬燈</h3>
+<pre tabindex="0"><code>&lt;div style=&#34;overflow: hidden; white-space: nowrap; background: rgba(255, 138, 61, 0.1); color: #ff8a3d; padding: 10px 0; border-radius: 6px; border: 1px solid #ff8a3d;&#34;&gt;
+  &lt;div style=&#34;display: inline-block; padding-left: 100%; animation: marquee 12s linear infinite;&#34; onmouseover=&#34;this.style.animationPlayState=&#39;paused&#39;&#34; onmouseout=&#34;this.style.animationPlayState=&#39;running&#39;&#34;&gt;
+    🚀 歡迎來到我的部落格！感謝您看到這裡！
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+@keyframes marquee {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+&lt;/style&gt;
+</code></pre><br>
+<div style="overflow: hidden; white-space: nowrap; background: rgba(255, 138, 61, 0.1); color: #ff8a3d; padding: 10px 0; border-radius: 6px; border: 1px solid #ff8a3d;">
+  <div style="display: inline-block; padding-left: 100%; animation: marquee 12s linear infinite;" onmouseover="this.style.animationPlayState='paused'" onmouseout="this.style.animationPlayState='running'">
+    🚀 歡迎來到我的部落格！感謝您看到這裡！
+  </div>
+</div>
+<style>
+@keyframes marquee {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+</style>
+<br>
+<h3 id="26-一鍵複製文字">26. 一鍵複製文字</h3>
+<pre tabindex="0"><code>&lt;div style=&#34;display: inline-flex; align-items: center; border: 1px solid #ff8a3d; border-radius: 6px; overflow: hidden;&#34;&gt;
+  &lt;span id=&#34;copy-text&#34; style=&#34;padding: 6px 12px; background: rgba(255, 138, 61, 0.08); color: #ff8a3d; font-weight: bold;&#34;&gt;CARROT2026&lt;/span&gt;
+  &lt;button onclick=&#34;navigator.clipboard.writeText(&#39;CARROT2026&#39;); alert(&#39;已複製！&#39;);&#34; style=&#34;border: none; background: #ff8a3d; color: white; padding: 6px 12px; cursor: pointer; font-weight: bold;&#34;&gt;
+    📋 複製
+  &lt;/button&gt;
+&lt;/div&gt;
+</code></pre><br>
+<div style="display: inline-flex; align-items: center; border: 1px solid #ff8a3d; border-radius: 6px; overflow: hidden;">
+  <span id="copy-text" style="padding: 6px 12px; background: rgba(255, 138, 61, 0.08); color: #ff8a3d; font-weight: bold;">CARROT2026</span>
+  <button onclick="navigator.clipboard.writeText('CARROT2026'); alert('已複製！');" style="border: none; background: #ff8a3d; color: white; padding: 6px 12px; cursor: pointer; font-weight: bold;">
+    📋 複製
+  </button>
+</div>
+<p><br><br></p>
+<blockquote>
+<p>我的網站本身用 <code>``` ```</code> 包起來就可以複製內文了。</p></blockquote>
+<br>
+<h3 id="27-脈衝呼吸燈">27. 脈衝呼吸燈</h3>
+<pre tabindex="0"><code>&lt;span style=&#34;display: inline-flex; align-items: center; gap: 6px; background: #ffe3e3; color: #e03131; padding: 4px 10px; border-radius: 20px; font-weight: bold; font-size: 0.85em;&#34;&gt;
+  &lt;span style=&#34;width: 8px; height: 8px; background-color: #e03131; border-radius: 50%; animation: pulse 1.5s infinite;&#34;&gt;&lt;/span&gt;
+  這個名字很酷吧
+&lt;/span&gt;
+
+&lt;style&gt;
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(224, 49, 49, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(224, 49, 49, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(224, 49, 49, 0); }
+}
+&lt;/style&gt;
+</code></pre><br>
+<span style="display: inline-flex; align-items: center; gap: 6px; background: #ffe3e3; color: #e03131; padding: 4px 10px; border-radius: 20px; font-weight: bold; font-size: 0.85em;">
+  <span style="width: 8px; height: 8px; background-color: #e03131; border-radius: 50%; animation: pulse 1.5s infinite;"></span>
+  這個名字很酷吧
+</span>
+<style>
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(224, 49, 49, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(224, 49, 49, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(224, 49, 49, 0); }
+}
+</style>
+<p><br><br></p>
+<h3 id="28-提示文字">28. 提示文字</h3>
+<pre tabindex="0"><code>&lt;style&gt;
+.tooltip{
+    position:relative;
+    display:inline-block;
+    cursor:help;
+}
+
+.tooltip .tip{
+    visibility:hidden;
+    opacity:0;
+
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:140%;
+
+    background:#333;
+    color:#fff;
+
+    padding:6px 10px;
+    border-radius:6px;
+
+    white-space:nowrap;
+
+    transition:.25s;
+}
+
+.tooltip:hover .tip{
+    visibility:visible;
+    opacity:1;
+}
+&lt;/style&gt;
+
+&lt;span class=&#34;tooltip&#34;&gt;
+    滑鼠移過來
+    &lt;span class=&#34;tip&#34;&gt;
+        喵！
+    &lt;/span&gt;
+&lt;/span&gt;
+</code></pre><br>
+<style>
+.tooltip{
+    position:relative;
+    display:inline-block;
+    cursor:help;
+}
+
+.tooltip .tip{
+    visibility:hidden;
+    opacity:0;
+
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:140%;
+
+    background:#333;
+    color:#fff;
+
+    padding:6px 10px;
+    border-radius:6px;
+
+    white-space:nowrap;
+
+    transition:.25s;
+}
+
+.tooltip:hover .tip{
+    visibility:visible;
+    opacity:1;
+}
+</style>
+<span class="tooltip">
+    滑鼠移過來
+    <span class="tip">
+        喵！
+    </span>
+</span>
+<blockquote>
+<p>註：手機無此效果。</p></blockquote>
+<p><br><br></p>
+<h3 id="29-卡片標籤">29. 卡片標籤</h3>
+<pre tabindex="0"><code>&lt;div style=&#34;position: relative; width: 320px; padding: 20px; border:1px solid #ddd; border-radius:10px;&#34;&gt;
+  我是一張卡片
+
+  &lt;span style=&#34;
+    position:absolute;
+    top:12px;
+    right:-30px;
+    background:#ff4d4f;
+    color:white;
+    padding:4px 35px;
+    font-size:12px;
+    font-weight:bold;
+    transform:rotate(45deg);
+    box-shadow:0 2px 6px rgba(0,0,0,.2);
+  &#34;&gt;
+    NEW
+  &lt;/span&gt;
+&lt;/div&gt;
+</code></pre><br>
+<div style="position: relative; width: 320px; padding: 20px; border:1px solid #ddd; border-radius:10px;">
+  我是一張卡片
+<p><span style="
+position:absolute;
+top:12px;
+right:-30px;
+background:#ff4d4f;
+color:white;
+padding:4px 35px;
+font-size:12px;
+font-weight:bold;
+transform:rotate(45deg);
+box-shadow:0 2px 6px rgba(0,0,0,.2);
+">
+NEW
+</span></p>
+</div>
+<br>
+<h3 id="30-打字機">30. 打字機</h3>
+<pre tabindex="0"><code>&lt;h2 class=&#34;typing&#34;&gt;歡迎來到我的部落格！&lt;/h2&gt;
+
+&lt;style&gt;
+.typing{
+    width: 18ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #ff8a3d;
+
+    animation:
+        typing 2s steps(10),
+        blink .7s infinite;
+}
+
+@keyframes typing{
+    from{ width:0;}
+    to{ width:18ch;}
+}
+
+@keyframes blink{
+    50%{ border-color:transparent;}
+}
+&lt;/style&gt;
+</code></pre><h2 class="typing">歡迎來到我的部落格！</h2>
+<style>
+.typing{
+    width: 18ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #ff8a3d;
+
+    animation:
+        typing 2s steps(10),
+        blink .7s infinite;
+}
+
+@keyframes typing{
+    from{ width:0;}
+    to{ width:18ch;}
+}
+
+@keyframes blink{
+    50%{ border-color:transparent;}
+}
+</style>
+<blockquote>
+<p>註：已經跑出來的話請重新整理。</p></blockquote>
+<hr>
+<p>參考資料：<br>
+<a href="https://markdown.tw/">Markdown 語法說明</a><br>
+<a href="https://hackmd.io/@asd0713/Sk4DmtBFn">HTML語法大全 - HackMD</a><br>
+<a href="https://kaiblog.is-a.dev/blog/markdown">善用 MarkDown / HTML+CSS | KAI BLOG</a><br>
+<a href="https://wiwi.blog/blog/format-as-rhetoric/">社群媒體不讓你用的那些格式 | Wiwi.Blog</a></p>
+<style>
+  /* 目錄的極簡樣式 */
+  #custom-toc {
+      background-color: var(--theme, #f5f5f5); /* 自動適應 PaperMod 暗黑/白天模式 */
+      border-left: 4px solid #ff8a3d;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+  }
+  #custom-toc h4 { margin: 0 0 10px 0; color: inherit; }
+  #custom-toc ul { list-style-type: none; padding-left: 0; margin: 0; } /* 預設 padding 設為 0，由 li 的 class 控制縮排 */
+  #custom-toc li { margin: 8px 0; }
+  #custom-toc a { text-decoration: none; color: #ff8a3d; font-weight: 500; }
+  #custom-toc a:hover { text-decoration: underline; }
+  
+  /* 根據標題等級動態縮排，讓層級更清晰 */
+  .toc-h1 { padding-left: 0px; font-size: 1.05rem; font-weight: bold; }
+  .toc-h2 { padding-left: 15px; font-size: 1rem; }
+  .toc-h3 { padding-left: 30px; font-size: 0.95rem; opacity: 0.9; }
+  .toc-h4 { padding-left: 45px; font-size: 0.9rem; opacity: 0.85; }
+  .toc-h5 { padding-left: 60px; font-size: 0.85rem; opacity: 0.8; }
+  .toc-h6 { padding-left: 75px; font-size: 0.8rem; opacity: 0.75; }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const tocContainer = document.getElementById("custom-toc");
+    if (!tocContainer) return;
+
+    // 1. 修改抓取範圍：加入 h1, h2, h3, h4, h5, h6
+    const headers = document.querySelectorAll(".post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6");
+    if (headers.length === 0) {
+      tocContainer.style.display = "none"; // 沒標題就隱藏
+      return;
+    }
+
+    // 建立目錄標題
+    tocContainer.innerHTML = "<h4>📋 文章目錄</h4><ul id='toc-list'></ul>";
+    const tocList = document.getElementById("toc-list");
+
+    headers.forEach((header, index) => {
+      // 如果標題本來沒有 ID，就幫它建立一個，這樣超連結才連得過去
+      if (!header.id) {
+          header.id = "toc-anchor-" + index;
+      }
+
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = "#" + header.id;
+      a.textContent = header.textContent;
+
+      // 2. 動態判斷標題標籤（例如 "h2"、"h3"），並加上對應的 CSS class
+      const tagName = header.tagName.toLowerCase(); // 取得 "h1" ~ "h6"
+      li.classList.add("toc-" + tagName);          // 變成 "toc-h1" ~ "toc-h6"
+
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+  });
+</script>
+]]></content:encoded></item><item><title>知識圖譜</title><link>http://localhost:1313/posts/graph-view/</link><pubDate>Sun, 26 Jul 2026 12:00:00 +0800</pubDate><guid>http://localhost:1313/posts/graph-view/</guid><description>&lt;p>早上做了一個模仿 &lt;a href="http://localhost:1313/posts/backlink">Obsidian 的 graph view&lt;/a>，不只我自己能看到連結，讀者有興趣也可以玩玩看。有種站在全知視角觀察自己思考的感覺。&lt;/p>
 &lt;div class="mini-graph-card" style="margin: 2.5rem 0; border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; background: var(--entry); box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
 &lt;div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem;">
 &lt;span style="font-weight: 700; font-size: 1rem; color: var(--primary); display: flex; align-items: center; gap: 0.5rem;">
@@ -536,6 +1017,10 @@ ShowShareButtons = false
 <p>在 <a href="/posts/about">/about</a> 有放，學 Github 的，如下所示：</p>
 
 
+
+    
+    
+    
 
     
     
@@ -4451,7 +4936,7 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-07-26\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-07-26\n✍️ 狀態：有 3 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
@@ -6421,7 +6906,7 @@ after: [範例](/posts/example)
 &lt;strong>主題閱讀&lt;/strong>：跨文本交叉比對。&lt;br>&lt;/p>
 &lt;h3 id="我的閱讀四層次">我的閱讀四層次：&lt;/h3>
 &lt;p>&lt;strong>識字&lt;/strong>：基礎閱讀。&lt;br>
-&lt;strong>理解&lt;/strong>：閱讀理解，就像學測國文的刁鑽問題……&lt;br>
+&lt;strong>理解&lt;/strong>：閱讀理解，就像&lt;a href="http://localhost:1313/posts/light">學測國文&lt;/a>的刁鑽問題……&lt;br>
 &lt;strong>實踐&lt;/strong>：例如工具書，要把書中內容化為行動，才是真正發揮了書的價值。我認為能做到這一步才有資格說自己會看書。&lt;br>
 &lt;strong>創造&lt;/strong>：有辦法憑自己的能力改善生活，可以根據所學組合出獨特的點子。老話一句就是：&lt;a href="http://localhost:1313/posts/progress">從消費者變成生產者&lt;/a>。&lt;/p></description><content:encoded><![CDATA[<h3 id="如何閱讀一本書的閱讀四層次"><a href="https://readingoutpost.com/how-to-read-a-book/">《如何閱讀一本書》</a>的閱讀四層次：</h3>
 <p><strong>基礎閱讀</strong>：看懂文章的意思。<br>
@@ -6430,7 +6915,7 @@ after: [範例](/posts/example)
 <strong>主題閱讀</strong>：跨文本交叉比對。<br></p>
 <h3 id="我的閱讀四層次">我的閱讀四層次：</h3>
 <p><strong>識字</strong>：基礎閱讀。<br>
-<strong>理解</strong>：閱讀理解，就像學測國文的刁鑽問題……<br>
+<strong>理解</strong>：閱讀理解，就像<a href="/posts/light">學測國文</a>的刁鑽問題……<br>
 <strong>實踐</strong>：例如工具書，要把書中內容化為行動，才是真正發揮了書的價值。我認為能做到這一步才有資格說自己會看書。<br>
 <strong>創造</strong>：有辦法憑自己的能力改善生活，可以根據所學組合出獨特的點子。老話一句就是：<a href="/posts/progress">從消費者變成生產者</a>。</p>
 ]]></content:encoded></item><item><title>書的分類</title><link>http://localhost:1313/posts/book-category/</link><pubDate>Fri, 10 Jul 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/book-category/</guid><description>&lt;p>比起&lt;a href="https://catweb.ncl.edu.tw/class2007/96-1-1.htm">中文圖書分類法&lt;/a>，我自己更偏好把書分成這六種：&lt;/p>
@@ -8624,6 +9109,10 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
 
 
 
@@ -12102,7 +12591,7 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-07-26\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-07-26\n✍️ 狀態：有 3 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 

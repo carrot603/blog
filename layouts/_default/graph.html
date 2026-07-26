@@ -8,7 +8,9 @@
       width: 100vw;
       height: 100vh;
       z-index: 9999;
-      background: var(--bg, #1d1e20);
+      /* 🎯 完美適應黑白主題：優先讀取 PaperMod 主題背景變數 */
+      background: var(--theme, var(--bg, #1d1e20));
+      transition: background 0.3s ease;
     }
 
     .graph-hint {
@@ -19,10 +21,11 @@
       color: var(--primary);
       opacity: 0.7;
       pointer-events: none;
-      background: rgba(0, 0, 0, 0.3);
+      background: var(--entry, rgba(0, 0, 0, 0.3));
       padding: 6px 12px;
       border-radius: 6px;
       backdrop-filter: blur(4px);
+      border: 1px solid var(--border);
     }
 
     .graph-back-btn {
@@ -106,7 +109,6 @@
 
     document.addEventListener("DOMContentLoaded", function() {
       // 🚫 【指定要排除的檔名 / 網址路徑】
-      // 請填入文章網址最後面的名稱（例如 content/posts/my-index.md 就填入 "my-index"）
       const EXCLUDE_PATHS = [
         "graph",       
         "series", 
@@ -117,10 +119,7 @@
         .then(data => {
           // 精準匹配路徑排除
           const filteredData = data.filter(d => {
-            // 清理網址，取出最末端檔名 slug (例如 /posts/my-index/ -> my-index)
             const slug = d.id.replace(/\/$/, "").split('/').pop();
-            
-            // 只要 slug 或完整 id 精準等於黑名單裡設定的檔名就擋掉
             const isExcluded = EXCLUDE_PATHS.some(path => slug === path || d.id === path || d.id === `/${path}/`);
             return !isExcluded;
           });
@@ -195,6 +194,7 @@
 
             link.exit().remove();
 
+            // 🎯 使用 CSS 變數 var(--primary)，主題切換時連線顏色自動調適
             const linkEnter = link.enter().append("line")
               .attr("stroke", "var(--primary)")
               .attr("stroke-opacity", 0.15)
@@ -212,10 +212,12 @@
               .style("cursor", "pointer")
               .style("transition", "opacity 0.25s ease");
 
+            // 🎯 使用 CSS 變數 var(--primary)
             nodeEnter.append("circle")
               .attr("r", 8)
               .attr("fill", "var(--primary)");
 
+            // 🎯 使用 CSS 變數 var(--primary)
             nodeEnter.append("text")
               .text(d => d.title)
               .attr("x", 12)
