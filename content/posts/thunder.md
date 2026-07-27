@@ -3,7 +3,7 @@ date = '2026-08-13T05:00:00+08:00'
 draft = false
 title = '雷霆儀隊'
 +++
-![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20230820.jpg)
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_4807.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
 儀隊是我的青春，謹以此貼文紀念過去天天練槍的美好時光。雖然轉槍是最傷手的，但我還是練了一些酷酷的特技。先放一部六轉的影片（接得很不穩）：
 
@@ -14,6 +14,18 @@ title = '雷霆儀隊'
 其實我的儀隊生涯充滿了挫折，在高三之前，我的進度一直是落後的。我的程度剛剛好可以駕馭表演，但我太細了！力氣跟熟練度都沒有其他同屆來得好，每次練習都相當吃力！甚至有一次成發，前兩天累到掛急診！
 
 我想這是基本功不足的緣故。在鋼琴上也是同理，也許有一天我也能像練槍一樣，舉重若輕，而在那之前就是每天乖乖地練基本功，累積實力。
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/thunder1.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
+>裝帥拍的……
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20230820.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
+>我與中提琴（？
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/thunder2.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
+>謹此紀念國防教室。
 
 目前為止我們社團的人是越來越少，也許儀隊這種活動已經沒落了！以下附上我整理的關於雷霆的東西。
 
