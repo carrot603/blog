@@ -35,7 +35,9 @@ title = 'series'
 2026-07-22 [《死線已是十天前》](/posts/deadline)  
 2026-07-23 [《文章作法》](/posts/narrative)  
 2026-07-24 [《時間的秩序》](/posts/L'ordine-del-tempo)  
-2026-07-26 [《知識複利筆記術》](/posts/zettelkasten)
+2026-07-26 [《知識複利筆記術》](/posts/zettelkasten)  
+2026-07-27 [《台灣磁磚系譜學》](/posts/tile)  
+2026-07-27 [《暢銷書潛規則》](/posts/top-book)
 
 ---
 
@@ -56,6 +58,18 @@ title = 'series'
 - [蘿蔔書單🥕](/posts/carrot-book)
 
 ---
+
+### 𣈱銷主題挑戰
+
+參考[《暢銷書潛規則》](/posts/top-book)：
+
+- 名人
+- 理財
+- 國學（淺顯的
+- 專業
+- 品位
+
+（本清單待更新）
 
 <style>
   /* 目錄的極簡樣式（橘色系 + 字體加大） */

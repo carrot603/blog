@@ -128,7 +128,7 @@ title = '30 個常用 HTML + CSS 小技巧'
 
 <span style="filter: blur(4px); transition: 0.3s;" onmouseover="this.style.filter='none'" onmouseout="this.style.filter='blur(4px)'">不要看啦</span>
 
->註：手機無此效果。
+>註：手機點擊可獲得效果，點擊空白處即可恢復。
 <br>
 
 ### 11. 摺疊內容
@@ -185,7 +185,7 @@ title = '30 個常用 HTML + CSS 小技巧'
 
 <div style="display:inline-block; padding:20px; border-radius:12px; background:#fff; color:#ff8a3d; font-weight:bold; border:1px solid rgba(255,138,61,0.3); box-shadow:0 4px 12px rgba(255,138,61,0.15); transition:.3s; cursor:pointer;" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 12px 25px rgba(255,138,61,0.35)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 12px rgba(255,138,61,0.15)'">✨ 滑鼠移過來看看</div>
 
->註：手機無此效果。
+>註：手機點擊可獲得效果，點擊空白處即可恢復。
 
 <br>
 
@@ -503,7 +503,7 @@ HTML
     </span>
 </span>
 
->註：手機無此效果。
+>註：手機點擊可獲得效果，點擊空白處即可恢復。
 
 <br><br>
 
