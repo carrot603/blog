@@ -22,9 +22,11 @@ title = '網站大事記'
 在[ BlogBlog 同樂會](https://blogblog.club/party/)投稿六月主題「[論音樂與記憶](/posts/music-and-memories)」。
 ### 2026-06-26
 
-又投稿七月主題冷知識「[注音狂想曲](/posts/bopomofo)」。
-
+又投稿七月主題冷知識「[注音狂想曲](/posts/bopomofo)」。  
 在 [nownownow.com](https://nownownow.com/) 上登錄，收到 [Derek Sivers](https://sive.rs/) 的回覆。
+### 2026-07-11
+
+使用 [Cloudflare R2](https://www.cloudflare.com/products/r2/) 管理照片影片。
 ### 2026-07-18
 
 榮登 [IndiePing](https://indieping.giveanornot.com/)🎉
@@ -34,8 +36,6 @@ title = '網站大事記'
 
 ### 2026-07-26
 
-讓外部連結開啟新分頁。
-
-新增[知識圖譜](/graph)。
-
+讓外部連結開啟新分頁。  
+新增[知識圖譜](/graph)。  
 加入 Hover 文章預覽視窗，顯示網站內文章摘要，僅限電腦版。（延遲設定 0.3 s）
