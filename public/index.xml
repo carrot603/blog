@@ -7537,7 +7537,8 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
 2026-07-24 <a href="/posts/L'ordine-del-tempo">《時間的秩序》</a><br>
 2026-07-26 <a href="/posts/zettelkasten">《知識複利筆記術》</a><br>
 2026-07-27 <a href="/posts/tile">《台灣磁磚系譜學》</a><br>
-2026-07-27 <a href="/posts/top-book">《暢銷書潛規則》</a></p>
+2026-07-27 <a href="/posts/top-book">《暢銷書潛規則》</a><br>
+2026-07-30 <a href="/posts/diamond-sutra">《金剛經》教我的人生智慧</a></p>
 <hr>
 <h3 id="千本好書">千本好書</h3>
 <p><span style="background: linear-gradient(to top, rgba(143, 221, 115, 0.5) 40%, transparent 40%);"><a href="/posts/proust">《追憶似水年華》</a> </span>唯一推薦！</p>
@@ -8411,14 +8412,14 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
 </ol>
 </div>
 ]]></content:encoded></item><item><title>/now</title><link>http://localhost:1313/now/</link><pubDate>Fri, 26 Jun 2026 06:00:00 +0800</pubDate><guid>http://localhost:1313/now/</guid><description>&lt;div class="note-box">
-&lt;p>💡 這是我的 /now 頁面，最後更新於：2026-07-27。&lt;/p>
+&lt;p>💡 這是我的 /now 頁面，最後更新於：2026-07-30。&lt;/p>
 &lt;p>本頁面同時投稿到 &lt;a href="https://nownownow.com/">https://nownownow.com/&lt;/a>&lt;/p>
 &lt;/div>
 &lt;blockquote>
 &lt;p>我發現只有我名字打中文，但算了沒關係，可能有一天搜尋&lt;a href="https://nownownow.com/p/01LE">江俊佑&lt;/a>這個頁面就會跑出來了。我似乎是第 39 個臺灣人🇹🇼&lt;/p>&lt;/blockquote>
 &lt;p>我比較內向，如果想跟我打招呼，可以到 &lt;a href="mailto:carrot603@proton.me">carrot603@proton.me&lt;/a>&lt;/p></description><content:encoded><![CDATA[<div class="note-box">
     
-          <p>💡 這是我的 /now 頁面，最後更新於：2026-07-27。</p>
+          <p>💡 這是我的 /now 頁面，最後更新於：2026-07-30。</p>
 <p>本頁面同時投稿到 <a href="https://nownownow.com/">https://nownownow.com/</a></p>
 
 
@@ -8435,34 +8436,24 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
 <li>《莊子》</li>
 <li>《西方哲學史》（羅素）</li>
 <li>《所多瑪和蛾摩拉》</li>
-<li>聯經的<a href="https://events.linkingbooks.com.tw/LNB/top/2024/historyofchina/index.html">聯經中國史</a>系列</li>
+<li>聯經的<a href="https://events.linkingbooks.com.tw/LNB/top/2025/great-figures_in-the-history-of-asia/index.html">《亞洲人物史》</a>系列</li>
 </ul>
 <h3 id="在練的曲子">在練的曲子</h3>
 <ul>
-<li>Bach: BWV 846 Fugue</li>
-<li>Chopin: Etude Op. 10 No.5</li>
+<li>Beethoven: Piano Concerto No. 1, Op. 15</li>
 <li>Rachmaninoff: Prelude Op. 23 No. 5</li>
 <li>音階努力中😬</li>
 </ul>
 <h3 id="想去哪裡玩">想去哪裡玩</h3>
-<p>我想要看星星🤩</p>
+<p>散步</p>
 <h3 id="最近忙什麼">最近忙什麼</h3>
-<p>參加<a href="/posts/frei-aber-froh">一中弦樂成發</a><br>
-去<a href="/posts/tanyashen">潭雅神騎車</a>，維持練跑，體力顯著提昇！<br>
-獲得資工小廢物 - JN 推薦<a href="/posts/deeper-learning">《深度學習的技術》</a><br>
-去<a href="/posts/tainan">臺南</a>玩<br>
-即將搬到臺北……
-討論<a href="/posts/business-book">閱讀</a>、寫寫<a href="/posts/backlink">程式</a></p>
+<p>即將搬到臺北……</p>
 <hr>
-<h3 id="七月計劃">七月計劃</h3>
-<p>讀完《世界哲學史》<br>
-學日文五十音<br>
-學會煮菜<br>
-把圖書館的書還掉<br>
-練一首 Concerto<br>
-（希望能夠達成）</p>
+<h3 id="八月計劃">八月計劃</h3>
+<p>養成跑步習慣<br>
+在臺北能自給自足</p>
 <hr>
-<h3 id="-2026-年-7-月跑步紀錄">🏃 2026 年 7 月跑步紀錄</h3>
+<h3 id="-2026-年-8-月跑步紀錄">🏃 2026 年 8 月跑步紀錄</h3>
 <table>
   <thead>
       <tr>
@@ -8479,45 +8470,54 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
       <tr>
           <td style="text-align: center"></td>
           <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
           <td style="text-align: center"><span class="no-run">1</span></td>
-          <td style="text-align: center"><span class="run-done">2<br><strong>2.8k</strong></span></td>
-          <td style="text-align: center"><span class="no-run">3</span></td>
-          <td style="text-align: center"><span class="run-done">4<br><strong>2.4k</strong></span></td>
-          <td style="text-align: center"><span class="no-run">5</span></td>
+          <td style="text-align: center"><span class="no-run">2</span></td>
       </tr>
       <tr>
-          <td style="text-align: center"><span class="run-done">6<br><strong>2.8k</strong></span></td>
-          <td style="text-align: center"><span class="run-done">7<br><strong>1.8k</strong></span></td>
+          <td style="text-align: center"><span class="no-run">3</span></td>
+          <td style="text-align: center"><span class="no-run">4</span></td>
+          <td style="text-align: center"><span class="no-run">5</span></td>
+          <td style="text-align: center"><span class="no-run">6</span></td>
+          <td style="text-align: center"><span class="no-run">7</span></td>
           <td style="text-align: center"><span class="no-run">8</span></td>
           <td style="text-align: center"><span class="no-run">9</span></td>
+      </tr>
+      <tr>
           <td style="text-align: center"><span class="no-run">10</span></td>
           <td style="text-align: center"><span class="no-run">11</span></td>
           <td style="text-align: center"><span class="no-run">12</span></td>
-      </tr>
-      <tr>
           <td style="text-align: center"><span class="no-run">13</span></td>
           <td style="text-align: center"><span class="no-run">14</span></td>
-          <td style="text-align: center"><span class="run-done">15<br>🚲<strong>38k</strong></span></td>
+          <td style="text-align: center"><span class="no-run">15</span></td>
           <td style="text-align: center"><span class="no-run">16</span></td>
+      </tr>
+      <tr>
           <td style="text-align: center"><span class="no-run">17</span></td>
           <td style="text-align: center"><span class="no-run">18</span></td>
           <td style="text-align: center"><span class="no-run">19</span></td>
-      </tr>
-      <tr>
           <td style="text-align: center"><span class="no-run">20</span></td>
           <td style="text-align: center"><span class="no-run">21</span></td>
           <td style="text-align: center"><span class="no-run">22</span></td>
           <td style="text-align: center"><span class="no-run">23</span></td>
+      </tr>
+      <tr>
           <td style="text-align: center"><span class="no-run">24</span></td>
           <td style="text-align: center"><span class="no-run">25</span></td>
           <td style="text-align: center"><span class="no-run">26</span></td>
-      </tr>
-      <tr>
-          <td style="text-align: center"><span class="run-done">27<br><strong>2.1k</strong></span></td>
+          <td style="text-align: center"><span class="no-run">27</span></td>
           <td style="text-align: center"><span class="no-run">28</span></td>
           <td style="text-align: center"><span class="no-run">29</span></td>
           <td style="text-align: center"><span class="no-run">30</span></td>
+      </tr>
+      <tr>
           <td style="text-align: center"><span class="no-run">31</span></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
           <td style="text-align: center"></td>
           <td style="text-align: center"></td>
       </tr>
@@ -24852,7 +24852,7 @@ to { transform: rotateX(-15deg) rotateY(360deg); }
 <hr>
 <p>還記得當時，我不會韓文的謝謝，媽媽拍完照之後跟他說 Thank you，我則不知說什麼好，有點不太禮貌！</p>
 <p>曲目不可考，但有依稀印象最後一首是賦格，我覺得特別沈重，可能是<a href="https://www.youtube.com/watch?v=OidoRhYhEhI"> K. 394</a>。</p>
-<p>2026-07-25 16:46 補</p>
+<p>2026-07-25 16 : 46 補</p>
 ]]></content:encoded></item><item><title>林柏廷繪本展</title><link>http://localhost:1313/memories/20230422/</link><pubDate>Sat, 22 Apr 2023 05:00:00 +0800</pubDate><guid>http://localhost:1313/memories/20230422/</guid><description>&lt;p>為了&lt;a href="https://findbook.com.tw/9789862944042">《小豬找雨》&lt;/a>而去&lt;a href="https://zh.wikipedia.org/zh-tw/%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%9B%9B%E5%BC%B5%E7%8A%81%E5%88%86%E9%A4%A8">四張犁&lt;/a>看展。&lt;/p>
 &lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot-book.jpg" style="width: 75%; max-width: 100%; height: auto;">
 &lt;p>本來是 2010 年出版，2024 年又重新出版，馬上買來收藏！&lt;/p>
