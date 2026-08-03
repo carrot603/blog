@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Mon, 03 Aug 2026 05:06:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>《夏宇在晨邊：你是我最完整的廢墟》</title><link>http://localhost:1313/posts/hsia-yu/</link><pubDate>Mon, 03 Aug 2026 05:06:00 +0800</pubDate><guid>http://localhost:1313/posts/hsia-yu/</guid><description>&lt;p>&lt;img alt="無法載入" loading="lazy" src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/1785717759382.jpg">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Mon, 03 Aug 2026 16:01:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>大蘿蔔圖鑑</title><link>http://localhost:1313/posts/carrot-big-gallery/</link><pubDate>Mon, 03 Aug 2026 16:01:00 +0800</pubDate><guid>http://localhost:1313/posts/carrot-big-gallery/</guid><description>&lt;p>Nicopy 的大蘿蔔，這是他的相簿。&lt;/p>
+&lt;div class="gallery">
+&lt;p>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot26.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot25.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot1.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot6.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot5.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot4.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot3.jpg" />&lt;/p>
+&lt;/div>
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+&lt;script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js">&lt;/script>
+&lt;script>
+// 自動幫 .gallery 裡面的圖片加上點擊放大效果
+document.querySelectorAll('.gallery img').forEach(img => {
+const a = document.createElement('a');
+a.dataset.fancybox = "gallery";
+a.href = img.src;
+img.parentNode.insertBefore(a, img);
+a.appendChild(img);
+});
+Fancybox.bind('[data-fancybox="gallery"]', {});
+&lt;/script></description><content:encoded><![CDATA[<p>Nicopy 的大蘿蔔，這是他的相簿。</p>
+<div class="gallery"> 
+<p><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot26.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot25.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot1.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot6.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot5.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot4.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot3.jpg" /></p>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+
+  // 自動幫 .gallery 裡面的圖片加上點擊放大效果
+  document.querySelectorAll('.gallery img').forEach(img => {
+    const a = document.createElement('a');
+    a.dataset.fancybox = "gallery";
+    a.href = img.src;
+    img.parentNode.insertBefore(a, img);
+    a.appendChild(img);
+  });
+  Fancybox.bind('[data-fancybox="gallery"]', {});
+</script>]]></content:encoded></item><item><title>蘿蔔圖鑑</title><link>http://localhost:1313/posts/carrot-gallery/</link><pubDate>Mon, 03 Aug 2026 16:00:00 +0800</pubDate><guid>http://localhost:1313/posts/carrot-gallery/</guid><description>&lt;p>IKEA 買的小蘿蔔，這是他的相簿。&lt;/p>
+&lt;div class="gallery">
+&lt;p>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot28.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot27.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot24.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot23.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot22.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot21.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot20.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot19.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot18.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot17.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot16.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot15.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot14.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot13.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot12.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot11.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot10.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot9.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot8.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot2.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot7.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot29.jpg" />&lt;/p>
+&lt;/div>
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+&lt;script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js">&lt;/script>
+&lt;script>
+// 自動幫 .gallery 裡面的圖片加上點擊放大效果
+document.querySelectorAll('.gallery img').forEach(img => {
+const a = document.createElement('a');
+a.dataset.fancybox = "gallery";
+a.href = img.src;
+img.parentNode.insertBefore(a, img);
+a.appendChild(img);
+});
+Fancybox.bind('[data-fancybox="gallery"]', {});
+&lt;/script></description><content:encoded><![CDATA[<p>IKEA 買的小蘿蔔，這是他的相簿。</p>
+<div class="gallery"> 
+<p><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot28.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot27.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot24.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot23.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot22.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot21.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot20.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot19.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot18.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot17.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot16.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot15.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot14.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot13.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot12.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot11.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot10.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot9.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot8.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot2.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot7.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot29.jpg" /></p>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+
+  // 自動幫 .gallery 裡面的圖片加上點擊放大效果
+  document.querySelectorAll('.gallery img').forEach(img => {
+    const a = document.createElement('a');
+    a.dataset.fancybox = "gallery";
+    a.href = img.src;
+    img.parentNode.insertBefore(a, img);
+    a.appendChild(img);
+  });
+  Fancybox.bind('[data-fancybox="gallery"]', {});
+</script>]]></content:encoded></item><item><title>🥕</title><link>http://localhost:1313/posts/carrot/</link><pubDate>Mon, 03 Aug 2026 15:00:00 +0800</pubDate><guid>http://localhost:1313/posts/carrot/</guid><description>&lt;p>為什麼我喜歡紅蘿蔔呢？大約三歲的時候，爸爸媽媽帶我去 IKEA，我在一堆大蘿蔔裡面意外發現小根的紅蘿蔔，從此愛不釋手！&lt;/p>
+&lt;p>大約長到國小的時候，我開始有認同（？蘿蔔的意識，吃飯會盛很多蘿蔔，美術作品能畫蘿蔔，就畫蘿蔔。至於是&lt;a href="https://wiwi.video/w/9pjWwdP2WdNdHQqcaijEmN">選我所愛，還是愛我所選？&lt;/a>我想這是一個正向循環，我喜歡蘿蔔的形象，對於它的味道也不反感，因此越來越喜歡吃，也把蘿蔔當作自己的代表。&lt;/p></description><content:encoded><![CDATA[<p>為什麼我喜歡紅蘿蔔呢？大約三歲的時候，爸爸媽媽帶我去 IKEA，我在一堆大蘿蔔裡面意外發現小根的紅蘿蔔，從此愛不釋手！</p>
+<p>大約長到國小的時候，我開始有認同（？蘿蔔的意識，吃飯會盛很多蘿蔔，美術作品能畫蘿蔔，就畫蘿蔔。至於是<a href="https://wiwi.video/w/9pjWwdP2WdNdHQqcaijEmN">選我所愛，還是愛我所選？</a>我想這是一個正向循環，我喜歡蘿蔔的形象，對於它的味道也不反感，因此越來越喜歡吃，也把蘿蔔當作自己的代表。</p>
+<p>我有兩根最喜歡的蘿蔔，一個就是 IKEA 的：</p>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<blockquote>
+<p>他裡面有扁笛，有一次我用他叫媽媽起床，「啾啾啾」的，現在想來實在好笑！</p></blockquote>
+<hr>
+<p>另一根大約是小六時買的大蘿蔔，品牌是 <a href="https://www.facebook.com/nicopyworld/?locale=zh_TW">Nicopy</a>，好像已經快倒了！之前還有很多實體店可以逛，早知道多買十根！他的表面是「銀狐絨」材質，反正就是超級好摸！抱起來也很剛好，如果要開我的實體博物館，這可以擺在門口（X</p>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot30.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<p>如果有人手裡剛好有這些蘿蔔，我願意出高價收購！請聯絡我的<a href="/posts/about">電子郵件</a>。</p>
+<hr>
+<p>延伸閱讀：<br><a href="/posts/carrot-gallery">蘿蔔圖鑑</a><br><a href="/posts/carrot-big-gallery">大蘿蔔圖鑑</a></p>
+]]></content:encoded></item><item><title>《夏宇在晨邊：你是我最完整的廢墟》</title><link>http://localhost:1313/posts/hsia-yu/</link><pubDate>Mon, 03 Aug 2026 05:06:00 +0800</pubDate><guid>http://localhost:1313/posts/hsia-yu/</guid><description>&lt;p>&lt;img alt="無法載入" loading="lazy" src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/1785717759382.jpg">&lt;/p>
 &lt;p>&lt;a href="https://www.opentix.life/event/2048656360075108353">夏宇在晨邊：你是我最完整的廢墟&lt;/a>&lt;/p>
 &lt;p>&lt;strong>【演出者介紹】&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>文本來源與詩詞聲音｜夏宇&lt;/strong>&lt;br>
@@ -2734,6 +2817,18 @@ ShowShareButtons = false
 <p>在 <a href="/posts/about">/about</a> 有放，學 Github 的，如下所示：</p>
 
 
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
 
     
     
@@ -6627,7 +6722,7 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-08-03\n✍️ 狀態：有 7 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-08-03\n✍️ 狀態：有 10 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
@@ -11030,6 +11125,18 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
 
 
 
@@ -14414,7 +14521,7 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-08-03\n✍️ 狀態：有 7 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-08-03\n✍️ 狀態：有 10 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
