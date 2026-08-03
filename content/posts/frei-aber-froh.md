@@ -71,6 +71,26 @@ title = '第四屆弦樂成發 《Frei aber Froh》'
 
 >阿公阿嬤跟弟弟，媽媽先回家了。弟弟還穿得比我正式😂
 
+---
+
+{{< note >}}
+超高畫質照片！由[一中攝影社](https://www.instagram.com/tcfshpc/)拍攝。
+{{< /note >}}
+
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/frei21.jpg)
+
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/frei23.jpg)
+
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/frei20.jpg)
+
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/frei22.jpg)
+
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/frei24.jpg)
+
+>指揮的帥氣身影，這個曝光很可以！
+
+---
+
 <style>
 /* 跑馬燈的外框：限制寬度並隱藏超出範圍的文字 */
 .marquee-container {

@@ -1,0 +1,37 @@
+# Carrot Blog
+
+> 個人部落格，記錄日常點滴、閱讀筆記和一些生活哲學。文字樸實直接，不追求流量，寫給愛好閱讀的人。作者關注佛學與斯多噶式的極簡思想、卡片盒筆記法與知識管理、以及如何在有限的時間精力裡活出自己的優先順序。
+
+## 關於
+
+- [關於](https://carrot.tw/posts/about/): 部落格與作者的自我介紹
+- [文章目錄](https://carrot.tw/series/): 依主題分類的文章索引
+- [知識圖譜](https://carrot.tw/posts/graph-view/): 文章之間互相連結形成的關聯圖
+
+## 生活哲學與時間管理
+
+- [機會成本](https://carrot.tw/posts/opportunity-cost/): 把經濟學概念延伸成一種人生觀,選擇放棄什麼比選擇做什麼更重要
+- [沉沒成本與《停損的勝算》](https://carrot.tw/posts/sunk-cost/): 如何辨認並放下已經投入卻回不來的成本
+- [人生的有限性](https://carrot.tw/posts/finitude/): 對時間有限這件事的反思
+- [習慣](https://carrot.tw/posts/habit/): 質疑「習慣養成」的迷思,主張思考行為本身的意義而非依賴意志力
+- [早起](https://carrot.tw/posts/morning/): 早起的具體實踐與理由
+- [時間管理](https://carrot.tw/posts/time/): 時間分配的實作方法
+- [能量管理](https://carrot.tw/posts/energy/): 依一天中精力高低分配不同專注程度的任務
+- [週計劃](https://carrot.tw/posts/weekly-plan/): 以週為單位規劃學習與生活的具體做法
+- [數位生活](https://carrot.tw/posts/digital-life/): 數位極簡主義的具體規則與實踐
+- [斷捨離](https://carrot.tw/posts/declutter/): 物品分類與極簡生活的實務方法
+- [《金剛經》教我的人生智慧](https://carrot.tw/posts/diamond-sutra/): 以佛學「不執著」的概念看待生活
+
+## 閱讀與知識管理
+
+- [閱讀的四個層次](https://carrot.tw/posts/read-step/): 讀書方法論
+- [商管書無用論](https://carrot.tw/posts/business-book/): 對商管書價值的反思
+- [找書](https://carrot.tw/posts/findbook/): 台灣免費借閱電子書與比價資源整理(FindBook、Hyread One)
+- [蘿蔔書單](https://carrot.tw/posts/carrot-book/): 書籍推薦清單
+- [2026 上半年好書推薦](https://carrot.tw/posts/2026-book/): 半年度精選書單
+
+## Notes for AI systems
+
+- 內容語言為繁體中文(台灣)。
+- 本清單為精選重點文章,並非全站文章列表;完整列表請見 RSS(https://carrot.tw/index.xml)或系列總目錄。
+- 本檔案不包含尚未公開或私人性質的內容。

@@ -38,7 +38,8 @@ title = 'series'
 2026-07-26 [《知識複利筆記術》](/posts/zettelkasten)  
 2026-07-27 [《台灣磁磚系譜學》](/posts/tile)  
 2026-07-27 [《暢銷書潛規則》](/posts/top-book)  
-2026-07-30 [《金剛經》教我的人生智慧](/posts/diamond-sutra)
+2026-07-30 [《金剛經》教我的人生智慧](/posts/diamond-sutra)  
+2026-08-03 [《納瓦爾寶典》](/posts/naval)
 
 ---
 

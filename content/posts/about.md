@@ -26,6 +26,7 @@ title = '關於'
 https://carrot.tw/index.xml
 ```
 ---
+
 避免大家不知道我長怎樣，先放一張獨照在這👀
 
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg)
@@ -35,9 +36,12 @@ https://carrot.tw/index.xml
 你也可以從這些方面了解我：
 
 [數位生活](/posts/digital-life)  
-[網站大事記](/posts/blog-milestone)
+[網站大事記](/posts/blog-milestone)  
+[《金剛經》教我的人生智慧](/posts/diamond-sutra)  
+[核心思想](/posts/core-idea)
 
 ---
+
 我的更新日曆：
 
 {{< day >}}
