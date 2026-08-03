@@ -5,6 +5,9 @@ title = '我用 AI：請益 ChatGPT 寫作方向'
 +++
 <div id="custom-toc"></div>
 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/ai-gpt.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
+>日理萬機的感覺！
 
 起因：我把我的 https://carrot.tw/index.xml 檔案丟給三個 AI 看，想要尋找大家會想看的題材，以及透過解析更認識自己（？為此我還用我的 Google 帳號註冊了 Claude 和 ChatGPT，從此開啟新世界！
 
