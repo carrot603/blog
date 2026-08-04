@@ -17,7 +17,7 @@ title = '🥕'
 
 另一根大約是小六時買的大蘿蔔，品牌是 [Nicopy](https://www.facebook.com/nicopyworld/?locale=zh_TW)，好像已經快倒了！之前還有很多實體店可以逛，早知道多買十根！他的表面是「銀狐絨」材質，反正就是超級好摸！抱起來也很剛好，如果要開我的實體博物館，這可以擺在門口（X
 
-<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot30.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20221105.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
 如果有人手裡剛好有這些蘿蔔，我願意出高價收購！請聯絡我的[電子郵件](/posts/about)。
 

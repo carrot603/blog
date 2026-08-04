@@ -199,52 +199,43 @@ title = '雲嘉二日遊（二）'
 長跪讀素書，書中竟何如。<br>上言加餐食，下言長相憶。<br>[飲馬長城窟行 - 蔡邕](https://zh.wikisource.org/zh-hant/%E9%A3%B2%E9%A6%AC%E9%95%B7%E5%9F%8E%E7%AA%9F%E8%A1%8C_\(%E8%94%A1%E9%82%95\))
 
 <style>
-  /* 目錄的極簡樣式 */
+  /* 目錄極簡樣式 */
   #custom-toc {
-      background-color: var(--theme, #f5f5f5); /* 自動適應 PaperMod 暗黑/白天模式 */
+      background-color: var(--theme, #f5f5f5);
       border-left: 4px solid #ff8a3d;
       padding: 15px 20px;
       margin: 20px 0;
       border-radius: 4px;
   }
   #custom-toc h4 { margin: 0 0 10px 0; color: inherit; }
-  #custom-toc ul { list-style-type: none; padding-left: 0; margin: 0; } /* 預設 padding 設為 0，由 li 的 class 控制縮排 */
+  #custom-toc ul { list-style-type: none; padding-left: 0; margin: 0; }
   #custom-toc li { margin: 8px 0; }
   #custom-toc a { text-decoration: none; color: #ff8a3d; font-weight: 500; }
   #custom-toc a:hover { text-decoration: underline; }
   
-  /* 根據標題等級動態縮排，讓層級更清晰 */
   .toc-h1 { padding-left: 0px; font-size: 1.05rem; font-weight: bold; }
   .toc-h2 { padding-left: 15px; font-size: 1rem; }
   .toc-h3 { padding-left: 30px; font-size: 0.95rem; opacity: 0.9; }
-  .toc-h4 { padding-left: 45px; font-size: 0.9rem; opacity: 0.85; }
+  .toc-h4 { padding-left: 45px; font-size: 0.85rem; opacity: 0.85; }
   .toc-h5 { padding-left: 60px; font-size: 0.85rem; opacity: 0.8; }
   .toc-h6 { padding-left: 75px; font-size: 0.8rem; opacity: 0.75; }
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    
-    // ==========================================
     // 1. 自動幫圖片補上 Lazy Loading
-    // ==========================================
     const allImages = document.querySelectorAll("img");
     allImages.forEach(img => {
       if (!img.hasAttribute("loading")) {
         img.setAttribute("loading", "lazy");
       }
-    }); // 修正點：這裡補上閉合小括號與大括號
+    });
 
-    // ==========================================
     // 2. 自動生成目錄 (TOC)
-    // ==========================================
     const tocContainer = document.getElementById("custom-toc");
-    if (!tocContainer) return; // 沒找到目錄容器就跳出
+    if (!tocContainer) return;
 
-    // 抓取文章內的標題
     const rawHeaders = document.querySelectorAll(".post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6");
-    
-    // 排除燈箱與相簿分類標題，避免目錄重複
     const headers = Array.from(rawHeaders).filter(header => {
       return !header.closest("#lightbox") && !header.closest(".album-category");
     });
@@ -254,7 +245,6 @@ title = '雲嘉二日遊（二）'
       return;
     }
 
-    // 建立目錄標題與清單
     tocContainer.innerHTML = "<h4>📋 文章目錄</h4><ul id='toc-list'></ul>";
     const tocList = document.getElementById("toc-list");
 
@@ -284,15 +274,15 @@ title = '雲嘉二日遊（二）'
       z-index: 1000;
       max-width: 320px;
       padding: 10px 14px;
-      background-color: var(--entry, #ffffff); /* 自動適應 PaperMod 亮/暗主題 */
+      background-color: var(--entry, #ffffff);
       color: var(--primary, #333333);
       border: 1px solid var(--border, #e0e0e0);
-      border-left: 4px solid #ff8a3d; /* 搭配你最愛的莫蘭迪冷橘色邊條 */
+      border-left: 4px solid #ff8a3d;
       border-radius: 6px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       font-size: 0.9rem;
       line-height: 1.5;
-      pointer-events: none; /* 避免滑鼠干擾浮動框 */
+      pointer-events: none;
       opacity: 0;
       transition: opacity 0.2s ease, transform 0.2s ease;
       transform: translateY(6px);
@@ -307,24 +297,19 @@ title = '雲嘉二日遊（二）'
 <script>
   (function() {
     function initFootnoteTooltips() {
-      // 尋找 Hugo 預設產生的所有註腳連結 (通常包含 href="#fn:" 或 class="footnote-ref")
       const footnoteLinks = document.querySelectorAll('a[href^="#fn:"], .footnote-ref a, a.footnote-ref');
       if (footnoteLinks.length === 0) return;
 
-      // 建立全站唯一的 Tooltip 浮動容器
       let tooltip = document.createElement('div');
       tooltip.className = 'footnote-tooltip';
       document.body.appendChild(tooltip);
 
       footnoteLinks.forEach(link => {
-        // 抓取目標註腳的 ID
         const targetId = link.getAttribute('href').replace('#', '');
         const targetFootnote = document.getElementById(targetId);
         if (!targetFootnote) return;
 
-        // 滑鼠移入：抓取註腳純文字並顯示浮動框
         link.addEventListener('mouseenter', (e) => {
-          // 清理註腳內容（移除返回箭頭 ↩）
           let content = targetFootnote.cloneNode(true);
           const backLinks = content.querySelectorAll('.footnote-backref');
           backLinks.forEach(bl => bl.remove());
@@ -332,7 +317,6 @@ title = '雲嘉二日遊（二）'
           tooltip.innerHTML = content.innerHTML.trim();
           tooltip.classList.add('active');
 
-          // 定位浮動框位置（出現在滑鼠上方偏右）
           const rect = link.getBoundingClientRect();
           const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
           const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
@@ -341,7 +325,6 @@ title = '雲嘉二日遊（二）'
           tooltip.style.left = (rect.left + scrollLeft) + 'px';
         });
 
-        // 滑鼠移出：隱藏浮動框
         link.addEventListener('mouseleave', () => {
           tooltip.classList.remove('active');
         });
@@ -356,228 +339,201 @@ title = '雲嘉二日遊（二）'
   })();
 </script>
 
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>貼文相片牆</title>
-  <style>
-    /* ==========================================
-       1. 主題顏色設定 (以 #ff8a3d 為主色)
-       ========================================== */
-    :root {
-      /* 品牌主色 */
-      --primary-color: #ff8a3d;
-      --primary-hover: #e0742b; /* 滑鼠懸停時稍深的橘色 */
+<style>
+  /* 相簿分類標題樣式 */
+  .album-category {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+  }
 
-      /* 淺色主題 (白色背景) */
-      --bg-color: #fcfcfc;
-      --text-main: #222222;
-      --text-muted: #666666;
-      --card-bg: #ffffff;
-      --modal-bg: #ffffff;
-      --border-color: #ffe0cc; /* 帶有一點點橘色調的淺灰邊框 */
-    }
+  .album-category h2 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #ff8a3d;
+    display: inline-block;
+  }
 
-    /* 偵測使用者系統是否為深色模式 */
-    @media (prefers-color-scheme: dark) {
-      :root {
-        /* 深色主題 (黑色背景) */
-        --bg-color: #121212;
-        --text-main: #f0f0f0;
-        --text-muted: #aaaaaa;
-        --card-bg: #1e1e1e;
-        --modal-bg: #242424;
-        --border-color: #3a281e; /* 深色背景下帶有暗橘色的細邊框 */
-      }
-    }
+  /* 相片牆網格（一列三個） */
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-    /* 全局背景與文字顏色設定 */
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 20px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
+  .photo-item {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--entry, #ffffff);
+    border: 2px solid transparent;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
 
-    /* 標題與段落顏色 */
-    h1, h2, h3, h4, h5, h6 {
-      color: var(--text-main);
-    }
+  .photo-item:hover {
+    transform: scale(1.03);
+    border-color: #ff8a3d;
+    box-shadow: 0 4px 15px rgba(255, 138, 61, 0.3);
+  }
 
-    p {
-      color: var(--text-muted);
-    }
+  .photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 
-    /* 分類區塊樣式 */
-    .album-category {
-      max-width: 900px;
-      margin: 0 auto 40px auto;
-    }
-
-    /* 標題帶有主色橘色的下劃線與文字亮點 */
-    .album-category h2 {
-      font-size: 1.25rem;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 3px solid var(--primary-color); /* 用 #ff8a3d 作為標題底線 */
-      display: inline-block;
-    }
-
-    /* ==========================================
-       2. 相片牆網格排版 (一列三個)
-       ========================================== */
+  @media (max-width: 600px) {
     .photo-gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      max-width: 900px;
-      margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
 
-    /* 照片卡片外框 */
-    .photo-item {
-      aspect-ratio: 1 / 1;
-      overflow: hidden;
-      border-radius: 8px;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      background-color: var(--card-bg);
-      border: 2px solid transparent; /* 預備邊框 */
-      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-    }
+  /* 燈箱 Modal 彈窗樣式 */
+  .lightbox {
+    border: 2px solid #ff8a3d;
+    border-radius: 12px;
+    padding: 0;
+    max-width: 800px;
+    width: 90vw;
+    background: var(--entry, #ffffff);
+    color: var(--primary, #222222);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
 
-    /* 滑鼠懸停時微幅放大 + 顯示主色橘色邊框與光暈 */
-    .photo-item:hover {
-      transform: scale(1.03);
-      border-color: var(--primary-color);
-      box-shadow: 0 4px 15px rgba(255, 138, 61, 0.3); /* 橘色發光外陰影 */
-    }
+  .lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+  }
 
-    .photo-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+  .lightbox-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-height: 90vh;
+  }
 
-    /* 手機版自動調整為一列兩個 */
-    @media (max-width: 600px) {
-      .photo-gallery {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+  .lightbox-img {
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    background-color: #000000;
+    display: block;
+  }
 
-    /* ==========================================
-       3. 燈箱 (Modal) 彈出視窗樣式
-       ========================================== */
+  .lightbox-info {
+    padding: 20px;
+    background: var(--entry, #ffffff);
+    overflow-y: auto;
+  }
+
+  .lightbox-info h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #ff8a3d;
+  }
+
+  .lightbox-info p {
+    margin: 0;
+    color: var(--secondary, #666666);
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff8a3d;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .close-btn:hover {
+    background: #e0742b;
+    transform: scale(1.05);
+  }
+
+  /* 手機版 (<=600px) 全螢幕滿版 */
+  @media (max-width: 600px) {
     .lightbox {
-      border: 2px solid var(--primary-color); /* 燈箱外框加上主色橘色 */
-      border-radius: 12px;
-      padding: 0;
-      max-width: 800px;
-      width: 90vw;
-      background: var(--modal-bg);
-      color: var(--text-main);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    }
-
-    .lightbox::backdrop {
-      background: rgba(0, 0, 0, 0.8);
+      width: 100vw !important;
+      height: 100vh !important;
+      max-width: 100vw !important;
+      max-height: 100vh !important;
+      border: none !important;
+      border-radius: 0 !important;
+      margin: 0 !important;
     }
 
     .lightbox-content {
-      display: flex;
-      flex-direction: column;
-      position: relative;
+      height: 100vh;
+      max-height: 100vh;
     }
 
     .lightbox-img {
-      width: 100%;
-      max-height: 60vh;
-      object-fit: contain;
-      background-color: #000000;
+      flex: 1;
+      max-height: 70vh;
     }
 
     .lightbox-info {
-      padding: 20px;
-      background: var(--modal-bg);
+      padding: 16px;
     }
 
-    .lightbox-info h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      color: var(--primary-color); /* 彈窗標題使用主色橘色 */
-    }
-
-    .lightbox-info p {
-      margin: 0;
-      color: var(--text-muted);
-    }
-
-    /* 關閉按鈕：預設主色橘色 */
     .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: var(--primary-color);
-      color: #ffffff;
-      border: none;
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      font-size: 18px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s ease;
+      top: 16px;
+      right: 16px;
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
     }
+  }
+</style>
 
-    .close-btn:hover {
-      background: var(--primary-hover);
-    }
-  </style>
-</head>
-<body>
-
-  <dialog id="lightbox" class="lightbox" onclick="closeOnBackdropClick(event)">
-    <div class="lightbox-content">
-      <button class="close-btn" onclick="closeLightbox()">&times;</button>
-      <img id="modal-img" class="lightbox-img" src="" alt="放大照片">
-      <div class="lightbox-info">
-        <h3 id="modal-title">標題</h3>
-        <p id="modal-desc">詳細說明內容...</p>
-      </div>
+<dialog id="lightbox" class="lightbox" onclick="closeOnBackdropClick(event)">
+  <div class="lightbox-content">
+    <button class="close-btn" onclick="closeLightbox()">&times;</button>
+    <img id="modal-img" class="lightbox-img" src="" alt="放大照片">
+    <div class="lightbox-info">
+      <h3 id="modal-title">標題</h3>
+      <p id="modal-desc">詳細說明內容...</p>
     </div>
-  </dialog>
+  </div>
+</dialog>
 
-  <script>
-    const lightbox = document.getElementById('lightbox');
-    const modalImg = document.getElementById('modal-img');
-    const modalTitle = document.getElementById('modal-title');
-    const modalDesc = document.getElementById('modal-desc');
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const modalImg = document.getElementById('modal-img');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDesc = document.getElementById('modal-desc');
 
-    function openLightbox(imgUrl, title, desc) {
-      modalImg.src = imgUrl;
-      modalTitle.textContent = title || '';
-      modalDesc.textContent = desc || '';
-      lightbox.showModal();
-    }
+  function openLightbox(imgUrl, title, desc) {
+    modalImg.src = imgUrl;
+    modalTitle.textContent = title || '';
+    modalDesc.textContent = desc || '';
+    lightbox.showModal();
+  }
 
-    function closeLightbox() {
+  function closeLightbox() {
+    lightbox.close();
+  }
+
+  function closeOnBackdropClick(event) {
+    if (event.target === lightbox) {
       lightbox.close();
     }
-
-    function closeOnBackdropClick(event) {
-      if (event.target === lightbox) {
-        lightbox.close();
-      }
-    }
-  </script>
-
-</body>
-</html>
+  }
+</script>

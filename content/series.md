@@ -39,7 +39,8 @@ title = 'series'
 2026-07-27 [《台灣磁磚系譜學》](/posts/tile)  
 2026-07-27 [《暢銷書潛規則》](/posts/top-book)  
 2026-07-30 [《金剛經》教我的人生智慧](/posts/diamond-sutra)  
-2026-08-03 [《納瓦爾寶典》](/posts/naval)
+2026-08-03 [《納瓦爾寶典》](/posts/naval)  
+2026-08-05 [《亞洲人物史》](/posts/asia-great-figures)
 
 ---
 
@@ -58,6 +59,23 @@ title = 'series'
 <br>
 
 - [蘿蔔書單🥕](/posts/carrot-book)
+
+---
+
+### 遊記
+
+2026-07-15 [潭雅神壯遊](/posts/tanyashen)  
+2026-07-21 [臺史博＆奇美之旅](/posts/tainan)  
+2026-08-03 [雲嘉二日遊（一）](/posts/yunlin)  
+2026-08-03 [雲嘉二日遊（二）](/posts/yunlin1)
+
+---
+
+### 相簿
+
+[蘿蔔圖鑑](/posts/carrot-gallery)  
+[大蘿蔔圖鑑](/posts/carrot-gallery-big)  
+[各種蘿蔔](/posts/carrot-gallery1)
 
 ---
 
