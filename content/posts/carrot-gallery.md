@@ -12,19 +12,41 @@ IKEA 買的小蘿蔔，這是他的相簿。
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot2.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot7.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/joke1.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot29.jpg" />
 </div>
 
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
 <script>
-
-  // 自動幫 .gallery 裡面的圖片加上點擊放大效果
+document.addEventListener("DOMContentLoaded", function() {
+  // 1. 自動幫 .gallery 裡面的圖片包裹 <a> 標籤，並設定 Fancybox 屬性
   document.querySelectorAll('.gallery img').forEach(img => {
     const a = document.createElement('a');
     a.dataset.fancybox = "gallery";
     a.href = img.src;
+    
+    // 讓包裹圖片的 <a> 標籤不會影響 CSS Grid 排版
+    a.style.display = "block";
+    a.style.width = "100%";
+    a.style.height = "100%";
+
     img.parentNode.insertBefore(a, img);
     a.appendChild(img);
   });
-  Fancybox.bind('[data-fancybox="gallery"]', {});
+
+  // 2. 綁定 Fancybox
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    // 這裡可以自訂 Fancybox 的放大效果，例如放大後自動填滿螢幕
+    Images: {
+      Panzoom: {
+        maxScale: 2,
+      },
+    },
+    Toolbar: {
+      display: {
+        left: ["infobar"],
+        middle: [],
+        right: ["slideshow", "fullscreen", "thumbs", "close"],
+      },
+    },
+  });
+});
 </script>

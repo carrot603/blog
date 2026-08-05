@@ -3,7 +3,7 @@ date = '2026-08-05T05:01:00+08:00'
 draft = false
 title = '《亞洲人物史》'
 +++
-<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/asia.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/asia.jpg">
 
 聯經出版[《亞洲人物史》](https://events.linkingbooks.com.tw/LNB/top/2025/great-figures_in-the-history-of-asia/index.html)，2024 年就下單了，享有超早鳥 64 折，陸陸續續等到今天，書終於出齊了！
 

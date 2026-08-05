@@ -59,24 +59,45 @@ title = '各種蘿蔔'
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
 <script>
-  // 自動幫 .gallery 裡面的圖片加上 Fancybox 與說明文字
+document.addEventListener("DOMContentLoaded", function() {
+  // 1. 自動幫 .gallery 裡面的圖片包裹 <a> 標籤，並設定 Fancybox 屬性與 Caption
   document.querySelectorAll('.gallery img').forEach(img => {
     const a = document.createElement('a');
     a.dataset.fancybox = "gallery";
     a.href = img.src;
 
-    // 🌟 關鍵：優先抓取 data-desc，沒有就抓 alt，都沒有就留空
-    const captionText = img.dataset.desc || img.alt || "";
+    // 關鍵修改：自動擷取圖片的 alt 屬性作為 Fancybox 的說明文字
+    // 如果圖片有 alt 或是 title，就帶入 caption
+    const captionText = img.getAttribute('alt') || img.getAttribute('title') || '';
     if (captionText) {
       a.dataset.caption = captionText;
     }
+    
+    // 讓包裹圖片的 <a> 標籤不會影響 CSS Grid 排版
+    a.style.display = "block";
+    a.style.width = "100%";
+    a.style.height = "100%";
 
     img.parentNode.insertBefore(a, img);
     a.appendChild(img);
   });
 
-  // 初始化 Fancybox
-  Fancybox.bind('[data-fancybox="gallery"]', {});
+  // 2. 綁定 Fancybox
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    Images: {
+      Panzoom: {
+        maxScale: 2,
+      },
+    },
+    Toolbar: {
+      display: {
+        left: ["infobar"],
+        middle: [],
+        right: ["slideshow", "fullscreen", "thumbs", "close"],
+      },
+    },
+  });
+});
 </script>
 
 <style>
@@ -87,6 +108,6 @@ title = '各種蘿蔔'
     text-align: center;
     padding: 12px 20px !important;
     background: rgba(0, 0, 0, 0.75) !important; /* 半透明黑底 */
-    border-top: 3px solid #ff8a3d; /* 搭配你最愛的莫蘭迪橘邊條 */
+    border-top: 3px solid #ff8a3d; /* 莫蘭迪橘邊條 */
   }
 </style>

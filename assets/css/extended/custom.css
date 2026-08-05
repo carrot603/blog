@@ -69,7 +69,7 @@
 
 .newspaper-figure {
     float: left;
-    width: 60%;             /* 佔據文章寬度的 40% */
+    width: 60%;             /* 佔據文章寬度的 60% */
     max-width: 400px;       /* 電腦版大螢幕上不超過 400px */
     min-width: 220px;       /* 手機版不縮到太小 */
     margin: 10px 24px 10px 0; /* 調整外距，特別讓右邊留空給文字呼吸 (上 右 下 左) */
@@ -85,9 +85,19 @@
     margin: 10px 0 10px 24px; /* 讓左邊留空給文字呼吸 */
 }
 
+/* 手機版報紙圖片繞排修正：螢幕太窄時自動改為滿寬，避免文字擠成一細條 */
+@media (max-width: 600px) {
+    .newspaper-figure, .newspaper-figure.align-right {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
 /* 圖片本體設定 */
 .newspaper-figure img {
-    width: 100%;            
+    width: 100%;          
     height: auto;
     display: block;
     border-radius: 2px;
@@ -107,35 +117,99 @@
     clear: both;
 }
 
-/* 相簿容器：設定 3 欄網格 */
+/* ================= 相簿容器 (Gallery) ================= */
+
+/* ================= 相簿容器 (Gallery) ================= */
+
+/* 電腦版：預設 3 欄自適應 */
 .gallery {
-  display: grid !important;
-  grid-template-columns: repeat(3, 200px) !important;
-  gap: 12px !important;
-  justify-content: start;
-  margin: 20px 0;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px !important;
+    margin: 20px 0;
+}
+
+/* 📱 手機版：自動切換為一列 2 張 */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+    }
 }
 
 /* 取消 Hugo 自動產生的 <p> 段落預設樣式 */
 .gallery p {
-  margin: 0 !important;
-  padding: 0 !important;
-  display: contents; /* 關鍵：讓 <p> 標籤隱形，子元素直接參與外層 Grid 佈局 */
+    margin: 0 !important;
+    padding: 0 !important;
+    display: contents; /* 讓 <p> 標籤不影響外層 Grid 佈局 */
 }
 
-/* 照片格式設定：強制 150x150 正方形 */
+/* 讓 Fancybox 動態產生的 <a> 標籤填滿 Grid 格子 */
+.gallery a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* 照片格式設定：自動填滿格子與維持 1:1 正方形 */
 .gallery img {
-  width: 200px !important;
-  height: 200px !important;
-  object-fit: cover !important;
-  border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-  display: block;
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    border-radius: 8px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    display: block;
 }
 
-/* 滑鼠懸停效果 */
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+/* 滑鼠懸停效果 (針對包裹後的圖片) */
+.gallery a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= 放大填滿螢幕 (Lightbox Modal) ================= */
+
+/* 背景遮罩 */
+.lightbox-modal {
+    display: none; /* 預設隱藏 */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* 半透明黑背景 */
+    backdrop-filter: blur(5px); /* 背景高斯模糊效果 */
+    justify-content: center;
+    align-items: center;
+}
+
+/* 顯示時開啓 Flex */
+.lightbox-modal.active {
+    display: flex;
+}
+
+/* 放大後的照片：自動依螢幕比例填滿（不變形） */
+.lightbox-modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain; /* 完整顯示整張照片，保持長寬比 */
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 關閉按鈕 */
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
 }
