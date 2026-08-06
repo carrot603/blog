@@ -11,9 +11,9 @@ title = '兒時照片'
 
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/004.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
-<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_0007.jpg.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_0007.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
-<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_0010.jpg.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_0010.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
 >我跟弟弟。
 

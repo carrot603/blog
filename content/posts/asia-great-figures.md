@@ -5,7 +5,7 @@ title = '《亞洲人物史》'
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/asia.jpg">
 
-聯經出版[《亞洲人物史》](https://events.linkingbooks.com.tw/LNB/top/2025/great-figures_in-the-history-of-asia/index.html)，2024 年就下單了，享有超早鳥 64 折，陸陸續續等到今天，書終於出齊了！
+聯經出版[《亞洲人物史》](https://events.linkingbooks.com.tw/LNB/top/2025/great-figures_in-the-history-of-asia/index.html)，2025 年就下單了，享有超早鳥 64 折，陸陸續續等到今天，書終於出齊了！
 
 這套鉅著是日本[集英社](https://lp.shueisha.co.jp/great-figures_in-the-history-of-asia/)創社 95 週年紀念的企劃，封面由《JoJo的奇妙冒險》創作者荒木飛呂彥繪製，雖然我沒看過，但感覺就很酷！
 
