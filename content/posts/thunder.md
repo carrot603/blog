@@ -23,7 +23,9 @@ title = '雷霆儀隊'
 
 >我與中提琴（？
 
-<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/thunder2.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/thunder2.jpg">
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/thunder10.jpg">
 
 >謹此紀念國防教室。
 

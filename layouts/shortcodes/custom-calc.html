@@ -1,0 +1,125 @@
+<div class="custom-calc-card">
+  <div class="calc-header">
+    <h3>解套計算機</h3>
+    <p class="calc-formula">計算公式：<code>[ 100 / (100 - x) - 1 ] &times; 100%</code></p>
+  </div>
+
+  <div class="calc-body">
+    <div class="input-group">
+      <label for="input-x">賠了 ( x ) ％：</label>
+      <input type="number" id="input-x" placeholder="請輸入 x" value="20" oninput="runCustomCalc()" />
+    </div>
+
+    <hr class="calc-divider" />
+
+    <div class="result-group">
+      <span>計算結果：</span>
+      <div class="result-display">
+        <span id="calc-result" class="result-value">25</span>
+        <span class="percent-symbol">%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* 樣式自動適應 PaperMod 暗黑 / 明亮模式 */
+.custom-calc-card {
+  background-color: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 450px;
+}
+
+.calc-header h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+
+.calc-formula {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.input-group input {
+  width: 140px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background-color: var(--theme);
+  color: var(--primary);
+  font-size: 1rem;
+  outline: none;
+  text-align: right;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6;
+}
+
+.calc-divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 15px 0;
+}
+
+.result-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.result-value {
+  color: #3b82f6; /* 高亮顯示結果 */
+  font-size: 1.4rem;
+}
+</style>
+
+<script>
+function runCustomCalc() {
+  const rawInput = document.getElementById('input-x').value;
+  const x = parseFloat(rawInput);
+
+  const resultElement = document.getElementById('calc-result');
+
+  // 防呆：未輸入數字或 x 等於 100 時的處理
+  if (isNaN(x)) {
+    resultElement.innerText = '0';
+    return;
+  }
+  
+  if (x === 100) {
+    resultElement.innerText = '∞'; // 分母為 0 時顯示無限大符號
+    return;
+  }
+
+  // 1. 公式計算：(100 / (100 - x) - 1) * 100
+  const result = ((100 / (100 - x)) - 1) * 100;
+
+  // 2. 顯示結果（小數最多保留 2 位，整數不顯示小數點）
+  resultElement.innerText = Number.isInteger(result) ? result : result.toFixed(2);
+}
+
+// 頁面載入時先執行一次初始化計算
+document.addEventListener('DOMContentLoaded', runCustomCalc);
+</script>

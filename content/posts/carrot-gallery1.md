@@ -18,6 +18,9 @@ title = '各種蘿蔔'
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20241204.jpg" alt="2024-12-04<br>捷運上的廣告，上面有白蘿蔔。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20240930.jpg" alt="2024-09-30<br>家政課做蘿蔔披薩。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20240921.jpg" alt="2024-09-21<br>湊滿夾娃娃機的蘿蔔們，幾乎都保夾……">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot35.jpg" alt="2024-09-15<br>截圖自電子書。">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot37.jpg" alt="2024-09-07<br>截圖自電子書。">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot36.jpg" alt="2024-09-06<br>截圖自電子書。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20240901.jpg" alt="2024-09-01<br>去酒廠參觀。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20240819.jpg" alt="2024-08-19<br>蘿旋麵包。">  
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20240818.jpg" alt="2024-08-18<br>紅蘿蔔蛋糕。">
@@ -52,6 +55,7 @@ title = '各種蘿蔔'
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20230110.jpg" alt="2023-01-10<br>第一次穿蘿蔔外套。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20221105.jpg" alt="2022-11-05<br>目前找到大蘿蔔的最早照片。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20221104.jpg" alt="2022-11-04<br>大墩文化中心手作課程海報。">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot34.jpg" alt="2013-09-14<br>抓別人的圖，下載照片居然還附拍攝日期。早知道就多買三十根小蘿蔔！">
 
 </div>
 
