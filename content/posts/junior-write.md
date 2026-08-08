@@ -72,6 +72,8 @@ title = '國中作文'
 
 ---
 
+延伸閱讀：[高中作文](/posts/high-school-write)
+
 <style>
   /* 目錄的極簡樣式 */
   #custom-toc {

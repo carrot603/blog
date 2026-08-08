@@ -15,6 +15,12 @@ title = '兒時照片'
 
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_0010.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/007.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/008.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/009.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
 >我跟弟弟。
 
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/003.jpg" style="width: 75%; max-width: 100%; height: auto;">
@@ -28,3 +34,7 @@ title = '兒時照片'
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_2803.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
 >國小弦樂表演，氣球是爸爸的。
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/006.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
+>在 [IKEA](/posts/carrot-gallery) 亂搞！

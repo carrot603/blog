@@ -61,7 +61,11 @@ Why going to Taipei is such important? It not only symbols my studies, but also 
 
 有很多中式英文，我連一面都沒填滿，還好學測時寫了大概一面半。閱讀能力還行，但英文寫作，我完全沒有頭緒！只能硬湊有的沒的片語，用一些老套介係詞，什麼 not only... but also... 之類的。
 
-現在應該也沒進步多少啦！要我用英文寫 blog 也寫不出來……
+現在應該也沒進步多少啦！要我用[英文](/posts/toeic)寫 blog 也寫不出來……
+
+---
+
+延伸閱讀：[國中作文](/posts/junior-write)
 
 <style>
   /* 目錄的極簡樣式 */

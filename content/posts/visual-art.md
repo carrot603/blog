@@ -11,7 +11,7 @@ title = '美術作品'
 
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_20260725_103231_774.jpg" style="width: 50%; max-width: 100%; height: auto;">
 
->幼兒園每週都要假日分享，每當假日就讓爸媽頭痛（X 這是小時候畫的蘿蔔，小朋友的畫都好抽象（還是只有我？
+>幼兒園每週都要假日分享，每當假日就讓爸媽頭痛（X 這是小時候畫的[蘿蔔](/posts/carrot-gallery)，小朋友的畫都好抽象（還是只有我？
 
 ---
 
