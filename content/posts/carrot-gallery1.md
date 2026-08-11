@@ -6,8 +6,16 @@ title = '各種蘿蔔'
 平時收集到的各種蘿蔔照片。如果您手邊有蘿蔔的美照，歡迎[寄信](/posts/about)給我！
 
 <div class="gallery">
-  <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_20260801_095939_557.jpg" alt="2026-08-01<br>去雲林路上看到的。">
-  <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_20260731_181851_181.jpg" alt="2026-07-31<br>家楷去蒙古買的伴手禮，喝起來像蘿蔔泥。">
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_20260808_110116_344.jpg" alt="2026-08-08<br>IKEA 新產品，這一頁有扁笛，完全致敬小蘿蔔！">
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_20260801_095939_557.jpg" alt="2026-08-01<br>去雲林路上看到的。">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_20260731_181851_181.jpg" alt="2026-07-31<br>家楷去蒙古買的伴手禮，喝起來像蘿蔔泥。">
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-04-16.jpg" alt="2026-04-16<br>忘記誰買的點心，捨不得吃結果壞掉了！">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-03-11.jpg" alt="2026-03-11<br>散步時偶然發現，好想在這邊上學！">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-01-29.jpg" alt="2026-01-29<br>XPark。">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-01-28.jpg" alt="2026-01-28<br>美麗華門口，給小朋友玩的氣球城堡。">
 
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20250606.jpg" alt="2025-06-06<br>Mojo 超巨大蘿蔔到貨。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20250205.jpg" alt="2025-02-05<br>樂高大蘿蔔。">
