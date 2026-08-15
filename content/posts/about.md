@@ -7,6 +7,8 @@ title = '關於'
 💡本頁面正式掛上主選單，日後將不定期更新。
 {{< /note >}}
 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
 我是江俊佑，生於臺灣臺中市，今年十九歲。興趣是彈鋼琴、閱讀跟探索世界。我每天都會出門散步、運動，讀幾頁[《追憶似水年華》](/posts/proust)。
    
 在高中的時候參加[儀隊](https://www.instagram.com/thunder_living/)跟[弦樂社](https://www.instagram.com/tcfshso_3rd/)，涉略滿廣泛的（？
@@ -25,11 +27,6 @@ title = '關於'
 ```text
 https://carrot.tw/index.xml
 ```
----
-
-避免大家不知道我長怎樣，先放一張獨照在這👀
-
-![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg)
 
 ---
 
