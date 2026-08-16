@@ -17,6 +17,7 @@ title = '各種蘿蔔'
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-01-29.jpg" alt="2026-01-29<br>XPark。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-01-28.jpg" alt="2026-01-28<br>美麗華門口，給小朋友玩的氣球城堡。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-01-18.jpg" alt="2026-01-18<br>出自《圖解大人生存指南》P. 173">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2025-11-29 22.06.25.jpg" alt="2025-11-29<br>阿公做的給空氣鳳梨的架子，做成蘿蔔簡直神來一筆！">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20250606.jpg" alt="2025-06-06<br>Mojo 超巨大蘿蔔到貨。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20250205.jpg" alt="2025-02-05<br>樂高大蘿蔔。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/20250205-1.jpg" alt="2025-02-05<br>某餐廳的噴瓶。">

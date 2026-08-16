@@ -56,6 +56,10 @@ title = '/now'
 | <span class="no-run">24</span> | <span class="no-run">25</span> | <span class="no-run">26</span> | <span class="no-run">27</span> | <span class="no-run">28</span> | <span class="no-run">29</span> | <span class="no-run">30</span> |
 | <span class="no-run">31</span> | | | | | | |
 
+---
+
+**版權聲明**：本站文章採用 [創用 CC 姓名標示-非商業性 4.0 國際 授權條款 (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant) 進行授權。轉載或引用請註明原創作者與出處，且不得用於商業用途。
+
 <style>
   /* 1. 強制解除主題可能加在表格外層的捲軸限制 */
   .post-content table, 

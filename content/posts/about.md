@@ -44,3 +44,5 @@ https://carrot.tw/index.xml
 {{< day >}}
 
 ---
+
+**版權聲明**：本站文章採用 [創用 CC 姓名標示-非商業性 4.0 國際 授權條款 (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant) 進行授權。轉載或引用請註明原創作者與出處，且不得用於商業用途。

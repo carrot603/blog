@@ -39,7 +39,7 @@ title = '臺北走透透'
 |           安和路           |           |
 | [光復南北路](/posts/guangfu) | 13th Ave. |
 |           基隆路           | 14th Ave. |
-|           松仁路           |           |
+|  [松仁路](/posts/songren)  |           |
 
 # 東西向主要道路
 
