@@ -7,6 +7,7 @@ title = '各種蘿蔔'
 
 <div class="gallery">
 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-17-2.jpg" alt="2026-08-17<br>幫午餐加料——最愛吃蘿蔔了！">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_20260808_110116_344.jpg" alt="2026-08-08<br>IKEA 新產品，這一頁有扁笛，完全致敬小蘿蔔！">
 
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_20260801_095939_557.jpg" alt="2026-08-01<br>去雲林路上看到的。">
