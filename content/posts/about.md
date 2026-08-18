@@ -23,6 +23,8 @@ title = '關於'
 
 近況請看 [/now](/now)，[https://nownownow.com/](https://nownownow.com/) 上也有我的[頁面](https://nownownow.com/p/01LE)。
 
+我畫了一個酷酷的圖譜，[點此前往](/graph)！
+
 想訂閱我可以到 https://carrot.tw/index.xml （點擊下方複製）：
 ```text
 https://carrot.tw/index.xml
@@ -35,7 +37,8 @@ https://carrot.tw/index.xml
 [數位生活](/posts/digital-life)  
 [網站大事記](/posts/blog-milestone)  
 [《金剛經》教我的人生智慧](/posts/diamond-sutra)  
-[核心思想](/posts/core-idea)
+[核心思想](/posts/core-idea)  
+[/when-i-die](/posts/when-i-die)
 
 ---
 
