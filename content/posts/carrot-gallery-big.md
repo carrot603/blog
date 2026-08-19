@@ -7,6 +7,8 @@ Nicopy 的大蘿蔔，這是他的相簿。
 
 <div class="gallery"> 
 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-09.jpg" alt="2026-08-09<br>搬家前的大蘿蔔。">
+
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot31.jpg" alt="以前從他的官網存下來的，現在網站已經找不到了！我保留在這裡，廠商不會來告我吧？">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot32.jpg" alt="我沒有拿來營利喔！">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot33.jpg" alt="大蘿蔔頭像。">
