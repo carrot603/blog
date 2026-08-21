@@ -1,11 +1,11 @@
 ---
 created: 2026-08-22T06:26:46+08:00
-modified: 2026-08-22T06:26:55+08:00
+modified: 2026-08-22T06:30:03+08:00
 title: Hardoff
 ---
 
 {{< note >}}
-註： 桌機搬到[臺北](/posts/taipei)了，本文是靠[GitJournal](/posts/2026-08-10-17-47-44/)純手刻！若照片跑不出來，不是你的問題！
+註： 桌機搬到[臺北](/posts/taipei)了，本文是靠 [GitJournal](/posts/2026-08-10-17-47-44/) 純手刻！若照片跑不出來，不是你的問題！
 {{< /note >}}
 
 ![Image](./61479aa1e10867cdf8ac880c6da0d0ed.jpg) 
