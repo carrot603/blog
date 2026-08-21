@@ -1,9 +1,13 @@
 ---
 created: 2026-08-22T06:00:37+08:00
-modified: 2026-08-22T06:09:51+08:00
+modified: 2026-08-22T06:13:26+08:00
 ---
 
 # Hardoff
+
+{{< note >}}
+註： 桌機搬到[臺北](/posts/taipei)，本文是靠[Git Journal]
+{{< /note >}}
 
 ![Image](./61479aa1e10867cdf8ac880c6da0d0ed.jpg) 
 
