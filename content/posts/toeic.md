@@ -5,6 +5,10 @@ title = '多益經驗談'
 +++
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/toeic.jpg)
 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/toeic.jpg">
+
+>附上成績分析。
+
 7/26（日）的時候，我完成了人生第一次的 Listening and Reading Test，成績終於在今天公佈了！
 
 以下分享一些注意事項跟心法，供大家參考：

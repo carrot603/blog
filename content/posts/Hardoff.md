@@ -3,12 +3,7 @@ created: 2026-08-22T06:26:46+08:00
 modified: 2026-08-22T06:30:03+08:00
 title: Hardoff
 ---
-
-{{< note >}}
-註： 桌機搬到[臺北](/posts/taipei)了，本文是靠 [GitJournal](/posts/2026-08-10-17-47-44/) 純手刻！若照片跑不出來，不是你的問題！
-{{< /note >}}
-
-![Image](./61479aa1e10867cdf8ac880c6da0d0ed.jpg) 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/hardoff.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
 昨天下午我去了 Hardoff，把家裡的~~廢物~~用不到的物品拿去賣掉。
 
@@ -18,10 +13,10 @@ title: Hardoff
 
 ---
 
-![Image](./9dba4cac96f4e7725a3967b71b0f5607.jpg) 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/hardoff-2.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
 >一把狀況看起來還不錯的小提琴，居然只要 $1500；但音色我就無法肯定了，他沒有弓讓我試拉。
 
-![Image](./bd16e19106da406cd2c7fd9ca258d1d7.jpg) 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/hardoff-1.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
 >玩具區的小鋼琴。當然這邊有很多真的 Keyboard，貝斯的數量更是驚人！令人懷疑臺中是不是有樂器拋售潮（X
