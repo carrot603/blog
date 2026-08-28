@@ -12,6 +12,26 @@ IKEA 買的小蘿蔔，這是他的相簿。
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot2.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot7.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/joke1.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot29.jpg" />
 </div>
 
+---
+
+{{< note >}}
+8/28 更新：以下整理舊檔案中，有關小蘿蔔的照片。這些是我以前從網路上存下來的，以圖搜圖都找不到，看來早已堙滅在歲月當中了！若有版權問題請來信告知！
+{{< /note >}}
+
+<div class="gallery"> 
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot38.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot39.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot40.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot41.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot43.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot44.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot45.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot42.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot46.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot47.jpg" alt="補一張紅蘿蔔的好朋友——花椰菜！"/>
+</div>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 

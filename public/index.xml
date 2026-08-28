@@ -2252,6 +2252,22 @@ document.addEventListener("DOMContentLoaded", function() {
 &lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot22.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot21.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot20.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot19.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot18.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot17.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot16.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot15.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot14.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot13.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot12.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot11.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot10.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot9.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot8.jpg" />
 &lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot2.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot7.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/joke1.jpg" />&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot29.jpg" />&lt;/p>
 &lt;/div>
+&lt;hr>
+&lt;div class="note-box">
+8/28 更新：以下整理舊檔案中，有關小蘿蔔的照片。這些是我以前從網路上存下來的，以圖搜圖都找不到，看來早已堙滅在歲月當中了！若有版權問題請來信告知！
+&lt;/div>
+&lt;div class="gallery">
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot38.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot39.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot40.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot41.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot43.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot44.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot45.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot42.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot46.jpg" />
+&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot47.jpg" alt="補一張紅蘿蔔的好朋友——花椰菜！"/>
+&lt;/div>
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 &lt;script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js">&lt;/script>
 &lt;script>
@@ -2290,6 +2306,25 @@ right: ["slideshow", "fullscreen", "thumbs", "close"],
 <p><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot28.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot27.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot24.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot23.jpg" />
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot22.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot21.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot20.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot19.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot18.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot17.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot16.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot15.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot14.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot13.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot12.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot11.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot10.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot9.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot8.jpg" />
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot2.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot7.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/joke1.jpg" /><img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot29.jpg" /></p>
+</div>
+<hr>
+<div class="note-box">
+    
+          8/28 更新：以下整理舊檔案中，有關小蘿蔔的照片。這些是我以前從網路上存下來的，以圖搜圖都找不到，看來早已堙滅在歲月當中了！若有版權問題請來信告知！
+
+</div>
+
+<div class="gallery"> 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot38.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot39.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot40.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot41.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot43.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot44.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot45.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot42.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot46.jpg" />
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/carrot47.jpg" alt="補一張紅蘿蔔的好朋友——花椰菜！"/>
 </div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
