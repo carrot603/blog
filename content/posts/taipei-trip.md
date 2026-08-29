@@ -50,7 +50,7 @@ title = '臺北走透透'
 |   和平東西路    | 1st Blvd.  |
 |   愛國東西路    |            |
 |    信義路     | 2nd Blvd.  |
-| 凱達格蘭大道↔仁愛路 | 3rd Blvd.  |
+| [仁愛路↔凱達格蘭大道](/posts/renai) | 3rd Blvd.  |
 |   忠孝東西路    | 4th Blvd.  |
 |    八德路     |            |
 |    市民大道    | 5th Blvd.  |
