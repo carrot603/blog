@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 29 Aug 2026 13:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>臺北走透透——仁愛路↔凱達格蘭大道</title><link>http://localhost:1313/posts/renai/</link><pubDate>Sat, 29 Aug 2026 13:00:00 +0800</pubDate><guid>http://localhost:1313/posts/renai/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-29-9.jpg">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 29 Aug 2026 19:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>發現內聲部</title><link>http://localhost:1313/posts/inner-voice/</link><pubDate>Sat, 29 Aug 2026 19:00:00 +0800</pubDate><guid>http://localhost:1313/posts/inner-voice/</guid><description>&lt;p>這是本部落格第一篇，涉及專業音樂知識的文章。本來只想分享生活，但既然這是我自己的網站，那我想放什麼，都是我的自由。我的 RSS Feed 裡面也有不少專門內容，有很 geek 的也有專業畫家，就算看不懂還是會瀏覽過去。&lt;/p></description><content:encoded><![CDATA[<p>這是本部落格第一篇，涉及專業音樂知識的文章。本來只想分享生活，但既然這是我自己的網站，那我想放什麼，都是我的自由。我的 RSS Feed 裡面也有不少專門內容，有很 geek 的也有專業畫家，就算看不懂還是會瀏覽過去。</p>
+<p>以下講解一些有關鋼琴的樂理，希望各位喜歡！</p>
+<hr>
+<p>下午我在練琴時突然想到，哈農的<a href="https://www.youtube.com/watch?v=seA0s6bJYg0">終止式</a>和弦，除了最外聲部，還有裡面的旋律存在：</p>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-29-11.jpg">
+<blockquote>
+<p>註：因為最一開始是在 d 小調上發現，所以舉例沿用。這裡只寫出右手的音。</p></blockquote>
+<p>所謂<strong>外聲部</strong>，是指最高跟最低的音。前者頻率高容易被聽到；後者飽滿有穿透力，是辨識度最高的兩個聲部。而<strong>內聲部</strong>通常用來襯托和聲，給予<a href="https://www.youtube.com/watch?v=I0y2LY4sPZA">和弦</a>不同的色彩。</p>
+<p><strong>和弦</strong>的定義是：三個音以上才算和弦。而當中每個音的大小聲的比例調配，端看演奏者想要什麼音色而異。</p>
+<p>要突出內聲部，是一件相當困難的事情。因為音符擠在裡面，不容易被聽到，此時演奏者就要分別調整每個指尖下去的力量，同時確保聲音還是好聽的。</p>
+<p>左邊是一般的版本，也可以說是預設值，因為高音天生就特別響亮。旋律是 <code>D</code> <code>D</code> <code>C♯</code> <code>D</code>，只在兩個音之間游移。</p>
+<p>而右邊的內聲部旋律，<code>B♭</code> <code>A</code> <code>C♯</code> <code>D</code>，<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>半音配上戲劇性的大三度，這樣比起單調的外聲部，還要立體多了！不知道術科考試能不能這樣彈？</p>
+<hr>
+<p>關於內聲部，我最近在練蕭邦的 Op. 10 No. 2，聽到了各種詮釋。</p>
+<p>Dmitry Shishkin 在 2015 年蕭邦大賽：</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/of_afnCe4IE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<blockquote>
+<p>要是我練得好，希望彈得像這樣！</p></blockquote>
+<hr>
+<p><a href="https://shop.yunchanlimofficial.com/">任奫燦</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> 2024 年的蕭邦練習曲專輯：</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/U_wNABPosd4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<blockquote>
+<p>很夭壽的速度！留意 0 : 13 的內聲部旋律。</p></blockquote>
+<hr>
+<p>Julian Zhi Chao Jia 在 2010 年蕭邦大賽：</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/pVc9g4Cqnrw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<blockquote>
+<p>0 : 13 有長句內聲部旋律。其實整首都充滿了內聲部。</p></blockquote>
+<hr>
+<p>烏克蘭鋼琴家 Vitalij Margulis 的詮釋：</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rmayKaD52LU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<blockquote>
+<p>內聲部的極致表現！還有踏瓣跟 rubato，考試絕對不能這樣！</p></blockquote>
+<hr>
+<p>同場加映：Backhaus 的蕭邦，話說我有他的全套貝多芬奏鳴曲！記得聽到最後喔！</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zjdeo6ELJBw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>本來直接寫 Bb 跟 C#，還好想到 <a href="https://wiwi.blog/blog/sharp-sign">Wiwi</a>，才有漂亮的升降記號可以用！&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>「<strong>奫</strong>」讀 <strong>ㄩㄣ</strong>（yūn)。他的網站很有質感耶！&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>臺北走透透——仁愛路↔凱達格蘭大道</title><link>http://localhost:1313/posts/renai/</link><pubDate>Sat, 29 Aug 2026 13:00:00 +0800</pubDate><guid>http://localhost:1313/posts/renai/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-29-9.jpg">
 &lt;p>時間統計如下：&lt;/p>
 &lt;table>
 &lt;thead>
@@ -5874,6 +5936,10 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
 
 
 
@@ -9467,7 +9533,7 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-08-29\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-08-29\n✍️ 狀態：有 3 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
@@ -13983,6 +14049,10 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
 
 
 
@@ -17576,7 +17646,7 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-08-29\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-08-29\n✍️ 狀態：有 3 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
