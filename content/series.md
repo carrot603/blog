@@ -54,7 +54,8 @@ title = 'series'
 2026-08-03 [《納瓦爾寶典》](/posts/naval)  
 2026-08-05 [《亞洲人物史》](/posts/asia-great-figures)  
 2026-08-21 [《莊子內篇解義》朝三暮四的真正含意](/posts/zhuangzi)  
-2026-08-25 [《人性箴言》](/posts/rochefoucauld)
+2026-08-25 [《人性箴言》](/posts/rochefoucauld)  
+2026-08-31 [《即使明日死去也不後悔》](/posts/die)
 
 ---
 
