@@ -4,7 +4,7 @@ draft = false
 title = '/now'
 +++
 {{< note >}}
-💡 這是我的 /now 頁面，最後更新於：2026-07-30。
+💡 這是我的 /now 頁面，最後更新於：2026-08-31。
 
 本頁面同時投稿到 https://nownownow.com/
 
@@ -17,44 +17,37 @@ title = '/now'
 ---
 
 ### 人生的階段
-即將成為[市北](/posts/utaipei-announce)音樂系大一新生🥳
+我是大學生了！
 
 ### 正在讀的書
-- 《莊子》  
-- 《西方哲學史》（羅素）  
-- 《所多瑪和蛾摩拉》  
--  聯經的[《亞洲人物史》](https://events.linkingbooks.com.tw/LNB/top/2025/great-figures_in-the-history-of-asia/index.html)系列
+- [《中國，在世界中形成》](/posts/signed-book)
 
 ### 在練的曲子
-- Beethoven: Piano Concerto No. 1, Op. 15  
-- Rachmaninoff: Prelude Op. 23 No. 5  
-- 音階努力中😬
+- Scarlatti: K. 54
 
 ### 想去哪裡玩
-散步
+[臺北走透透](/posts/taipei-trip)
 
 ### 最近忙什麼
-即將搬到臺北……
+想當 prepper
 
 ---
 
-### 八月計劃
-
-養成跑步習慣  
-在臺北能自給自足
+### 九月計劃
+早睡早起  
+適應大學生活
 
 ---
 
-### 🏃 2026 年 8 月跑步紀錄
+### 🏃 2026 年 9 月跑步紀錄
 
 | 一 | 二 | 三 | 四 | 五 | 六 | 日 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| | | | | | <span class="no-run">1</span> | <span class="no-run">2</span> |
-| <span class="no-run">3</span> | <span class="no-run">4</span> | <span class="no-run">5</span> | <span class="no-run">6</span> | <span class="no-run">7</span> | <span class="no-run">8</span> | <span class="no-run">9</span> |
-| <span class="no-run">10</span> | <span class="no-run">11</span> | <span class="no-run">12</span> | <span class="no-run">13</span> | <span class="no-run">14</span> | <span class="no-run">15</span> | <span class="no-run">16</span> |
-| <span class="no-run">17</span> | <span class="no-run">18</span> | <span class="no-run">19</span> | <span class="no-run">20</span> | <span class="no-run">21</span> | <span class="no-run">22</span> | <span class="no-run">23</span> |
-| <span class="no-run">24</span> | <span class="no-run">25</span> | <span class="no-run">26</span> | <span class="no-run">27</span> | <span class="no-run">28</span> | <span class="no-run">29</span> | <span class="no-run">30</span> |
-| <span class="no-run">31</span> | | | | | | |
+| | <span class="no-run">1</span> | <span class="no-run">2</span> | <span class="no-run">3</span> | <span class="no-run">4</span> | <span class="no-run">5</span> | <span class="no-run">6</span> |
+| <span class="no-run">7</span> | <span class="no-run">8</span> | <span class="no-run">9</span> | <span class="no-run">10</span> | <span class="no-run">11</span> | <span class="no-run">12</span> | <span class="no-run">13</span> |
+| <span class="no-run">14</span> | <span class="no-run">15</span> | <span class="no-run">16</span> | <span class="no-run">17</span> | <span class="no-run">18</span> | <span class="no-run">19</span> | <span class="no-run">20</span> |
+| <span class="no-run">21</span> | <span class="no-run">22</span> | <span class="no-run">23</span> | <span class="no-run">24</span> | <span class="no-run">25</span> | <span class="no-run">26</span> | <span class="no-run">27</span> |
+| <span class="no-run">28</span> | <span class="no-run">29</span> | <span class="no-run">30</span> | | | | |
 
 ---
 
