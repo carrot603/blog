@@ -3,7 +3,7 @@ date = '2026-08-07T15:00:00+08:00'
 draft = false
 title = '多益經驗談'
 +++
-![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/toeic.jpg)
+![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/toeic1.jpg)
 
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/toeic.jpg">
 

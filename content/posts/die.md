@@ -11,6 +11,8 @@ title = '《即使明日死去也不後悔》'
 
 <img src="https://webcdn2.ebook.hyread.com.tw/bookcover/397366978986175810720245928110823.jpg" style="width: 50%; max-width: 100%; height: auto;">
 
+>封面照片引自 [HyRead One](https://one.ebook.hyread.com.tw/searchList.jsp)。
+
 我沒什麼感人肺腑的相遇故事好寫，因此請容許我介紹一本我覺得富有啟發性的書。
 
 ---
