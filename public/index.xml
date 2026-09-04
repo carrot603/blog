@@ -1,4 +1,644 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 04 Sep 2026 21:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>大掃除</title><link>http://localhost:1313/posts/cleaning/</link><pubDate>Fri, 04 Sep 2026 21:00:00 +0800</pubDate><guid>http://localhost:1313/posts/cleaning/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-04.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 05 Sep 2026 05:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>搜尋自己</title><link>http://localhost:1313/posts/search-myself/</link><pubDate>Sat, 05 Sep 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/search-myself/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/search-myself.jpg">
+&lt;h1 id="前言">前言&lt;/h1>
+&lt;p>自從用了 &lt;a href="https://search.google.com/search-console/about">Google Search Console&lt;/a> 之後，三不五時會上去看我網站的&lt;a href="http://localhost:1313/posts/traffic">流量&lt;/a>，好奇是什麼關鍵字會讓我曝光。以下是截至 2026-09-04 的結果：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>熱門查詢項目&lt;/th>
+&lt;th>點擊&lt;/th>
+&lt;th>曝光&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>carrot blog&lt;/td>
+&lt;td>7&lt;/td>
+&lt;td>20&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>carrot&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>19&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>死線已是十天前&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>7&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>findbook 找 書 網&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>5&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>小熊冰淇淋&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>carrots&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>4&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>小熊冰淇淋銅鑼燒&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>carrot替代方案&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&amp;ldquo;阿里不達的人&amp;rdquo;&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>樂天小熊冰淇淋&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>台灣磁磚系譜學&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>巧克豆豆冰銅燒&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>小 蘿蔔&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>wiwi.blog&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>father&amp;rsquo;s day google doodle 2026&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>解放時間&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>carrot78592&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>田邊剛&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>亞洲人物史&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>人物史&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>江俊佑&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>胡萝卜周&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>羅波&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>豐原心鎖橋花之道&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>小紅蘿蔔&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>1&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>除了 &lt;code>carrot&lt;/code> 和 &lt;code>carrot blog&lt;/code>，還有我的本名之外，其餘都不是我自己搜尋的。看來提交索引有極大的幫助！尤其 AI 也會爬我的文，我的部落格的能見度又多上許多。&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/search-myself.jpg">
+<h1 id="前言">前言</h1>
+<p>自從用了 <a href="https://search.google.com/search-console/about">Google Search Console</a> 之後，三不五時會上去看我網站的<a href="/posts/traffic">流量</a>，好奇是什麼關鍵字會讓我曝光。以下是截至 2026-09-04 的結果：</p>
+<table>
+  <thead>
+      <tr>
+          <th>熱門查詢項目</th>
+          <th>點擊</th>
+          <th>曝光</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>carrot blog</td>
+          <td>7</td>
+          <td>20</td>
+      </tr>
+      <tr>
+          <td>carrot</td>
+          <td>0</td>
+          <td>19</td>
+      </tr>
+      <tr>
+          <td>死線已是十天前</td>
+          <td>0</td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>findbook 找 書 網</td>
+          <td>0</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>小熊冰淇淋</td>
+          <td>0</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>carrots</td>
+          <td>0</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>小熊冰淇淋銅鑼燒</td>
+          <td>0</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>carrot替代方案</td>
+          <td>0</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>&ldquo;阿里不達的人&rdquo;</td>
+          <td>0</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>樂天小熊冰淇淋</td>
+          <td>0</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>台灣磁磚系譜學</td>
+          <td>0</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>巧克豆豆冰銅燒</td>
+          <td>0</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>小 蘿蔔</td>
+          <td>0</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>wiwi.blog</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>father&rsquo;s day google doodle 2026</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>解放時間</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>carrot78592</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>田邊剛</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>亞洲人物史</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>人物史</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>江俊佑</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>胡萝卜周</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>羅波</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>豐原心鎖橋花之道</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>小紅蘿蔔</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<p>除了 <code>carrot</code> 和 <code>carrot blog</code>，還有我的本名之外，其餘都不是我自己搜尋的。看來提交索引有極大的幫助！尤其 AI 也會爬我的文，我的部落格的能見度又多上許多。</p>
+<p>但我在 Google 搜尋<code>江俊佑 blog</code>，Gemini 給我的回覆是：</p>
+<blockquote>
+<p>江俊佑的個人部落格為 JunYou&rsquo;s Blog。部落格主題網站架設：包含網頁空間、WordPress 等架站教學與技巧。程式設計：網頁前端、資料庫（如 Firebase、Firestore）應用。數位科技：內網穿透（如 NPS）、3D 多媒體、Arduino 與遊戲設計等技術分享。如果您想找特定類型的文章或某個教學，可以告訴我關鍵字，我來幫您進一步確認。……AI 可能會出錯，請查證回覆內容 。</p></blockquote>
+<p>確實出錯了，而且錯得離譜！那個部落格（<a href="https://junyou.tw/">https://junyou.tw/</a>）2021 年之後就沒更新了！他叫陳俊佑。我也不是網站工程師。話說我現在附上他的連結，是不是反而會增加他的曝光度啊？</p>
+<p>如果想找我，最快的方法就是輸入 <code>carrot.tw</code>，可以直接當網址，也能是關鍵字。我剛查了，Gemeni 吐出來的結果確實是對的。</p>
+<hr>
+<p>我想全面搜索自己（是有多自戀？）我選了各大搜尋引擎，並使用以下關鍵字查詢：</p>
+<pre tabindex="0"><code>江俊佑
+江俊佑 carrot
+江俊佑 now
+江俊佑 blog
+carrot blog
+carrot
+</code></pre><p>當然在每個人的裝置，輸出的搜尋結果都不一樣。這只是我的測試，僅供參考！</p>
+<hr>
+<div id="custom-toc"></div>
+<hr>
+<h2 id="google">Google</h2>
+<p><strong>江俊佑</strong></p>
+<ul>
+<li>20: 西貝流士</li>
+<li>37: <a href="/now">/now</a></li>
+</ul>
+<p><strong>江俊佑 carrot</strong></p>
+<p>前五名依序是：</p>
+<ul>
+<li>🥇Instagram <a href="https://www.instagram.com/carrot.603/">carrot.603 - 江俊佑</a></li>
+<li>🥈/now</li>
+<li>🥉Facebook <a href="https://www.facebook.com/carrot603/">江俊佑(@carrot603)</a></li>
+<li>4: Instagram <a href="https://www.instagram.com/p/CxSsyjmSWxX/?img_index=7">儀隊的貼文</a></li>
+<li>5: <a href="https://nownownow.com/TW">NowNowNow 的臺灣頁面</a></li>
+</ul>
+<p><strong>江俊佑 now</strong></p>
+<ul>
+<li>🥇<a href="https://nownownow.com/TW">NowNowNow 的臺灣頁面</a></li>
+<li>4: 西貝流士</li>
+</ul>
+<p><strong>江俊佑 blog</strong></p>
+<ul>
+<li>🥇/now</li>
+<li>🥈NowNowNow 的臺灣頁面</li>
+<li>9: I&rsquo;m Marcus 我的思维棱镜</li>
+</ul>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>🥇首頁</li>
+<li>🥈/now</li>
+<li>4: <a href="/posts/week-1">蘿蔔週報#1 | Carrot Blog</a>（雖然網址是舊的）</li>
+</ul>
+<p><strong>carrot</strong></p>
+<ul>
+<li>84: 首頁（按到第九頁就看到了！）</li>
+</ul>
+<hr>
+<h2 id="bing">Bing</h2>
+<p><strong>江俊佑</strong>
+無</p>
+<p><strong>江俊佑 carrot</strong></p>
+<ul>
+<li>🥇<a href="/posts/hello">你好</a></li>
+<li>🥈/now</li>
+<li>🥉 <a href="https://www.pinterest.com/carrotmaninoff/">俊佑 江 (carrotmaninoff) - Profile | Pinterest</a>。我已經沒在用了，看來是忘記註銷。</li>
+</ul>
+<p><strong>江俊佑 now</strong></p>
+<blockquote>
+<p>沒有結果，我也不是什麼「成都多彩形象设计艺术学校高级彩妆讲师」，那個人甚至有自己的<a href="https://baike.baidu.com/item/%E6%B1%9F%E4%BF%8A%E4%BD%91/205837#:~:text=%E6%B1%9F%E4%BF%8A%E4%BD%91%EF%BC%8C%E4%B8%AD%E5%9B%BD%E9%AB%98%E7%BA%A7,%E5%BD%A2%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%B8%88%E8%B5%84%E8%B4%A8%E3%80%82">百度百科</a>！</p></blockquote>
+<p><strong>江俊佑 blog</strong></p>
+<blockquote>
+<p>意外地沒有結果</p></blockquote>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>🥇首頁</li>
+<li>🥈<a href="/posts/carrot-blog">Carrot Blog</a></li>
+<li>28: <a href="/posts/blog-intro">網站功能介紹</a></li>
+<li>53: <a href="/series">/series</a></li>
+</ul>
+<p><strong>carrot</strong>
+無</p>
+<hr>
+<h2 id="yahoo">Yahoo!</h2>
+<p><strong>江俊佑</strong>
+無</p>
+<p><strong>江俊佑 carrot</strong></p>
+<ul>
+<li>🥇你好</li>
+<li>🥉/now</li>
+<li>4: Pinterest</li>
+</ul>
+<p><strong>江俊佑 now</strong>
+無</p>
+<p><strong>江俊佑 blog</strong>
+無</p>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>🥇首頁</li>
+<li>🥈 <a href="/posts/carrot-blog">Carrot Blog</a></li>
+<li>12: /posts</li>
+<li>13: 網站功能介紹</li>
+<li>14: /series</li>
+<li>16: /now</li>
+<li>18: <a href="/posts/blog-milestone">網站大事記</a></li>
+<li>20: <a href="/categories">/categories</a></li>
+<li>22: /search</li>
+<li>27: <a href="/posts/carrot">🥕</a></li>
+<li>28: <a href="/posts/digital-life">數位生活</a></li>
+</ul>
+<blockquote>
+<p>後面的結果還有不少文章，就不一一列舉了～</p></blockquote>
+<p><strong>carrot</strong>
+無</p>
+<hr>
+<h2 id="duckduckgo-all-regions">DuckDuckGo (all regions)</h2>
+<p><strong>江俊佑</strong></p>
+<ul>
+<li>13: 我的 <a href="https://www.youtube.com/@Carrot603">YouTube 頻道</a></li>
+<li>21: NowNowNow 的臺灣頁面</li>
+<li>30: 我彈 <a href="https://www.youtube.com/watch?v=MTj5JQ5tepA">BWV 866</a></li>
+<li>33: 我彈 K.333（已下架）</li>
+<li>35: Instagram</li>
+<li>40: 我彈 <a href="https://www.youtube.com/watch?v=19nmNJZXeFc">Sinfonia</a></li>
+</ul>
+<p><strong>江俊佑 carrot</strong></p>
+<ul>
+<li>🥇你好</li>
+<li>🥈/now</li>
+<li>🥉Pinterest</li>
+<li>12: NowNowNow 的臺灣頁面</li>
+</ul>
+<p><strong>江俊佑 now</strong></p>
+<ul>
+<li>34: Instagram</li>
+</ul>
+<p><strong>江俊佑 blog</strong></p>
+<ul>
+<li>11: 我的 YouTube</li>
+<li>31: Instagram</li>
+<li>32: 我彈 BWV 866</li>
+<li>33: 我彈 Sinfonia</li>
+</ul>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>44: 首頁</li>
+</ul>
+<p><strong>carrot</strong>
+無</p>
+<hr>
+<h2 id="duckduckgo-taiwan">DuckDuckGo (Taiwan)</h2>
+<p><strong>江俊佑</strong>
+無</p>
+<p><strong>江俊佑 carrot</strong></p>
+<ul>
+<li>🥇 你好</li>
+<li>🥉/now</li>
+<li>4: Pinterest</li>
+</ul>
+<p><strong>江俊佑 now</strong>
+無</p>
+<p><strong>江俊佑 blog</strong>
+無</p>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>🥇首頁</li>
+<li>🥈 Carrot Blog</li>
+<li>9: Categories</li>
+<li>10: /series</li>
+<li>11: /now</li>
+</ul>
+<blockquote>
+<p>後面有不少文章。</p></blockquote>
+<p><strong>carrot</strong>
+無</p>
+<hr>
+<h2 id="startpage-all-regions">Startpage (all regions)</h2>
+<p><strong>江俊佑</strong></p>
+<ul>
+<li>14: 西貝流士</li>
+</ul>
+<p><strong>江俊佑 carrot</strong></p>
+<ul>
+<li>🥇NowNowNow 的臺灣頁面</li>
+</ul>
+<p><strong>江俊佑 now</strong></p>
+<ul>
+<li>🥇NowNowNow 的臺灣頁面</li>
+<li>🥈西貝流士</li>
+</ul>
+<p><strong>江俊佑 blog</strong></p>
+<ul>
+<li>🥇NowNowNow 的臺灣頁面</li>
+<li>🥈 I&rsquo;m Marcus 我的思维棱镜</li>
+</ul>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>🥇 首頁</li>
+</ul>
+<p><strong>carrot</strong>
+無</p>
+<hr>
+<h2 id="startpage-taiwan">Startpage (Taiwan)</h2>
+<p><strong>江俊佑</strong></p>
+<ul>
+<li>9 西貝流士</li>
+</ul>
+<p><strong>江俊佑 carrot</strong></p>
+<ul>
+<li>🥇NowNowNow 的臺灣頁面</li>
+</ul>
+<p><strong>江俊佑 now</strong></p>
+<ul>
+<li>🥇NowNowNow 的臺灣頁面</li>
+<li>🥈西貝流士</li>
+</ul>
+<p><strong>江俊佑 blog</strong></p>
+<ul>
+<li>🥇NowNowNow 的臺灣頁面</li>
+</ul>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>🥇首頁</li>
+<li>🥈<a href="/graph">/graph</a></li>
+<li>🥉<a href="/posts/weekly-plan">週計劃</a></li>
+<li>7: <a href="/posts/blog-questions-challenge">部落格問題挑戰</a></li>
+</ul>
+<p><strong>carrot</strong></p>
+<ul>
+<li>50: 首頁</li>
+</ul>
+<hr>
+<h2 id="ecosia-all-regions">Ecosia (all regions)</h2>
+<p><strong>江俊佑</strong></p>
+<ul>
+<li>15 西貝流士</li>
+</ul>
+<p><strong>江俊佑 carrot</strong></p>
+<ul>
+<li>🥇NowNowNow 的臺灣頁面</li>
+</ul>
+<p><strong>江俊佑 now</strong></p>
+<ul>
+<li>🥇西貝流士</li>
+<li>8: NowNowNow 的臺灣頁面</li>
+</ul>
+<p><strong>江俊佑 blog</strong>
+無</p>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>🥇首頁</li>
+</ul>
+<p><strong>carrot</strong>
+無</p>
+<hr>
+<h2 id="ecosia-taiwan">Ecosia (Taiwan)</h2>
+<p><strong>江俊佑</strong></p>
+<ul>
+<li>12 西貝流士</li>
+</ul>
+<p><strong>江俊佑 carrot</strong></p>
+<ul>
+<li>🥇NowNowNow 的臺灣頁面</li>
+</ul>
+<p><strong>江俊佑 now</strong></p>
+<ul>
+<li>🥇西貝流士</li>
+</ul>
+<p><strong>江俊佑 blog</strong></p>
+<ul>
+<li>5: NowNowNow 的臺灣頁面</li>
+<li>9: I&rsquo;m Marcus 我的思维棱镜</li>
+</ul>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>🥇首頁</li>
+</ul>
+<p><strong>carrot</strong>
+無</p>
+<hr>
+<h2 id="brave-search">Brave Search</h2>
+<p><strong>江俊佑 carrot</strong></p>
+<ul>
+<li>22: 首頁</li>
+</ul>
+<hr>
+<h2 id="百度">百度</h2>
+<p><strong>carrot blog</strong></p>
+<ul>
+<li>🥈首頁</li>
+</ul>
+<hr>
+<h1 id="結論">結論</h1>
+<p>Yahoo! 的搜尋結果很像 Bing。Ecosia 跟 Startpage 是第一次聽說，我覺得後者也滿好用的！</p>
+<p>最後用 <code>site:carrot.tw</code> 直接索引出來，目前 Google 上有 100 個頁面，Bing 大概有二十幾個，DuckDuckGo 有 25 個，Startpage 有 53 個，Ecosia 有 52 個，Brave Search 上只出現首頁。我在網路上也有一席之地呢！</p>
+<p>看來「江俊佑 carrot」和「carrot blog」最有用！大魔王關鍵字「carrot」因為太過廣泛，很難查得到自己。但在 Google 排第 84 個，硬查還是查得到；Startpage (Taiwan) 上面居然排第 50 個，太驚訝了！原來我那麼有名嗎？</p>
+<p>當中最特別的是「I&rsquo;m Marcus 我的思维棱镜」，很榮幸能被他回覆！這個 backlink 也提供了曝光，看到這了還不快引用我（X</p>
+<hr>
+<h1 id="雜談">雜談</h1>
+<p>看了那麼多江俊佑，我發現<a href="https://teacher.tku.edu.tw/PsnProfile.aspx?u=t902840">淡江大學</a>有江俊佑，<a href="https://stat.swufe.edu.cn/info/2041/14121.htm">西南财经大学统计与数据科学学院</a>有江俊佑，甚至<a href="https://www.douyin.com/user/MS4wLjABAAAAoXNkRtZF5KWVWVGW5ZFvV0uYv9RntRrSbxJIdcspaFE">抖音</a>上也有江俊佑！當然這些都不是我本人。也許世界上有很多江俊佑，我無法保證我是最傑出的江俊佑，但我一定是最特別的江俊佑！我過得很快樂，嘿嘿！</p>
+<p>至於 carrot，國外有更多 carrot，像 <a href="https://carrot.com">https://carrot.com</a> 是商業和房地產的、<a href="https://www.digcarrot.com/">https://www.digcarrot.com</a> 是一個附帶數位貨幣的通訊軟體、<a href="https://carrot.pl/">https://carrot.pl</a> 是波蘭的事故車拍賣網站。除此之外還有<a href="https://chromewebstore.google.com/detail/carrot/gakohpplicjdhhfllilcjpfildodfnnn?hl=zh-tw">瀏覽器外掛</a>、<a href="https://grainedecarotte.ch/the-story-of-the-carrot/">種蘿蔔</a>、<a href="https://www.lovethycarrot.com/">食譜</a>，甚至<a href="https://thecrookedcarrot.com/home/">真的在煮紅蘿蔔</a>，賣二手物品的 <a href="https://karrotmarket.com/">Karrot</a>，以及跟我差不多同名的 <a href="https://carrot.dev/">The Carrot&rsquo;s Blog</a>。幾個月前還有看到 <code>https://carrot.blog/</code> 是有網頁的，但他應該是沒續約，或是直接倒了，那個網址直接空著；好想把它也買下來喔！</p>
+<p>在臺灣，有賣衣服的 <a href="https://shopee.tw/carrot_co">Carrot.co</a> 和 <a href="http://carrot.com.tw">http://carrot.com.tw</a>，「紅蘿蔔工業股份有限公司」在跟我競爭。後者是高雄的 PVC 門窗供應商，叫紅蘿蔔滿可愛的。</p>
+<p>總之我覺得這個部落格，名字取得很好！而且很有特色！期待我發揚光大的一天。</p>
+<hr>
+<h1 id="後記">後記</h1>
+<p>本次實驗，意外發現自己的數位足跡，像 Pinterest，我自己都忘記有它的存在。那是用我以前的 Google 帳號註冊的，帳號早就註銷了，但 Pinterest 還在，陰魂不散好可怕！重點是還看得到我收藏的照片，還好都是一些正常的東西，像<a href="/posts/carrot-gallery-1">紅蘿蔔圖</a>。</p>
+<p>大家無聊的時候也可以搜尋自己，或者搜尋我，看看會有什麼不同的結果出來；同時讓搜尋引擎知道我很夯，這樣我就有流量了！</p>
+<style>
+  /* 目錄的極簡樣式 */
+  #custom-toc {
+      background-color: var(--theme, #f5f5f5); /* 自動適應 PaperMod 暗黑/白天模式 */
+      border-left: 4px solid #ff8a3d;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+  }
+  #custom-toc h4 { margin: 0 0 10px 0; color: inherit; }
+  #custom-toc ul { list-style-type: none; padding-left: 0; margin: 0; } /* 預設 padding 設為 0，由 li 的 class 控制縮排 */
+  #custom-toc li { margin: 8px 0; }
+  #custom-toc a { text-decoration: none; color: #ff8a3d; font-weight: 500; }
+  #custom-toc a:hover { text-decoration: underline; }
+  
+  /* 根據標題等級動態縮排，讓層級更清晰 */
+  .toc-h1 { padding-left: 0px; font-size: 1.05rem; font-weight: bold; }
+  .toc-h2 { padding-left: 15px; font-size: 1rem; }
+  .toc-h3 { padding-left: 30px; font-size: 0.95rem; opacity: 0.9; }
+  .toc-h4 { padding-left: 45px; font-size: 0.9rem; opacity: 0.85; }
+  .toc-h5 { padding-left: 60px; font-size: 0.85rem; opacity: 0.8; }
+  .toc-h6 { padding-left: 75px; font-size: 0.8rem; opacity: 0.75; }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const tocContainer = document.getElementById("custom-toc");
+    if (!tocContainer) return;
+
+    // 1. 修改抓取範圍：加入 h1, h2, h3, h4, h5, h6
+    const headers = document.querySelectorAll(".post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6");
+    if (headers.length === 0) {
+      tocContainer.style.display = "none"; // 沒標題就隱藏
+      return;
+    }
+
+    // 建立目錄標題
+    tocContainer.innerHTML = "<h4>📋 文章目錄</h4><ul id='toc-list'></ul>";
+    const tocList = document.getElementById("toc-list");
+
+    headers.forEach((header, index) => {
+      // 如果標題本來沒有 ID，就幫它建立一個，這樣超連結才連得過去
+      if (!header.id) {
+          header.id = "toc-anchor-" + index;
+      }
+
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = "#" + header.id;
+      a.textContent = header.textContent;
+
+      // 2. 動態判斷標題標籤（例如 "h2"、"h3"），並加上對應的 CSS class
+      const tagName = header.tagName.toLowerCase(); // 取得 "h1" ~ "h6"
+      li.classList.add("toc-" + tagName);          // 變成 "toc-h1" ~ "toc-h6"
+
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+  });
+</script>]]></content:encoded></item><item><title>大掃除</title><link>http://localhost:1313/posts/cleaning/</link><pubDate>Fri, 04 Sep 2026 21:00:00 +0800</pubDate><guid>http://localhost:1313/posts/cleaning/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-04.jpg" style="width: 75%; max-width: 100%; height: auto;">
 &lt;p>嘿嘿我來更新啦！想說洗碗的菜瓜布要替換了，索性拿來刷平常不會清的超髒角落，反正刷完直接丟掉，又不用善後，大快人心！&lt;/p>
 &lt;p>我把所有層板搬出來，用菜瓜布刷完溝溝，還用棉花棒把直角的地方清乾淨，從今以後我就生活在絕對潔淨的地方了！想想就覺得舒服。&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-04.jpg" style="width: 75%; max-width: 100%; height: auto;">
 <p>嘿嘿我來更新啦！想說洗碗的菜瓜布要替換了，索性拿來刷平常不會清的超髒角落，反正刷完直接丟掉，又不用善後，大快人心！</p>
@@ -6465,6 +7105,10 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
 
 
 
@@ -10061,13 +10705,13 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-04\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-04\n✍️ 狀態：有 1 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -10081,14 +10725,18 @@ ShowShareButtons = false
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-09-05\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-09-05\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
@@ -14625,6 +15273,10 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
 
 
 
@@ -18221,13 +18873,13 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-04\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-04\n✍️ 狀態：有 1 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -18241,14 +18893,18 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-09-05\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-09-05\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
