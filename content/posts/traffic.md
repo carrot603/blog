@@ -16,3 +16,15 @@ title = '好多人來看我喔'
 Seth Godin 寫過 [*The minimum viable audience*](https://seths.blog/2019/03/the-minimum-viable-audience-2/)，翻譯過來就是「最小可行觀眾」。現在我已經有身為[創作者](/posts/writer)的認同了，在這邊畫個大餅，如果我有 50 個忠實讀者，那麼我就算是經營成功了！
 
 我理想中的受眾應該是像我一樣，喜歡輸入（不限於閱讀）、思考且快樂的人，偶爾閒來無事，就打開某個部落格看看。比起想從我的文章中[學到什麼](/posts/deeper-learning)，我更希望觀眾是因為覺得我這個人很有趣（或很奇怪？）才來閱讀，不論是長文、小品甚至廢文都好；願意來看，不是為了內容本身，而只是因為它們出自我這個人。
+
+---
+
+{{< note >}}
+2026-09-05 21 : 08 Cloudflare 寄信給我，節錄如下：
+{{< /note >}}
+
+>Congrats on surpassing 10,000 pageviews on carrot.tw last month! This is the first time for your website.<br>Getting to 10K is no easy task and we hope you continue to grow and we are glad you chose Cloudflare to provide services for your website.<br>13388 pageviews<br>2026-05-23 creation date
+
+我把圖放這邊當紀念：
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-05-3.jpg" style="width: 75%; max-width: 100%; height: auto;">
