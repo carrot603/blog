@@ -279,3 +279,37 @@
     }
   });
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // 取得文章內容區域裡的所有連結
+    const links = document.querySelectorAll(".post-content a");
+
+    links.forEach(link => {
+      // 判斷是否為外部連結 (非本站且開頭為 http)
+      if (link.hostname !== window.location.hostname && link.href.startsWith("http")) {
+        // 建立 img 元素
+        const favicon = document.createElement("img");
+        favicon.src = `https://www.google.com/s2/favicons?domain=${link.hostname}&sz=32`;
+        
+        /* 🛡️ 徹底防撐開行距的最終解法：
+           1. display: inline-block + vertical-align: middle 控制基準
+           2. line-height: 0 避免圖示觸發瀏覽器的行高計算
+           3. margin-top/bottom 設為 0
+        */
+        favicon.style.width = "1em";
+        favicon.style.height = "1em";
+        favicon.style.lineHeight = "0";
+        favicon.style.display = "inline-block";
+        favicon.style.verticalAlign = "middle"; // 垂直居中對齊文字
+        favicon.style.marginTop = "0";
+        favicon.style.marginBottom = "0";
+        favicon.style.marginLeft = "4px";  // 圖案左側空隙
+        favicon.style.marginRight = "4px"; // 圖案右側空隙
+
+        // 將圖示插入到連結文字的前方
+        link.insertBefore(favicon, link.firstChild);
+      }
+    });
+  });
+</script>
