@@ -9,4 +9,6 @@ title = '能量管理'
 
 ---
 
-昨天去臺北尋找租屋處，雖然六點才起床，但沒有睡午覺，還站了一整天！回家累到不行！晚上卻睡不太著，可能是過度疲勞，或是自己想太多，抑或是面對未來過於興奮，總之必須學會讓自己恢復能量。不禁想起曾經在網路上看到，需要用來玩的休息日，跟單純休息的休息日。週休二日看似漫長，但精力有稀缺性，欲望只能收斂，做一些真正重要的事，然後<span style="text-emphasis: filled circle; text-emphasis-position: over; -webkit-text-emphasis: filled circle; -webkit-text-emphasis-position: over;">好好休息</span>！
+昨天去臺北尋找租屋處[^1]，雖然六點才起床，但沒有睡午覺，還站了一整天！回家累到不行！晚上卻睡不太著，可能是過度疲勞，或是自己想太多，抑或是面對未來過於興奮，總之必須學會讓自己恢復能量。不禁想起曾經在網路上看到，需要用來玩的休息日，跟單純休息的休息日。週休二日看似漫長，但精力有稀缺性，欲望只能收斂，做一些真正重要的事，然後<span style="text-emphasis: filled circle; text-emphasis-position: over; -webkit-text-emphasis: filled circle; -webkit-text-emphasis-position: over;">好好休息</span>！
+
+[^1]:2026-09-08 20 : 50 註：請參考[北漂生活](/posts/taipei)。
