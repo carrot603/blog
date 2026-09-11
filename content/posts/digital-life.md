@@ -10,6 +10,7 @@ title = '數位生活'
 只有早上吃早餐會用手機聽 [Podcast](https://readingoutpost.com/podcast/)，看一下 blog 跟 [Taipei Times](https://www.taipeitimes.com/)，偶爾[看別人彈琴](https://www.youtube.com/watch?v=yr1pFv5QzPc)，除此之外我跟網路是隔絕的。我不看新聞、不看電視，也不會看片、追劇。我很享受這種清靜的生活。偶爾拿出手機紀錄靈感，把重點打在 [Obsidian](https://obsidian.md/)；但我更喜歡手寫在小筆記本裡，最後統一輸出成 blog 的內容。
 
 ---
+
 我使用的軟硬體：
 
 - Samsung 27吋 S3 曲面顯示器 C366
@@ -29,4 +30,5 @@ title = '數位生活'
 - 瀏覽器：[Brave](https://brave.com/) 
 
 ---
+
 我不是 Geek，只是被 [Wiwi](https://wiwi.blog/) 傳教，開啟了自由軟體之路，Pixel 也是因為他在用才買的。在當今大企業猖獗的時代，讓我們一起守護最後的淨土，用行動支持科技獨立。

@@ -39,6 +39,7 @@ https://carrot.tw/index.xml
 [《金剛經》教我的人生智慧](/posts/diamond-sutra)  
 [核心思想](/posts/core-idea)  
 [/when-i-die](/posts/when-i-die)
+[北漂生活](/posts/taipei)
 
 ---
 
