@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 12 Sep 2026 05:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>一天當兩天用</title><link>http://localhost:1313/posts/long-day/</link><pubDate>Sat, 12 Sep 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/long-day/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 12 Sep 2026 20:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>開學日</title><link>http://localhost:1313/posts/2026-09-07-1/</link><pubDate>Sat, 12 Sep 2026 20:00:00 +0800</pubDate><guid>http://localhost:1313/posts/2026-09-07-1/</guid><description>&lt;div class="note-box">
+9/7 開學日當天的日記，拖到現在才產出！為避免時序錯亂，本文將在 9/14 把發布日期調整回去。
+&lt;/div>
+&lt;p>本來訂了五點的鬧鐘，結果四點半就醒來，大概是因為要開學太興奮了！&lt;/p></description><content:encoded><![CDATA[<div class="note-box">
+    
+          9/7 開學日當天的日記，拖到現在才產出！為避免時序錯亂，本文將在 9/14 把發布日期調整回去。
+
+</div>
+
+<p>本來訂了五點的鬧鐘，結果四點半就醒來，大概是因為要開學太興奮了！</p>
+<p>吃完早餐看點<a href="/posts/2026-09-07">新聞</a>，六點多去傳統市場逛逛，幾乎沒有攤販營業，這個時間可能還是太早了，或者菜市場週一休市？</p>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-07.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<p>七點多到學校。我們有所謂「家族琴房」，意思是每間琴房都有安排固定的人使用，省去搶琴點的麻煩！那麼早去當然沒有半個人。我摸了一下 Kawai，目測二三十年了，有些音不準，甚至有兩個音琴弦斷掉了！<code>F6</code> 沒有聲音，<code>A6</code> 按下去會變成減五度音程，十分詭異！</p>
+<p>小時候看書上寫，俄國學派技巧扎實。像拉赫，早上六點就起來練基本功了。我要好好<a href="/posts/2026-09-10">向他學習</a>！琴房開放時間是 6 : 00~24 : 00，第一班捷運也沒那麼早！但這樣我就沒辦法跑步了，作息可能還要摸索。</p>
+<hr>
+<h2 id="雜談">雜談</h2>
+<p>睽違一年坐在教室裡聽課。重考的這一年，每天都是極其自由的，時間不被固定，空間不被限制，想去散步就出門，想要看書就去借，這才是「真．自主學習」！我已經摸索出屬於自己的一套<a href="/posts/learning">學習法</a>了，簡單來講就是番茄鐘，加上刻意練習，還有實作！</p>
+<p>我每專心二十分鐘，就一定要休息！起來走一走，讓腦袋放空，讓想法發酵。學到一個知識，不是丟到某一個 Vault 裡面就沒事了，而是想盡辦法在生活中實踐！比如我讀<a href="/posts/deeper-learning">《深度學習的技術》</a>這本書，就真的手寫了一篇筆記。</p>
+<p>我想完全照我的模式下去學習，沒錯，我就是這麼自我中心！因此，呆坐在大教室裡一百分鐘，跟其他五十個只會無限下滑短影音，追逐世俗名利和物質的小朋友，處在同一個空間，光想像就覺得可怕！</p>
+<p>這有點學校無用論，畢竟現在都有 AI 了！我知道哪裡有知識，我懂得怎麼利用圖書館和線上資料庫；最重要的是，我懂該如何學習——後設學習。那我為什麼要讀大學呢？明明主修課只要到老師家學就好了啊？幹嘛還去學校，為了學分煩惱，每週還要多花 22 小時在上面？</p>
+<p>當然是為了<strong>學歷</strong>。主要是生活體驗和社交啦！我來市北，真的就是想體驗校園生活而已！這點說出來可能沒人信，因此我沒跟身邊的任何人講。趁著還年輕，多看點書，多練點琴。我很清楚自己現在這個年紀，是多麼珍貴且特殊的階段！價值觀建立完成，也有能力照顧自己，重點是還沒開始上班，暫時不用為了錢而煩惱！現在就是<a href="https://podcasts.apple.com/tw/podcast/ep29-%E4%BD%A0%E7%9C%9F%E7%9A%84%E5%96%9C%E6%AD%A1%E4%BB%96%E5%97%8E-%E5%A4%B1%E5%8E%BB%E6%84%9B%E4%BA%BA%E4%BD%A0%E6%9C%83%E6%80%8E%E9%BA%BC%E6%A8%A3-%E8%A9%B2%E4%B8%8D%E8%A9%B2%E7%B9%BC%E7%BA%8C%E8%BF%BD%E9%80%90%E6%9C%AC%E4%BE%86%E7%9A%84%E5%A4%A2%E6%83%B3-%E6%95%B4%E7%90%86%E9%81%BA%E7%89%A9%E7%9A%84%E5%90%84%E7%A8%AE%E5%BF%83%E5%BE%97-%E4%B8%80%E8%B5%B7%E6%8A%8A%E7%8F%BE%E5%9C%A8%E9%81%8E%E5%BE%97%E5%BE%88%E9%96%83%E8%80%80%E5%90%A7/id1680322310?i=1000725061488">最好的年紀</a>！</p>
+<hr>
+<h2 id="國文">國文</h2>
+<p>開學第一天就早八，而且還是通識課！要跟全校的學生坐在一起聽課，沒有一個認識的。我都大學了還是逃不出國文和英文的魔爪！還好國文只有大一上下兩學期；英文只要上到大二上就好了！</p>
+<p>帶<a href="https://findbook.com.tw/9789864777129">《蕭邦的鋼琴與他的前奏曲》</a>，閒暇時看看。眼見其他小朋友都在滑短影音，就覺得這個世代沒救了！</p>
+<p>老師的簡報打不開，因為 Powerpoint 過期！都什麼年代了，還在用微軟的封閉軟體？當然要用<a href="https://www.libreoffice.org/">LibreOffice</a>  啊！還有問題排除，只能靠總務處的人親自跑來，其實他也只是按兩個按鈕，把舊的版本刪掉而已！這樣做事就不對了啊！應該寫一張故障排除，貼在每台電腦上，這樣比較有效率。</p>
+<p>老師花了一節課講解學期成績的算法。比較特別的是，請假一次就扣學習總成績一分，除非是不可抗力因素。她還提到，有同學濫用心理假，一整個學期都不來。</p>
+<p>想來合理！這是公平性的問題，如果一個全勤的認真學生，和一直翹課的老油條，拿到的分數一樣，確實有失妥當！</p>
+<p>老師說她上課的方式是互動式的，她會拋出問題，讓同學們好好思考，並且抽人回。段考的題型也有不少簡答題和申論題，檢視學生們的真正實力為何。</p>
+<p>老師鼓勵學生回答或是提出疑問，只要讓她覺得有積極投入課堂，就可以拿到不錯的平時成績。我這個人不愛出風頭，就把加分的機會讓給別人吧！我想以我的閱讀和判斷能力，修這門課應該是綽綽有餘！分數不需要追求極致。（好啦只是我太內向</p>
+<div style="display: flex; align-items: center; text-align: center; color: #888; margin: 20px 0;">
+  <div style="flex: 1; border-bottom: 1px solid #ccc;"></div>
+  <span style="padding: 0 10px;">下課休息</span>
+  <div style="flex: 1; border-bottom: 1px solid #ccc;"></div>
+</div>
+<p>第二堂課進入課文的背景。老師講了周朝的一些歷史，她說換位思考很重要！不能用現代的思維，去看古人的世界。</p>
+<p>這就讓我想起，臺大開放式課程上的許多老師都說，要<strong>拋棄民族國家史觀</strong>，也不能用現代的「國家」這個概念去看古代的周朝或是秦楚齊燕趙魏韓等等。</p>
+<p>史書上記載「<a href="https://zh.wikipedia.org/zh-tw/%E5%91%A8%E5%B9%B3%E7%8E%8B%E4%B8%9C%E8%BF%81">平王東遷雒邑</a>」，看起來是個建國大業，但其實只是因為周平王的爸爸，<a href="https://zh.wikipedia.org/wiki/%E5%91%A8%E5%B9%BD%E7%8E%8B" title="周幽王">周幽王</a>寵愛褒姒和她兒子，想要把平王廢掉（「<a href="https://zh.wikipedia.org/wiki/%E7%83%BD%E7%81%AB%E6%88%8F%E8%AF%B8%E4%BE%AF" title="烽火戲諸侯">烽火戲諸侯</a>」主角就是幽王和褒姒）。當然那時候他不叫「平王」，而是「宜臼」，以下用宜臼稱之。</p>
+<p>宜臼為了自保，只能豁出去了！聯合鄰近的諸侯國還有犬戎，<a href="https://zh.wikipedia.org/zh-tw/%E7%8A%AC%E6%88%8E%E6%94%BB%E5%91%A8%E4%B9%8B%E6%88%B0">攻入首都鎬京</a>。其實平王也不想讓他爸爸死掉，但事情就這麼失控了！也因為首都被破壞殆盡，加上讓犬戎進自己家，門路都被摸透了！因此平王才要遷都。</p>
+<p>以上平王害死幽王的事件，可以解讀成「子弒父」，再來是「臣弒君」，完全違反了人倫常理！平王
+統治的正當性就受到懷疑，從此周天子的地位徒留空名！</p>
+<p>其實課文是左傳的<a href="https://zh.wikisource.org/zh-hant/%E9%84%AD%E4%BC%AF%E5%85%8B%E6%AE%B5%E4%BA%8E%E9%84%A2">〈鄭伯克段於鄢〉</a>，光背景知識就鋪陳那麼久！總之我聽故事是聽得很起勁啦！課文的男主角是鄭莊公，下週老師會講他的故事。</p>
+<hr>
+<h2 id="英文">英文</h2>
+<p>老師一開始講英文（廢話這不是英文課嗎？）我還以為要全英文上課！聽 <a href="https://podcasts.apple.com/us/podcast/huberman-lab/id1545953110">Huberman</a> 二十分鐘就分心了，連堂的一百分鐘那還得了！好在老師有穿插中文解釋。</p>
+<p>她說這門課會讓我們進行兩分鐘的報告，練習口說和聽力，當然也會看看新聞、演講和廣播。</p>
+<p>老師演示的時候，一打開 <a href="https://edition.cnn.com/">CNN 官網</a>，上半部分滿版的廣告！真正的新聞只能在底下苟活！而廣播和演講對我來說不成問題，反正我每天早上都會聽 Huberman 還有讀 <a href="https://www.taipeitimes.com/">Taipei Times</a>。</p>
+<p>考考各位，黃金救援時間的英文是什麼？絕對不是 golden rescue period，而是 <span style="background-color: #333; color: #333; transition: all 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#333'">golden window</span>。沒有為什麼，片語就是這樣，約定俗成的講法；就像我們說炒魷魚，不會說炒花枝一樣。</p>
+<p>她有提到傅柯（Paul-Michel Foucault，1926—1984） 和《第二性》。說德希達（Jacques Derrida，1930—2004）要破除 binary（二元對立）。都是我有聽過的法國哲學家。不曉得我們學校的史地系會不會讀到這些哲學家和作品，反正我是還滿了解的！</p>
+<p>書籍方面，老師帶了<a href="https://findbook.com.tw/9786267063866">《失控的焦慮世代》（The Anxious Generation）</a>、<a href="https://findbook.com.tw/9786263106659">《Rewire-神經可塑性》</a>，還有<a href="https://en.wikipedia.org/wiki/Nocturnes_(short_story_collection)">石黑一雄的 <em>Nocturnes</em></a>，都是英文版。對於石黑一雄的認識，我只知道他是諾貝爾文學獎得主，不知道他是英國人。老師也有講到<a href="https://podcasts.apple.com/tw/podcast/%E8%AE%80%E5%AD%97%E7%94%9F%E6%B4%BB-ep10-%E5%A6%82%E6%9E%9C%E6%8B%BF%E5%88%B0%E7%88%BA%E7%88%BA%E7%9A%84%E9%9D%88%E9%AD%82%E6%95%B8%E6%93%9A-%E4%BD%A0%E6%9C%83%E5%B9%B9%E5%98%9B-%E7%9F%B3%E9%BB%91%E4%B8%80%E9%9B%84%E7%9A%84-%E5%85%8B%E6%8B%89%E6%8B%89%E8%88%87%E5%A4%AA%E9%99%BD/id1889201185?i=1000766749794">《克拉拉與太陽》</a>，前幾天有聽這一集，這個科技倫理的部份以後有機會再討論。課堂上白板也有出現 <a href="https://podcasts.apple.com/tw/podcast/%E8%AE%80%E5%AD%97%E7%94%9F%E6%B4%BB-ep15-%E8%AA%B0%E5%9C%A8%E8%A3%BD%E9%80%A0-%E5%A4%A7%E5%AE%B6%E9%83%BD%E9%80%99%E6%A8%A3%E6%83%B3/id1889201185?i=1000777201743">common sense</a> 這個關鍵字，有興趣的話去聽秦客講。</p>
+<p>其它關鍵字像是 <a href="https://en.wikipedia.org/wiki/Brick_Lane_(novel)"><em>Bricklane</em></a>和 <a href="https://wwnorton.com/">Norton</a>，前者是書名，後者是出版社，我有記在本篇草稿當中。以後有空多看看書評吧！反正我本來就很愛看書，這個月的閱讀清單不怕不夠了！</p>
+<p><a href="https://readingoutpost.com/taiwan-travelogue/">《臺灣漫遊錄》</a>有得 <a href="https://thebookerprizes.com/">Booker Prizes</a>，老師輕描淡寫地說楊双子是她同學！太酷了吧！</p>
+<hr>
+<h2 id="午餐">午餐</h2>
+<p>因為跟同學還不熟，中午約不到人吃飯。我就自己走到延平南路上，吃一碗牛肉湯麵。留意段句喔！是「牛肉湯．麵」，就只有香香的牛肉湯跟白麵條而已！難怪比較便宜！</p>
+<p>回到琴房，發現裡頭有人在練琴，打開門一看發現是一位大四的學姊。跟她打個招呼之後，我就在旁邊睡午覺，好像真的有睡著，雖然真的很吵！</p>
+<p>從小到大，我從來沒有聽過別人練琴。現在比較聽得懂了，知道怎麼練，和要練什麼。<a href="/posts/learning">學習</a>是有快速有效的方法的，不可能曲子從頭彈到尾，然後錯了就重來，無限循環。當然要<strong>刻意練習</strong>啊！每個樂句都要唱，哪裡大聲哪裡小聲，哪邊音響效果需要調整，這些都需要投入極其大量的時間！</p>
+<p>下午六七節空堂，繼續看蕭邦。鋼琴上有超多樂譜和書，我問學姐能不能翻翻，她說可以，真是太棒了！終於能滿足我無窮的<a href="/posts/2026-09-09#%E5%9C%8B%E5%9C%96">閱讀欲</a>！我挑了最厚的<a href="https://findbook.com.tw/9789865228521">《臺灣音樂史》</a>，看完前言和現代的政策。</p>
+<hr>
+<h2 id="合奏">合奏</h2>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-07-1.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<p>管弦樂合奏，位置隨便坐。但因為我太晚到了，居然坐到小一第二排內檔！</p>
+<p>拉柴五，視譜，大概看得懂，但手太笨了，都拉不太準。</p>
+<hr>
+<h2 id="回家">回家</h2>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-07-2.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<p>放學之後去國家戲劇院樓下的<strong>表演藝術圖書館</strong>。我背著小提琴，一副就是音樂系學生的樣子！好想借唱片，但我沒有<a href="/posts/student-card">學生證</a>可以刷，也還沒買會員。<a href="/posts/2026-09-08#%E7%8F%AD%E6%9C%83">明天班會課</a>，應該會趁大家集合的時候統一發放。</p>
+]]></content:encoded></item><item><title>一天當兩天用</title><link>http://localhost:1313/posts/long-day/</link><pubDate>Sat, 12 Sep 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/long-day/</guid><description>&lt;blockquote>
 &lt;p>不做無益事，一日當三日，人活五十歲，我活百五十。——&lt;a href="https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E5%9C%8B%E6%96%87/%E4%B8%8D%E5%81%9A%E7%84%A1%E7%9B%8A%E4%BA%8B%EF%BC%8C%E4%B8%80%E6%97%A5%E7%95%B6%E4%B8%89%E6%97%A5%EF%BC%8C%E4%BA%BA%E6%B4%BB%E4%BA%94%E5%8D%81%E6%AD%B2%EF%BC%8C%E6%88%91%E6%B4%BB%E7%99%BE%E4%BA%94%E5%8D%81.html">胡適&lt;/a>。&lt;/p>&lt;/blockquote>
 &lt;p>（我國中也有讀過這一課）&lt;/p>
 &lt;p>我每天大約五點就會起床，中午一定要&lt;a href="http://localhost:1313/posts/nap">睡午覺&lt;/a>，免得精神渙散。我的一整天就因此被切割成上下兩部份，體感上就像過了兩天一樣！&lt;/p>
@@ -109,11 +176,14 @@
 <p>管弦合奏。跟週一一樣練柴五。這次我改拉小二，一樣視譜。指揮讓我們提早下課，所以我就跑到琴房彈個蕭邦。</p>
 <hr>
 <h2 id="國圖">國圖</h2>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-09.jpg" style="width: 75%; max-width: 100%; height: auto;">
 <p>放學，拿著熱騰騰的<a href="/posts/student-card">學生證</a>到國家圖書館申請綁定。我高一的時候就有來過，當時還因為年紀太小，被拒絕入館；不過最後還是成功進去了。今天再次走入，感覺十分不同，可能因為覺得自己長大了；也或許是因為自己有一套學習方法，面對眾多書籍也不頭痛！</p>
 <p>想入館的民眾請注意：進國圖可以帶背包，但<span style="text-emphasis: filled circle; -webkit-text-emphasis: filled circle;">裡面不能有書</span>，需要放在置物區。國圖的置物櫃也很高科技，輸入生日的西元年月日，再刷借閱證，選一個櫃子就可以放東西了，非常方便！</p>
 <p>我在尋找二樓中文新書區，結果多爬一層樓！因為國圖走那個最氣派的大樓梯，上去就是二樓了。</p>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-09-1.jpg" style="width: 75%; max-width: 100%; height: auto;">
 <p>叢書區，整齊劃一的排列，看著很是療癒！一想到我身處在全臺灣最大、最齊全也最權威的國家圖書館，感動油然而生。如果我把這裡的所有知識都學完，那我一定比全世界的 AI 加起來都還要厲害！當然人的時間壽命有限，我們只能選一個有興趣的領域耕耘。專業化是必然的結果，在每個領域當中都能有深刻進步，人類社會才會成長。</p>
 <p>上課趁空堂來這邊晃晃也不錯！但市北自己就有圖書館了，好難抉擇啊！</p>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-09-3.jpg" style="width: 75%; max-width: 100%; height: auto;">
 <hr>
 <h2 id="回家">回家</h2>
 <p>六點才到家，煮烏龍麵。我把音樂系社團的通知打開，浪費了十分鐘在找設定 email 的按鈕。果然還是問 AI 比較快！如果真的找不到，不用猶豫！繼續輸出問題，問到對為止。畢竟 AI 吐出來的答案也不一定是完全正確的。</p>
@@ -7666,6 +7736,10 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
 
 
 
@@ -11315,7 +11389,7 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-12\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-12\n✍️ 狀態：有 2 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
@@ -15934,6 +16008,10 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
 
 
 
@@ -19583,7 +19661,7 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-12\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-12\n✍️ 狀態：有 2 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
