@@ -35,7 +35,7 @@ title = '臺北走透透'
 |          建國南北路          | 10th Ave. |
 |          復興南北路          | 11th Ave. |
 |           大安路           |           |
-|          敦化南北路          | 12th Ave. |
+| [敦化南北路](/posts/dunhua)  | 12th Ave. |
 |           安和路           |           |
 | [光復南北路](/posts/guangfu) | 13th Ave. |
 |           基隆路           | 14th Ave. |
