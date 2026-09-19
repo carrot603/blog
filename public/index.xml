@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 18 Sep 2026 20:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>國家圖書館</title><link>http://localhost:1313/posts/nt/</link><pubDate>Fri, 18 Sep 2026 20:00:00 +0800</pubDate><guid>http://localhost:1313/posts/nt/</guid><description>&lt;p>今天下午沒課，終於有完整的時間可以正式參觀國家圖書館了！&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 19 Sep 2026 20:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>主視覺</title><link>http://localhost:1313/posts/key-visual/</link><pubDate>Sat, 19 Sep 2026 20:00:00 +0800</pubDate><guid>http://localhost:1313/posts/key-visual/</guid><description>&lt;p>我的網站主視覺定調為 &lt;code>#ff8a3d&lt;/code>，像這樣： &lt;input type="color" value="#ff8a3d" style="border: none; cursor: pointer;">&lt;/p>
+&lt;p>包括：&lt;/p>
+&lt;div class="note-box">
+note
+&lt;/div>
+&lt;p>以及目錄選單，我都設定成這個顏色。我個人覺得不管在白天或是&lt;a href="https://blog.duckll.tw/blog/DarkModeOrNot/">黑夜模式&lt;/a>都很搭！&lt;/p>
+&lt;hr>
+&lt;p>但是我的 &lt;a href="http://localhost:1313/posts/favicon">Favicon&lt;/a> 卻暗了一點！這張是我請 Gemini 設計的。應該夠有個人特色吧？&lt;/p></description><content:encoded><![CDATA[<p>我的網站主視覺定調為 <code>#ff8a3d</code>，像這樣： <input type="color" value="#ff8a3d" style="border: none; cursor: pointer;"></p>
+<p>包括：</p>
+<div class="note-box">
+    
+          note
+
+</div>
+
+<p>以及目錄選單，我都設定成這個顏色。我個人覺得不管在白天或是<a href="https://blog.duckll.tw/blog/DarkModeOrNot/">黑夜模式</a>都很搭！</p>
+<hr>
+<p>但是我的 <a href="/posts/favicon">Favicon</a> 卻暗了一點！這張是我請 Gemini 設計的。應該夠有個人特色吧？</p>
+<img src="/share.png" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px;">
+<p>這是 <code>#ef883b</code>，長這樣：<input type="color" value="#ef883b" style="border: none; cursor: pointer;"></p>
+<hr>
+<p><input type="color" value="#ff8a3d" style="border: none; cursor: pointer;"><input type="color" value="#ef883b" style="border: none; cursor: pointer;"></p>
+<p>前後對比才看得出差別。還是亮一點好，看起來更有活力！</p>
+]]></content:encoded></item><item><title>國家圖書館</title><link>http://localhost:1313/posts/nt/</link><pubDate>Fri, 18 Sep 2026 20:00:00 +0800</pubDate><guid>http://localhost:1313/posts/nt/</guid><description>&lt;p>今天下午沒課，終於有完整的時間可以正式參觀國家圖書館了！&lt;/p>
 &lt;p>二樓&lt;a href="http://localhost:1313/posts/2026-09-09#%E5%9C%8B%E5%9C%96">上禮拜就逛過了&lt;/a>，因此今天的重心就放在其他的典藏空間。首先來到四樓的「善本書室」，它有展出金剛經耶！但裡面好像不能拍照🫢&lt;/p>
 &lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/nt.jpg" style="width: 75%; max-width: 100%; height: auto;">
 &lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/nt-6.jpg" style="width: 75%; max-width: 100%; height: auto;">
@@ -8385,6 +8408,10 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
 
 
 
@@ -12037,13 +12064,13 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-18\n✍️ 狀態：有 4 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-18\n✍️ 狀態：有 4 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -12057,14 +12084,18 @@ ShowShareButtons = false
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-09-19\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-09-19\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
@@ -16751,6 +16782,10 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
 
 
 
@@ -20403,13 +20438,13 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-18\n✍️ 狀態：有 4 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-18\n✍️ 狀態：有 4 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -20423,14 +20458,18 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-09-19\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-09-19\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
