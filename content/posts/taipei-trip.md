@@ -49,7 +49,7 @@ title = '臺北走透透'
 |    辛亥路     |            |
 |   和平東西路    | 1st Blvd.  |
 |   愛國東西路    |            |
-|    信義路     | 2nd Blvd.  |
+|    [信義路](/posts/xinyi)     | 2nd Blvd.  |
 | [仁愛路↔凱達格蘭大道](/posts/renai) | 3rd Blvd.  |
 |   忠孝東西路    | 4th Blvd.  |
 |    八德路     |            |
