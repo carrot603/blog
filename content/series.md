@@ -42,7 +42,8 @@ title = 'series'
 2026-08-16 [松仁路](/posts/songren)  
 2026-08-29 [仁愛路↔凱達格蘭大道](/posts/renai)  
 2026-09-15 [敦化南北路](/posts/dunhua)  
-2026-09-20 [信義路](/posts/xinyi)
+2026-09-20 [信義路](/posts/xinyi)  
+2026-09-22 [復興南北路](/posts/fuxing)
 
 ---
 
