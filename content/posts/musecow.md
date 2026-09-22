@@ -3,7 +3,7 @@ date = '2026-09-20T18:00:00+08:00'
 draft = false
 title = '音樂家的無聊人生'
 +++
-<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/202308.jpg" style="width: 50%; max-width: 100%; height: auto;">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/202308.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
 >2023-08-12。在「回不去的家鄉」音樂會與海牛老師合照。
 
@@ -18,6 +18,8 @@ title = '音樂家的無聊人生'
 他的腳本都很幽默，就連線上課程也是！我從中學到不少東西，而最主要的我覺得還是「曲式」方面。我現在能夠有效率地分析一首曲子，有很大部份都要歸功於海牛！
 
 ---
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/musecow.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
 昨天 17 : 30 學籽特別開了一個直播，讓有問題的學員提問，海牛統一回答。
 

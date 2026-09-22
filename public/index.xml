@@ -1,4 +1,229 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Tue, 22 Sep 2026 12:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>臺北走透透——復興南北路</title><link>http://localhost:1313/posts/fuxing/</link><pubDate>Tue, 22 Sep 2026 12:00:00 +0800</pubDate><guid>http://localhost:1313/posts/fuxing/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/fuxing.jpg">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Wed, 23 Sep 2026 05:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>職能調查表</title><link>http://localhost:1313/posts/ucan/</link><pubDate>Wed, 23 Sep 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/ucan/</guid><description>&lt;p>校方要我們在&lt;a href="https://ucan.moe.edu.tw/index.aspx">大專校院就業職能平台&lt;/a>做職能調查表，以下分享我的結果：&lt;/p>
+&lt;h1 id="職業興趣探索診斷結果">職業興趣探索診斷結果&lt;/h1>
+&lt;h3 id="16-種職涯類型">16 種職涯類型&lt;/h3>
+&lt;p>16 種職涯類型是由同一領域、或所需知識技能相近的工作所組成，可以提供給教育體系運用於職涯或學習發展規劃，有系統的養成相近的知識與技能。分數代表的是您的興趣表現，而非工作技巧或能力。&lt;/p></description><content:encoded><![CDATA[<p>校方要我們在<a href="https://ucan.moe.edu.tw/index.aspx">大專校院就業職能平台</a>做職能調查表，以下分享我的結果：</p>
+<h1 id="職業興趣探索診斷結果">職業興趣探索診斷結果</h1>
+<h3 id="16-種職涯類型">16 種職涯類型</h3>
+<p>16 種職涯類型是由同一領域、或所需知識技能相近的工作所組成，可以提供給教育體系運用於職涯或學習發展規劃，有系統的養成相近的知識與技能。分數代表的是您的興趣表現，而非工作技巧或能力。</p>
+<table>
+  <thead>
+      <tr>
+          <th>16 職涯類型</th>
+          <th>興趣強度分數</th>
+          <th>PR值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>建築營造</td>
+          <td>3.20</td>
+          <td>87</td>
+      </tr>
+      <tr>
+          <td>天然資源、食品與農業</td>
+          <td>1.45</td>
+          <td>53</td>
+      </tr>
+      <tr>
+          <td>藝文與影音傳播</td>
+          <td>2.90</td>
+          <td>85</td>
+      </tr>
+      <tr>
+          <td>企業經營管理</td>
+          <td>2.35</td>
+          <td>69</td>
+      </tr>
+      <tr>
+          <td>教育與訓練</td>
+          <td>3.20</td>
+          <td>78</td>
+      </tr>
+      <tr>
+          <td>金融財務</td>
+          <td>2.90</td>
+          <td>86</td>
+      </tr>
+      <tr>
+          <td>政府公共事務</td>
+          <td>2.90</td>
+          <td>84</td>
+      </tr>
+      <tr>
+          <td>醫療保健</td>
+          <td>2.60</td>
+          <td>71</td>
+      </tr>
+      <tr>
+          <td>個人及社會服務</td>
+          <td>2.90</td>
+          <td>71</td>
+      </tr>
+      <tr>
+          <td>休閒與觀光旅遊</td>
+          <td>2.35</td>
+          <td>51</td>
+      </tr>
+      <tr>
+          <td>資訊科技</td>
+          <td>2.60</td>
+          <td>78</td>
+      </tr>
+      <tr>
+          <td>司法、法律與公共安全</td>
+          <td>1.75</td>
+          <td>39</td>
+      </tr>
+      <tr>
+          <td>行銷與銷售</td>
+          <td>1.45</td>
+          <td>48</td>
+      </tr>
+      <tr>
+          <td>製造</td>
+          <td>2.60</td>
+          <td>80</td>
+      </tr>
+      <tr>
+          <td>科學、技術、工程、數學</td>
+          <td>2.05</td>
+          <td>72</td>
+      </tr>
+      <tr>
+          <td>物流運輸</td>
+          <td>1.75</td>
+          <td>56</td>
+      </tr>
+  </tbody>
+</table>
+<p>您在 16 種職涯類型中，興趣度最高的前幾名依序是：</p>
+<p><strong>建築營造、教育與訓練、藝文與影音傳播、金融財務、政府公共事務、個人及社會服務</strong></p>
+<blockquote>
+<p>原來我是建築師的料（X 主要還是藝術和社會，還有財務管理我也滿有興趣；公共事務倒是還好。</p></blockquote>
+<hr>
+<h3 id="職業性格">職業性格</h3>
+<p>職業性格分為實用型 R、研究型 I、藝術型 A、社會型 S、企業型 E 及事務型 C 六大職業性格類型。每個類型的職業性格傾向，皆有其適配的職業環境(參考 16 種職涯類型)。各類型滿分為 12 分，以下是您在職業性格類型的診斷分數：</p>
+<table>
+  <thead>
+      <tr>
+          <th>職業性格</th>
+          <th>職業性格代碼</th>
+          <th>職業性格傾向</th>
+          <th>PR值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>事務型</td>
+          <td>C</td>
+          <td>10</td>
+          <td>95</td>
+      </tr>
+      <tr>
+          <td>藝術型</td>
+          <td>A</td>
+          <td>8</td>
+          <td>88</td>
+      </tr>
+      <tr>
+          <td>社會型</td>
+          <td>S</td>
+          <td>8</td>
+          <td>79</td>
+      </tr>
+      <tr>
+          <td>研究型</td>
+          <td>I</td>
+          <td>7</td>
+          <td>77</td>
+      </tr>
+      <tr>
+          <td>實用型</td>
+          <td>R</td>
+          <td>7</td>
+          <td>81</td>
+      </tr>
+      <tr>
+          <td>企業型</td>
+          <td>E</td>
+          <td>2</td>
+          <td>32</td>
+      </tr>
+  </tbody>
+</table>
+<p>您的職業性格代碼：<strong>CAS</strong> 事務型、藝術型、社會型</p>
+<p><strong>事務型</strong>的人是典型的「文書者」(Organizer)，性格特徵為：規律、精確、有條理、堅毅、謹慎、有效率、穩重、愛整潔、講求實際、保守、服從指示。</p>
+<p><strong>藝術型</strong>的人是典型的「創作者」(Creator)，性格特徵為有創意、想像、直覺、獨立、具演藝表達性、跳脫框架限制、不傳統媚俗、理想化、敏銳感性。</p>
+<p><strong>社會型</strong>的人是典型的「幫助者」(Helper)，在性格特徵上是合作、友善、慷概、助人、仁慈、負責、善社交、善解人意、敏銳、圓融、和善。</p>
+<blockquote>
+<p>乍看之下有點矛盾！我很講究規矩沒錯，也很愛計畫事物；但我同時也過得十分瀟灑！<a href="/posts/fuxing">說散步就散步</a>，依直覺做事，很是自在！我覺得理性和感性不是二元對立，而像是一個隨時變化的「<a href="https://georgeessential.substack.com/p/065">天秤</a>」，端看我當下的心情任意調配。</p></blockquote>
+<hr>
+<h1 id="職場共通職能診斷結果">職場共通職能診斷結果</h1>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-22.jpg">
+<table>
+  <thead>
+      <tr>
+          <th>職場共通職能</th>
+          <th>能力強度PR值</th>
+          <th>分數</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>溝通表達</td>
+          <td>86</td>
+          <td>4.43</td>
+      </tr>
+      <tr>
+          <td>持續學習</td>
+          <td>90</td>
+          <td>4.71</td>
+      </tr>
+      <tr>
+          <td>人際互動</td>
+          <td>24</td>
+          <td>3.5</td>
+      </tr>
+      <tr>
+          <td>團隊合作</td>
+          <td>75</td>
+          <td>4.43</td>
+      </tr>
+      <tr>
+          <td>問題解決</td>
+          <td>99</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>創新</td>
+          <td>83</td>
+          <td>4.33</td>
+      </tr>
+      <tr>
+          <td>工作責任及紀律</td>
+          <td>82</td>
+          <td>4.71</td>
+      </tr>
+      <tr>
+          <td>資訊科技應用</td>
+          <td>70</td>
+          <td>4.13</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>溝通表達</strong>這還行啦！我還滿喜歡聊天的，至於寫作就更樂衷了！<strong>持續學習</strong>，畢竟我說過「<a href="/posts/learning">人生來是為了學習</a>」<a href="https://wiwi.video/w/o4xMSZzubNc2xCzdTw35Wm">學習是件非常好玩的事情</a>！<strong>團隊合作</strong>，雖然我不太願意當個領導者，但若是被分派任務的員工，我倒是很樂意。</p>
+<p>我很會<strong>解決問題</strong>，也許這是我的天賦。就拿<a href="/posts/deeper-learning">工作法</a>來說，我一直煩惱我的生活不夠理想，產出不夠多元，練琴不夠有效率，那怎麼辦呢？除了看書，套用現成的模板，我更擅長改良方法，為己所用。</p>
+<p>我也滿有<strong>創意</strong>的！時常有些天馬行空的有趣想法。至於<strong>工作責任及紀律</strong>，我覺得自己很<a href="/posts/self-discipline">自律</a>，有責任感。</p>
+<hr>
+<p>而尚待加強的項目如下：</p>
+<p>您在「人際互動」這項共通職能的原始分數是 3.5 分，PR 值是 24，代表您的人際互動能力尚待加強。<br>
+您在與人互動時，對於他人所釋出的訊息，有時候不是很理解和無法判斷對方的意圖或想法，以至於您不能做出適切的回應讓彼此感覺相談甚歡。在職場上，您不善於以互惠的原則，主動去建立職場上的人脈關係，所以人際交往比較單純，人際圈也比較狹小，僅限於因工作而認識的同事和客戶，您與他們的互動也比較制式化，不是屬於熱情的人。<br>
+建議您練習同理心的技巧，認識各式不同的人，試著去理解他們的情緒、想法與需求，瞭解人的多元性。另一方面可以觀摩與學習他人應對進退的方法，學習適切的互動方式。在職場上，不要侷限於狹小的個人，可以採取互惠合作原則，不吝主動地給予他人友善的回應或協助，廣結人緣。</p>
+<blockquote>
+<p>我很內向，只在必要的時候社交，也許是因為上學；或者自己悶壞了！也會想找別人聊天。像 blog 就是個很好<a href="https://yangbear.bearblog.dev/blogs-and-friendship/">交朋友</a>的地方！</p></blockquote>
+<hr>
+<p>我自認為很了解自己，很清楚我的人格特性；我也知道我想做什麼，總之我很滿意現在的生活，每天都是<a href="/posts/ideal-daily">最理想的一天</a>！</p>
+]]></content:encoded></item><item><title>臺北走透透——復興南北路</title><link>http://localhost:1313/posts/fuxing/</link><pubDate>Tue, 22 Sep 2026 12:00:00 +0800</pubDate><guid>http://localhost:1313/posts/fuxing/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/fuxing.jpg">
 &lt;p>時間統計如下：&lt;/p>
 &lt;table>
 &lt;thead>
@@ -69,6 +294,7 @@
 <p>啟程沒多久，就跑到科技大樓上廁所。雖然爸爸說這種事情不用提，但是它拖累了我的時間，還是必須狡辯一下！到了忠孝復興也是一樣，還在東區地下街繞了一會兒。</p>
 <p>中山國中站，旁邊有<a href="https://maps.app.goo.gl/RgDaVJmCceMgbVKv8">三民書局</a>，對面的大樓還有<a href="https://maps.app.goo.gl/M1xuqhJtQSC3D6MR6">臺灣股票博物館</a>，看起來就很神奇！改天有空去逛逛。</p>
 <p>民權東路有個不完全的圓環，還做了一個狹窄的右轉道，讓行人很難過！（物理）</p>
+<p>然後今天其實是<a href="https://zh.wikipedia.org/zh-tw/%E7%84%A1%E8%BB%8A%E6%97%A5">世界無車日</a>，為什麼我會知道呢？因為路上的各種跑馬燈一直廣告。</p>
 <p>週日走<a href="/posts/xinyi">信義路</a>，還冒出很多靈感。今天沒有特別想什麼，就是專心走路，我覺得這樣很好。但更有可能是因為我累了！畢竟昨天要搶主修課的時間，搞到十點半才睡覺！今天也是靠鬧鐘逼自己起來。希望作息能維持規律，不過以後搶時間大概也會成為常態，而我的睡覺時間也應該彈性一點，不能晚睡十幾二十分就打亂節奏，那樣沒有「反脆弱」的精神！我想自己一個禮拜晚睡一次，就是極限了吧！實在不能熬夜啊！</p>
 ]]></content:encoded></item><item><title>獨立成篇</title><link>http://localhost:1313/posts/article/</link><pubDate>Tue, 22 Sep 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/article/</guid><description>&lt;p>我怎麼決定一篇文章該寫什麼內容呢？我的貼文有長有短，像日記就很冗長；而廢文就很輕盈。&lt;/p>
 &lt;p>我盡量維持日更，因此時間到了就一定得產出什麼。文章可能反映了我的片斷想法，以及單純分享生活瑣事。或者我覺得夠重要的主題，也會單獨發出來。篇幅小，留白也多，更能留住讀者的注意力。&lt;/p></description><content:encoded><![CDATA[<p>我怎麼決定一篇文章該寫什麼內容呢？我的貼文有長有短，像日記就很冗長；而廢文就很輕盈。</p>
@@ -427,14 +653,14 @@
 <p>第一次走那麼久，也是第一次走那麼遠，超過了十公里，但感覺也沒有特別累。其實從象山一路下來，就有點鐵腿了，但我還是堅持到底。路上想了很多，有不少靈感可以寫成文章，可惜留給自己輸出的時間不夠多，就等每天慢慢日更吧！</p>
 <p>沿途路過老朋友<a href="/posts/songren">松仁路</a>、<a href="/posts/guangfu">光復路</a>和<a href="/posts/dunhua">敦化路</a>，走透透系列也來到第五篇了，真快！感覺每次散步就像「<a href="https://zh.wikipedia.org/zh-tw/%E7%B6%93%E8%A1%8C">經行</a>」一樣，邊走路邊冥想。</p>
 <p>今天實在太晚出門，難得臺北天氣那麼好，好得有點過頭了！太陽好曬。這就是為什麼我喜歡清晨就出門散步，路上沒什麼人，氣溫舒適涼爽，沒有汽車廢氣，沒有紛紛擾擾。</p>
-]]></content:encoded></item><item><title>音樂家的無聊人生</title><link>http://localhost:1313/posts/musecow/</link><pubDate>Sun, 20 Sep 2026 18:00:00 +0800</pubDate><guid>http://localhost:1313/posts/musecow/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/202308.jpg" style="width: 50%; max-width: 100%; height: auto;">
+]]></content:encoded></item><item><title>音樂家的無聊人生</title><link>http://localhost:1313/posts/musecow/</link><pubDate>Sun, 20 Sep 2026 18:00:00 +0800</pubDate><guid>http://localhost:1313/posts/musecow/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/202308.jpg" style="width: 75%; max-width: 100%; height: auto;">
 &lt;blockquote>
 &lt;p>2023-08-12。在「回不去的家鄉」音樂會與海牛老師合照。&lt;/p>&lt;/blockquote>
 &lt;hr>
 &lt;blockquote>
 &lt;p>&lt;a href="https://www.youtube.com/@musecow/videos">音樂家的無聊人生 Musecow&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;p>大概五年前，從蕭邦夜曲系列就開始固定收看了。還有 &lt;a href="https://www.youtube.com/@musecow/podcasts">Podcast&lt;/a> 跟&lt;a href="https://podcasts.apple.com/tw/podcast/%E6%B8%85%E8%8F%AF%E9%9F%B3%E6%A8%82%E4%BA%BA/id1617238855">清華音樂人&lt;/a>都很好聽！&lt;/p>
-&lt;p>我第一個買的線上課程（也是唯一一個），就是海牛的「&lt;a href="https://seeds.com.tw/courses/musicianseacow">樂譜上的革命&lt;/a>」那時候超早鳥預購，我有買進階版課程，雖然到目前為止都還沒看完……&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/202308.jpg" style="width: 50%; max-width: 100%; height: auto;">
+&lt;p>我第一個買的線上課程（也是唯一一個），就是海牛的「&lt;a href="https://seeds.com.tw/courses/musicianseacow">樂譜上的革命&lt;/a>」那時候超早鳥預購，我有買進階版課程，雖然到目前為止都還沒看完……&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/202308.jpg" style="width: 75%; max-width: 100%; height: auto;">
 <blockquote>
 <p>2023-08-12。在「回不去的家鄉」音樂會與海牛老師合照。</p></blockquote>
 <hr>
@@ -444,6 +670,7 @@
 <p>我第一個買的線上課程（也是唯一一個），就是海牛的「<a href="https://seeds.com.tw/courses/musicianseacow">樂譜上的革命</a>」那時候超早鳥預購，我有買進階版課程，雖然到目前為止都還沒看完……</p>
 <p>他的腳本都很幽默，就連線上課程也是！我從中學到不少東西，而最主要的我覺得還是「曲式」方面。我現在能夠有效率地分析一首曲子，有很大部份都要歸功於海牛！</p>
 <hr>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/musecow.jpg" style="width: 75%; max-width: 100%; height: auto;">
 <p>昨天 17 : 30 學籽特別開了一個直播，讓有問題的學員提問，海牛統一回答。</p>
 <p>我把留言區裡，我想補充的東西放上來。問題用<em>斜體</em>表示：</p>
 <p>​​<em>請問有沒有使用直笛的古典音樂</em></p>
@@ -8927,6 +9154,10 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
 
 
 
@@ -12532,13 +12763,13 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-22\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-22\n✍️ 狀態：有 2 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -12552,14 +12783,18 @@ ShowShareButtons = false
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-09-23\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-09-23\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
@@ -17351,6 +17586,10 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
 
 
 
@@ -20956,13 +21195,13 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-22\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-22\n✍️ 狀態：有 2 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -20976,14 +21215,18 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-09-23\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-09-23\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
