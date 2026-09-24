@@ -22,7 +22,7 @@ title: '蘿蔔週報 #1'
 
 首先，我開始輸入英文內容，包括部落格和 Podcast。
 
-目前早晨的固定儀式就是，喝一杯咖啡，打開[Taipei Times](https://www.taipeitimes.com/)，關心一下國家大事和國際政治。除此之外，我不看新聞，我不需要聳動的智障騙點閱標題，我不想被販賣焦慮跟腥羶色，我很 Joy of Missing Out！
+目前早晨的固定儀式就是，喝一杯咖啡，打開 [Taipei Times](https://www.taipeitimes.com/)，關心一下國家大事和國際政治。除此之外，我不看新聞，我不需要聳動的智障騙點閱標題，我不想被販賣焦慮跟腥羶色，我很 Joy of Missing Out！
 
 我的 RSS 閱讀器使用 [Feedly](https://feedly.com/)，裡面有一個頁面叫 **Explore**，我都用來找科技新聞，但大都只是看標題而已。
 
