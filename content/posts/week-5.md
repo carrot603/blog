@@ -83,7 +83,7 @@ title = '蘿蔔週報 #5'
 
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/week-5-2.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
->我的升降桌，與聯經[《亞洲人物史》海報](/posts/linking)。
+>我的升降桌，與聯經[《亞洲人物史》海報](/posts/linking)。果然還是寬 160 cm、深 80 cm 的大桌面好用！
 
 ---
 
