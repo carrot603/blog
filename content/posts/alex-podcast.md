@@ -2,6 +2,7 @@
 date = '2026-09-18T05:00:00+08:00'
 draft = false
 title = '1 級 Podcaster 的 1 級小怪'
+tags = ["散文"]
 +++
 昨晚聽了 Alex Hsu 的第一集 Podcast「[1 級 Podcaster 的 1 級小怪 — 創作進行式](https://alexhsu.com/podcast/level-one)」，原來他講話的語調長這樣😲
 

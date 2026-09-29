@@ -2,6 +2,7 @@
 date = '2026-07-23T11:00:00+08:00'
 draft = false
 title = '網站功能介紹'
+tags = ["code"]
 +++
 ### 首頁
 

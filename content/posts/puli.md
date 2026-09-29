@@ -2,6 +2,7 @@
 date = '2026-06-14T05:00:00+08:00'
 draft = false
 title = '埔里音樂藝術節'
+tags = ["音樂","日記","一中"]
 +++
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/puli.jpg)
 

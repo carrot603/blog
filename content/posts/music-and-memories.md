@@ -2,6 +2,7 @@
 date = '2026-06-21T08:00:00+08:00'
 draft = false
 title = '論音樂與記憶'
+tags = ["音樂","說理","BBP"]
 +++
 {{< note >}}
 這是我的「[BlogBlog 同樂會 - 2026 年 6 月](https://blogblog.club/party/)」的投稿文章。本月主題是「[音樂與記憶](https://www.yozblog.com/posts/music-and-memories)」，由 [柚子](https://www.yozblog.com/) 主持。如果你有自己的部落格，歡迎一起來參加！

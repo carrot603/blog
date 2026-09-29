@@ -2,6 +2,7 @@
 date = '2026-09-23T05:00:00+08:00'
 draft = false
 title = '職能調查表'
+tags = ["散文"]
 +++
 校方要我們在[大專校院就業職能平台](https://ucan.moe.edu.tw/index.aspx)做職能調查表，以下分享我的結果：
 

@@ -2,6 +2,7 @@
 date = '2026-09-18T19:00:00+08:00'
 draft = false
 title = '聯經出版｜《亞洲人物史》開箱分享活動邀請'
+tags = ["散文","網路"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-14.jpg">
 

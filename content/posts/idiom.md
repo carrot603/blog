@@ -2,6 +2,7 @@
 date = '2026-06-17T07:00:00+08:00'
 draft = false
 title = '成語'
+tags = ["散文"]
 +++
 >或許德．夏呂斯先生曉得德．嘉拉爾東夫人對他的習性有所懷疑，又忍不住想<span style="text-emphasis: filled circle; text-emphasis-position: over; -webkit-text-emphasis: filled circle; -webkit-text-emphasis-position: over;">含沙射影</span>藉此取樂，才存心使她無法渲染她姪兒受到了如何親切的接待，同時也在大聲宣告他對年輕人不感興趣；（……）
 

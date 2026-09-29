@@ -2,6 +2,7 @@
 date = '2026-07-24T05:01:00+08:00'
 draft = false
 title = '後設認知'
+tags = ["閱讀","說理"]
 +++
 [《超速學習》](https://readingoutpost.com/ultralearning/)教我們後設學習，先計畫好然後全神貫注。
 

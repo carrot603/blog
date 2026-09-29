@@ -2,6 +2,7 @@
 date = '2026-07-02T05:00:00+08:00'
 draft = false
 title = '只有我這樣嗎？'
+tags = ["散文","BBP"]
 +++
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/shelf.jpg)
 ### 看書要用書架

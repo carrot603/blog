@@ -2,6 +2,7 @@
 date = '2026-07-10T05:00:00+08:00'
 draft = false
 title = '書的分類'
+tags = ["閱讀"]
 +++
 比起[中文圖書分類法](https://catweb.ncl.edu.tw/class2007/96-1-1.htm)，我自己更偏好把書分成這六種：
 

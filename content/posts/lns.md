@@ -2,6 +2,7 @@
 date = '2026-07-09T05:01:00+08:00'
 draft = false
 title = '部署文章捷徑'
+tags = ["code"]
 +++
 我都用 [Obsidian](https://obsidian.md/) 收集寫作素材。軟體內建的 markdown 語法會自動幫你設定好，讓編輯過程變得有效率許多。
 

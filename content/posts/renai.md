@@ -2,6 +2,7 @@
 date = '2026-08-29T13:00:00+08:00'
 draft = false
 title = '臺北走透透——仁愛路↔凱達格蘭大道'
+tags = ["臺北走透透"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-29-9.jpg">
 

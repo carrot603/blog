@@ -2,6 +2,7 @@
 date = '2026-08-24T05:00:00+08:00'
 draft = false
 title = '週一才是一週的開始'
+tags = ["散文"]
 +++
 [星期中的日子 - 維基百科，自由的百科全書](https://zh.wikipedia.org/zh-tw/%E6%98%9F%E6%9C%9F%E4%B8%AD%E7%9A%84%E6%97%A5%E5%AD%90)：
 

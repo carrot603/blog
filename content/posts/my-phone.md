@@ -2,6 +2,9 @@
 date: 2026-08-10T18:08:36+08:00
 modified: 2026-08-10T18:23:33+08:00
 title: 我的手機
+tags:
+  - about
+  - 科技
 ---
 
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/Screenshot_20260810-180535.png)

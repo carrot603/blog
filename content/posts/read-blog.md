@@ -2,6 +2,7 @@
 date = '2026-07-18T05:01:00+08:00'
 draft = false
 title = '一份時間賣多次'
+tags = ["散文","閱讀"]
 +++
 
 [《逆襲人生21個底層邏輯》](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=333968)提到賺錢的三種模式：一份時間賣一次、一份時間賣多次、買他人的時間。

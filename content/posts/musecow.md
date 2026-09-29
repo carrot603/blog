@@ -2,6 +2,7 @@
 date = '2026-09-20T18:00:00+08:00'
 draft = false
 title = '音樂家的無聊人生'
+tags = ["音樂","散文","日記"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/202308.jpg" style="width: 75%; max-width: 100%; height: auto;">
 

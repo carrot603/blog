@@ -2,6 +2,7 @@
 date = '2026-09-17T05:00:00+08:00'
 draft = false
 title = '搜尋蘿蔔'
+tags = ["蘿蔔","散文","網路"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/search-carrot.jpg">
 

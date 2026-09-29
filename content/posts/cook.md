@@ -2,6 +2,7 @@
 date = '2026-09-21T20:00:00+08:00'
 draft = false
 title = '請叫我蘿蔔大廚'
+tags = ["蘿蔔","料理"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/cook.jpg">
 

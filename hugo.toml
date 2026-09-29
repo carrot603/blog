@@ -47,6 +47,10 @@ timeZone = "Asia/Taipei"
   minifyOutput = true
   disableXML = false
 
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
 [[menu.main]]
   name = "📝"
   url = "/posts/"

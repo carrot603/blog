@@ -2,6 +2,7 @@
 date = '2026-09-14T05:00:00+08:00'
 draft = false
 title = '刀工'
+tags = ["散文","料理"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/knife.jpg" style="width: 75%; max-width: 100%; height: auto;">
 

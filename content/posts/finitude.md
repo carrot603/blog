@@ -3,6 +3,7 @@ date = '2026-06-28T05:01:00+08:00'
 draft = false
 title = '人生的有限性'
 math = true
+tags = ["說理"]
 +++
 若一週可以讀兩本書，一年算五十二週，一年可以讀 104 本書，為方便計算取整百。根據[國際標準編碼申辦整合服務平臺](https://isbn.ncl.edu.tw/NEW_ISBNNet/main_ProcessLevel3.php?Ptarget=253)，114 年新書共 55,016 種，大約 55,000 種。
 

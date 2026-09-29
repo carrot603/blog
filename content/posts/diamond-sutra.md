@@ -2,6 +2,7 @@
 date = '2026-07-30T05:00:00+08:00'
 draft = false
 title = '《金剛經》教我的人生智慧'
+tags = ["閱讀","說理","金剛經"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/sutra.jpg" style="width: 75%; max-width: 100%; height: auto;">
 

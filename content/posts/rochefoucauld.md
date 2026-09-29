@@ -2,6 +2,7 @@
 date = '2026-08-25T05:00:00+08:00'
 draft = false
 title = '《人性箴言》'
+tags = ["閱讀"]
 +++
 >[《偽善是邪惡向美德的致敬：人性箴言》](https://findbook.com.tw/9789865842086)，弗朗索瓦．德．拉羅什福柯（Francois de La Rochefoucauld 1613-1680）著，黃意雯譯，2013-08，八旗。
 

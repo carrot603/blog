@@ -2,6 +2,7 @@
 date = '2026-08-03T05:01:00+08:00'
 draft = false
 title = '我用 AI：請益 ChatGPT 寫作方向'
+tags = ["AI","科技"]
 +++
 <div id="custom-toc"></div>
 

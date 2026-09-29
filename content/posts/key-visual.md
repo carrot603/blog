@@ -2,6 +2,7 @@
 date = '2026-09-19T20:00:00+08:00'
 draft = false
 title = '主視覺'
+tags = ["code"]
 +++
 我的網站主視覺定調為 `#ff8a3d`，像這樣： <input type="color" value="#ff8a3d" style="border: none; cursor: pointer;">
 

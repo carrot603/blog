@@ -2,6 +2,7 @@
 date = '2026-07-26T19:00:00+08:00'
 draft = false
 title = '30 個常用 HTML + CSS 小技巧'
+tags = ["code"]
 +++
 本來想寫 markdown 語法的，但官網已經說明得很清楚了，請看 https://markdown.tw/
 

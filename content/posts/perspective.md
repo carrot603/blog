@@ -2,6 +2,7 @@
 date = '2026-08-12T05:00:00+08:00'
 draft = false
 title = '透視圖'
+tags = ["散文"]
 +++
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/perspective.jpg)
 

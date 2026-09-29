@@ -2,6 +2,7 @@
 date = '2026-09-14T20:00:00+08:00'
 draft = false
 title = '蘿蔔週報 #3'
+tags = ["回顧"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/week-3.jpg" style="width: 75%; max-width: 100%; height: auto;">
 

@@ -2,6 +2,7 @@
 date = '2026-08-03T05:00:00+08:00'
 draft = false
 title = '《納瓦爾寶典》'
+tags = ["閱讀"]
 +++
 [《納瓦爾寶典》](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=362484)Eric Jorgenson 著，謝佩妏譯。天下，2024-01。
 

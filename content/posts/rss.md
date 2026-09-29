@@ -2,6 +2,7 @@
 date = '2026-09-03T17:00:00+08:00'
 draft = false
 title = '我用 RSS'
+tags = ["散文","code","網路"]
 +++
 不想每天檢查訊息，更不願被 Google 和 Meta 壟斷！於是我把學校的 Gmail，轉寄到我私人的 ProtonMail，就不用讓超肥的 Gmail app 佔據我的手機容量了！
 

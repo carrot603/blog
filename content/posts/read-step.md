@@ -2,6 +2,7 @@
 date = '2026-07-11T05:00:00+08:00'
 draft = false
 title = '閱讀的四個層次'
+tags = ["說理","閱讀"]
 +++
 
 ### [《如何閱讀一本書》](https://readingoutpost.com/how-to-read-a-book/)的閱讀四層次：

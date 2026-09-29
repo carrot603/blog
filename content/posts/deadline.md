@@ -2,6 +2,7 @@
 title = '《死線已是十天前》'
 date = '2026-07-22T05:00:00+08:00'
 draft = false
+tags = ["閱讀"]
 +++
 [《死線已是十天前》](https://findbook.com.tw/9786269875931)：
 

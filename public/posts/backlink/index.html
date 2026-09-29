@@ -1,5 +1,5 @@
 <!doctype html><html lang=en dir=auto data-theme=dark><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="noindex, nofollow"><title>引用語法最佳化 | Carrot Blog</title>
-<meta name=keywords content><meta name=description content='
+<meta name=keywords content="code"><meta name=description content='
 把引用語法修改，對 Hugo 主機不影響，但在 Obsidian 內讀取，就能直接連結！
 before: [範例]({{< relref "example.md" >}})
 
@@ -9,7 +9,7 @@ after: [範例](/posts/example)
 <a href=/posts/>posts</a><svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg></nav><h1 class="post-title entry-hint-parent">引用語法最佳化</h1><div class=post-meta><span title='2026-07-15 05:00:00 +0800 CST'>July 15, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>273 words</span></div></header><div class="post-content md-content"><p><img alt=無法載入 loading=lazy src=https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/backlink.jpg></p><p>把引用語法修改，對 Hugo 主機不影響，但在 Obsidian 內讀取，就能直接連結！</p><pre tabindex=0><code>before: [範例]({{&lt; relref &#34;example.md&#34; &gt;}})
 
 after: [範例](/posts/example)
-</code></pre><p>以往的 <code>[範例]({{&lt; relref "example.md" >}})</code> Obsidian 都以為是純文字，自動建立名為 &ldquo;{{&lt;&rdquo; 的檔案。現在改成絕對路徑，不只 backlink 能直接瀏覽，連 graph 都能一目了然！</p><p>用看的就能知道誰跟誰最有關聯，也可以藉此檢查有沒有尚未建立的雙向連結。比如本篇跟<a href=/posts/hyperlink>超連結</a>，前後呼應，這段寫完回頭去補網址，就算觀眾看到舊文，也有機會看到我的最新進度！</p><p><img alt=無法載入 loading=lazy src=https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/backlink1.jpg></p><p>如此便實現上週的圖表願望！看著密密麻麻的線連來連去，感覺自己腦內的神經也變得四通八達（？</p><div class=note-box>2026-07-26 的我：我也畫出自己的<a href=/posts/graph-view>知識圖譜</a>了！</div></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=http://localhost:1313/posts/thsr/><span class=title>« Prev</span>
+</code></pre><p>以往的 <code>[範例]({{&lt; relref "example.md" >}})</code> Obsidian 都以為是純文字，自動建立名為 &ldquo;{{&lt;&rdquo; 的檔案。現在改成絕對路徑，不只 backlink 能直接瀏覽，連 graph 都能一目了然！</p><p>用看的就能知道誰跟誰最有關聯，也可以藉此檢查有沒有尚未建立的雙向連結。比如本篇跟<a href=/posts/hyperlink>超連結</a>，前後呼應，這段寫完回頭去補網址，就算觀眾看到舊文，也有機會看到我的最新進度！</p><p><img alt=無法載入 loading=lazy src=https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/backlink1.jpg></p><p>如此便實現上週的圖表願望！看著密密麻麻的線連來連去，感覺自己腦內的神經也變得四通八達（？</p><div class=note-box>2026-07-26 的我：我也畫出自己的<a href=/posts/graph-view>知識圖譜</a>了！</div></div><footer class=post-footer><ul class=post-tags><li><a href=http://localhost:1313/tags/code/>Code</a></li></ul><nav class=paginav><a class=prev href=http://localhost:1313/posts/thsr/><span class=title>« Prev</span>
 <span>高鐵雜誌</span>
 </a><a class=next href=http://localhost:1313/posts/business-inspirational/><span class=title>Next »</span>
 <span>商管＆心理書推薦</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2026 <a href=http://localhost:1313/>Carrot Blog</a></span> ·

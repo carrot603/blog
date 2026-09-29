@@ -2,6 +2,8 @@
 created: 2026-08-27T07:31:07+08:00
 modified: 2026-08-27T07:32:23+08:00
 title: 付費交友？
+tags:
+  - 散文
 ---
 
 剛剛在 Taipei Times 讀到 [*Would you pay for an algorithm to pick your friends?*](https://www.taipeitimes.com/News/feat/archives/2026/08/27/2003863195)，忍不住想分享一些想法。

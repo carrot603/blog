@@ -2,6 +2,7 @@
 date = '2026-07-28T05:00:00+08:00'
 draft = false
 title = '堆垛悖論'
+tags = ["散文","閱讀"]
 +++
 [《圖解悖論大百科》](https://webpac.taichung.gov.tw/bookDetail/888764)提到：
 

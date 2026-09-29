@@ -2,6 +2,7 @@
 date = '2026-08-10T05:00:00+08:00'
 draft = false
 title = '國中作文'
+tags = ["寫作"]
 +++
 <div id="custom-toc"></div>
 

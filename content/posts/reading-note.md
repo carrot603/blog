@@ -2,6 +2,7 @@
 date = '2026-07-12T05:00:00+08:00'
 draft = false
 title = '關於閱讀的筆記'
+tags = ["閱讀","說理","學習"]
 +++
 ### [《大腦想要的正確讀書法》](https://one.ebook.hyread.com.tw/bookDetail.jsp?id=421729)
 

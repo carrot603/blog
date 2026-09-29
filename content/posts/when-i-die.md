@@ -2,6 +2,7 @@
 date = '2026-08-09T05:00:00+08:00'
 draft = false
 title = '/when-i-die'
+tags = ["散文","about"]
 +++
 讀了「[日後 – 鵝庵筆記](https://white-ceiling.bearblog.dev/white-ceiling/)」，發現作者參考了一個德國人 Ava 寫的 [*when i die*](https://avas.bearblog.dev/when-i-die/)，於是我也想弄一個 `/when-i-die`😁
 

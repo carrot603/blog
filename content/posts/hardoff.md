@@ -2,6 +2,8 @@
 created: 2026-08-22T06:26:46+08:00
 modified: 2026-08-22T06:30:03+08:00
 title: Hardoff
+tags:
+  - 日記
 ---
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/hardoff.jpg" style="width: 75%; max-width: 100%; height: auto;">
 

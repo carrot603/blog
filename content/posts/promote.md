@@ -2,6 +2,7 @@
 date = '2026-07-01T05:00:00+08:00'
 draft = false
 title = '推坑'
+tags = ["散文","BBP"]
 +++
 ### [NiceLemon](https://wiwi.video/c/nicelemon/videos)
 

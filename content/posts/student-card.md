@@ -2,6 +2,7 @@
 date = '2026-09-09T20:00:00+08:00'
 draft = false
 title = '學生證'
+tags = ["日記","散文"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/student-card.jpg">
 

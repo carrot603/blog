@@ -2,6 +2,7 @@
 date = '2026-09-02T20:00:00+08:00'
 draft = false
 title = '系上報到'
+tags = ["日記"]
 +++
 {{< note >}}
 我把[新生訓練](/posts/freshman)補完了，有興趣可以看！

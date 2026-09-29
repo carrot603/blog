@@ -2,6 +2,7 @@
 date = '2026-09-12T05:00:00+08:00'
 draft = false
 title = '一天當兩天用'
+tags = ["說理","散文"]
 +++
 >不做無益事，一日當三日，人活五十歲，我活百五十。——[胡適](https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E5%9C%8B%E6%96%87/%E4%B8%8D%E5%81%9A%E7%84%A1%E7%9B%8A%E4%BA%8B%EF%BC%8C%E4%B8%80%E6%97%A5%E7%95%B6%E4%B8%89%E6%97%A5%EF%BC%8C%E4%BA%BA%E6%B4%BB%E4%BA%94%E5%8D%81%E6%AD%B2%EF%BC%8C%E6%88%91%E6%B4%BB%E7%99%BE%E4%BA%94%E5%8D%81.html)。
 

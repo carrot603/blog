@@ -2,6 +2,7 @@
 date = '2026-06-26T05:00:00+08:00'
 draft = false
 title = '找書'
+tags = ["閱讀"]
 +++
 [FindBook 找書網](https://findbook.com.tw/) 連結各大書店，不只能比價，也能導引至各大圖書館。我引用書目的所有連結也從這裡，比較客觀。
 

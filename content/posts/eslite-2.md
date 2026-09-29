@@ -2,6 +2,7 @@
 date = '2026-09-13T21:00:00+08:00'
 draft = false
 title = '星期六早上逛誠品（二）'
+tags = ["誠品"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-13.jpg">
 

@@ -2,6 +2,7 @@
 date = '2026-06-12T08:00:00+08:00'
 draft = false
 title = 'Carrot Blog'
+tags = ["散文"]
 +++
 本來叫 Carrot，但第一眼看到會覺得意義不明，我又不是賣菜的；再者只有 carrot 也不容易搜尋，像是 https://carrot.com 或 https://www.carrot.com.tw/ 也都叫 carrot。
 

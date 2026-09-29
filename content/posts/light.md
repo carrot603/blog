@@ -2,6 +2,7 @@
 date = '2026-06-17T05:00:00+08:00'
 draft = false
 title = '光照之處'
+tags = ["寫作","一中"]
 +++
 >以下是學測前寫的[國文 4568](https://www.sanmin.com.tw/product/index/011881869) 的作文題目。Gemini 給我 23 分😃我自己不敢再看但還是丟上來吧……
 

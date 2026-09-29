@@ -2,6 +2,7 @@
 date = '2026-07-04T05:00:00+08:00'
 draft = false
 title = '破題'
+tags = ["散文"]
 +++
 之所以會想要架網站，完全是受到 [Wiwi](https://wiwi.blog/blog/dont-abandon-your-home/) 的感召（？[好檸檬](https://wiwi.video/c/nicelemon/videos)的潛移默化自然不需多言。真正的動力來自於覺得自己夠成熟了，也有錢可以買網址😆
 

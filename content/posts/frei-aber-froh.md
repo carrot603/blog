@@ -2,6 +2,7 @@
 date = '2026-07-10T04:59:00+08:00'
 draft = false
 title = '第四屆弦樂成發 《Frei aber Froh》'
+tags = ["音樂","一中"]
 +++
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/frei.jpg)
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/frei1.jpg)

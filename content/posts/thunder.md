@@ -2,6 +2,7 @@
 date = '2026-08-13T05:00:00+08:00'
 draft = false
 title = '雷霆儀隊'
+tags = ["一中"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/IMG_4807.jpg" style="width: 75%; max-width: 100%; height: auto;">
 

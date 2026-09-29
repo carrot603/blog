@@ -2,6 +2,7 @@
 date = '2026-07-20T05:00:00+08:00'
 draft = false
 title = '《深度學習的技術》'
+tags = ["閱讀"]
 +++
 {{< note >}}
 🎉感謝[資工小廢物 - JN](https://blog.giveanornot.com/)推薦🎉

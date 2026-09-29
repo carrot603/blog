@@ -2,6 +2,7 @@
 date = '2026-06-26T05:01:00+08:00'
 draft = false
 title = '屬七和弦'
+tags = ["音樂","閱讀"]
 +++
 以下出自[《密集和聲與題庫》](https://ipac.nlpi.edu.tw/bookDetail/294339) 第十章 屬七和弦：
 

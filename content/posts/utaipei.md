@@ -2,6 +2,7 @@
 date = '2026-07-10T04:00:00+08:00'
 draft = false
 title = '致市北教授'
+tags = ["散文"]
 +++
 {{< youtube id="m3qMHBz1WoM" start="430" >}}
 <br>

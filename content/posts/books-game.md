@@ -2,6 +2,7 @@
 date = '2026-09-16T06:00:00+08:00'
 draft = false
 title = '《人生也是一個遊戲》'
+tags = ["閱讀"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/books-game.jpg" style="width: 75%; max-width: 100%; height: auto;">
 

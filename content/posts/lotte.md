@@ -2,6 +2,7 @@
 date = '2026-07-21T05:01:00+08:00'
 draft = false
 title = '樂天小熊冰淇淋'
+tags = ["散文","料理"]
 +++
 ![無法載入](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/lotte.jpg)
 上週買了兩個[酷聖石巧克豆豆冰銅燒](https://www.coldstone.com.tw/product_detail_374.html)，樂天小熊跟 Cold Stone 聯名，是包著巧克力豆的銅鑼燒冰。

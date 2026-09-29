@@ -2,6 +2,7 @@
 date = '2026-06-27T05:01:00+08:00'
 draft = false
 title = '比較不是永續之道'
+tags = ["說理","金剛經"]
 +++
 [《金剛經》](/posts/diamond-sutra)告訴我們不要比較。
 

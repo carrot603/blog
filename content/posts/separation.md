@@ -2,6 +2,7 @@
 date = '2026-09-09T05:00:00+08:00'
 draft = false
 title = '六度分隔理論'
+tags = ["散文"]
 +++
 >**六度分隔理論**（英語：Six Degrees of Separation）認為世界上任何互不相識的兩人，只需要很少的中間人就能夠建立起聯繫。[哈佛大學](https://zh.wikipedia.org/wiki/%E5%93%88%E4%BD%9B%E5%A4%A7%E5%AD%B8 "哈佛大學")心理學教授[斯坦利·米爾格拉姆](https://zh.wikipedia.org/wiki/%E6%96%AF%E5%9D%A6%E5%88%A9%C2%B7%E7%B1%B3%E5%B0%94%E6%A0%BC%E6%8B%89%E5%A7%86 "斯坦利·米爾格拉姆")於 1967 年根據這個概念做過一次連鎖信實驗，嘗試證明平均只需要 6 步就可以聯繫任何兩個互不相識的人。
 
