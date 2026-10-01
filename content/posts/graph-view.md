@@ -2,7 +2,7 @@
 date = '2026-07-26T12:00:00+08:00'
 draft = false
 title = '知識圖譜'
-tags = ["code"]
+tags = ["code","about"]
 +++
 早上做了一個模仿 [Obsidian 的 graph view](/posts/backlink)，不只我自己能看到連結，讀者有興趣也可以玩玩看。有種站在全知視角觀察自己思考的感覺。
 

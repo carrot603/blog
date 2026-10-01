@@ -63,6 +63,354 @@ note
 &lt;p>至於音樂系官網，&lt;a href="http://localhost:1313/posts/ut-music">昨天&lt;/a>助教有說，在「&lt;a href="https://music.utaipei.edu.tw/blog">最新消息&lt;/a>」常有重要通知，有空就上去看看。我才不要那麼麻煩咧！直接用 &lt;a href="https://rss.app/">RSS.app&lt;/a> 生成 RSS Feed 連結，丟到我的 Feedly 就好啦！有趣的是，公佈欄的連結 &lt;code>https://music.utaipei.edu.tw/blog&lt;/code>，居然是 blog！&lt;/p></description><content:encoded><![CDATA[<p>不想每天檢查訊息，更不願被 Google 和 Meta 壟斷！於是我把學校的 Gmail，轉寄到我私人的 ProtonMail，就不用讓超肥的 Gmail app 佔據我的手機容量了！</p>
 <p>至於音樂系官網，<a href="/posts/ut-music">昨天</a>助教有說，在「<a href="https://music.utaipei.edu.tw/blog">最新消息</a>」常有重要通知，有空就上去看看。我才不要那麼麻煩咧！直接用 <a href="https://rss.app/">RSS.app</a> 生成 RSS Feed 連結，丟到我的 Feedly 就好啦！有趣的是，公佈欄的連結 <code>https://music.utaipei.edu.tw/blog</code>，居然是 blog！</p>
 <p>而 <a href="https://www.facebook.com/utaipeimusic">Facebook 的社團</a>，也能用 RSS.app 建立連結；我們學生自己還有一個私密社團，感覺還是要加一下，免得遺漏重要資訊或經驗談。因為機器人爬不到私密社團，所以我還在想辦法；也要等審核通過再說。</p>
+]]></content:encoded></item><item><title>解套計算機</title><link>http://localhost:1313/posts/stuck/</link><pubDate>Sat, 08 Aug 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/stuck/</guid><description>&lt;div class="note-box">
+請進入網站以獲得完整體驗！
+&lt;/div>
+&lt;p>以下計算賠了多少％，要回檔幾％才會回本：&lt;/p>
+&lt;div class="custom-calc-card">
+&lt;div class="calc-header">
+&lt;h3>解套計算機&lt;/h3>
+&lt;p class="calc-formula">計算公式：&lt;code>[ 100 / (100 - x) - 1 ] &amp;times; 100%&lt;/code>&lt;/p>
+&lt;/div>
+&lt;div class="calc-body">
+&lt;div class="input-group">
+&lt;label for="input-x">賠了 ( x ) ％：&lt;/label>
+&lt;input type="number" id="input-x" placeholder="請輸入 x" value="20" oninput="runCustomCalc()" />
+&lt;/div>
+&lt;hr class="calc-divider" />
+&lt;div class="result-group">
+&lt;span>計算結果：&lt;/span>
+&lt;div class="result-display">
+&lt;span id="calc-result" class="result-value">25&lt;/span>
+&lt;span class="percent-symbol">%&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.custom-calc-card {
+background-color: var(--entry);
+border: 1px solid var(--border);
+border-radius: 12px;
+padding: 20px;
+margin: 20px 0;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+max-width: 450px;
+}
+.calc-header h3 {
+margin-top: 0;
+margin-bottom: 8px;
+color: var(--primary);
+}
+.calc-formula {
+font-size: 0.9rem;
+color: var(--secondary);
+margin-bottom: 15px;
+}
+.input-group {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 12px;
+}
+.input-group label {
+color: var(--primary);
+font-size: 0.95rem;
+}
+.input-group input {
+width: 140px;
+padding: 8px 12px;
+border-radius: 6px;
+border: 1px solid var(--border);
+background-color: var(--theme);
+color: var(--primary);
+font-size: 1rem;
+outline: none;
+text-align: right;
+}
+.input-group input:focus {
+border-color: #3b82f6;
+}
+.calc-divider {
+border: 0;
+border-top: 1px solid var(--border);
+margin: 15px 0;
+}
+.result-group {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: bold;
+font-size: 1.1rem;
+color: var(--primary);
+}
+.result-value {
+color: #3b82f6;
+font-size: 1.4rem;
+}
+&lt;/style>
+&lt;script>
+function runCustomCalc() {
+const rawInput = document.getElementById('input-x').value;
+const x = parseFloat(rawInput);
+const resultElement = document.getElementById('calc-result');
+if (isNaN(x)) {
+resultElement.innerText = '0';
+return;
+}
+if (x === 100) {
+resultElement.innerText = '∞';
+return;
+}
+const result = ((100 / (100 - x)) - 1) * 100;
+resultElement.innerText = Number.isInteger(result) ? result : result.toFixed(2);
+}
+document.addEventListener('DOMContentLoaded', runCustomCalc);
+&lt;/script>
+&lt;p>填入數字後就會自動得出結果囉！&lt;/p></description><content:encoded><![CDATA[<div class="note-box">
+    
+          請進入網站以獲得完整體驗！
+
+</div>
+
+<p>以下計算賠了多少％，要回檔幾％才會回本：</p>
+<div class="custom-calc-card">
+  <div class="calc-header">
+    <h3>解套計算機</h3>
+    <p class="calc-formula">計算公式：<code>[ 100 / (100 - x) - 1 ] &times; 100%</code></p>
+  </div>
+
+  <div class="calc-body">
+    <div class="input-group">
+      <label for="input-x">賠了 ( x ) ％：</label>
+      <input type="number" id="input-x" placeholder="請輸入 x" value="20" oninput="runCustomCalc()" />
+    </div>
+
+    <hr class="calc-divider" />
+
+    <div class="result-group">
+      <span>計算結果：</span>
+      <div class="result-display">
+        <span id="calc-result" class="result-value">25</span>
+        <span class="percent-symbol">%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+ 
+.custom-calc-card {
+  background-color: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 450px;
+}
+
+.calc-header h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+
+.calc-formula {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.input-group input {
+  width: 140px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background-color: var(--theme);
+  color: var(--primary);
+  font-size: 1rem;
+  outline: none;
+  text-align: right;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6;
+}
+
+.calc-divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 15px 0;
+}
+
+.result-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.result-value {
+  color: #3b82f6;  
+  font-size: 1.4rem;
+}
+</style>
+
+<script>
+function runCustomCalc() {
+  const rawInput = document.getElementById('input-x').value;
+  const x = parseFloat(rawInput);
+
+  const resultElement = document.getElementById('calc-result');
+
+  
+  if (isNaN(x)) {
+    resultElement.innerText = '0';
+    return;
+  }
+  
+  if (x === 100) {
+    resultElement.innerText = '∞'; 
+    return;
+  }
+
+  
+  const result = ((100 / (100 - x)) - 1) * 100;
+
+  
+  resultElement.innerText = Number.isInteger(result) ? result : result.toFixed(2);
+}
+
+
+document.addEventListener('DOMContentLoaded', runCustomCalc);
+</script>
+
+<p>填入數字後就會自動得出結果囉！</p>
+<hr>
+<p>或者參考以下表格：</p>
+<div class="grid-table">
+  <div class="gt-cell gt-header">損失%</div>
+  <div class="gt-cell gt-header gt-bold-right">回檔%</div>
+  <div class="gt-cell gt-header">損失%</div>
+  <div class="gt-cell gt-header gt-bold-right">回檔%</div>
+  <div class="gt-cell gt-header">損失%</div>
+  <div class="gt-cell gt-header gt-bold-right">回檔%</div>
+  <div class="gt-cell gt-header">損失%</div>
+  <div class="gt-cell gt-header gt-bold-right">回檔%</div>
+  <div class="gt-cell gt-header">損失%</div>
+  <div class="gt-cell gt-header">回檔%</div>
+  <div class="gt-cell">1</div><div class="gt-cell gt-bold-right">1.01</div><div class="gt-cell">21</div><div class="gt-cell gt-bold-right">26.58</div><div class="gt-cell">41</div><div class="gt-cell gt-bold-right">69.49</div><div class="gt-cell">61</div><div class="gt-cell gt-bold-right">156</div><div class="gt-cell">81</div><div class="gt-cell">426</div>
+  <div class="gt-cell">2</div><div class="gt-cell gt-bold-right">2.04</div><div class="gt-cell">22</div><div class="gt-cell gt-bold-right">28.21</div><div class="gt-cell">42</div><div class="gt-cell gt-bold-right">72.41</div><div class="gt-cell">62</div><div class="gt-cell gt-bold-right">163</div><div class="gt-cell">82</div><div class="gt-cell">456</div>
+  <div class="gt-cell">3</div><div class="gt-cell gt-bold-right">3.09</div><div class="gt-cell">23</div><div class="gt-cell gt-bold-right">29.87</div><div class="gt-cell">43</div><div class="gt-cell gt-bold-right">75.44</div><div class="gt-cell">63</div><div class="gt-cell gt-bold-right">170</div><div class="gt-cell">83</div><div class="gt-cell">488</div>
+  <div class="gt-cell">4</div><div class="gt-cell gt-bold-right">4.17</div><div class="gt-cell">24</div><div class="gt-cell gt-bold-right">31.58</div><div class="gt-cell">44</div><div class="gt-cell gt-bold-right">78.57</div><div class="gt-cell">64</div><div class="gt-cell gt-bold-right">178</div><div class="gt-cell">84</div><div class="gt-cell">525</div>
+  <div class="gt-cell">5</div><div class="gt-cell gt-bold-right">5.26</div><div class="gt-cell">25</div><div class="gt-cell gt-bold-right">33.33</div><div class="gt-cell">45</div><div class="gt-cell gt-bold-right">81.82</div><div class="gt-cell">65</div><div class="gt-cell gt-bold-right">186</div><div class="gt-cell">85</div><div class="gt-cell">567</div>
+  <div class="gt-cell">6</div><div class="gt-cell gt-bold-right">6.38</div><div class="gt-cell">26</div><div class="gt-cell gt-bold-right">35.14</div><div class="gt-cell">46</div><div class="gt-cell gt-bold-right">85.19</div><div class="gt-cell">66</div><div class="gt-cell gt-bold-right">194</div><div class="gt-cell">86</div><div class="gt-cell">614</div>
+  <div class="gt-cell">7</div><div class="gt-cell gt-bold-right">7.53</div><div class="gt-cell">27</div><div class="gt-cell gt-bold-right">36.99</div><div class="gt-cell">47</div><div class="gt-cell gt-bold-right">88.68</div><div class="gt-cell">67</div><div class="gt-cell gt-bold-right">203</div><div class="gt-cell">87</div><div class="gt-cell">669</div>
+  <div class="gt-cell">8</div><div class="gt-cell gt-bold-right">8.70</div><div class="gt-cell">28</div><div class="gt-cell gt-bold-right">38.89</div><div class="gt-cell">48</div><div class="gt-cell gt-bold-right">92.31</div><div class="gt-cell">68</div><div class="gt-cell gt-bold-right">213</div><div class="gt-cell">88</div><div class="gt-cell">733</div>
+  <div class="gt-cell">9</div><div class="gt-cell gt-bold-right">9.89</div><div class="gt-cell">29</div><div class="gt-cell gt-bold-right">40.85</div><div class="gt-cell">49</div><div class="gt-cell gt-bold-right">96.08</div><div class="gt-cell">69</div><div class="gt-cell gt-bold-right">223</div><div class="gt-cell">89</div><div class="gt-cell">809</div>
+  <div class="gt-cell gt-highlight"><strong>10</strong></div>
+  <div class="gt-cell gt-highlight gt-bold-right"><strong>11.11</strong></div>
+  <div class="gt-cell gt-highlight"><strong>30</strong></div>
+  <div class="gt-cell gt-highlight gt-bold-right"><strong>42.86</strong></div>
+  <div class="gt-cell gt-highlight"><strong>50</strong></div>
+  <div class="gt-cell gt-highlight gt-bold-right"><strong>100</strong></div>
+  <div class="gt-cell gt-highlight"><strong>70</strong></div>
+  <div class="gt-cell gt-highlight gt-bold-right"><strong>233</strong></div>
+  <div class="gt-cell gt-highlight"><strong>90</strong></div>
+  <div class="gt-cell gt-highlight"><strong>900</strong></div>
+  <div class="gt-cell">11</div><div class="gt-cell gt-bold-right">12.36</div><div class="gt-cell">31</div><div class="gt-cell gt-bold-right">44.93</div><div class="gt-cell">51</div><div class="gt-cell gt-bold-right">104</div><div class="gt-cell">71</div><div class="gt-cell gt-bold-right">245</div><div class="gt-cell">91</div><div class="gt-cell">1011</div>
+  <div class="gt-cell">12</div><div class="gt-cell gt-bold-right">13.64</div><div class="gt-cell">32</div><div class="gt-cell gt-bold-right">47.06</div><div class="gt-cell">52</div><div class="gt-cell gt-bold-right">108</div><div class="gt-cell">72</div><div class="gt-cell gt-bold-right">257</div><div class="gt-cell">92</div><div class="gt-cell">1150</div>
+  <div class="gt-cell">13</div><div class="gt-cell gt-bold-right">14.94</div><div class="gt-cell">33</div><div class="gt-cell gt-bold-right">49.25</div><div class="gt-cell">53</div><div class="gt-cell gt-bold-right">113</div><div class="gt-cell">73</div><div class="gt-cell gt-bold-right">270</div><div class="gt-cell">93</div><div class="gt-cell">1329</div>
+  <div class="gt-cell">14</div><div class="gt-cell gt-bold-right">16.28</div><div class="gt-cell">34</div><div class="gt-cell gt-bold-right">51.52</div><div class="gt-cell">54</div><div class="gt-cell gt-bold-right">117</div><div class="gt-cell">74</div><div class="gt-cell gt-bold-right">285</div><div class="gt-cell">94</div><div class="gt-cell">1567</div>
+  <div class="gt-cell">15</div><div class="gt-cell gt-bold-right">17.65</div><div class="gt-cell">35</div><div class="gt-cell gt-bold-right">53.85</div><div class="gt-cell">55</div><div class="gt-cell gt-bold-right">122</div><div class="gt-cell">75</div><div class="gt-cell gt-bold-right">300</div><div class="gt-cell">95</div><div class="gt-cell">1900</div>
+  <div class="gt-cell">16</div><div class="gt-cell gt-bold-right">19.05</div><div class="gt-cell">36</div><div class="gt-cell gt-bold-right">56.25</div><div class="gt-cell">56</div><div class="gt-cell gt-bold-right">127</div><div class="gt-cell">76</div><div class="gt-cell gt-bold-right">317</div><div class="gt-cell">96</div><div class="gt-cell">2400</div>
+  <div class="gt-cell">17</div><div class="gt-cell gt-bold-right">20.48</div><div class="gt-cell">37</div><div class="gt-cell gt-bold-right">58.73</div><div class="gt-cell">57</div><div class="gt-cell gt-bold-right">133</div><div class="gt-cell">77</div><div class="gt-cell gt-bold-right">335</div><div class="gt-cell">97</div><div class="gt-cell">3233</div>
+  <div class="gt-cell">18</div><div class="gt-cell gt-bold-right">21.95</div><div class="gt-cell">38</div><div class="gt-cell gt-bold-right">61.29</div><div class="gt-cell">58</div><div class="gt-cell gt-bold-right">138</div><div class="gt-cell">78</div><div class="gt-cell gt-bold-right">355</div><div class="gt-cell">98</div><div class="gt-cell">4900</div>
+  <div class="gt-cell">19</div><div class="gt-cell gt-bold-right">23.46</div><div class="gt-cell">39</div><div class="gt-cell gt-bold-right">63.93</div><div class="gt-cell">59</div><div class="gt-cell gt-bold-right">144</div><div class="gt-cell">79</div><div class="gt-cell gt-bold-right">376</div><div class="gt-cell">99</div><div class="gt-cell">9900</div>
+  <div class="gt-cell gt-highlight"><strong>20</strong></div>
+  <div class="gt-cell gt-highlight gt-bold-right"><strong>25.00</strong></div>
+  <div class="gt-cell gt-highlight"><strong>40</strong></div>
+  <div class="gt-cell gt-highlight gt-bold-right"><strong>66.67</strong></div>
+  <div class="gt-cell gt-highlight"><strong>60</strong></div>
+  <div class="gt-cell gt-highlight gt-bold-right"><strong>150</strong></div>
+  <div class="gt-cell gt-highlight"><strong>80</strong></div>
+  <div class="gt-cell gt-highlight gt-bold-right"><strong>400</strong></div>
+  <div class="gt-cell gt-highlight"><strong>100</strong></div>
+  <div class="gt-cell gt-highlight"><strong>歸零！</strong></div>
+</div>
+<style>
+/* 使用 CSS Grid 強制將內容分為 10 等份，徹底避開 PaperMod table 限制 */
+.grid-table {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.72rem;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+/* 儲存格基礎配置，確保上下垂直對齊 */
+.gt-cell {
+  padding: 5px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px dashed var(--border);
+  background-color: var(--entry);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 橘色標頭 (#ff8a3d) */
+.gt-header {
+  background-color: #ff8a3d;
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 2px solid #ff8a3d;
+}
+
+/* 每兩欄右側的橘色加粗分隔線 */
+.gt-bold-right {
+  border-right: 2px solid #ff8a3d;
+}
+
+/* 10、20 列的淡橘色高亮背景 */
+.gt-highlight {
+  background-color: rgba(255, 138, 61, 0.15);
+}
+</style>
+<hr>
+<p>可見 10 % 的時候停損，11 % 就回來了！<br>
+20 % 停損，25 % 才回本。<br>
+40 % 停損，67 % 才回本。<br>
+50 % 才停損，要翻倍才回得來。<br>
+60 % 才停損，漲 1.5 倍才會回來。<br>
+80 % 停損，要翻四倍！<br>
+90 % 停損，要翻九倍！<br>
+100 % 不用講，直接歸零😢</p>
+<p><a href="/posts/sunk-cost">停不停損</a>跟你賠多少沒有關係，當停損信號出現了就該<strong>砍掉</strong>，這是原則問題！當然，<strong>套牢</strong>也不是那麼可怕，只要標的還在穩定成長，大概總有一天會回來！</p>
+<p>但不要忘了<a href="/posts/opportunity-cost">機會成本</a>，搞不好投資<a href="/posts/odd-lot">大盤</a>還賺得比較多！而且這之間的<a href="/posts/time">時間</a>損失，加上煩惱的精神損耗，是多少錢也彌補不來的！</p>
+<hr>
+<p>stock 跟 stuck 可以玩文字遊戲，我想它們長那麼像，不是沒有理由的！</p>
 ]]></content:encoded></item><item><title>Cloudflare R2</title><link>http://localhost:1313/posts/r2/</link><pubDate>Thu, 06 Aug 2026 07:00:00 +0800</pubDate><guid>http://localhost:1313/posts/r2/</guid><description>&lt;p>之前我都把照片和影片，放在部落格資料夾的 &lt;code>/static&lt;/code> 當中。但久而久之，網站就會越來越肥！這樣不是&lt;a href="http://localhost:1313/posts/do-not-compare">長久之計&lt;/a>。&lt;/p>
 &lt;p>我的 blog 存檔在 &lt;a href="https://github.com/">GitHub&lt;/a>，在我的電腦上寫好文章後，用指令 &lt;code>git push&lt;/code> 就能更新。&lt;a href="https://www.cloudflare.com/">Cloudflare&lt;/a> 負責託管我的網站，每當更新就會自動部署，如此一來，全世界都看得到我的 blog！步驟簡潔又方便，而且所有功能都是免費的！&lt;/p></description><content:encoded><![CDATA[<p>之前我都把照片和影片，放在部落格資料夾的 <code>/static</code> 當中。但久而久之，網站就會越來越肥！這樣不是<a href="/posts/do-not-compare">長久之計</a>。</p>
 <p>我的 blog 存檔在 <a href="https://github.com/">GitHub</a>，在我的電腦上寫好文章後，用指令 <code>git push</code> 就能更新。<a href="https://www.cloudflare.com/">Cloudflare</a> 負責託管我的網站，每當更新就會自動部署，如此一來，全世界都看得到我的 blog！步驟簡潔又方便，而且所有功能都是免費的！</p>
@@ -947,6 +1295,10 @@ ShowShareButtons = false
 <p>在 <a href="/posts/about">/about</a> 有放，學 Github 的，如下所示：</p>
 
 
+
+    
+    
+    
 
     
     
@@ -5554,13 +5906,13 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-30\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-30\n✍️ 狀態：有 1 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -5574,14 +5926,18 @@ ShowShareButtons = false
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-01\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-01\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             

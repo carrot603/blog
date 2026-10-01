@@ -1,4 +1,174 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Wed, 30 Sep 2026 20:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>我（曾經）的夜生活</title><link>http://localhost:1313/posts/stay-up/</link><pubDate>Wed, 30 Sep 2026 20:00:00 +0800</pubDate><guid>http://localhost:1313/posts/stay-up/</guid><description>&lt;div class="note-box">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Thu, 01 Oct 2026 05:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>健檢雜談</title><link>http://localhost:1313/posts/health-examine/</link><pubDate>Thu, 01 Oct 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/health-examine/</guid><description>&lt;p>報告終於在昨天出爐了！直接貼&lt;a href="https://service.ch.com.tw/group_check/login_sh.aspx">學生體檢結果查詢&lt;/a>的表格上來：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>檢查項目&lt;/th>
+&lt;th>檢查值&lt;/th>
+&lt;th>參考值&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=ACE000011" title="按這裏看胸部Ｘ光(一面) ONE VIEW CHEST(PA)的相關文章">胸部Ｘ光(一面) ONE VIEW CHEST(PA)&lt;/a>&lt;/td>
+&lt;td>正常&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=ACA000002" title="按這裏看身 高 Height的相關文章">身高 Height&lt;/a>&lt;/td>
+&lt;td>168.6&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=ACA000002" title="按這裏看體 重 Weight的相關文章">體重 Weight&lt;/a>&lt;/td>
+&lt;td>46.2&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=AIA970501" title="按這裏看腰圍的相關文章">腰圍&lt;/a>&lt;/td>
+&lt;td>62&lt;/td>
+&lt;td>男：&amp;lt; 90 女：&amp;lt; 80&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>身體質量指數BMI&lt;/td>
+&lt;td>16.3&lt;/td>
+&lt;td>18.5 ≦ BMI ＜ 24（成人標準）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>BMI判定&lt;/td>
+&lt;td>過輕&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>脈 搏 Pulse Rate&lt;/td>
+&lt;td>61&lt;/td>
+&lt;td>60 - 100&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=ACA000007" title="按這裏看收縮壓 S.P.的相關文章">收縮壓 S.P.&lt;/a>&lt;/td>
+&lt;td>94&lt;/td>
+&lt;td>&amp;lt; 140&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=ACA000007" title="按這裏看舒張壓 D.P.的相關文章">舒張壓 D.P.&lt;/a>&lt;/td>
+&lt;td>65&lt;/td>
+&lt;td>&amp;lt; 90&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=ACA000015" title="按這裏看矯正視力 (左) C. Spectacles(L)的相關文章">矯正視力 (左) C. Spectacles(L)&lt;/a>&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>&amp;gt;= 0.9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=ACA000015" title="按這裏看矯正視力 (右) C. Spectacles(R)的相關文章">矯正視力 (右) C. Spectacles(R)&lt;/a>&lt;/td>
+&lt;td>0.9&lt;/td>
+&lt;td>&amp;gt;= 0.9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=ACA000016" title="按這裏看色 盲 Color Vision的相關文章">色盲 Color Vision&lt;/a>&lt;/td>
+&lt;td>無異樣&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=AIA900601" title="按這裏看聽 力 判 定 Audiogram的相關文章">聽力判定 Audiogram&lt;/a>&lt;/td>
+&lt;td>無異樣&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;amp;chapter=ABD900201" title="按這裏看口 腔的相關文章">口腔&lt;/a>&lt;/td>
+&lt;td>無異樣&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;p>我在填&lt;a href="https://calke.bearblog.dev/healthy/">健檢&lt;/a>調查表的時候，很有自信地勾選「每日睡足七小時」、「每天都有吃早餐」，劇烈運動十分鐘以上的天數，有到五天以上。因為只要我有出門，運動量一定達標，即使只是散步也夠久了！&lt;/p></description><content:encoded><![CDATA[<p>報告終於在昨天出爐了！直接貼<a href="https://service.ch.com.tw/group_check/login_sh.aspx">學生體檢結果查詢</a>的表格上來：</p>
+<table>
+  <thead>
+      <tr>
+          <th>檢查項目</th>
+          <th>檢查值</th>
+          <th>參考值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=ACE000011" title="按這裏看胸部Ｘ光(一面)  ONE VIEW CHEST(PA)的相關文章">胸部Ｘ光(一面) ONE VIEW CHEST(PA)</a></td>
+          <td>正常</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=ACA000002" title="按這裏看身        高    Height的相關文章">身高 Height</a></td>
+          <td>168.6</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=ACA000002" title="按這裏看體        重    Weight的相關文章">體重 Weight</a></td>
+          <td>46.2</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=AIA970501" title="按這裏看腰圍的相關文章">腰圍</a></td>
+          <td>62</td>
+          <td>男：&lt; 90 女：&lt; 80</td>
+      </tr>
+      <tr>
+          <td>身體質量指數BMI</td>
+          <td>16.3</td>
+          <td>18.5 ≦ BMI ＜ 24（成人標準）</td>
+      </tr>
+      <tr>
+          <td>BMI判定</td>
+          <td>過輕</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>脈 搏 Pulse Rate</td>
+          <td>61</td>
+          <td>60 - 100</td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=ACA000007" title="按這裏看收縮壓 S.P.的相關文章">收縮壓 S.P.</a></td>
+          <td>94</td>
+          <td>&lt; 140</td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=ACA000007" title="按這裏看舒張壓 D.P.的相關文章">舒張壓 D.P.</a></td>
+          <td>65</td>
+          <td>&lt; 90</td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=ACA000015" title="按這裏看矯正視力 (左) C. Spectacles(L)的相關文章">矯正視力 (左) C. Spectacles(L)</a></td>
+          <td>1</td>
+          <td>&gt;= 0.9</td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=ACA000015" title="按這裏看矯正視力 (右) C. Spectacles(R)的相關文章">矯正視力 (右) C. Spectacles(R)</a></td>
+          <td>0.9</td>
+          <td>&gt;= 0.9</td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=ACA000016" title="按這裏看色       盲 Color Vision的相關文章">色盲 Color Vision</a></td>
+          <td>無異樣</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=AIA900601" title="按這裏看聽 力 判 定 Audiogram的相關文章">聽力判定 Audiogram</a></td>
+          <td>無異樣</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><a href="http://www.ch.com.tw/ch_healthservice.aspx?sv=ch_fitness&amp;chapter=ABD900201" title="按這裏看口        腔的相關文章">口腔</a></td>
+          <td>無異樣</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>我在填<a href="https://calke.bearblog.dev/healthy/">健檢</a>調查表的時候，很有自信地勾選「每日睡足七小時」、「每天都有吃早餐」，劇烈運動十分鐘以上的天數，有到五天以上。因為只要我有出門，運動量一定達標，即使只是散步也夠久了！</p>
+<p>網路使用的部份，每天不足兩小時；因為最低就是這個選項。這也是我自己感到驕傲的地方，畢竟我又不會滑手機！為什麼要讓演算法填滿我的人生呢？那些膚淺的內容不會是我想要的！</p>
+<p>當然每天都會看看 Feedly 上面大家的好文，再加上<a href="https://www.taipeitimes.com/">報紙</a>，偶爾看看<a href="/posts/musecow">線上課程</a>，一天大概會使用一小時的 3C 吧！寫文章不算在內，除非是查資料，不然根本沒有必要連上線。而若是統計螢幕使用時間，加上寫作或找靈感的一小時，一共約兩小時，還勉強可以。</p>
+<p>唯一需要改進的，大概只有視力！1.0、0.9 還夠用，但我拉樂團有時都看不到譜，教室黑板看得也不是很清楚……至於過輕，我覺得不成問題，反正過得健康就好了！我長得還滿均勻的（？至少人家看到我，不會覺得我太細就好。</p>
+]]></content:encoded></item><item><title>我（曾經）的夜生活</title><link>http://localhost:1313/posts/stay-up/</link><pubDate>Wed, 30 Sep 2026 20:00:00 +0800</pubDate><guid>http://localhost:1313/posts/stay-up/</guid><description>&lt;div class="note-box">
 這是「&lt;a href="https://blogblog.club/party/">BlogBlog 同樂會 - 2026 年 9 月&lt;/a>」的投稿文章。本月主題是「&lt;a href="https://jasonjlai.net/zh/3pwriting/stay-up.html">晚上不睡覺&lt;/a>」，由 &lt;a href="https://jasonjlai.net/">Jason Lai&lt;/a> 主持。如果你有自己的部落格，歡迎一起來參加！
 &lt;/div>
 &lt;p>對於第一次熬通宵，仍是記憶猶新。那時我大概只有三歲！&lt;/p></description><content:encoded><![CDATA[<div class="note-box">
@@ -9546,6 +9716,10 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
 
 
 
@@ -13204,13 +13378,13 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-30\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-30\n✍️ 狀態：有 1 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -13224,14 +13398,18 @@ ShowShareButtons = false
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-01\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-01\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
@@ -14084,6 +14262,8 @@ ShowShareButtons = false
 加入 Hover 文章預覽視窗，顯示網站內文章摘要，僅限電腦版。（延遲設定 0.3 s）</p>
 <h3 id="2026-09-08">2026-09-08</h3>
 <p>在外部連結的最前面，都加上它們自己的 <a href="/posts/favicon">favicon</a>。</p>
+<h3 id="2026-09-29">2026-09-29</h3>
+<p>新增 <a href="/tags">tags</a> 頁面，為每篇文章都加上標籤，顯示在網頁末尾。</p>
 ]]></content:encoded></item><item><title>《文章作法》</title><link>http://localhost:1313/posts/narrative/</link><pubDate>Thu, 23 Jul 2026 05:01:00 +0800</pubDate><guid>http://localhost:1313/posts/narrative/</guid><description>&lt;p>&lt;a href="https://findbook.com.tw/9786263177826">《文章作法》&lt;/a>〈附錄二　論記敘文中作者的地位並評現今小說界的文字〉（P.157）：&lt;/p>
 &lt;blockquote>
 &lt;p>記敘文在文字的形式上，要看不出有作者在，才能令人讀了如目見身歷，得到純粹的印象。一經作者逐處加入說明或議論，就可減殺讀者的趣味。其情形正如戀愛男女喁喁情話著，媒介者突然露出面影來羼入障害一樣。凡是好的記敘文，大都是在形式上看不出有作者的。&lt;/p></description><content:encoded><![CDATA[<p><a href="https://findbook.com.tw/9786263177826">《文章作法》</a>〈附錄二　論記敘文中作者的地位並評現今小說界的文字〉（P.157）：</p>
@@ -18047,6 +18227,10 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
 
 
 
@@ -21705,13 +21889,13 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-09-30\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-09-30\n✍️ 狀態：有 1 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -21725,14 +21909,18 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-01\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-01\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
