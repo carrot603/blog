@@ -1,30 +1,26 @@
 +++
-date = '2026-06-22T09:00:00+08:00'
+date = '2026-10-02T05:00:00+08:00'
 draft = false
 title = '關於'
-tags = ["about","散文"]
+tags = ["about"]
 +++
 {{< note >}}
 💡本頁面正式掛上主選單，日後將不定期更新。
 {{< /note >}}
 
-<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg" style="width: 75%; max-width: 100%; height: auto;">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg" style="width: 50%; max-width: 100%; height: auto;">
 
-我是江俊佑，生於臺灣臺中市，今年十九歲。興趣是彈鋼琴、閱讀跟探索世界。我每天都會出門散步、運動，讀幾頁[《追憶似水年華》](/posts/proust)。
-   
-在高中的時候參加[儀隊](https://www.instagram.com/thunder_living/)跟[弦樂社](https://www.instagram.com/tcfshso_3rd/)，涉略滿廣泛的（？
+你好我叫江俊佑，生於臺灣臺中市，今年十九歲。目前就讀[臺北市立大學音樂學系](https://music.utaipei.edu.tw/)，主修鋼琴🎹
 
-我是重考生，目前錄取[臺北市立大學音樂學系](https://music.utaipei.edu.tw/)，主修鋼琴🎹
+我都[九點睡覺](/posts/morning)，五點起床，每天都會出門[散步](/posts/taipei-trip)、運動，日子過得充實而愜意！
 
-我喜歡吃紅蘿蔔，你也可以叫我蘿蔔🥕
+我的興趣是閱讀（不是練琴🥲）除了[哲學](/posts/diamond-sutra)、[文學](/posts/proust)書之外，目前最大的樂趣來源，就是到處去別人的部落格看看👀
 
-我比較內向，如果想認識我可以到 carrot603&#64;proton.me
+有任何話想對我說，歡迎寫信到 carrot603&#64;proton.me，就算只是打個招呼也可以喔（拜託🥺
 
-有話想對我說的話歡迎寫信給我，打個招呼也可以😊
+我喜歡吃[紅蘿蔔](/posts/carrot)，你也可以叫我蘿蔔🥕畢竟這個網站就叫 Carrot Blog😃
 
-近況請看 [/now](/now)，[https://nownownow.com/](https://nownownow.com/) 上也有我的[頁面](https://nownownow.com/p/01LE)。
-
-我畫了一個酷酷的圖譜，[點此前往](/graph)！
+近況請看 [/now](/now)，[https://nownownow.com/](https://nownownow.com/) 上也有我的[頁面](https://nownownow.com/p/01LE)，我似乎是第 39 個臺灣人🇹🇼
 
 想訂閱我可以到 https://carrot.tw/index.xml （點擊下方複製）：
 ```text
@@ -41,6 +37,7 @@ https://carrot.tw/index.xml
 [核心思想](/posts/core-idea)  
 [/when-i-die](/posts/when-i-die)  
 [北漂生活](/posts/taipei)
+[知識圖譜](/graph)
 
 ---
 

@@ -1,0 +1,53 @@
++++
+date = '2026-06-22T09:00:00+08:00'
+draft = false
+title = '2026 版關於'
+tags = ["about","散文"]
++++
+{{< note >}}
+💡本頁面為 2026-06-22 寫的第一版，已在 10-02 更新！
+{{< /note >}}
+
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg" style="width: 75%; max-width: 100%; height: auto;">
+
+我是江俊佑，生於臺灣臺中市，今年十九歲。興趣是彈鋼琴、閱讀跟探索世界。我每天都會出門散步、運動，讀幾頁[《追憶似水年華》](/posts/proust)。
+   
+在高中的時候參加[儀隊](https://www.instagram.com/thunder_living/)跟[弦樂社](https://www.instagram.com/tcfshso_3rd/)，涉略滿廣泛的（？
+
+我是重考生，目前錄取[臺北市立大學音樂學系](https://music.utaipei.edu.tw/)，主修鋼琴🎹
+
+我喜歡吃紅蘿蔔，你也可以叫我蘿蔔🥕
+
+我比較內向，如果想認識我可以到 carrot603&#64;proton.me
+
+有話想對我說的話歡迎寫信給我，打個招呼也可以😊
+
+近況請看 [/now](/now)，[https://nownownow.com/](https://nownownow.com/) 上也有我的[頁面](https://nownownow.com/p/01LE)。
+
+我畫了一個酷酷的圖譜，[點此前往](/graph)！
+
+想訂閱我可以到 https://carrot.tw/index.xml （點擊下方複製）：
+```text
+https://carrot.tw/index.xml
+```
+
+---
+
+你也可以從這些方面了解我：
+
+[數位生活](/posts/digital-life)  
+[網站大事記](/posts/blog-milestone)  
+[《金剛經》教我的人生智慧](/posts/diamond-sutra)  
+[核心思想](/posts/core-idea)  
+[/when-i-die](/posts/when-i-die)  
+[北漂生活](/posts/taipei)
+
+---
+
+我的更新日曆：
+
+{{< day >}}
+
+---
+
+**版權聲明**：本站文章採用 [創用 CC 姓名標示-非商業性 4.0 國際 授權條款 (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant) 進行授權。轉載或引用請註明原創作者與出處，且不得用於商業用途。

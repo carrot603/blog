@@ -447,13 +447,13 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
 <hr>
 <p>我會空出完整的一天，把練琴跟看書的時間挪來小小的旅行，一週就多了 9 小時可以利用！我可以去書店、<a href="/posts/library">圖書館</a>，偶爾跟朋友聚聚也不錯。</p>
 <p>彈性的時間流失掉也沒關係，若可以做更多事會更好！比如多更新幾篇文章，看一些<a href="/posts/ask-the-past">奇怪的書</a>，或是去沒去過的地方探索。當然，不能落入效率陷阱，沒有必要填滿行事曆，過得從容自在開心才是最重要的！</p>
-]]></content:encoded></item><item><title>關於</title><link>http://localhost:1313/posts/about/</link><pubDate>Mon, 22 Jun 2026 09:00:00 +0800</pubDate><guid>http://localhost:1313/posts/about/</guid><description>&lt;div class="note-box">
-💡本頁面正式掛上主選單，日後將不定期更新。
+]]></content:encoded></item><item><title>關於</title><link>http://localhost:1313/posts/2026-about/</link><pubDate>Mon, 22 Jun 2026 09:00:00 +0800</pubDate><guid>http://localhost:1313/posts/2026-about/</guid><description>&lt;div class="note-box">
+💡本頁面為 2026-06-22 寫的第一版，已在 10-02 更新！
 &lt;/div>
 &lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg" style="width: 75%; max-width: 100%; height: auto;">
 &lt;p>我是江俊佑，生於臺灣臺中市，今年十九歲。興趣是彈鋼琴、閱讀跟探索世界。我每天都會出門散步、運動，讀幾頁&lt;a href="http://localhost:1313/posts/proust">《追憶似水年華》&lt;/a>。&lt;/p></description><content:encoded><![CDATA[<div class="note-box">
     
-          💡本頁面正式掛上主選單，日後將不定期更新。
+          💡本頁面為 2026-06-22 寫的第一版，已在 10-02 更新！
 
 </div>
 
