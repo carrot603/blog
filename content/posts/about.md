@@ -31,13 +31,17 @@ https://carrot.tw/index.xml
 
 你也可以從這些方面了解我：
 
+[《金剛經》教我的人生智慧](/posts/diamond-sutra)  
 [數位生活](/posts/digital-life)  
 [網站大事記](/posts/blog-milestone)  
-[《金剛經》教我的人生智慧](/posts/diamond-sutra)  
+[商管書無用論](/posts/business-book)  
 [核心思想](/posts/core-idea)  
+[北漂生活](/posts/taipei)  
+[知識圖譜](/graph)  
+[臺北走透透](/posts/taipei-trip/)  
+[開學日](/posts/2026-09-07-1)  
 [/when-i-die](/posts/when-i-die)  
-[北漂生活](/posts/taipei)
-[知識圖譜](/graph)
+[/tags](/tags)
 
 ---
 

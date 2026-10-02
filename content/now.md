@@ -4,7 +4,7 @@ draft = false
 title = '/now'
 +++
 {{< note >}}
-💡 這是我的 /now 頁面，最後更新於：2026-08-31。
+💡 這是我的 /now 頁面，最後更新於：2026-10-02。
 
 本頁面同時投稿到 https://nownownow.com/
 
@@ -12,7 +12,9 @@ title = '/now'
 
 >我發現只有我名字打中文，但算了沒關係，可能有一天搜尋[江俊佑](https://nownownow.com/p/01LE)這個頁面就會跑出來了。我似乎是第 39 個臺灣人🇹🇼
 
-我比較內向，如果想跟我打招呼，可以到 carrot603&#64;proton.me
+- 我比較內向，如果有任何話想對我說，歡迎寫信到 carrot603&#64;proton.me，就算只是打個招呼也可以喔（拜託🥺
+
+- 自我介紹[在這裡](/posts/about)😁
 
 ---
 
@@ -21,33 +23,40 @@ title = '/now'
 
 ### 正在讀的書
 - [《中國，在世界中形成》](/posts/signed-book)
+- 《槓桿 ETF 投資法》
+- *Clara and the Sun*
 
 ### 在練的曲子
+- Bach: BWV 782
 - Scarlatti: K. 54
+- Mozart: K. 333
+- Czerny: Op. 299 No. 1, 2
 
 ### 想去哪裡玩
 [臺北走透透](/posts/taipei-trip)
 
 ### 最近忙什麼
-想當 prepper
+手指獨立性😬
 
 ---
 
-### 九月計劃
-早睡早起  
-適應大學生活
+### 十月計劃
+
+prepper  
+每天記錄三件小事  
+每天來點隨機
 
 ---
 
-### 🏃 2026 年 9 月跑步紀錄
+### 2026 年 10 月跑步紀錄
 
 | 一 | 二 | 三 | 四 | 五 | 六 | 日 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| | <span class="no-run">1</span> | <span class="no-run">2</span> | <span class="no-run">3</span> | <span class="no-run">4</span> | <span class="no-run">5</span> | <span class="no-run">6</span> |
-| <span class="no-run">7</span> | <span class="no-run">8</span> | <span class="no-run">9</span> | <span class="no-run">10</span> | <span class="no-run">11</span> | <span class="no-run">12</span> | <span class="no-run">13</span> |
-| <span class="no-run">14</span> | <span class="no-run">15</span> | <span class="no-run">16</span> | <span class="no-run">17</span> | <span class="no-run">18</span> | <span class="no-run">19</span> | <span class="no-run">20</span> |
-| <span class="no-run">21</span> | <span class="no-run">22</span> | <span class="no-run">23</span> | <span class="no-run">24</span> | <span class="no-run">25</span> | <span class="no-run">26</span> | <span class="no-run">27</span> |
-| <span class="no-run">28</span> | <span class="no-run">29</span> | <span class="no-run">30</span> | | | | |
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  |  | 1 | 2 | 3 | 4 |
+| 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+| 12 | 13 | 14 | 15 | 16 | 17 | 18 |
+| 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+| 26 | 27 | 28 | 29 | 30 | 31 |  |
 
 ---
 
@@ -94,4 +103,3 @@ title = '/now'
       height: 100%;
   }
 </style>
-
