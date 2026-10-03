@@ -45,6 +45,10 @@ tags = ["散文","about"]
 
 在外部連結的最前面，都加上它們自己的 [favicon](/posts/favicon)。
 
+### 2026-09-22
+
+申請加入 [Nebula Search](https://nebula.quickconnect.qzz.io/)！
+
 ### 2026-09-29
 
 新增 [tags](/tags) 頁面，為每篇文章都加上標籤，顯示在網頁末尾。
