@@ -44,7 +44,8 @@ title = 'series'
 2026-09-15 [敦化南北路](/posts/dunhua)  
 2026-09-20 [信義路](/posts/xinyi)  
 2026-09-22 [復興南北路](/posts/fuxing)  
-2026-09-24 [愛國東西路](/posts/aiguo)
+2026-09-24 [愛國東西路](/posts/aiguo)  
+2026-10-04 [中華路](/posts/chunghua)
 
 ---
 
