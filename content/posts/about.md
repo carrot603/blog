@@ -16,6 +16,8 @@ tags = ["about"]
 
 我的興趣是閱讀（不是練琴🥲）除了[哲學](/posts/diamond-sutra)、[文學](/posts/proust)書之外，目前最大的樂趣來源，就是到處去別人的部落格看看👀
 
+我不會滑手機，厭倦演算法和膚淺的多巴胺刺激。我喜歡主動尋找新事物，作知識的主人。
+
 有任何話想對我說，歡迎寫信到 carrot603&#64;proton.me，就算只是打個招呼也可以喔（拜託🥺
 
 我喜歡吃[紅蘿蔔](/posts/carrot)，你也可以叫我蘿蔔🥕畢竟這個網站就叫 Carrot Blog😃
@@ -35,6 +37,7 @@ https://carrot.tw/index.xml
 [數位生活](/posts/digital-life)  
 [網站大事記](/posts/blog-milestone)  
 [商管書無用論](/posts/business-book)  
+[《追憶似水年華》](/posts/proust)  
 [核心思想](/posts/core-idea)  
 [北漂生活](/posts/taipei)  
 [知識圖譜](/graph)  
@@ -42,6 +45,12 @@ https://carrot.tw/index.xml
 [開學日](/posts/2026-09-07-1)  
 [/when-i-die](/posts/when-i-die)  
 [/tags](/tags)
+
+---
+
+我的知識圖譜：
+
+{{< mini-graph >}}
 
 ---
 

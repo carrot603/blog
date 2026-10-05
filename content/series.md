@@ -11,6 +11,12 @@ title = 'series'
 
 ---
 
+### /tags
+
+直接到標籤頁面逛逛：[/tags](/tags)
+
+---
+
 ### 知識圖譜
 
 {{< mini-graph >}}
@@ -21,14 +27,17 @@ title = 'series'
 
 ### 精選文章
 
-- [《金剛經》教我的人生智慧](/posts/diamond-sutra)
-- [《追憶似水年華》](/posts/proust)
-- [核心思想](/posts/core-idea)
-- [數位生活](/posts/digital-life)
-- [網站大事記](/posts/blog-milestone)
-- [30 個常用 HTML + CSS 小技巧](/posts/html)
-- [/when-i-die](/posts/when-i-die)
-- [北漂生活](/posts/taipei)
+[《金剛經》教我的人生智慧](/posts/diamond-sutra)  
+[數位生活](/posts/digital-life)  
+[網站大事記](/posts/blog-milestone)  
+[商管書無用論](/posts/business-book)  
+[核心思想](/posts/core-idea)  
+[北漂生活](/posts/taipei)  
+[知識圖譜](/graph)  
+[臺北走透透](/posts/taipei-trip/)  
+[開學日](/posts/2026-09-07-1)  
+[/when-i-die](/posts/when-i-die)  
+[/tags](/tags)
 
 ---
 
