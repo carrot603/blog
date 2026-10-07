@@ -9,6 +9,8 @@
 &lt;th>9/30&lt;/th>
 &lt;th>10/1&lt;/th>
 &lt;th>10/2&lt;/th>
+&lt;th>&lt;strong>10/3&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>10/4&lt;/strong>&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -19,6 +21,8 @@
 &lt;td>7 : 20&lt;/td>
 &lt;td>7 : 20&lt;/td>
 &lt;td>7 : 00&lt;/td>
+&lt;td>4 : 50&lt;/td>
+&lt;td>5 : 05&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>就寢&lt;/td>
@@ -26,6 +30,8 @@
 &lt;td>22 : 10&lt;/td>
 &lt;td>21 : 50&lt;/td>
 &lt;td>21 : 30&lt;/td>
+&lt;td>22 : 30&lt;/td>
+&lt;td>22 : 00&lt;/td>
 &lt;td>22 : 30&lt;/td>
 &lt;/tr>
 &lt;/tbody>
@@ -42,6 +48,8 @@
           <th>9/30</th>
           <th>10/1</th>
           <th>10/2</th>
+          <th><strong>10/3</strong></th>
+          <th><strong>10/4</strong></th>
       </tr>
   </thead>
   <tbody>
@@ -52,6 +60,8 @@
           <td>7 : 20</td>
           <td>7 : 20</td>
           <td>7 : 00</td>
+          <td>4 : 50</td>
+          <td>5 : 05</td>
       </tr>
       <tr>
           <td>就寢</td>
@@ -59,6 +69,8 @@
           <td>22 : 10</td>
           <td>21 : 50</td>
           <td>21 : 30</td>
+          <td>22 : 30</td>
+          <td>22 : 00</td>
           <td>22 : 30</td>
       </tr>
   </tbody>
@@ -106,6 +118,12 @@
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/week-6-3.jpg" style="width: 75%; max-width: 100%; height: auto;">
 <p>看得還不過癮，於是又坐車到中山，去逛誠品南西。我喜歡這邊的裝潢和格局，雖然大部分的書我都不會想看。但我覺得這裡的陳列做得很用心，不只視覺上看起來就很舒服，分類也不完全照書本身寫的，而是根據時事和跨領域結合，是個挖掘好書的好地方！</p>
 <p>回家，輸出本篇。更新 <a href="/now">/now</a>。出門買個熱豆花當晚餐，真是過癮！跟家人通話，似乎太晚睡了！</p>
+<hr>
+<h1 id="週六">週六</h1>
+<p>請看<a href="/posts/eslite-5">〈星期六早上逛誠品（五）〉</a>。</p>
+<hr>
+<h1 id="週日">週日</h1>
+<p>本日有<a href="/posts/2026-10-04">日記</a>。我感覺這個週末再充實不過！</p>
 ]]></content:encoded></item><item><title>蘿蔔週報 #5</title><link>http://localhost:1313/posts/week-5/</link><pubDate>Mon, 28 Sep 2026 21:00:00 +0800</pubDate><guid>http://localhost:1313/posts/week-5/</guid><description>&lt;table>
 &lt;thead>
 &lt;tr>
