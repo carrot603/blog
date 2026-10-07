@@ -26,6 +26,7 @@ tags = ["散文"]
     <img src="https://www.bookrepclub.com.tw/webroot/file/book/pic_1772009226_63041_1.jpg" style="width: 100%; height: auto;">
   </div>
 </div><img src="" style="width: 75%; max-width: 100%; height: auto;">
+
 >以上皆引自[讀書共和國網路書店](https://www.bookrep.com.tw/?md=gwindex&cl=index&at=index)官網（真抱歉沒辦法對齊！）
 
 有花花的底圖，還有文字方塊放書名和附標題。書腰的風格也很類似。其實現在的文史書籍幾乎都走這個風格。
