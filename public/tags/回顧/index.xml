@@ -30,7 +30,7 @@
 &lt;td>0 : 30&lt;/td>
 &lt;td>21 : 30&lt;/td>
 &lt;td>21 : 20&lt;/td>
-&lt;td>&lt;/td>
+&lt;td>23 : 00&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -68,7 +68,7 @@
           <td>0 : 30</td>
           <td>21 : 30</td>
           <td>21 : 20</td>
-          <td></td>
+          <td>23 : 00</td>
       </tr>
   </tbody>
 </table>
