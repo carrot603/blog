@@ -1024,6 +1024,14 @@
     
     
 
+    
+    
+    
+
+    
+    
+    
+
 
 
 
@@ -4738,13 +4746,13 @@
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-14\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-14\n✍️ 狀態：有 4 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -4758,14 +4766,16 @@
                 
                 
                 
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：無文章 [今天]')" 
+                     style="background-color: #fff9db; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
@@ -7913,6 +7923,14 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
+    
+    
+    
+
 
 
 
@@ -11627,13 +11645,13 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-14\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-14\n✍️ 狀態：有 4 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -11647,14 +11665,16 @@ ShowShareButtons = false
                 
                 
                 
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：無文章 [今天]')" 
+                     style="background-color: #fff9db; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
