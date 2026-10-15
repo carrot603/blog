@@ -1032,6 +1032,10 @@
     
     
 
+    
+    
+    
+
 
 
 
@@ -4746,7 +4750,7 @@
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-14\n✍️ 狀態：有 4 篇文章')" 
+                <div onclick="alert('📅 日期：2026-10-14\n✍️ 狀態：有 2 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
@@ -4767,10 +4771,12 @@
                 
                 
                     
+                        
+                    
                 
 
-                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：無文章 [今天]')" 
-                     style="background-color: #fff9db; 
+                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
@@ -7931,6 +7937,10 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
 
 
 
@@ -11645,7 +11655,7 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-14\n✍️ 狀態：有 4 篇文章')" 
+                <div onclick="alert('📅 日期：2026-10-14\n✍️ 狀態：有 2 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
@@ -11666,10 +11676,12 @@ ShowShareButtons = false
                 
                 
                     
+                        
+                    
                 
 
-                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：無文章 [今天]')" 
-                     style="background-color: #fff9db; 
+                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
