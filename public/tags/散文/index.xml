@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>散文 on Carrot Blog</title><link>http://localhost:1313/tags/%E6%95%A3%E6%96%87/</link><description>Recent content in 散文 on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Thu, 15 Oct 2026 05:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%95%A3%E6%96%87/index.xml" rel="self" type="application/rss+xml"/><item><title>悖論</title><link>http://localhost:1313/posts/paradox/</link><pubDate>Thu, 15 Oct 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/paradox/</guid><description>&lt;ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>散文 on Carrot Blog</title><link>http://localhost:1313/tags/%E6%95%A3%E6%96%87/</link><description>Recent content in 散文 on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Fri, 16 Oct 2026 05:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%95%A3%E6%96%87/index.xml" rel="self" type="application/rss+xml"/><item><title>上海自來水來自海上</title><link>http://localhost:1313/posts/symmetry/</link><pubDate>Fri, 16 Oct 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/symmetry/</guid><description>&lt;ul>
+&lt;li>囍&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>綿緜&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>中一中&lt;/li>
+&lt;li>法文文法&lt;/li>
+&lt;li>土撥鼠撥土&lt;/li>
+&lt;li>音樂廳聽音樂&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>上海自來水來自海上&lt;/li>
+&lt;/ul>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>「喜」本身就是左右對稱的，但寫雙喜感覺比較喜氣！像是「朋」「喆」「林」……等等也可代入。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p></description><content:encoded><![CDATA[<ul>
+<li>囍<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+<li>綿緜<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+<li>中一中</li>
+<li>法文文法</li>
+<li>土撥鼠撥土</li>
+<li>音樂廳聽音樂<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+<li>上海自來水來自海上</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>「喜」本身就是左右對稱的，但寫雙喜感覺比較喜氣！像是「朋」「喆」「林」……等等也可代入。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>「緜」是異體字，我們習慣的是「綿」，左糸右帛；但前者我在三四十年前的舊書很常看到。&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>不完全對稱。首先「廳」和「聽」就不一樣；再來，「樂音」其實語意也通，但那樣未免太過文言又拗口！其實本文是因為這句才寫就的，若有想到七個字或八個字的對稱，歡迎來信指教！這也是我第一次加這麼多註腳，還在註腳裡面寫這麼多字。&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>悖論</title><link>http://localhost:1313/posts/paradox/</link><pubDate>Thu, 15 Oct 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/paradox/</guid><description>&lt;ul>
 &lt;li>「我說謊了！」&lt;/li>
 &lt;li>「我對成語一竅不通。」&lt;/li>
 &lt;li>「禁止廣告」本身也是一個廣告。&lt;/li>
@@ -99,6 +135,10 @@
 <p>我看其他人用 Bear Blog 佔大宗。它是更乾淨沒錯啦，但不能插入一些有的沒的，像我現在想要召喚我的更新日曆：</p>
 
 
+
+    
+    
+    
 
     
     
@@ -4871,13 +4911,13 @@
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：有 3 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -4891,14 +4931,18 @@
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-16\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-16\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
@@ -9781,6 +9825,10 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
     
     
 
+    
+    
+    
+
 
 
 
@@ -13520,13 +13568,13 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-15\n✍️ 狀態：有 3 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -13540,14 +13588,18 @@ Anton Arensky: Piano Trio No. 1 in d minor, Op. 32, mov. IV</p>
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-16\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-16\n✍️ 狀態：有 1 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
