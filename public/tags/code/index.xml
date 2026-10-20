@@ -1,8 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Code on Carrot Blog</title><link>http://localhost:1313/tags/code/</link><description>Recent content in Code on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Thu, 08 Oct 2026 07:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/code/index.xml" rel="self" type="application/rss+xml"/><item><title>Papermod</title><link>http://localhost:1313/posts/papermod/</link><pubDate>Thu, 08 Oct 2026 07:00:00 +0800</pubDate><guid>http://localhost:1313/posts/papermod/</guid><description>&lt;p>我的版面設計十分簡潔，主題採用 &lt;a href="https://themes.gohugo.io/themes/hugo-papermod/">Hugo PaperMod&lt;/a>。這其實是 AI 建議我的，當初我的提示詞只有打「像 Wiwi 一樣就好」，但他的網站有自己重新調配過。我又不會寫程式！只能挑一個現成的佈景主題，現在很慶幸自己做出了這個選擇！&lt;/p></description><content:encoded><![CDATA[<p>我的版面設計十分簡潔，主題採用 <a href="https://themes.gohugo.io/themes/hugo-papermod/">Hugo PaperMod</a>。這其實是 AI 建議我的，當初我的提示詞只有打「像 Wiwi 一樣就好」，但他的網站有自己重新調配過。我又不會寫程式！只能挑一個現成的佈景主題，現在很慶幸自己做出了這個選擇！</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Code on Carrot Blog</title><link>http://localhost:1313/tags/code/</link><description>Recent content in Code on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Tue, 20 Oct 2026 20:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/code/index.xml" rel="self" type="application/rss+xml"/><item><title>2026-10-20 日記</title><link>http://localhost:1313/posts/2026-10-20/</link><pubDate>Tue, 20 Oct 2026 20:00:00 +0800</pubDate><guid>http://localhost:1313/posts/2026-10-20/</guid><description>&lt;p>昨晚 21 : 30 在搶主修課時間，摸了很久才睡覺。&lt;/p>
+&lt;p>今天就沒訂鬧鐘，想要實驗自己到底需要多少的睡眠時間。第一次醒來看天已經亮了，大概是六點多，想說瞇一下再起床。再度睜開眼，看到天色很亮，想說天氣應該不錯，赫然發現已經 7 : 20！所以還是沒有結論，但我想七個小時就夠了。&lt;/p></description><content:encoded><![CDATA[<p>昨晚 21 : 30 在搶主修課時間，摸了很久才睡覺。</p>
+<p>今天就沒訂鬧鐘，想要實驗自己到底需要多少的睡眠時間。第一次醒來看天已經亮了，大概是六點多，想說瞇一下再起床。再度睜開眼，看到天色很亮，想說天氣應該不錯，赫然發現已經 7 : 20！所以還是沒有結論，但我想七個小時就夠了。</p>
+<hr>
+<h3 id="買菜">買菜</h3>
+<p>還好早上沒課，但我想去學校也無法，因為必須買菜。出門之前整理一下文章。今天買了超級大根的紅蘿蔔、高麗菜還有筊白筍。我根本不知道筍子怎麼料理，但就先買再說。去水果攤買蘋果和芭樂，感覺這兩個一起吃挺搭的。去家樂福超市買吐司和芝麻包。</p>
+<p>我學到了，以後都買山形吐司，因為它的寬度剛好，能平鋪兩片在電鍋裡，這樣我才有最酥脆的吐司可吃。之前的正方形吐司太寬了，要烤的話勢必得犧牲掉一片。</p>
+<p>突發奇想買芝麻包，打算作為早餐，中午忍不住就先蒸一個試試看。包裝上面寫放在電鍋隔水加熱，但我沒有多的鍋子，反正就讓它跟飯一起炊大約十五分鐘。想當年國小放學後都會去安親班，芝麻包就是點心時間的常客。當時覺得芝麻內餡又香又甜，加上熱氣蒸騰就變得更加可口！這可說是我的童年回憶。</p>
+<hr>
+<h3 id="網站">網站</h3>
+<p>回家打開 Cloudflare，修正了 Redirect Rule（重定向規則）：</p>
+<p><code>(http.request.uri.path in {&quot;/feed&quot; &quot;/feed/&quot; &quot;/rss&quot; &quot;/rss/&quot; &quot;/rss.xml&quot; &quot;/feed.xml&quot; &quot;/atom.xml&quot; &quot;/atom&quot; &quot;/feeds/posts/default&quot;})</code></p>
+<p>因為我的 Feed 網址是 <a href="https://carrot.tw/index.xml">https://carrot.tw/index.xml</a> ，所以把可能的後綴全部列出，然後引到前者。</p>
+<p>我還重設了快取，並新增 <code>robots.txt</code> 檔案，這樣我的網站就更容易被爬到，不再出現 404。</p>
+<hr>
+<h3 id="講座">講座</h3>
+<p>吃完午餐，把<a href="/posts/blog-observe">〈部落格觀察〉</a>寫完才出門。因為今天下午一點學校有辦講座，要多聽講座才有學分拿。也剛好今天比較晚起，就不用留時間睡午覺。去捷運站的時候剛好錯過，下一班要等八分鐘。</p>
+<p>國防部示範樂隊招生說明。本來打算趁機讀個電子書，但台上講的太生動，我就認真地把它聽完了！最後還有有獎徵答的環節，他們準備的獎品有保溫杯、墨鏡和運動毛巾，誠意滿滿。</p>
+<p>聽他們介紹每天的行程，感覺自由時間很多，不像大家對於軍中的刻板印象，是非常封閉死板的。他們說可以把示範樂隊的工作，當成是學士後或者碩士後的延伸，畢竟樂團還是以表演為主。示範樂隊是國家的，所以他們跟總統綁在一起，不管是元旦、國慶，或是就職典禮、外賓接待，都是由示範樂隊來演出。另外每年都有不少音樂會，編制涵蓋管樂團、弦樂團、管弦樂團和爵士大樂團等等。沒錯！他們跟三軍樂儀隊不一樣，是有招收弦樂的，雖然沒有我的事就是了。但儀隊可以考慮（X</p>
+<p>我就在想，加入示範樂隊不只是選擇演奏或是薪俸，更是選擇你的整個下半輩子！這就關乎於工作和人生了，而我們為什麼要工作？為什麼要生活？生活當中有多少部分，是我們自己可以掌控的？我們的時間會受社會多少的制約？這當然是一個很深的話題，我在這邊不會多加討論。總之就是這樣。</p>
+<hr>
+<h3 id="練琴">練琴</h3>
+<p>然後我就回家了，遲遲不練琴，逛了一小時的部落格觀察。然後把莫札特 K. 333 的第三樂章，還有Scarlatti K. 54 練完。我發現我跟昨天幾乎都在練同樣的東西，一樣在提速和合手，可見昨天完全沒有用心練！練曲子應該要一次到位，而一次也不用練太多，專心在眼前的樂句，把音樂唱好。不過這兩天還算是有效率，硬要說的話，昨天是練純技巧，把音找好；而今天就是真正在做音樂。</p>
+<p>經過這一個月以來的訓練，我能感受到自己有非常非常明顯的進步！不只是手指變獨立了，就連音樂上也有新的想法，視譜也變快了。我的音樂之路又燃起了希望！</p>
+<p>最後彈一下柴五的鋼琴版。18 : 30 才開始煮飯，把菜通通切好冰起來，但我對一餐的份量還不是很有概念。晚餐吃阿嬤的滷豬腳和筍子，然後就去洗澡了。</p>
+]]></content:encoded></item><item><title>Papermod</title><link>http://localhost:1313/posts/papermod/</link><pubDate>Thu, 08 Oct 2026 07:00:00 +0800</pubDate><guid>http://localhost:1313/posts/papermod/</guid><description>&lt;p>我的版面設計十分簡潔，主題採用 &lt;a href="https://themes.gohugo.io/themes/hugo-papermod/">Hugo PaperMod&lt;/a>。這其實是 AI 建議我的，當初我的提示詞只有打「像 Wiwi 一樣就好」，但他的網站有自己重新調配過。我又不會寫程式！只能挑一個現成的佈景主題，現在很慶幸自己做出了這個選擇！&lt;/p></description><content:encoded><![CDATA[<p>我的版面設計十分簡潔，主題採用 <a href="https://themes.gohugo.io/themes/hugo-papermod/">Hugo PaperMod</a>。這其實是 AI 建議我的，當初我的提示詞只有打「像 Wiwi 一樣就好」，但他的網站有自己重新調配過。我又不會寫程式！只能挑一個現成的佈景主題，現在很慶幸自己做出了這個選擇！</p>
 <p>看過不少<a href="https://blogblog.club/party/">個人網站</a>，而做到像我這麼<a href="/posts/minimalism">極簡</a>的，目前還沒看過。我沒有任何折疊選單，唯一的功能列就是右上角那一排小小的按鈕，還有文章底部的上下一篇而已！</p>
 <p>我看其他人用 Bear Blog 佔大宗。它是更乾淨沒錯啦，但不能插入一些有的沒的，像我現在想要召喚我的更新日曆：</p>
 
 
+
+    
+    
+    
 
     
     
@@ -4781,7 +4810,7 @@
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 3 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
@@ -8021,6 +8050,10 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
 
 
 
@@ -11734,7 +11767,7 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 3 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
