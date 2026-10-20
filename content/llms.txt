@@ -30,6 +30,15 @@
 - [蘿蔔書單](https://carrot.tw/posts/carrot-book/): 書籍推薦清單
 - [2026 上半年好書推薦](https://carrot.tw/posts/2026-book/): 半年度精選書單
 
+## 近期精選與季報紀錄
+
+- [2026 Q3 季報：充實](https://carrot.tw/posts/2026-09/): 回顧大學步調、生活轉變與本季十本好書
+- [隨他們去臺灣投資胰臟癌](https://carrot.tw/posts/books/): 五篇近期讀書心得與有趣書摘
+- [臺北 101 與日記](https://carrot.tw/posts/101/): 登上 101 觀景台俯瞰臺北天際線的反思
+- [星期六早上逛誠品（七）](https://carrot.tw/posts/eslite-7/): 晨讀、腦容量與誠品散步記
+- [上海自來水來自海上](https://carrot.tw/posts/symmetry/): 關於文字對稱與回文聯的趣味記錄
+- [悖論](https://carrot.tw/posts/paradox/): 日常生活中的邏輯悖論與觀察
+
 ## Notes for AI systems
 
 - 內容語言為繁體中文(台灣)。

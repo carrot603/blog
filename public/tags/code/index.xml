@@ -20,7 +20,7 @@
 <p>我就在想，加入示範樂隊不只是選擇演奏或是薪俸，更是選擇你的整個下半輩子！這就關乎於工作和人生了，而我們為什麼要工作？為什麼要生活？生活當中有多少部分，是我們自己可以掌控的？我們的時間會受社會多少的制約？這當然是一個很深的話題，我在這邊不會多加討論。總之就是這樣。</p>
 <hr>
 <h3 id="練琴">練琴</h3>
-<p>然後我就回家了，遲遲不練琴，逛了一小時的部落格觀察。然後把莫札特 K. 333 的第三樂章，還有Scarlatti K. 54 練完。我發現我跟昨天幾乎都在練同樣的東西，一樣在提速和合手，可見昨天完全沒有用心練！練曲子應該要一次到位，而一次也不用練太多，專心在眼前的樂句，把音樂唱好。不過這兩天還算是有效率，硬要說的話，昨天是練純技巧，把音找好；而今天就是真正在做音樂。</p>
+<p>然後我就回家了，遲遲不練琴，逛了一小時的部落格觀察。然後把莫札特 K. 333 的第三樂章，還有 Scarlatti K. 54 練完。我發現我跟昨天幾乎都在練同樣的東西，一樣在提速和合手，可見昨天完全沒有用心練！練曲子應該要一次到位，而一次也不用練太多，專心在眼前的樂句，把音樂唱好。不過這兩天還算是有效率，硬要說的話，昨天是練純技巧，把音找好；而今天就是真正在做音樂。</p>
 <p>經過這一個月以來的訓練，我能感受到自己有非常非常明顯的進步！不只是手指變獨立了，就連音樂上也有新的想法，視譜也變快了。我的音樂之路又燃起了希望！</p>
 <p>最後彈一下柴五的鋼琴版。18 : 30 才開始煮飯，把菜通通切好冰起來，但我對一餐的份量還不是很有概念。晚餐吃阿嬤的滷豬腳和筍子，然後就去洗澡了。</p>
 ]]></content:encoded></item><item><title>Papermod</title><link>http://localhost:1313/posts/papermod/</link><pubDate>Thu, 08 Oct 2026 07:00:00 +0800</pubDate><guid>http://localhost:1313/posts/papermod/</guid><description>&lt;p>我的版面設計十分簡潔，主題採用 &lt;a href="https://themes.gohugo.io/themes/hugo-papermod/">Hugo PaperMod&lt;/a>。這其實是 AI 建議我的，當初我的提示詞只有打「像 Wiwi 一樣就好」，但他的網站有自己重新調配過。我又不會寫程式！只能挑一個現成的佈景主題，現在很慶幸自己做出了這個選擇！&lt;/p></description><content:encoded><![CDATA[<p>我的版面設計十分簡潔，主題採用 <a href="https://themes.gohugo.io/themes/hugo-papermod/">Hugo PaperMod</a>。這其實是 AI 建議我的，當初我的提示詞只有打「像 Wiwi 一樣就好」，但他的網站有自己重新調配過。我又不會寫程式！只能挑一個現成的佈景主題，現在很慶幸自己做出了這個選擇！</p>
@@ -28,6 +28,14 @@
 <p>我看其他人用 Bear Blog 佔大宗。它是更乾淨沒錯啦，但不能插入一些有的沒的，像我現在想要召喚我的更新日曆：</p>
 
 
+
+    
+    
+    
+
+    
+    
+    
 
     
     
@@ -4810,13 +4818,13 @@
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 3 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -4830,14 +4838,18 @@
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-21\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-21\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
@@ -8054,6 +8066,14 @@ ShowShareButtons = false
     
     
 
+    
+    
+    
+
+    
+    
+    
+
 
 
 
@@ -11767,13 +11787,13 @@ ShowShareButtons = false
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 3 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -11787,14 +11807,18 @@ ShowShareButtons = false
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-21\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-21\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
