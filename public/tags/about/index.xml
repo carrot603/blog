@@ -1267,6 +1267,10 @@
     
     
 
+    
+    
+    
+
 
 
 
@@ -4955,13 +4959,13 @@
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-19\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-19\n✍️ 狀態：有 2 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -4975,14 +4979,18 @@
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
@@ -7385,6 +7393,10 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
 
 
 
@@ -11073,13 +11085,13 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-19\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-19\n✍️ 狀態：有 2 篇文章')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            border: 2px solid #ffc107; box-sizing: border-box;"
+                            "
                      class="calendar-square">
                 </div>
             
@@ -11093,14 +11105,18 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                 
                 
                 
+                    
+                        
+                    
+                
 
-                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
+                <div onclick="alert('📅 日期：2026-10-20\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                     style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
-                            "
+                            border: 2px solid #ffc107; box-sizing: border-box;"
                      class="calendar-square">
                 </div>
             
