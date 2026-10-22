@@ -1,5 +1,5 @@
 +++
-date = '2026-10-25T05:00:00+08:00'
+date = '2026-10-28T05:00:00+08:00'
 draft = false
 title = 'Gaze Mini+'
 tags = ["閱讀","about"]
