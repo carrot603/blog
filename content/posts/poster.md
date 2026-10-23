@@ -1,5 +1,5 @@
 +++
-date = '2026-10-24T05:00:00+08:00'
+date = '2026-10-24T07:00:00+08:00'
 draft = false
 title = '部落格宣傳海報'
 tags = ["網路"]
@@ -34,4 +34,3 @@ tags = ["網路"]
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-10-22.jpg" style="width: 75%; max-width: 100%; height: auto;" alt="carrot.tw">
 
 >ChatGPT 做的，可能是我不太會下提示詞。覺得可愛還是放上來了！
-
