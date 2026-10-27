@@ -58,7 +58,7 @@ timeZone = "Asia/Taipei"
 
 [[menu.main]]
   name = "📚"
-  url = "/series/"
+  url = "/tags/"
   weight = 30
 
 [[menu.main]]

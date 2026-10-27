@@ -1,8 +1,8 @@
 +++
-date = '2026-10-28T05:00:00+08:00'
+date = '2026-10-29T05:00:00+08:00'
 draft = false
 title = 'Gaze Mini+'
-tags = ["閱讀","about"]
+tags = ["閱讀","about","科技"]
 +++
 {{< r2video "https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/gaze.mp4" >}}
 

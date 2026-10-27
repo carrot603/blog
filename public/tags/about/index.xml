@@ -1,4 +1,580 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>About on Carrot Blog</title><link>http://localhost:1313/tags/about/</link><description>Recent content in About on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 10 Oct 2026 05:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/about/index.xml" rel="self" type="application/rss+xml"/><item><title>我的唱片收藏</title><link>http://localhost:1313/posts/cd/</link><pubDate>Sat, 10 Oct 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/cd/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/cd.jpg" style="width: 75%; max-width: 100%; height: auto;" alt="唱片">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>About on Carrot Blog</title><link>http://localhost:1313/tags/about/</link><description>Recent content in About on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Tue, 27 Oct 2026 05:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/about/index.xml" rel="self" type="application/rss+xml"/><item><title>自我言論審查</title><link>http://localhost:1313/posts/self-examine/</link><pubDate>Tue, 27 Oct 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/self-examine/</guid><description>&lt;p>最近從頭開始聽好檸檬 Podcast，&lt;a href="https://wiwi.video/w/ftAH9NmhQC4izRuj1JCoCi">第 0 集&lt;/a>兩位主持人聊到，不要過度自我言論審查。&lt;/p>
+&lt;p>我完全沒有這個問題！&lt;del>我爸媽每天都會來看我的部落格，我還不是照樣講？&lt;/del> 倒不是說我一點意見都沒有，而是我有選擇地公開。畢竟這個網站是完全開放的，全世界都看得到，也會留下永久的紀錄。因此一些涉及個人隱私，或是人身安全的部分，我就不會寫上去。雖然現在能靠 AI 找到不少蛛絲馬跡就是了……&lt;/p></description><content:encoded><![CDATA[<p>最近從頭開始聽好檸檬 Podcast，<a href="https://wiwi.video/w/ftAH9NmhQC4izRuj1JCoCi">第 0 集</a>兩位主持人聊到，不要過度自我言論審查。</p>
+<p>我完全沒有這個問題！<del>我爸媽每天都會來看我的部落格，我還不是照樣講？</del> 倒不是說我一點意見都沒有，而是我有選擇地公開。畢竟這個網站是完全開放的，全世界都看得到，也會留下永久的紀錄。因此一些涉及個人隱私，或是人身安全的部分，我就不會寫上去。雖然現在能靠 AI 找到不少蛛絲馬跡就是了……</p>
+<p>感覺這樣寫很像雙面人，但人本身就具有多面性！很多沒必要知道的事情，就不用老實交代。比起查核無關緊要的事實，更重要的內容本身帶給我們的啟示。</p>
+<hr>
+<p>這個部落格不會出現什麼：</p>
+<ul>
+<li><strong>政治</strong>：尤其意識形態的對立，我盡量避免衝突。老實說我不太關心政治，對很多事情都沒有立場。但沒有立場，不代表不會捍衛自己的權利！我想有必要的話，我也應該適時表態（在現實中）。
+<br></li>
+<li><strong>宗教</strong>：又一個無解的深奧難題！我沒有宗教信仰，不過我很愛看<a href="/posts/diamond-sutra">《金剛經》</a>就是了！
+<br></li>
+<li><strong>金錢</strong>：畢竟財不露白；就算跟熟人，也不要透漏自己的財務狀況。但是關於投資方面我倒是有點心得（？</li>
+</ul>
+<p>包含但不限於以上，我的原則是不要作死。這個網站被我定調為分享日常的部份；反正你們只要知道我很開心，這樣就夠了。</p>
+]]></content:encoded></item><item><title>猜字謎</title><link>http://localhost:1313/posts/word-puzzle/</link><pubDate>Sun, 25 Oct 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/word-puzzle/</guid><description>&lt;div class="puzzle-wrapper">
+&lt;div class="puzzle-header">
+&lt;div class="puzzle-title">Word Puzzle&lt;/div>
+&lt;div class="sub">點選格子後輸入英文字母（不分大小寫），可填橫向、直向與斜向。&lt;/div>
+&lt;/div>
+&lt;div class="wrap">
+&lt;div class="gridbox">
+&lt;div class="grid" id="grid">&lt;/div>
+&lt;div id="win">🎉 恭喜全部完成！&lt;/div>
+&lt;div class="bar">
+&lt;span id="prog">已完成 0 / 11&lt;/span>
+&lt;span>&lt;button id="hint" type="button">提示&lt;/button> &lt;button id="reset" type="button">重來&lt;/button>&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div class="clues" id="clues">&lt;/div>
+&lt;/div>
+&lt;div id="toast">&lt;/div>
+&lt;/div>
+&lt;style>
+.puzzle-wrapper {
+--bg: #faf8f4;
+--fg: #222;
+--muted: #777;
+--cell: #fff;
+--line: #c9c3b8;
+--act: #fff1b8;
+--cur: #ffd54a;
+--ok: #c8ecd0;
+--okfg: #14632b;
+--bad: #fbd0d0;
+--acc: #2a6fdb;
+--card: #fff;
+margin: 1rem 0;
+padding: 12px;
+background: var(--bg);
+color: var(--fg);
+border-radius: 12px;
+border: 1px solid var(--line);
+font-family: -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+.puzzle-wrapper {
+--bg: #1c1b19;
+--fg: #eee;
+--muted: #999;
+--cell: #2a2927;
+--line: #4a4743;
+--act: #4a4220;
+--cur: #8a6d10;
+--ok: #1f4d2b;
+--okfg: #9be3ae;
+--bad: #5a2626;
+--acc: #7ab0ff;
+--card: #262522;
+}
+}
+.puzzle-title {
+font-size: 20px;
+font-weight: bold;
+margin: 0;
+text-align: center;
+padding: 4px 12px 0;
+}
+.puzzle-wrapper .sub {
+text-align: center;
+color: var(--muted);
+font-size: 14px;
+margin: 4px 12px 12px;
+}
+.puzzle-wrapper .wrap {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+padding: 0;
+}
+.puzzle-wrapper .gridbox {
+flex: 1 1 340px;
+max-width: 560px;
+}
+.puzzle-wrapper .grid {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+gap: 2px;
+}
+.puzzle-wrapper .c {
+position: relative;
+aspect-ratio: 1;
+}
+.puzzle-wrapper .c input {
+width: 100%;
+height: 100%;
+box-sizing: border-box;
+padding: 0;
+text-align: center;
+font: 700 clamp(13px, 4.2vw, 24px) inherit;
+font-family: inherit;
+text-transform: uppercase;
+border: 1px solid var(--line);
+border-radius: 4px;
+background: var(--cell);
+color: var(--fg);
+outline: none;
+caret-color: transparent;
+}
+.puzzle-wrapper .c.act input { background: var(--act); }
+.puzzle-wrapper .c.cur input { background: var(--cur); border-color: var(--acc); }
+.puzzle-wrapper .c.bad input { background: var(--bad); }
+.puzzle-wrapper .c.ok input { background: var(--ok); color: var(--okfg); animation: pop .4s; }
+.puzzle-wrapper .n {
+position: absolute;
+top: 1px;
+left: 3px;
+font-size: 9px;
+color: var(--muted);
+pointer-events: none;
+}
+@keyframes pop { 50% { transform: scale(1.15); } }
+.puzzle-wrapper .bar {
+display: flex;
+gap: 8px;
+align-items: center;
+justify-content: space-between;
+margin-top: 10px;
+}
+.puzzle-wrapper button {
+font: inherit;
+font-size: 14px;
+padding: 6px 14px;
+border-radius: 8px;
+border: 1px solid var(--line);
+background: var(--card);
+color: var(--fg);
+cursor: pointer;
+}
+.puzzle-wrapper .clues {
+flex: 1 1 280px;
+max-width: 420px;
+background: var(--card);
+border-radius: 12px;
+padding: 6px 16px 12px;
+align-self: flex-start;
+}
+.puzzle-wrapper .clues h3 {
+font-size: 15px;
+margin: 12px 0 4px;
+color: var(--acc);
+}
+.puzzle-wrapper .clues ul { list-style: none; margin: 0; padding: 0; }
+.puzzle-wrapper .clues li {
+padding: 6px 4px;
+border-radius: 6px;
+cursor: pointer;
+font-size: 15px;
+display: flex;
+gap: 6px;
+}
+.puzzle-wrapper .clues li:hover, .puzzle-wrapper .clues li.act { background: var(--act); }
+.puzzle-wrapper .clues li b { min-width: 20px; }
+.puzzle-wrapper .clues li.done { color: var(--okfg); }
+.puzzle-wrapper .clues li.done .t::before { content: "✓ "; }
+.puzzle-wrapper .len { color: var(--muted); font-size: 12px; margin-left: auto; white-space: nowrap; }
+#toast {
+position: fixed;
+left: 50%;
+bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+transform: translate(-50%, 40px);
+background: var(--okfg);
+color: var(--bg);
+padding: 10px 20px;
+border-radius: 24px;
+font-weight: 700;
+opacity: 0;
+transition: .3s;
+pointer-events: none;
+z-index: 99999;
+}
+#toast.show { opacity: 1; transform: translate(-50%, 0); }
+#win { display: none; text-align: center; font-size: 18px; font-weight: 700; color: var(--okfg); margin-top: 10px; }
+&lt;/style>
+&lt;script>
+document.addEventListener("DOMContentLoaded", function() {
+const W=[
+["library","我喜歡逛？",0,0,1,1],
+["carrot","我喜歡吃？",1,10,1,0],
+["happy","我每天都很…",2,6,1,0],
+["blog","我寫的…",3,8,1,1],
+["Taipei","現居城市",4,3,0,1],
+["Taichung","我的家鄉",4,3,1,0],
+["piano","我的主修",5,6,0,1],
+["read","我的嗜好",6,8,1,1],
+["walk","去路上…",7,10,1,0],
+["scroll","我不會 doom...",9,5,0,1],
+["morning","一日之計在於？",10,0,0,1]
+].map(([a,q,r,c,dr,dc])=>({a:a.toLowerCase(),A:a,q,r,c,dr,dc,dir:dr&amp;&amp;dc?"斜":dr?"直":"橫",done:false,cells:[...a].map((_,i)=>(r+dr*i)+","+(c+dc*i))}));
+const cells={}, grid=document.getElementById("grid");
+if (!grid) return;
+W.forEach((w,wi)=>w.cells.forEach((k,i)=>{(cells[k]=cells[k]||{ans:w.a[i],words:[]}).words.push(wi)}));
+const nums={}; let n=0;
+[...W].sort((x,y)=>x.r-y.r||x.c-y.c).forEach(w=>{const k=w.r+","+w.c;if(!nums[k])nums[k]=++n;w.num=nums[k]});
+let act=0, cur=null, wasFocused=false;
+for(let r=0;r&lt;12;r++) for(let c=0;c&lt;12;c++){
+const k=r+","+c, d=document.createElement("div"); d.className="c";
+if(cells[k]){
+const inp=document.createElement("input");
+inp.maxLength=2; inp.autocomplete="off"; inp.autocapitalize="off"; inp.spellcheck=false;
+inp.setAttribute("aria-label","第"+(r+1)+"列第"+(c+1)+"欄");
+cells[k].el=inp; cells[k].d=d; d.appendChild(inp);
+if(nums[k]){const s=document.createElement("span");s.className="n";s.textContent=nums[k];d.appendChild(s)}
+inp.onfocus=()=>{cur=k;if(!W[act].cells.includes(k))act=cells[k].words[0];render()};
+inp.onpointerdown=()=>{wasFocused=document.activeElement===inp};
+inp.onclick=()=>{const ws=cells[k].words;if(wasFocused&amp;&amp;ws.length>1){act=ws[(ws.indexOf(act)+1)%ws.length];render()}};
+inp.oninput=()=>{
+const v=inp.value.replace(/[^a-zA-Z]/g,"").slice(-1).toUpperCase();inp.value=v;
+if(v){const cs=W[act].cells,i=cs.indexOf(k);if(i>=0&amp;&amp;i&lt;cs.length-1)cells[cs[i+1]].el.focus()}
+check();
+};
+inp.onkeydown=e=>{
+const dirs={ArrowUp:[-1,0],ArrowDown:[1,0],ArrowLeft:[0,-1],ArrowRight:[0,1]};
+if(dirs[e.key]){e.preventDefault();let[a,b]=dirs[e.key],rr=r,cc=c;for(let s=0;s&lt;12;s++){rr+=a;cc+=b;if(cells[rr+","+cc]){cells[rr+","+cc].el.focus();break}}}
+else if(e.key==="Backspace"&amp;&amp;!inp.value){e.preventDefault();const cs=W[act].cells,i=cs.indexOf(k);if(i>0){const p=cells[cs[i-1]].el;p.value="";p.focus();check()}}
+};
+}
+grid.appendChild(d);
+}
+const cl=document.getElementById("clues");
+["橫","直","斜"].forEach(dir=>{
+const h=document.createElement("h3");h.textContent={橫:"橫向 →",直:"直向 ↓",斜:"斜向 ↘"}[dir];cl.appendChild(h);
+const ul=document.createElement("ul");
+W.map((w,i)=>[w,i]).filter(([w])=>w.dir===dir).sort((x,y)=>x[0].num-y[0].num).forEach(([w,i])=>{
+const li=document.createElement("li");li.id="q"+i;
+li.innerHTML=`&lt;b>${w.num}&lt;/b>&lt;span class="t">${w.q}&lt;/span>&lt;span class="len">${w.a.length} 個字母&lt;/span>`;
+li.onclick=()=>{act=i;const k=w.cells.find(k=>!cells[k].el.value)||w.cells[0];cells[k].el.focus();render()};
+ul.appendChild(li);
+});
+cl.appendChild(ul);
+});
+const st=w=>{const v=w.cells.map(k=>cells[k].el.value.toLowerCase());return v.includes("")?"p":v.join("")===w.a?"ok":"bad"};
+function render(){
+const aw=W[act];
+for(const k in cells){
+const c=cells[k],cn=c.d.classList,s=c.words.map(i=>W[i]);
+cn.toggle("act",aw.cells.includes(k));cn.toggle("cur",k===cur);
+cn.toggle("ok",s.some(w=>w.done));cn.toggle("bad",!s.some(w=>w.done)&amp;&amp;s.some(w=>st(w)==="bad"));
+}
+W.forEach((w,i)=>{const li=document.getElementById("q"+i);if(li){li.classList.toggle("act",i===act);li.classList.toggle("done",w.done)}});
+const d=W.filter(w=>w.done).length;
+document.getElementById("prog").textContent=`已完成 ${d} / ${W.length}`;
+document.getElementById("win").style.display=d===W.length?"block":"none";
+}
+let tt;
+function toast(t){const e=document.getElementById("toast");e.textContent=t;e.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>e.classList.remove("show"),2200)}
+function check(){
+W.forEach(w=>{
+const s=st(w)==="ok";
+if(s&amp;&amp;!w.done){w.done=true;toast(W.every(x=>x.done)?"🎉 全部答對了！太棒了！":`✓ 答對了！${w.A}（${w.q}）`)}
+else if(!s&amp;&amp;w.done)w.done=false;
+});
+render();
+}
+document.getElementById("hint").onclick=()=>{
+const k=W[act].cells.find(k=>cells[k].el.value.toLowerCase()!==cells[k].ans);
+if(k){cells[k].el.value=cells[k].ans.toUpperCase();cells[k].el.focus();check()}
+};
+document.getElementById("reset").onclick=()=>{
+for(const k in cells)cells[k].el.value="";W.forEach(w=>w.done=false);render();cells[W[act].cells[0]].el.focus();
+};
+render();
+});
+&lt;/script>
+&lt;blockquote>
+&lt;p>本文受到 &lt;a href="https://kus.ai/">Kusai&lt;/a> 啟發！我請 Claude 做的，不到一分半就產出如此完整的遊戲，現在 AI 根本超強！&lt;/p></description><content:encoded><![CDATA[<div class="puzzle-wrapper">
+  <div class="puzzle-header">
+    <div class="puzzle-title">Word Puzzle</div>
+    <div class="sub">點選格子後輸入英文字母（不分大小寫），可填橫向、直向與斜向。</div>
+  </div>
+
+  <div class="wrap">
+    <div class="gridbox">
+      <div class="grid" id="grid"></div>
+      <div id="win">🎉 恭喜全部完成！</div>
+      <div class="bar">
+        <span id="prog">已完成 0 / 11</span>
+        <span><button id="hint" type="button">提示</button> <button id="reset" type="button">重來</button></span>
+      </div>
+    </div>
+    <div class="clues" id="clues"></div>
+  </div>
+  <div id="toast"></div>
+</div>
+
+<style>
+ 
+.puzzle-wrapper {
+  --bg: #faf8f4;
+  --fg: #222;
+  --muted: #777;
+  --cell: #fff;
+  --line: #c9c3b8;
+  --act: #fff1b8;
+  --cur: #ffd54a;
+  --ok: #c8ecd0;
+  --okfg: #14632b;
+  --bad: #fbd0d0;
+  --acc: #2a6fdb;
+  --card: #fff;
+  
+  margin: 1rem 0;
+  padding: 12px;
+  background: var(--bg);
+  color: var(--fg);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  font-family: -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+  .puzzle-wrapper {
+    --bg: #1c1b19;
+    --fg: #eee;
+    --muted: #999;
+    --cell: #2a2927;
+    --line: #4a4743;
+    --act: #4a4220;
+    --cur: #8a6d10;
+    --ok: #1f4d2b;
+    --okfg: #9be3ae;
+    --bad: #5a2626;
+    --acc: #7ab0ff;
+    --card: #262522;
+  }
+}
+
+ 
+.puzzle-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding: 4px 12px 0;
+}
+.puzzle-wrapper .sub {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin: 4px 12px 12px;
+}
+.puzzle-wrapper .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+.puzzle-wrapper .gridbox {
+  flex: 1 1 340px;
+  max-width: 560px;
+}
+.puzzle-wrapper .grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2px;
+}
+.puzzle-wrapper .c {
+  position: relative;
+  aspect-ratio: 1;
+}
+.puzzle-wrapper .c input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+  font: 700 clamp(13px, 4.2vw, 24px) inherit;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--cell);
+  color: var(--fg);
+  outline: none;
+  caret-color: transparent;
+}
+.puzzle-wrapper .c.act input { background: var(--act); }
+.puzzle-wrapper .c.cur input { background: var(--cur); border-color: var(--acc); }
+.puzzle-wrapper .c.bad input { background: var(--bad); }
+.puzzle-wrapper .c.ok input { background: var(--ok); color: var(--okfg); animation: pop .4s; }
+.puzzle-wrapper .n {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  font-size: 9px;
+  color: var(--muted);
+  pointer-events: none;
+}
+@keyframes pop { 50% { transform: scale(1.15); } }
+.puzzle-wrapper .bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.puzzle-wrapper button {
+  font: inherit;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--fg);
+  cursor: pointer;
+}
+.puzzle-wrapper .clues {
+  flex: 1 1 280px;
+  max-width: 420px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 6px 16px 12px;
+  align-self: flex-start;
+}
+.puzzle-wrapper .clues h3 {
+  font-size: 15px;
+  margin: 12px 0 4px;
+  color: var(--acc);
+}
+.puzzle-wrapper .clues ul { list-style: none; margin: 0; padding: 0; }
+.puzzle-wrapper .clues li {
+  padding: 6px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  gap: 6px;
+}
+.puzzle-wrapper .clues li:hover, .puzzle-wrapper .clues li.act { background: var(--act); }
+.puzzle-wrapper .clues li b { min-width: 20px; }
+.puzzle-wrapper .clues li.done { color: var(--okfg); }
+.puzzle-wrapper .clues li.done .t::before { content: "✓ "; }
+.puzzle-wrapper .len { color: var(--muted); font-size: 12px; margin-left: auto; white-space: nowrap; }
+#toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  transform: translate(-50%, 40px);
+  background: var(--okfg);
+  color: var(--bg);
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-weight: 700;
+  opacity: 0;
+  transition: .3s;
+  pointer-events: none;
+  z-index: 99999;
+}
+#toast.show { opacity: 1; transform: translate(-50%, 0); }
+#win { display: none; text-align: center; font-size: 18px; font-weight: 700; color: var(--okfg); margin-top: 10px; }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const W=[
+    ["library","我喜歡逛？",0,0,1,1],
+    ["carrot","我喜歡吃？",1,10,1,0],
+    ["happy","我每天都很…",2,6,1,0],
+    ["blog","我寫的…",3,8,1,1],
+    ["Taipei","現居城市",4,3,0,1],
+    ["Taichung","我的家鄉",4,3,1,0],
+    ["piano","我的主修",5,6,0,1],
+    ["read","我的嗜好",6,8,1,1],
+    ["walk","去路上…",7,10,1,0],
+    ["scroll","我不會 doom...",9,5,0,1],
+    ["morning","一日之計在於？",10,0,0,1]
+  ].map(([a,q,r,c,dr,dc])=>({a:a.toLowerCase(),A:a,q,r,c,dr,dc,dir:dr&&dc?"斜":dr?"直":"橫",done:false,cells:[...a].map((_,i)=>(r+dr*i)+","+(c+dc*i))}));
+
+  const cells={}, grid=document.getElementById("grid");
+  if (!grid) return;
+
+  W.forEach((w,wi)=>w.cells.forEach((k,i)=>{(cells[k]=cells[k]||{ans:w.a[i],words:[]}).words.push(wi)}));
+  
+  const nums={}; let n=0;
+  [...W].sort((x,y)=>x.r-y.r||x.c-y.c).forEach(w=>{const k=w.r+","+w.c;if(!nums[k])nums[k]=++n;w.num=nums[k]});
+
+  let act=0, cur=null, wasFocused=false;
+  for(let r=0;r<12;r++) for(let c=0;c<12;c++){
+    const k=r+","+c, d=document.createElement("div"); d.className="c";
+    if(cells[k]){
+      const inp=document.createElement("input");
+      inp.maxLength=2; inp.autocomplete="off"; inp.autocapitalize="off"; inp.spellcheck=false;
+      inp.setAttribute("aria-label","第"+(r+1)+"列第"+(c+1)+"欄");
+      cells[k].el=inp; cells[k].d=d; d.appendChild(inp);
+      if(nums[k]){const s=document.createElement("span");s.className="n";s.textContent=nums[k];d.appendChild(s)}
+      
+      inp.onfocus=()=>{cur=k;if(!W[act].cells.includes(k))act=cells[k].words[0];render()};
+      inp.onpointerdown=()=>{wasFocused=document.activeElement===inp};
+      inp.onclick=()=>{const ws=cells[k].words;if(wasFocused&&ws.length>1){act=ws[(ws.indexOf(act)+1)%ws.length];render()}};
+      inp.oninput=()=>{
+        const v=inp.value.replace(/[^a-zA-Z]/g,"").slice(-1).toUpperCase();inp.value=v;
+        if(v){const cs=W[act].cells,i=cs.indexOf(k);if(i>=0&&i<cs.length-1)cells[cs[i+1]].el.focus()}
+        check();
+      };
+      inp.onkeydown=e=>{
+        const dirs={ArrowUp:[-1,0],ArrowDown:[1,0],ArrowLeft:[0,-1],ArrowRight:[0,1]};
+        if(dirs[e.key]){e.preventDefault();let[a,b]=dirs[e.key],rr=r,cc=c;for(let s=0;s<12;s++){rr+=a;cc+=b;if(cells[rr+","+cc]){cells[rr+","+cc].el.focus();break}}}
+        else if(e.key==="Backspace"&&!inp.value){e.preventDefault();const cs=W[act].cells,i=cs.indexOf(k);if(i>0){const p=cells[cs[i-1]].el;p.value="";p.focus();check()}}
+      };
+    }
+    grid.appendChild(d);
+  }
+
+  const cl=document.getElementById("clues");
+  ["橫","直","斜"].forEach(dir=>{
+    const h=document.createElement("h3");h.textContent={橫:"橫向 →",直:"直向 ↓",斜:"斜向 ↘"}[dir];cl.appendChild(h);
+    const ul=document.createElement("ul");
+    W.map((w,i)=>[w,i]).filter(([w])=>w.dir===dir).sort((x,y)=>x[0].num-y[0].num).forEach(([w,i])=>{
+      const li=document.createElement("li");li.id="q"+i;
+      li.innerHTML=`<b>${w.num}</b><span class="t">${w.q}</span><span class="len">${w.a.length} 個字母</span>`;
+      li.onclick=()=>{act=i;const k=w.cells.find(k=>!cells[k].el.value)||w.cells[0];cells[k].el.focus();render()};
+      ul.appendChild(li);
+    });
+    cl.appendChild(ul);
+  });
+
+  const st=w=>{const v=w.cells.map(k=>cells[k].el.value.toLowerCase());return v.includes("")?"p":v.join("")===w.a?"ok":"bad"};
+  function render(){
+    const aw=W[act];
+    for(const k in cells){
+      const c=cells[k],cn=c.d.classList,s=c.words.map(i=>W[i]);
+      cn.toggle("act",aw.cells.includes(k));cn.toggle("cur",k===cur);
+      cn.toggle("ok",s.some(w=>w.done));cn.toggle("bad",!s.some(w=>w.done)&&s.some(w=>st(w)==="bad"));
+    }
+    W.forEach((w,i)=>{const li=document.getElementById("q"+i);if(li){li.classList.toggle("act",i===act);li.classList.toggle("done",w.done)}});
+    const d=W.filter(w=>w.done).length;
+    document.getElementById("prog").textContent=`已完成 ${d} / ${W.length}`;
+    document.getElementById("win").style.display=d===W.length?"block":"none";
+  }
+
+  let tt;
+  function toast(t){const e=document.getElementById("toast");e.textContent=t;e.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>e.classList.remove("show"),2200)}
+  function check(){
+    W.forEach(w=>{
+      const s=st(w)==="ok";
+      if(s&&!w.done){w.done=true;toast(W.every(x=>x.done)?"🎉 全部答對了！太棒了！":`✓ 答對了！${w.A}（${w.q}）`)}
+      else if(!s&&w.done)w.done=false;
+    });
+    render();
+  }
+
+  document.getElementById("hint").onclick=()=>{
+    const k=W[act].cells.find(k=>cells[k].el.value.toLowerCase()!==cells[k].ans);
+    if(k){cells[k].el.value=cells[k].ans.toUpperCase();cells[k].el.focus();check()}
+  };
+  document.getElementById("reset").onclick=()=>{
+    for(const k in cells)cells[k].el.value="";W.forEach(w=>w.done=false);render();cells[W[act].cells[0]].el.focus();
+  };
+  render();
+});
+</script>
+
+<blockquote>
+<p>本文受到 <a href="https://kus.ai/">Kusai</a> 啟發！我請 Claude 做的，不到一分半就產出如此完整的遊戲，現在 AI 根本超強！</p></blockquote>
+]]></content:encoded></item><item><title>我的唱片收藏</title><link>http://localhost:1313/posts/cd/</link><pubDate>Sat, 10 Oct 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/cd/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/cd.jpg" style="width: 75%; max-width: 100%; height: auto;" alt="唱片">
 &lt;blockquote>
 &lt;p>算是連假特輯吧！炫耀一下我引以為傲的收藏。不過現在的小朋友還知道 CD 怎麼用嗎？&lt;/p>&lt;/blockquote>
 &lt;p>但還有一些留在臺中，那時候搬家帶不上來，這邊也沒位子給我放……&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/cd.jpg" style="width: 75%; max-width: 100%; height: auto;" alt="唱片">
@@ -1295,6 +1871,38 @@
     
     
 
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
 
 
 
@@ -1324,157 +1932,6 @@
     <div style="flex-grow: 1;">
         <div style="display: grid; grid-template-columns: repeat(27, 1fr); grid-auto-flow: column; grid-template-rows: repeat(7, 1fr); gap: 4px;">
             
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-25\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-26\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-                    
-                        
-                    
-                
-
-                <div onclick="alert('📅 日期：2026-05-27\n✍️ 狀態：有 1 篇文章')" 
-                     style="background-color: #216e39; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-28\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-29\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-30\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-31\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
             
                 
                 
@@ -5058,118 +5515,138 @@
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-22\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-22\n✍️ 狀態：有 3 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-23\n✍️ 狀態：有 1 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-24\n✍️ 狀態：有 1 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-25\n✍️ 狀態：有 1 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-26\n✍️ 狀態：有 3 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-27\n✍️ 狀態：有 2 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
                             border: 2px solid #ffc107; box-sizing: border-box;"
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-23\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-24\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-25\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-26\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-27\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
                      class="calendar-square">
                 </div>
             
@@ -5866,6 +6343,153 @@
                      class="calendar-square">
                 </div>
             
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-11-30\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-01\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-02\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-03\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-04\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-05\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-06\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
         </div>
 
         
@@ -6255,6 +6879,8 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
 <p>申請加入 <a href="https://nebula.quickconnect.qzz.io/">Nebula Search</a>！</p>
 <h3 id="2026-09-29">2026-09-29</h3>
 <p>新增 <a href="/tags">/tags</a> 頁面，為每篇文章都加上標籤，顯示在網頁末尾。</p>
+<h3 id="2026-10-27">2026-10-27</h3>
+<p>2026-07-09 建立 /books，2026-07-24 改成 /series，列出一些精選文章。今整併成 /tags 並重新分類。</p>
 ]]></content:encoded></item><item><title>自己的進步</title><link>http://localhost:1313/posts/progress/</link><pubDate>Sun, 05 Jul 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/progress/</guid><description>&lt;p>自從六月開始寫 blog，我強烈感覺我的文筆跟口語都更有組織了！就算是廢文我也字斟句酌，什麼東西該寫，什麼東西不必提；文章的風格要隨性還是文謅謅。&lt;/p></description><content:encoded><![CDATA[<p>自從六月開始寫 blog，我強烈感覺我的文筆跟口語都更有組織了！就算是廢文我也字斟句酌，什麼東西該寫，什麼東西不必提；文章的風格要隨性還是文謅謅。</p>
 <p>從消費者變成生產者的轉變就是，我好佩服能出書跟寫 blog 的人！寫過才知道要輸出有意義的內容是多麼地吃力，更別提持續產出了！這也變相鼓勵我在生活中多找靈感，對於自己的想法也多少能具體用語言表達。</p>
 <p>回首過往的文章覺得有些幼稚，但正是因此才看得出我的進步。<a href="https://wiwi.video/c/nicelemon/videos">好檸檬</a>曾經說過，如果看一兩年前的作品，自己覺得不尷尬，那就是進步得不夠多！我現在看一個月前的文章就覺得不行了！</p>
@@ -7453,6 +8079,38 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     
     
 
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
 
 
 
@@ -7482,157 +8140,6 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
     <div style="flex-grow: 1;">
         <div style="display: grid; grid-template-columns: repeat(27, 1fr); grid-auto-flow: column; grid-template-rows: repeat(7, 1fr); gap: 4px;">
             
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-25\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-26\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-                    
-                        
-                    
-                
-
-                <div onclick="alert('📅 日期：2026-05-27\n✍️ 狀態：有 1 篇文章')" 
-                     style="background-color: #216e39; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-28\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-29\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-30\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-05-31\n✍️ 狀態：無文章')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
             
                 
                 
@@ -11216,118 +11723,138 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-22\n✍️ 狀態：有 3 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-22\n✍️ 狀態：有 3 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-23\n✍️ 狀態：有 1 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-24\n✍️ 狀態：有 1 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-25\n✍️ 狀態：有 1 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-26\n✍️ 狀態：有 3 篇文章')" 
+                     style="background-color: #216e39; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                    
+                        
+                    
+                
+
+                <div onclick="alert('📅 日期：2026-10-27\n✍️ 狀態：有 2 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
                             cursor: pointer;
                             pointer-events: auto !important;
                             border: 2px solid #ffc107; box-sizing: border-box;"
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-23\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-24\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-25\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-26\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
-                     class="calendar-square">
-                </div>
-            
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-
-                <div onclick="alert('📅 日期：2026-10-27\n✍️ 狀態：無文章 [預寫排程]')" 
-                     style="background-color: #ebedf0; 
-                            aspect-ratio: 1; 
-                            border-radius: 2px; 
-                            cursor: pointer;
-                            pointer-events: auto !important;
-                            "
                      class="calendar-square">
                 </div>
             
@@ -12015,6 +12542,153 @@ nodeGroup.attr("transform", d => `translate(${d.x},${d.y})`);
                 
 
                 <div onclick="alert('📅 日期：2026-11-29\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-11-30\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-01\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-02\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-03\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-04\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-05\n✍️ 狀態：無文章 [預寫排程]')" 
+                     style="background-color: #ebedf0; 
+                            aspect-ratio: 1; 
+                            border-radius: 2px; 
+                            cursor: pointer;
+                            pointer-events: auto !important;
+                            "
+                     class="calendar-square">
+                </div>
+            
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+
+                <div onclick="alert('📅 日期：2026-12-06\n✍️ 狀態：無文章 [預寫排程]')" 
                      style="background-color: #ebedf0; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 

@@ -2,7 +2,7 @@
 date = '2026-10-08T07:00:00+08:00'
 draft = false
 title = 'Papermod'
-tags = ["code","散文"]
+tags = ["code","散文","blog"]
 +++
 我的版面設計十分簡潔，主題採用 [Hugo PaperMod](https://themes.gohugo.io/themes/hugo-papermod/)。這其實是 AI 建議我的，當初我的提示詞只有打「像 Wiwi 一樣就好」，但他的網站有自己重新調配過。我又不會寫程式！只能挑一個現成的佈景主題，現在很慶幸自己做出了這個選擇！
 

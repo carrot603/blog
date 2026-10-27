@@ -2,6 +2,7 @@
 date = '2026-10-27T05:00:00+08:00'
 draft = false
 title = '自我言論審查'
+tags = ["about","好檸檬"]
 +++
 最近從頭開始聽好檸檬 Podcast，[第 0 集](https://wiwi.video/w/ftAH9NmhQC4izRuj1JCoCi)兩位主持人聊到，不要過度自我言論審查。
 
