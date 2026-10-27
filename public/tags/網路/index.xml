@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>網路 on Carrot Blog</title><link>http://localhost:1313/tags/%E7%B6%B2%E8%B7%AF/</link><description>Recent content in 網路 on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Mon, 26 Oct 2026 07:24:39 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%B6%B2%E8%B7%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>LINE</title><link>http://localhost:1313/posts/line/</link><pubDate>Mon, 26 Oct 2026 07:24:39 +0800</pubDate><guid>http://localhost:1313/posts/line/</guid><description>&lt;p>有一個訂位系統叫 &lt;a href="https://dining.inline.app/">inline&lt;/a>，我覺得名字取得很好！好奇一查，它跟某個可惡的東西一點關係都沒有（好險好險）。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>網路 on Carrot Blog</title><link>http://localhost:1313/tags/%E7%B6%B2%E8%B7%AF/</link><description>Recent content in 網路 on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Wed, 28 Oct 2026 06:59:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%B6%B2%E8%B7%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>我又收到詐騙信了</title><link>http://localhost:1313/posts/scam/</link><pubDate>Wed, 28 Oct 2026 06:59:00 +0800</pubDate><guid>http://localhost:1313/posts/scam/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/scam-1.jpg" style="width: 75%; max-width: 100%; height: auto;" alt="詐騙信截圖">
+&lt;p>一臉就是詐騙信啊！我自己都不知道我開了公司。&lt;/p>
+&lt;p>如果寫部落格的各位，有留下自己的電子郵件信箱，請馬上把它隱藏，或是改個字元之類的，才不會被爬蟲爬到，然後寄一堆垃圾信給你。&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/scam-1.jpg" style="width: 75%; max-width: 100%; height: auto;" alt="詐騙信截圖">
+<p>一臉就是詐騙信啊！我自己都不知道我開了公司。</p>
+<p>如果寫部落格的各位，有留下自己的電子郵件信箱，請馬上把它隱藏，或是改個字元之類的，才不會被爬蟲爬到，然後寄一堆垃圾信給你。</p>
+<p>說到資安，聽說上禮拜有什麼 <a href="https://blog.longwin.com.tw/2026/10/news-mis-rd-black-week-cve-hack-crack-2026/">PHP 大漏洞</a>，第一時間「財團法人台灣網路資訊中心（TWNIC）」就有寄信給我，但我懷疑那也是詐騙信，便不予理會。而萬幸的是，我的部落格是純靜態網站，不會受到這個漏洞的影響。</p>
+]]></content:encoded></item><item><title>LINE</title><link>http://localhost:1313/posts/line/</link><pubDate>Mon, 26 Oct 2026 07:24:39 +0800</pubDate><guid>http://localhost:1313/posts/line/</guid><description>&lt;p>有一個訂位系統叫 &lt;a href="https://dining.inline.app/">inline&lt;/a>，我覺得名字取得很好！好奇一查，它跟某個可惡的東西一點關係都沒有（好險好險）。&lt;/p>
 &lt;p>現在的 LINE 無所不包，從貼圖、遊戲和新聞，到付款、漫畫和音樂，應有盡有！為的就是讓使用者產生更多依賴，進而收集更多個資，投放無孔不入的廣告！更有甚者，還推出一個訂閱服務，把照片和備份這些基本功能變成課金模式。&lt;/p></description><content:encoded><![CDATA[<p>有一個訂位系統叫 <a href="https://dining.inline.app/">inline</a>，我覺得名字取得很好！好奇一查，它跟某個可惡的東西一點關係都沒有（好險好險）。</p>
 <p>現在的 LINE 無所不包，從貼圖、遊戲和新聞，到付款、漫畫和音樂，應有盡有！為的就是讓使用者產生更多依賴，進而收集更多個資，投放無孔不入的廣告！更有甚者，還推出一個訂閱服務，把照片和備份這些基本功能變成課金模式。</p>
 <p>好這篇不是來抱怨的，而是 line 這個字可以延伸出很多雙關耶：</p>
@@ -62,6 +68,19 @@
 <p>繼 <a href="https://blogblog.club/party/">BlogBlog.Club</a>、<a href="https://indieping.giveanornot.com/">IndiePing</a> 和 <a href="https://nebula.quickconnect.qzz.io/">Nebula</a> 之後，又多了一個平台可以展現自己！我用 Google 帳號註冊之後，手動加了「生活」「閱讀」兩個分類。</p>
 <p>之前曾夢想把 BBP 的部落格們全部看過，現在已經爬得差不多了，每天都有很多 Feed 可以慢慢品嚐！我甚至還會寄信<del>騷擾</del>跟人家打招呼，畢竟寫部落格就是要互動才有趣。正當我以為自己已經建立了一個完整的知識獲得體系（臨時起意取的），突然飛來一筆超長的清單！截稿前（10/20 15 : 21）部落格觀察已經收錄了 487 個部落格了！除了像我這種，一個人在網路一隅發牢騷，默默守護著小小的網站之外，更多的是新聞、財經、親子和 3C 等等，<del>比無名小站還要歷史悠久</del>經營得有聲有色的超大部落格！</p>
 <p>看看標籤排行榜，大家都喜歡地方美食、旅遊，不然就是社群、科技、程式之類，都是很主流的話題。我一直想提昇網站的能見度，剛好這就有現成的熱門關鍵字可以用，這不就是 SEO 的概念嗎？若我針對一些自己感興趣的主題抒發想法，也許就有更多機會讓別人發現我。當然，我不能淪落成譁眾取寵的內容農場。</p>
+]]></content:encoded></item><item><title>搜尋結果成效</title><link>http://localhost:1313/posts/search/</link><pubDate>Tue, 13 Oct 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/search/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/search.jpg" alt="search">
+&lt;blockquote>
+&lt;p>2026-10-05 截圖。&lt;/p>&lt;/blockquote>
+&lt;p>畫面中是 &lt;a href="https://search.google.com/search-console/about">Google Search Console&lt;/a> 的「深入分析」。最近蹭了&lt;a href="http://localhost:1313/posts/books-game">《人生也是一個遊戲》&lt;/a>不少流量😀&lt;/p>
+&lt;p>其他的熱門關鍵字像是「譯者即叛徒 ii」「酷聖石巧克豆豆冰銅燒」「富邦藝庭」都各有一個點閱，可見我的網站還是有外來的流量的！&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/search.jpg" alt="search">
+<blockquote>
+<p>2026-10-05 截圖。</p></blockquote>
+<p>畫面中是 <a href="https://search.google.com/search-console/about">Google Search Console</a> 的「深入分析」。最近蹭了<a href="/posts/books-game">《人生也是一個遊戲》</a>不少流量😀</p>
+<p>其他的熱門關鍵字像是「譯者即叛徒 ii」「酷聖石巧克豆豆冰銅燒」「富邦藝庭」都各有一個點閱，可見我的網站還是有外來的流量的！</p>
+<p>還有一些莫名其妙的字串，比如<code>不怕麻煩到台南了趕快回家去尋找創始人早餐所以我用啊喔呃誒愛誒奧歐安恩骯鞥二</code>、<code>不做無益事 一日當三日 人活五十歲 我活百五十</code>以及<code>六度理論</code>，分別對應<a href="/posts/bopomofo">〈注音狂想曲〉</a>、<a href="/posts/long-day">〈一天當兩天用〉</a>和<a href="/posts/separation">〈六度分隔理論〉</a>，也都有不少曝光。</p>
+<p>我早就把網站的 sitemap 全部塞給 Google 了，全部文章都爬完也只是時間問題！去搜尋引擎輸入 <code>site:carrot.tw</code> 已經有兩百多個頁面！現在問 AI，也能夠拼湊出我的完整個人資訊；我已經在網路上建立了屬於自己的領域。</p>
+<p>本文跟之前的<a href="/posts/search-myself">〈搜尋自己〉</a>，內容多有重複！那為什麼我還要特別寫一篇呢？因為我突然發現，我在 Feedly 上多了一個訂閱者！（第一個就是我自己……）快承認吧！到底是誰👀</p>
+<p>看似小到不起眼的數字，卻可以讓我開心一整天！好奇大家都是怎麼看到我的文章的？是靠 RSS Feed，還是直接點進我的網址呢？</p>
 ]]></content:encoded></item><item><title>聯經出版｜《亞洲人物史》開箱分享活動邀請</title><link>http://localhost:1313/posts/linking/</link><pubDate>Fri, 18 Sep 2026 19:00:00 +0800</pubDate><guid>http://localhost:1313/posts/linking/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-14.jpg">
 &lt;p>上週五，聯經寄給我一封郵件。除了告知&lt;a href="http://localhost:1313/posts/asia-great-figures">《亞洲人物史》&lt;/a>的「年表海報」已經出貨之外，還有一個活動：凡是預購全套的讀者，在聯經的粉絲專頁底下留言，附上全套書籍實拍照片，就能獲得 $300 購物點數！（發這篇文會不會透漏什麼機密啊？）&lt;/p>
 &lt;p>有好康當然要爭取啊！反正我也沒有什麼損失，祖克伯的演算法誘惑不了我！&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-14.jpg">
@@ -735,4 +754,29 @@ carrot
 &lt;p>至於音樂系官網，&lt;a href="http://localhost:1313/posts/ut-music">昨天&lt;/a>助教有說，在「&lt;a href="https://music.utaipei.edu.tw/blog">最新消息&lt;/a>」常有重要通知，有空就上去看看。我才不要那麼麻煩咧！直接用 &lt;a href="https://rss.app/">RSS.app&lt;/a> 生成 RSS Feed 連結，丟到我的 Feedly 就好啦！有趣的是，公佈欄的連結 &lt;code>https://music.utaipei.edu.tw/blog&lt;/code>，居然是 blog！&lt;/p></description><content:encoded><![CDATA[<p>不想每天檢查訊息，更不願被 Google 和 Meta 壟斷！於是我把學校的 Gmail，轉寄到我私人的 ProtonMail，就不用讓超肥的 Gmail app 佔據我的手機容量了！</p>
 <p>至於音樂系官網，<a href="/posts/ut-music">昨天</a>助教有說，在「<a href="https://music.utaipei.edu.tw/blog">最新消息</a>」常有重要通知，有空就上去看看。我才不要那麼麻煩咧！直接用 <a href="https://rss.app/">RSS.app</a> 生成 RSS Feed 連結，丟到我的 Feedly 就好啦！有趣的是，公佈欄的連結 <code>https://music.utaipei.edu.tw/blog</code>，居然是 blog！</p>
 <p>而 <a href="https://www.facebook.com/utaipeimusic">Facebook 的社團</a>，也能用 RSS.app 建立連結；我們學生自己還有一個私密社團，感覺還是要加一下，免得遺漏重要資訊或經驗談。因為機器人爬不到私密社團，所以我還在想辦法；也要等審核通過再說。</p>
+]]></content:encoded></item><item><title>好多人來看我喔</title><link>http://localhost:1313/posts/traffic/</link><pubDate>Sun, 30 Aug 2026 05:00:00 +0800</pubDate><guid>http://localhost:1313/posts/traffic/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-30.jpg">
+&lt;p>上圖是我昨天截的 Cloudflare 後台數據。左邊是頁面瀏覽，看一篇文章就算一次；右邊是獨立的訪客數量，計算有多少不同的人進來看。平常最多只有十個人，我是被爬蟲入侵還是突然爆紅了？&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-30.jpg">
+<p>上圖是我昨天截的 Cloudflare 後台數據。左邊是頁面瀏覽，看一篇文章就算一次；右邊是獨立的訪客數量，計算有多少不同的人進來看。平常最多只有十個人，我是被爬蟲入侵還是突然爆紅了？</p>
+<p>如果你用 <a href="https://brave.com/">Brave</a> 瀏覽器打開我的網頁，會發現有一個追蹤器，那就是 Cloudflare 的計數機器人。除此之外，我的網頁不會侵犯你的隱私，跳一堆彈出視窗或廣告。這裡只有用愛灌溉的文字，加上一些精美（？的圖片。</p>
+<p>載入速度經過我的各種測試，都還滿快的！有一次我去 3C 專櫃，就在平板上打開我的部落格，感覺真奇妙！因為眼前這個畫面是我親手打造的，全世界都看得到！下次想測試網速，歡迎直接在瀏覽器上輸入 <code>carrot.tw</code>，簡潔好記的網址，買得物超所值！</p>
+<p>要說完全不在乎流量是不可能的！但同時我也清楚，自己不願意追逐數字，畢竟那<a href="/posts/do-not-compare">沒有意義</a>！而且我也不靠這個吃飯，因此也不至於煩惱。要博眼球，我大可以寫一些充滿爭議性的內容，放在最<del>垃圾</del>琳瑯滿目的社群媒體上面，吸引阿里不達的人過來。</p>
+<p>Seth Godin 寫過 <a href="https://seths.blog/2019/03/the-minimum-viable-audience-2/"><em>The minimum viable audience</em></a>，翻譯過來就是「最小可行觀眾」。現在我已經有身為<a href="/posts/writer">創作者</a>的認同了，在這邊畫個大餅，如果我有 50 個忠實讀者，那麼我就算是經營成功了！</p>
+<p>我理想中的受眾應該是像我一樣，喜歡輸入（不限於閱讀）、思考且快樂的人，偶爾閒來無事，就打開某個部落格看看。比起想從我的文章中<a href="/posts/deeper-learning">學到什麼</a>，我更希望觀眾是因為覺得我這個人很有趣（或很奇怪？）才來閱讀，不論是長文、小品甚至廢文都好；願意來看，不是為了內容本身，而只是因為它們出自我這個人。</p>
+<hr>
+<div class="note-box">
+    
+          2026-09-05 21 : 08 Cloudflare 寄信給我，節錄如下：
+
+</div>
+
+<blockquote>
+<p>Congrats on surpassing 10,000 pageviews on carrot.tw last month! This is the first time for your website.<br>Getting to 10K is no easy task and we hope you continue to grow and we are glad you chose Cloudflare to provide services for your website.<br>13388 pageviews<br>2026-05-23 creation date</p></blockquote>
+<p>我把圖放這邊當紀念：</p>
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-05-3.jpg" style="width: 75%; max-width: 100%; height: auto;">]]></content:encoded></item><item><title>父親節 Doodle</title><link>http://localhost:1313/posts/2026-08-08/</link><pubDate>Sat, 08 Aug 2026 09:00:00 +0800</pubDate><guid>http://localhost:1313/posts/2026-08-08/</guid><description>&lt;p>&lt;img alt="無法載入" loading="lazy" src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/fathers-day-2026-june-21-6753651837110939-2xa.gif">&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://doodles.google/doodle/fathers-day-2026-june-21/">https://doodles.google/doodle/fathers-day-2026-june-21/&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;p>在 Google 首頁看到今年的父親節 Doodle，居然是&lt;a href="http://localhost:1313/posts/carrot-gallery">蘿蔔&lt;/a>耶！大隻的是櫻桃蘿蔔還是甜菜啊？我想這是 Google 唯一&lt;a href="http://localhost:1313/posts/digital-life">友善的服務&lt;/a>了！&lt;/p></description><content:encoded><![CDATA[<p><img alt="無法載入" loading="lazy" src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/fathers-day-2026-june-21-6753651837110939-2xa.gif"></p>
+<blockquote>
+<p><a href="https://doodles.google/doodle/fathers-day-2026-june-21/">https://doodles.google/doodle/fathers-day-2026-june-21/</a></p></blockquote>
+<p>在 Google 首頁看到今年的父親節 Doodle，居然是<a href="/posts/carrot-gallery">蘿蔔</a>耶！大隻的是櫻桃蘿蔔還是甜菜啊？我想這是 Google 唯一<a href="/posts/digital-life">友善的服務</a>了！</p>
 ]]></content:encoded></item></channel></rss>

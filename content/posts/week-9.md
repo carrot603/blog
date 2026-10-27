@@ -1,5 +1,5 @@
 +++
-date = '2026-10-28T05:00:00+08:00'
+date = '2026-10-28T07:00:00+08:00'
 draft = false
 title = '蘿蔔週報 #9'
 tags = ["blog","好檸檬"]
@@ -70,9 +70,12 @@ tags = ["blog","好檸檬"]
 
 關於最後「雨傘不是感情遺產」，是《白蛇傳》裡面，許仙與白素貞「借傘定情」的經典橋段。參考自 [euvin](https://euvin01.blogspot.com/2009/07/blog-post.html?m=1) 和[山居美樂地](https://www.facebook.com/dreanlife999/posts/pfbid02JY4LXDwPgBscCaZfij9qHj3fXEeMpfuSTBQdcUX1nNnGsgrW3wes3aSQnTGzYqhvl)。
 
-
 希望這能解答作者的疑惑！
 
 ---
 
 其實還有不少話題可以[討論](https://tianyanfeng.blog/share-and-discuss/)，也許以後可以來寫個專文分享。
+
+最後分享一個，「我的更新日曆」從下週開始就會填滿了！剛架網站的時候，還沒想到可以持續日更這麼久！自認為經營得還算不錯，輸出了很多內容。而日更對我來說不算壓力，它不是一個[本末倒置的指標](https://tianyanfeng.blog/goodharts-law/)；只要用心生活，自然而然就有東西寫，至少我是這麼認為的！
+
+{{< day >}}
