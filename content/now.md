@@ -24,7 +24,7 @@ title = '/now'
 ### 正在讀的書
 - [《中國，在世界中形成》](/posts/signed-book)
 - 《槓桿 ETF 投資法》
-- *Clara and the Sun*
+- *Klara and the Sun*
 
 ### 在練的曲子
 - Bach: BWV 782

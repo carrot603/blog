@@ -1250,6 +1250,10 @@
     
     
 
+    
+    
+    
+
 
 
 
@@ -5012,7 +5016,7 @@
                     
                 
 
-                <div onclick="alert('📅 日期：2026-10-28\n✍️ 狀態：有 2 篇文章 [今天]')" 
+                <div onclick="alert('📅 日期：2026-10-28\n✍️ 狀態：有 3 篇文章 [今天]')" 
                      style="background-color: #216e39; 
                             aspect-ratio: 1; 
                             border-radius: 2px; 
