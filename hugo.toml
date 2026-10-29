@@ -16,6 +16,8 @@ timeZone = "Asia/Taipei"
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]
   section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
 
 [params]
   defaultTheme = "dark"

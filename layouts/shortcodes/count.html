@@ -1,0 +1,277 @@
+{{/*
+  3D 每日字數柱狀圖（可切換年度）
+  用法：layouts/partials/word-bars-3d.html，在版型中 {{ partial "word-bars-3d.html" . }}
+  字數由 layouts/partials/word-count.html 計算（需與此檔一起放入）。
+*/}}
+{{ $posts := slice }}
+{{ range .Site.RegularPages }}
+  {{/* 沒有設定日期的頁面（Hugo 會當成 0001-01-01）直接略過 */}}
+  {{ if not .Date.IsZero }}
+    {{/* 字數改由共用的 word-count.html 計算，文章頁的統計也請改用同一個，數字才會一致 */}}
+    {{ $w := partial "word-count.html" . }}
+    {{ $posts = $posts | append (dict "d" (.Date.Format "2006-01-02") "ts" .Date.Unix "t" .Title "w" $w "u" .RelPermalink) }}
+  {{ end }}
+{{ end }}
+
+<div id="wc3d" data-posts='{{ $posts | jsonify }}' style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;margin:30px 0;">
+  <div class="wc3d-tabs" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;"></div>
+  <div class="wc3d-stats" style="display:flex;gap:16px;flex-wrap:wrap;color:var(--secondary);margin-bottom:8px;"></div>
+  <div class="wc3d-canvas" style="position:relative;width:100%;height:clamp(320px,48vw,520px);touch-action:pan-y;cursor:grab;">
+    <div class="wc3d-tip" style="display:none;position:absolute;z-index:5;pointer-events:none;max-width:260px;padding:8px 10px;border-radius:6px;background:rgba(30,30,30,.92);color:#fff;font-size:12px;line-height:1.5;"></div>
+    <div class="wc3d-msg" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--secondary);">載入 3D 圖表中…</div>
+  </div>
+  <div class="wc3d-legend" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;color:var(--secondary);font-size:11px;align-items:center;justify-content:flex-end;"></div>
+  <div style="color:var(--secondary);font-size:11px;margin-top:6px;text-align:right;">拖曳旋轉 · 滾輪縮放 · 點擊柱子前往文章</div>
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById('wc3d');
+  var posts;
+  try { posts = JSON.parse(root.getAttribute('data-posts')); }
+  catch (e) { root.querySelector('.wc3d-msg').textContent = '資料讀取失敗：此檔案需由 Hugo 處理（請以 partial 引入並用 hugo server 檢視）'; return; }
+  posts = posts.filter(function (p) { return p.d >= '1971-01-01'; });
+  var wrap = root.querySelector('.wc3d-canvas');
+  var tip = root.querySelector('.wc3d-tip');
+  var msg = root.querySelector('.wc3d-msg');
+
+  function loadScript(src) {
+    return new Promise(function (ok, fail) {
+      var s = document.createElement('script');
+      s.src = src; s.onload = ok; s.onerror = fail;
+      document.head.appendChild(s);
+    });
+  }
+  function ensureThree() {
+    if (window.THREE && THREE.OrbitControls) return Promise.resolve();
+    return loadScript('https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js')
+      .then(function () { return loadScript('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js'); });
+  }
+  ensureThree().then(init).catch(function () { msg.textContent = '3D 函式庫載入失敗'; });
+
+  function init() {
+    msg.style.display = 'none';
+
+    /* ---------- 常數與資料 ---------- */
+    var COLOR_A = '#216e39', COLOR_B = '#2f81f7';           // 第 1、3、5… 篇 / 第 2、4、6… 篇
+    var colorOf = function (idx) { return idx % 2 === 0 ? COLOR_A : COLOR_B; };
+    var PITCH = 1.2, MAXH = 9, ROWS = 7;
+    var WD = ['日', '一', '二', '三', '四', '五', '六'];
+    var pad = function (n) { return String(n).padStart(2, '0'); };
+    var fmt = function (d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); };
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var todayStr = fmt(today);
+    var addDays = function (n) { return new Date(today.getFullYear(), today.getMonth(), today.getDate() + n); };
+
+    var byDate = {}, yearSet = {};
+    yearSet[today.getFullYear()] = true;
+    posts.forEach(function (p) { (byDate[p.d] = byDate[p.d] || []).push(p); yearSet[p.d.slice(0, 4)] = true; });
+    Object.keys(byDate).forEach(function (k) { byDate[k].sort(function (a, b) { return a.ts - b.ts; }); });
+    var years = Object.keys(yearSet).map(Number).sort(function (a, b) { return b - a; });
+
+    /* ---------- 場景 ---------- */
+    var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    wrap.insertBefore(renderer.domElement, wrap.firstChild);
+    renderer.domElement.style.display = 'block';
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 400);
+    scene.add(new THREE.AmbientLight(0xffffff, 0.75));
+    var sun = new THREE.DirectionalLight(0xffffff, 0.8);
+    sun.position.set(12, 22, 14); scene.add(sun);
+    var controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true; controls.enablePan = false;
+    controls.minDistance = 12; controls.maxDistance = 200;
+    controls.minPolarAngle = 0.15; controls.maxPolarAngle = Math.PI / 2.05;
+
+    function resize() {
+      var w = wrap.clientWidth, h = wrap.clientHeight;
+      renderer.setSize(w, h);
+      camera.aspect = w / h; camera.updateProjectionMatrix();
+    }
+    resize();
+    if (window.ResizeObserver) new ResizeObserver(resize).observe(wrap); else window.addEventListener('resize', resize);
+
+    function isDark() {
+      var m = getComputedStyle(document.body).backgroundColor.match(/\d+/g);
+      return m ? (0.299 * m[0] + 0.587 * m[1] + 0.114 * m[2]) < 128 : false;
+    }
+    var tileMat = new THREE.MeshLambertMaterial({ color: 0xebedf0 });
+    var todayMat = new THREE.MeshLambertMaterial({ color: 0xff8a3d });
+    function applyTheme() { tileMat.color.set(isDark() ? 0x2d333b : 0xebedf0); }
+    applyTheme();
+    new MutationObserver(applyTheme).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+    var group = new THREE.Group(); scene.add(group);
+    var pickables = [], dayBars = {};
+
+    function label(text, w, h) {
+      var c = document.createElement('canvas'); c.width = 128; c.height = 64;
+      var g = c.getContext('2d'); g.fillStyle = '#8b8f94'; g.font = 'bold 34px sans-serif';
+      g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(text, 64, 32);
+      var s = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c), transparent: true, depthWrite: false }));
+      s.scale.set(w || 2.4, h || 1.2, 1); return s;
+    }
+    function clearGroup() {
+      group.children.slice().forEach(function (o) {
+        group.remove(o);
+        if (o.geometry) o.geometry.dispose();
+        if (o.material && o.material !== tileMat && o.material !== todayMat) { if (o.material.map) o.material.map.dispose(); o.material.dispose(); }
+      });
+      pickables = []; dayBars = {};
+    }
+
+    /* ---------- 建立某個檢視（recent 或某一年） ---------- */
+    var currentKey = null;
+    function build(key) {
+      currentKey = key;
+      clearGroup(); tip.style.display = 'none'; hovered = null;
+
+      var start, cols, inRange;
+      if (key === 'recent') {
+        var wdRaw = addDays(-147).getDay();
+        start = addDays(-147 - (wdRaw === 0 ? 6 : wdRaw - 1)); cols = 27;
+        inRange = function () { return true; };
+      } else {
+        var y = Number(key), jan1 = new Date(y, 0, 1), dow = jan1.getDay();
+        start = new Date(y, 0, 1 - (dow === 0 ? 6 : dow - 1));
+        var span = Math.round((new Date(y, 11, 31) - start) / 864e5) + 1;
+        cols = Math.ceil(span / 7);
+        inRange = function (d) { return d.getFullYear() === y; };
+      }
+
+      var days = [], maxTotal = 0, sum = 0, active = 0, best = null;
+      for (var i = 0; i < cols * ROWS; i++) {
+        var date = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+        if (!inRange(date)) { days.push(null); continue; }
+        var ds = fmt(date), items = byDate[ds] || [];
+        var total = items.reduce(function (s, p) { return s + (p.w || 0); }, 0);
+        var d = { date: date, ds: ds, col: Math.floor(i / ROWS), row: i % ROWS, items: items, total: total, future: ds > todayStr, today: ds === todayStr };
+        days.push(d);
+        if (!d.future) { sum += total; if (total > 0) active++; if (!best || total > best.total) best = d; }
+        if (total > maxTotal) maxTotal = total;
+      }
+      var scale = maxTotal > 0 ? MAXH / maxTotal : 1;
+
+      var stats = root.querySelector('.wc3d-stats'); stats.innerHTML = '';
+      [['總字數', sum.toLocaleString()], ['輸出天數', active + ' 天'],
+       ['單日最高', best && best.total ? best.total.toLocaleString() + ' 字（' + best.ds + '）' : '—']]
+        .forEach(function (x) { var s = document.createElement('span'); s.textContent = x[0] + '：' + x[1]; stats.appendChild(s); });
+
+      var offX = -(cols - 1) * PITCH / 2, offZ = -(ROWS - 1) * PITCH / 2;
+      days.forEach(function (d) {
+        if (!d) return;
+        var x = offX + d.col * PITCH, z = offZ + d.row * PITCH;
+        var tile = new THREE.Mesh(new THREE.BoxGeometry(1, 0.1, 1), d.today ? todayMat : tileMat);
+        tile.position.set(x, 0.05, z); tile.userData = { day: d };
+        group.add(tile); pickables.push(tile);
+        var y0 = 0.1; dayBars[d.ds] = [];
+        d.items.forEach(function (p, idx) {
+          var h = Math.max((p.w || 0) * scale, 0.06);
+          var mat = new THREE.MeshLambertMaterial({ color: colorOf(idx), transparent: d.future, opacity: d.future ? 0.55 : 1 });
+          var bar = new THREE.Mesh(new THREE.BoxGeometry(0.86, h, 0.86), mat);
+          bar.position.set(x, y0 + h / 2, z);
+          bar.userData = { day: d, post: p, idx: idx };
+          group.add(bar); pickables.push(bar); dayBars[d.ds].push(bar);
+          y0 += h;
+        });
+      });
+
+      var prevMonth = -1;
+      for (var c = 0; c < cols; c++) {
+        var first = null;
+        for (var r = 0; r < ROWS; r++) { if (days[c * ROWS + r]) { first = days[c * ROWS + r]; break; } }
+        if (!first) continue;
+        var m = first.date.getMonth();
+        if (m !== prevMonth) { var s = label((m + 1) + '月'); s.position.set(offX + c * PITCH, 0.1, -offZ + 1.3); group.add(s); prevMonth = m; }
+      }
+      ['一', '三', '五'].forEach(function (t, k) { var s = label(t, 1.2, 0.6); s.position.set(offX - 1.5, 0.1, offZ + k * 2 * PITCH); group.add(s); });
+
+      /* 圖例 */
+      var legend = root.querySelector('.wc3d-legend'); legend.innerHTML = '';
+      var sw = function (color, text, extra) {
+        var dv = document.createElement('div'), ic = document.createElement('span');
+        ic.style.cssText = 'display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:middle;margin-right:4px;background:' + color + ';' + (extra || '');
+        dv.appendChild(ic); dv.appendChild(document.createTextNode(text)); legend.appendChild(dv);
+      };
+      sw(COLOR_A, '當日第 1、3、5… 篇'); sw(COLOR_B, '當日第 2、4、6… 篇');
+      sw('#888', '預寫排程（半透明）', 'opacity:.55'); sw('#ff8a3d', '今天');
+
+      /* 鏡頭 */
+      var dist = 36 * (cols / 27) * Math.max(1, 1.8 / camera.aspect);
+      camera.position.set(0, dist * 0.55, dist * 0.8);
+      controls.target.set(0, 0, 0); controls.update();
+      renderTabs();
+    }
+
+    /* ---------- 年度切換 ---------- */
+    function renderTabs() {
+      var box = root.querySelector('.wc3d-tabs'); box.innerHTML = '';
+      [['recent', '近半年']].concat(years.map(function (y) { return [String(y), y + ' 年']; })).forEach(function (t) {
+        var b = document.createElement('button'); b.type = 'button'; b.textContent = t[1];
+        var on = t[0] === currentKey;
+        b.style.cssText = 'cursor:pointer;padding:3px 12px;border-radius:14px;font-size:12px;border:1px solid ' + (on ? COLOR_A : '#8b8f94') +
+          ';background:' + (on ? COLOR_A : 'transparent') + ';color:' + (on ? '#fff' : 'inherit');
+        b.addEventListener('click', function () { if (t[0] !== currentKey) build(t[0]); });
+        box.appendChild(b);
+      });
+    }
+
+    /* ---------- 互動 ---------- */
+    var ray = new THREE.Raycaster(), ptr = new THREE.Vector2(), hovered = null, downXY = null;
+    function pick(ev) {
+      var r = renderer.domElement.getBoundingClientRect();
+      ptr.set(((ev.clientX - r.left) / r.width) * 2 - 1, -((ev.clientY - r.top) / r.height) * 2 + 1);
+      ray.setFromCamera(ptr, camera);
+      var hit = ray.intersectObjects(pickables, false)[0];
+      return hit ? hit.object : null;
+    }
+    function setGlow(ds, on) { (dayBars[ds] || []).forEach(function (b) { b.material.emissive.setHex(on ? 0x333333 : 0x000000); }); }
+    function showTip(obj, ev) {
+      var d = obj.userData.day;
+      tip.innerHTML = '';
+      var h = document.createElement('div'); h.style.fontWeight = 'bold';
+      h.textContent = d.ds + '（週' + WD[d.date.getDay()] + '）' + (d.today ? ' [今天]' : '') + (d.future ? ' [預寫排程]' : '');
+      tip.appendChild(h);
+      var t = document.createElement('div'); t.textContent = d.items.length ? '共 ' + d.items.length + ' 篇，' + d.total.toLocaleString() + ' 字' : '無文章';
+      tip.appendChild(t);
+      d.items.forEach(function (p, i) {
+        var l = document.createElement('div'), dot = document.createElement('span');
+        dot.style.cssText = 'display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px;background:' + colorOf(i);
+        l.appendChild(dot); l.appendChild(document.createTextNode(p.t + ' · ' + (p.w || 0).toLocaleString() + ' 字'));
+        tip.appendChild(l);
+      });
+      tip.style.display = 'block';
+      var r = wrap.getBoundingClientRect();
+      var x = ev.clientX - r.left + 14, y = ev.clientY - r.top + 14;
+      if (x + tip.offsetWidth > r.width) x = ev.clientX - r.left - tip.offsetWidth - 14;
+      if (y + tip.offsetHeight > r.height) y = ev.clientY - r.top - tip.offsetHeight - 14;
+      tip.style.left = Math.max(0, x) + 'px'; tip.style.top = Math.max(0, y) + 'px';
+    }
+    renderer.domElement.addEventListener('pointermove', function (ev) {
+      if (ev.buttons) { tip.style.display = 'none'; return; }
+      var o = pick(ev), ds = o ? o.userData.day.ds : null;
+      if (ds !== hovered) { if (hovered) setGlow(hovered, false); if (ds) setGlow(ds, true); hovered = ds; }
+      if (o) { showTip(o, ev); renderer.domElement.style.cursor = o.userData.post ? 'pointer' : 'grab'; }
+      else { tip.style.display = 'none'; renderer.domElement.style.cursor = 'grab'; }
+    });
+    renderer.domElement.addEventListener('pointerleave', function () {
+      tip.style.display = 'none'; if (hovered) setGlow(hovered, false); hovered = null;
+    });
+    renderer.domElement.addEventListener('pointerdown', function (ev) { downXY = [ev.clientX, ev.clientY]; });
+    renderer.domElement.addEventListener('pointerup', function (ev) {
+      if (!downXY || Math.hypot(ev.clientX - downXY[0], ev.clientY - downXY[1]) > 5) return;
+      var o = pick(ev);
+      if (o && o.userData.post && o.userData.post.u) window.location.href = o.userData.post.u;
+    });
+
+    build('recent');
+    (function loop() {
+      requestAnimationFrame(loop);
+      if (document.hidden) return;
+      controls.update();
+      renderer.render(scene, camera);
+    })();
+  }
+})();
+</script>

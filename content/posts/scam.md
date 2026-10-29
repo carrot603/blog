@@ -6,7 +6,7 @@ tags = ["網路"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/scam-1.jpg" style="width: 75%; max-width: 100%; height: auto;" alt="詐騙信截圖">
 
-一臉就是詐騙信啊！我自己都不知道我開了公司。
+一臉就是[詐騙信](/posts/investment-scam)啊！我自己都不知道我開了公司。
 
 如果寫部落格的各位，有留下自己的電子郵件信箱，請馬上把它隱藏，或是改個字元之類的，才不會被爬蟲爬到，然後寄一堆垃圾信給你。
 

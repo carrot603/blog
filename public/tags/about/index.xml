@@ -12854,7 +12854,7 @@ ShowShareButtons = false
 <h3 id="2026-10-27">2026-10-27</h3>
 <p>2026-07-09 建立 /books，2026-07-24 改成 /series，列出一些精選文章。今整併成 /tags 並重新分類。</p>
 <h3 id="2026-10-28">2026-10-28</h3>
-<p>在 <a href="/posts">/posts</a> 文章清單，最右側列出有無圖片（幾張？）或附件。</p>
+<p>在 <a href="/posts">/posts</a> 文章清單，最右側列出有無圖片（幾張？）或影片、附件。</p>
 ]]></content:encoded></item><item><title>series</title><link>http://localhost:1313/posts/series/</link><pubDate>Thu, 09 Jul 2026 08:00:00 +0800</pubDate><guid>http://localhost:1313/posts/series/</guid><description>&lt;div class="note-box">
 本來叫 books，只是我的閱讀筆記，建立於 2026-07-09。但我需要幫文章分類，所以現在這裡是我的系列文章總目錄！2026-07-24 留。
 &lt;/div>

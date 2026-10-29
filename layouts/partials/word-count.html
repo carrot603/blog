@@ -1,0 +1,15 @@
+{{/*
+  共用字數計算（回傳整數）。用法：partial "word-count.html" 頁面（例如 partial "word-count.html" .）。
+  字數 = 原始內容扣除程式碼區塊、行內程式碼、圖片、連結網址、HTML 標籤、空白之後的字元數。
+  只讀 .RawContent，不需先渲染文章，所以在任何樣板裡呼叫都不會造成卡住。
+*/}}
+{{ $w := .RawContent
+    | replaceRE "(?s)```.*?```" ""
+    | replaceRE "(?s)~~~.*?~~~" ""
+    | replaceRE "`[^`\\n]*`" ""
+    | replaceRE "!\\[[^\\]]*\\]\\([^)]*\\)" ""
+    | replaceRE "\\[([^\\]]*)\\]\\([^)]*\\)" "$1"
+    | replaceRE "<[^>]+>" ""
+    | replaceRE "\\s+" ""
+    | strings.RuneCount }}
+{{ return $w }}
