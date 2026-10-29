@@ -10,17 +10,54 @@
     {{ range .Pages.ByDate.Reverse }}
     <div style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center;">
         
+        <!-- 日期 -->
         <span style="color: var(--secondary); font-size: 0.9em; width: 110px; font-family: monospace; flex-shrink: 0;">
             {{ .Date.Format "2006-01-02" }}
         </span>
         
+        <!-- 文章標題 -->
         <a href="{{ .Permalink }}" style="font-weight: 500; text-decoration: none; color: var(--primary); line-height: 1.5;">
             {{ .Title }}
         </a>
         
+        <!-- 草稿標記 -->
         {{ if .Draft }}
         <span style="color: #ff4d4f; font-size: 0.75em; margin-left: 10px; border: 1px solid #ff4d4f; padding: 0px 4px; border-radius: 3px; flex-shrink: 0;">Draft</span>
         {{ end }}
+
+        <!-- 照片、影片與附件圖示標籤（置右對齊） -->
+        <span style="margin-left: auto; padding-left: 10px; font-size: 0.85em; flex-shrink: 0;">
+            
+            {{/* 1. 計算圖片數量 */}}
+            {{ $imgList := findRE `<img\s+[^>]*>` .Content }}
+            {{ $imgCount := len $imgList }}
+            {{ if gt $imgCount 0 }}
+            <span style="margin-left: 4px;">🖼️ {{ $imgCount }}</span>
+            {{ end }}
+
+            {{/* 2. 計算影片數量（單純以 .HasShortcode 檢測，絕不崩潰） */}}
+            {{ $videoCount := 0 }}
+            {{ if .HasShortcode "r2video" }}
+                {{ $videoCount = add $videoCount 1 }}
+            {{ end }}
+            {{ if .HasShortcode "youtube" }}
+                {{ $videoCount = add $videoCount 1 }}
+            {{ end }}
+
+            {{ if gt $videoCount 0 }}
+            <span style="margin-left: 6px;">🎬{{ if gt $videoCount 1 }} {{ $videoCount }}{{ end }}</span>
+            {{ end }}
+
+            {{/* 3. 附件標示 */}}
+            {{ $hasAttachment := false }}
+            {{ if (or (.HasShortcode "pdf") (.HasShortcode "file") (.Params.attachments)) }}
+                {{ $hasAttachment = true }}
+            {{ end }}
+
+            {{ if $hasAttachment }}
+            <span style="margin-left: 6px;">📎</span>
+            {{ end }}
+        </span>
         
     </div>
     {{ end }}
