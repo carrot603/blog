@@ -2,7 +2,7 @@
 date = '2026-10-04T05:00:00+08:00'
 draft = false
 title = '星期六早上逛誠品（四）'
-tags = ["誠品"]
+tags = ["誠品","閱讀"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/eslite-4.jpg" style="width: 75%; max-width: 100%; height: auto;">
 
