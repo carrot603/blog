@@ -4,6 +4,10 @@ draft = false
 title = '我學英文單字的方法'
 tags = ["BBP","學習","閱讀"]
 +++
+{{< note >}}
+這是「[BlogBlog 同樂會 - 2026 年 10 月](https://blogblog.club/party/)」的投稿文章。本月主題是「[語言的習得、傳承與推廣](https://angeci.github.io/blog/zh/blogblog-party-languages/)」，由 [AngeCI](https://angeci.github.io/blog/zh/) 主持。如果你有自己的部落格，歡迎一起來參加！
+{{< /note >}}
+
 我每天都會空出至少半小時，閱讀全英文的內容。有時候是[小說](https://en.wikipedia.org/wiki/Klara_and_the_Sun)、[部落格](https://seths.blog/)，或者[新聞](https://taipeitimes.com/)、[Podcast](https://podcasts.apple.com/us/podcast/huberman-lab/id1545953110)，總之要讓自己沉浸在英文的環境中，才不會退化太多！
 
 我企圖透過大量閱讀，訓練自己的英文語感。大約三個月以前開始勉勵自己，現在不論是文法、單字或是口語方面，我都有感受到明顯的進步！
