@@ -11,5 +11,6 @@
     | replaceRE "\\[([^\\]]*)\\]\\([^)]*\\)" "$1"
     | replaceRE "<[^>]+>" ""
     | replaceRE "\\s+" ""
+    | replaceRE "\\{\\{[<%].*?[>%]\\}\\}" ""
     | strings.RuneCount }}
 {{ return $w }}
