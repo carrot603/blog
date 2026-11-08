@@ -1,16 +1,45 @@
-{{/*
-  共用字數計算（回傳整數）。用法：partial "word-count.html" 頁面（例如 partial "word-count.html" .）。
-  字數 = 原始內容扣除程式碼區塊、行內程式碼、圖片、連結網址、HTML 標籤、空白之後的字元數。
-  只讀 .RawContent，不需先渲染文章，所以在任何樣板裡呼叫都不會造成卡住。
-*/}}
-{{ $w := .RawContent
-    | replaceRE "(?s)```.*?```" ""
-    | replaceRE "(?s)~~~.*?~~~" ""
+{{- /*
+  共用字數計算（回傳整數）。用法：partial "word-count.html" .
+  字數 = 中日韓文字的「字數」＋ 英文／數字的「單字數」。
+  不計入：程式碼區塊（含四個反引號的外層、波浪線、未結束的區塊、highlight 短代碼）、
+  行內程式碼、圖片、連結與裸網址、HTML 標籤與註解、短代碼標記、清單編號、勾選框、
+  引用區塊的 [!note] 標籤，以及各種排版符號（換行、井字號、表格線條等）。
+  標點符號不計。只讀 .RawContent，不需先渲染文章。
+*/ -}}
+{{- /* 設為 true 時，表格（以 | 開頭的行）整行不計；false 時只忽略表格線條，儲存格內的文字仍會計入 */ -}}
+{{- $excludeTables := false -}}
+
+{{- $t := .RawContent
+    | replaceRE "\\r" ""
+    | replaceRE "(?s)<!--.*?-->" ""
+    | replaceRE "(?s)%%.*?%%" ""
+    | replaceRE "(?ms)^[ \\t]*(?:>[ \\t]*)*`{4,}[^`\\n]*\\n.*?^[ \\t]*(?:>[ \\t]*)*`{4,}[ \\t]*$" ""
+    | replaceRE "(?ms)^[ \\t]*(?:>[ \\t]*)*~{4,}[^\\n]*\\n.*?^[ \\t]*(?:>[ \\t]*)*~{4,}[ \\t]*$" ""
+    | replaceRE "(?ms)^[ \\t]*(?:>[ \\t]*)*`{3,}[^`\\n]*\\n.*?^[ \\t]*(?:>[ \\t]*)*`{3,}[ \\t]*$" ""
+    | replaceRE "(?ms)^[ \\t]*(?:>[ \\t]*)*~{3,}[^\\n]*\\n.*?^[ \\t]*(?:>[ \\t]*)*~{3,}[ \\t]*$" ""
+    | replaceRE "(?ms)^[ \\t]*(?:>[ \\t]*)*(?:`{3,}[^`\\n]*|~{3,}[^\\n]*)\\n.*\\z" ""
+    | replaceRE "(?s)\\{\\{[<%]\\s*highlight\\b.*?\\{\\{[<%]\\s*/highlight\\s*[>%]\\}\\}" ""
+    | replaceRE "(?s)\\{\\{[<%].*?[>%]\\}\\}" ""
+    | replaceRE "``[^\\n]*?``" ""
     | replaceRE "`[^`\\n]*`" ""
+    | replaceRE "!\\[\\[[^\\]]*\\]\\]" ""
     | replaceRE "!\\[[^\\]]*\\]\\([^)]*\\)" ""
-    | replaceRE "\\[([^\\]]*)\\]\\([^)]*\\)" "$1"
-    | replaceRE "<[^>]+>" ""
-    | replaceRE "\\s+" ""
-    | replaceRE "\\{\\{[<%].*?[>%]\\}\\}" ""
-    | strings.RuneCount }}
-{{ return $w }}
+    | replaceRE "\\[\\[[^\\]|]*\\|([^\\]]*)\\]\\]" "${1}"
+    | replaceRE "\\[\\[([^\\]]*)\\]\\]" "${1}"
+    | replaceRE "\\[([^\\]]*)\\]\\([^)]*\\)" "${1}"
+    | replaceRE "(?m)^[ \\t]*\\[[^\\]]+\\]:[ \\t]+\\S+.*$" ""
+    | replaceRE "\\[\\^[^\\]]*\\]" ""
+    | replaceRE "https?://[^\\s)>\\]]+" ""
+    | replaceRE "<[A-Za-z/!][^>\\n]*>" ""
+    | replaceRE "\\[![A-Za-z-]+\\][+-]?" ""
+    | replaceRE "(?m)^[ \\t]*[0-9]+[.)][ \\t]+" ""
+    | replaceRE "(?m)^([ \\t]*[-*+][ \\t]+)\\[[ xX]\\]" "${1}"
+-}}
+
+{{- if $excludeTables -}}
+  {{- $t = replaceRE "(?m)^[ \\t]*\\|.*$" "" $t -}}
+{{- end -}}
+
+{{- $cjk := $t | replaceRE "[^\\p{Han}\\p{Hiragana}\\p{Katakana}\\p{Hangul}]" "" | strings.RuneCount -}}
+{{- $eng := len (findRE "[A-Za-z0-9\\x{00C0}-\\x{024F}]+(?:['’-][A-Za-z0-9\\x{00C0}-\\x{024F}]+)*" $t) -}}
+{{- return (add $cjk $eng) -}}
