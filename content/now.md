@@ -60,7 +60,7 @@ prepper
 | 一 | 二 | 三 | 四 | 五 | 六 | 日 |
 | --- | --- | --- | --- | --- | --- | --- |
 |  |  |  |  |  |  | 1 |
-| 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| 2 | 3<br>1.8k | 4 | 5 | 6 | 7 | 8 |
 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
 | 16 | 17 | 18 | 19 | 20 | 21 | 22 |
 | 23 | 24 | 25 | 26 | 27 | 28 | 29 |
@@ -68,46 +68,45 @@ prepper
 
 ---
 
-**版權聲明**：本站文章採用 [創用 CC 姓名標示-非商業性 4.0 國際 授權條款 (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant) 進行授權。轉載或引用請註明原創作者與出處，且不得用於商業用途。
-
 <style>
-  /* 1. 強制解除主題可能加在表格外層的捲軸限制 */
-  .post-content table, 
+  /* 七欄日曆：欄寬平分、不被內容或主題撐開 */
+  .post-content table,
   table {
-      display: table !important; /* 確保它維持傳統表格行為，不被變成 flex 或 block */
-      width: 100% !important;   /* 寬度百分之百鋪開 */
-      max-width: 100% !important;
-      overflow: visible !important; /* 拒絕產生捲軸 */
+    display: table !important;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
   }
 
-  /* 如果主題有幫 table 包一層 div 限制，強制解除該 div 的捲軸 */
-  .post-content .table-wrapper,
-  div {
-      overflow-x: visible !important; 
+  .post-content th,
+  .post-content td,
+  th, td {
+    min-width: 0 !important;   /* 解除主題常見的 min-width */
+    width: 14.28%;
+    padding: 8px 2px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+    text-align: center;
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;   /* 太長的字才換行 */
   }
 
-  /* 2. 日曆格子的調整 */
-  .post-content th, .post-content td {
-      border: 1px solid #e0e0e0;
-      padding: 12px 4px;
-      width: 14.28% !important; /* 七天嚴格平分 100% 寬度 */
-      height: auto;             /* 讓高度隨文字多寡自動伸展，避免垂直捲軸 */
-      min-height: 60px;
-      vertical-align: top;
-      font-size: 0.9rem;
-      word-break: break-all;    /* 如果文字太長，強制換行，不撐開表格 */
+  /* 小螢幕再縮小一點 */
+  @media (max-width: 480px) {
+    th, td {
+      padding: 6px 1px;
+      font-size: 0.75rem;
+    }
   }
 
   .no-run { color: #999; }
-  
+
   .run-done {
-      display: block;
-      background-color: #e6f4ea;
-      color: #137333;
-      border-radius: 4px;
-      padding: 4px;
-      /* 取消原本的負 margin，改用正常排列，防止撐開格子 */
-      margin: 0; 
-      height: 100%;
+    display: block;
+    background-color: #e6f4ea;
+    color: #137333;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 0;
   }
 </style>

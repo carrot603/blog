@@ -8,7 +8,9 @@ tags = ["about"]
 💡本頁面正式掛上主選單，日後將不定期更新。
 {{< /note >}}
 
-<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg" style="width: 50%; max-width: 100%; height: auto;">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/me.jpg"
+     alt="我的照片"
+     style="display: block; margin: 0 auto; width: 75%; max-width: 100%; height: auto;">
 
 你好我叫江俊佑，生於臺灣臺中市，今年十九歲。目前就讀[臺北市立大學音樂學系](https://music.utaipei.edu.tw/)，主修鋼琴🎹
 
@@ -44,7 +46,8 @@ https://carrot.tw/index.xml
 [臺北走透透](/posts/taipei-trip/)  
 [開學日](/posts/2026-09-07-1)  
 [/when-i-die](/posts/when-i-die)  
-[/tags](/tags)
+[tags](/tags/)  
+[柱狀圖](/posts/word-count/)
 
 ---
 
@@ -59,5 +62,3 @@ https://carrot.tw/index.xml
 {{< day >}}
 
 ---
-
-**版權聲明**：本站文章採用 [創用 CC 姓名標示-非商業性 4.0 國際 授權條款 (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant) 進行授權。轉載或引用請註明原創作者與出處，且不得用於商業用途。
