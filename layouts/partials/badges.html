@@ -22,18 +22,32 @@
 <style>
   .post-badges {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;        /* 永遠排成一行 */
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     margin: 2rem 0 1rem;
     padding-top: 1rem;
     border-top: 1px solid #e0e0e0;
   }
-  .post-badges img {
-    height: 40px;      /* 四張統一高度，改這個數字就能整體縮放 */
-    width: auto;       /* 寬度依原圖比例自動計算 */
-    border: none;
+  .post-badges a {
     display: block;
+    flex: 0 1 auto;
+    min-width: 0;             /* 允許整排縮小，不會換行或溢出 */
+  }
+  .post-badges img {
+    display: block;
+    height: 40px;             /* 桌機高度，改這個數字就能整體縮放 */
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;      /* 縮小時維持比例，不變形 */
+    border: none;
+  }
+  @media (max-width: 480px) {  /* 手機：縮小高度，並把間距縮小 */
+    .post-badges { gap: 6px; }
+    .post-badges img { height: 28px; }
+  }
+  @media (max-width: 360px) {  /* 更窄的手機 */
+    .post-badges img { height: 22px; }
   }
 </style>
