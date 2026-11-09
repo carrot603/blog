@@ -159,6 +159,20 @@
             });
           });
 
+          // 🎯 計算每篇文章的「連結數」（不重複的相鄰文章數，進來與出去的都算，A↔B 只算一次）
+          const neighbors = new Map(allNodes.map(n => [n.id, new Set()]));
+          allLinks.forEach(l => {
+            neighbors.get(l.source).add(l.target);
+            neighbors.get(l.target).add(l.source);
+          });
+          allNodes.forEach(n => { n.degree = neighbors.get(n.id).size; });
+
+          // 🎯 節點半徑：連結越多越大。用平方根比例，讓「面積」與連結數成正比，大節點不會誇張地大
+          //    想調整大小範圍，改下面 range 的 [最小半徑, 最大半徑]
+          const maxDegree = d3.max(allNodes, n => n.degree) || 1;
+          const radius = d3.scaleSqrt().domain([0, maxDegree]).range([7, 26]);
+          const nodeRadius = d => radius(d.degree);
+
           const container = document.getElementById('graph-container');
           const width = window.innerWidth;
           const height = window.innerHeight;
@@ -225,13 +239,13 @@
 
             // 🎯 使用 CSS 變數 var(--primary)
             nodeEnter.append("circle")
-              .attr("r", 8)
+              .attr("r", nodeRadius)
               .attr("fill", "var(--primary)");
 
             // 🎯 使用 CSS 變數 var(--primary)
             nodeEnter.append("text")
               .text(d => d.title)
-              .attr("x", 12)
+              .attr("x", d => nodeRadius(d) + 5)
               .attr("y", 4)
               .attr("font-size", "15px")
               .attr("font-weight", "600")
@@ -271,7 +285,7 @@
               .force("center", d3.forceCenter(width / 2, height / 2))
               .force("x", d3.forceX(width / 2).strength(0.08))
               .force("y", d3.forceY(height / 2).strength(0.08))
-              .force("collide", d3.forceCollide().radius(35));
+              .force("collide", d3.forceCollide().radius(d => nodeRadius(d) + 27));
 
             simulation.on("tick", () => {
               allLinkSelection
