@@ -76,15 +76,19 @@ aiAssisted = true
 
 這是嵌入語法，需要請自取：
 
-```
-<a href="https://carrot.tw/" target="_blank" rel="noopener" title="carrot.tw">
-  <img src="https://carrot.tw/images/carrot-badge-bright.png" width="88" height="31" alt="carrot.tw">
-</a>
-```
+深色：
 
 ```
 <a href="https://carrot.tw/" target="_blank" rel="noopener" title="carrot.tw">
   <img src="https://carrot.tw/images/carrot-badge.png" width="88" height="31" alt="carrot.tw">
+</a>
+```
+
+淺色：
+
+```
+<a href="https://carrot.tw/" target="_blank" rel="noopener" title="carrot.tw">
+  <img src="https://carrot.tw/images/carrot-badge-bright.png" width="88" height="31" alt="carrot.tw">
 </a>
 ```
 
