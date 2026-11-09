@@ -8,7 +8,7 @@
   {{/* 沒有設定日期的頁面（Hugo 會當成 0001-01-01）直接略過 */}}
   {{ if not .Date.IsZero }}
     {{/* 字數改由共用的 word-count.html 計算，文章頁的統計也請改用同一個，數字才會一致 */}}
-    {{ $w := partial "word-count.html" . }}
+    {{ $w := partialCached "word-count.html" .Page .Page.RelPermalink }}
     {{ $posts = $posts | append (dict "d" (.Date.Format "2006-01-02") "ts" .Date.Unix "t" .Title "w" $w "u" .RelPermalink) }}
   {{ end }}
 {{ end }}

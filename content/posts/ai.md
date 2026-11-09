@@ -3,6 +3,7 @@ date = '2026-11-08T08:00:00+08:00'
 draft = false
 title = '淺論 AI'
 tags = ["AI","哲學","網路"]
+aiAssisted = true
 +++
 <div id="custom-toc"></div>
 

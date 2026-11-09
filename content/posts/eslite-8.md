@@ -3,6 +3,7 @@ date = '2026-11-08T15:30:00+08:00'
 draft = false
 title = '星期六沒有逛誠品（八）'
 tags = ["誠品","AI","閱讀","日記"]
+aiAssisted = true
 +++
 <div id="custom-toc"></div>
 

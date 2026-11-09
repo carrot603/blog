@@ -2,7 +2,7 @@
 
 {{- $wc := 0 }}
 {{- if or (.Param "ShowReadingTime") (.Param "ShowWordCount") }}
-    {{- $wc = partial "word-count.html" . }}
+    {{- $wc = partialCached "word-count.html" . .RelPermalink }}
 {{- end }}
 
 {{- if not .Date.IsZero -}}

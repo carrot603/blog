@@ -3,6 +3,7 @@ date = '2026-10-30T07:00:00+08:00'
 draft = false
 title = '柱狀圖'
 tags = ["about","code"]
+aiAssisted = true
 +++
 {{< count >}}
 

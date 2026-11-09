@@ -3,6 +3,7 @@ date = '2026-10-25T05:00:00+08:00'
 draft = false
 title = '猜字謎'
 tags = ["code","about","文字遊戲"]
+aiAssisted = true
 +++
 {{< word-puzzle >}}
 

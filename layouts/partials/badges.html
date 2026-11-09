@@ -1,8 +1,10 @@
 <div class="post-badges">
- <a href="https://carrot.tw/" target="_blank" rel="noopener" title="carrot.tw">
+  <a href="https://carrot.tw/" target="_blank" rel="noopener" title="carrot.tw">
     <img src="/images/carrot-badge.png" alt="Carrot Blog">
   </a>
 
+  {{- /* 文章 front matter 設 aiAssisted = true 時，隱藏兩個「真人撰寫」徽章 */ -}}
+  {{- if not (.Param "aiAssisted") }}
   <a href="https://notbyai.fyi/" target="_blank" rel="noopener" title="Written by Human, Not by AI">
     <img src="/images/badge.png" alt="真人撰寫・非AI生成">
   </a>
@@ -10,6 +12,7 @@
   <a href="https://paddletonightside.blogspot.com/2026/05/100.html?m=1" target="_blank" rel="noopener" title="100% Human">
     <img src="/images/badge-1.png" alt="100% Human">
   </a>
+  {{- end }}
 
   <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant" target="_blank" rel="license noopener" title="CC BY-NC 4.0">
     <img src="/images/badge-2.png" alt="創用 CC 姓名標示-非商業性 4.0 國際">
@@ -28,7 +31,7 @@
     border-top: 1px solid #e0e0e0;
   }
   .post-badges img {
-    height: 40px;      /* 三張統一高度，改這個數字就能整體縮放 */
+    height: 40px;      /* 四張統一高度，改這個數字就能整體縮放 */
     width: auto;       /* 寬度依原圖比例自動計算 */
     border: none;
     display: block;
