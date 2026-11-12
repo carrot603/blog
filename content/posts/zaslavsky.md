@@ -6,7 +6,7 @@ tags = ["音樂","日記"]
 +++
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-11-01-9.jpg">
 
-扎斯拉夫斯基（[Roman Zaslavsky](https://www.opentix.life/event/2072870491394531328)）獨奏會，11/1 在國家音樂廳演奏廳。曲目如下：
+扎斯拉夫斯基（[Roman Zaslavsky](https://www.opentix.life/event/2072870491394531328)）獨奏會，11/1 在國家音樂廳演奏廳。[官方樂曲解說在此](https://docs.google.com/document/u/0/d/1qORmxxKAR4vAk4UORZeBF0T2FbpxDGXtEh5yKR6LzJQ/mobilebasic)，曲目如下：
 
 **Frédéric Chopin (1810-1849)**
 
