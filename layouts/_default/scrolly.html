@@ -1,0 +1,283 @@
+{{- /*
+  捲動敘事版型（深色主題・與一般文章等寬版）。存成 layouts/_default/scrolly.html，文章 front matter 加上 layout = "scrolly" 即可使用。
+*/ -}}
+<!doctype html>
+<html lang="zh-TW" style="{{ with .Params.stage }}--stage:{{ . }};{{ end }}{{ with .Params.fit }}--fit:{{ . }};{{ end }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ .Title }} | {{ site.Title }}</title>
+{{- with .Description }}
+<meta name="description" content="{{ . }}">
+{{- end }}
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "favicon.png" | relURL }}">
+<script>document.documentElement.className = 'js';</script>
+<style>
+  /* ============ 可調整的參數（改這裡就好）============ */
+  :root {
+    --stage: 50;          /* 圖片區佔視窗高度的百分比，只寫數字。50＝上下各半；60＝圖片區較大 */
+    --step-min: 100;      /* 每一段文字至少佔文字區的百分比。100＝滿一屏；70＝更緊湊、留白更少（建議不要低於 60）*/
+    --beat: 20;           /* 只有圖片、沒有文字的段落，捲動時停留的長度（視窗高度的百分比）*/
+    --fit: contain;       /* contain＝照片完整顯示（預設）；cover＝填滿並裁切邊緣 */
+    --content-w: 720px;   /* 與一般 Hugo 文章完全相同的寬度（PaperMod 預設 720px）*/
+    --pad-x: 20px;        /* 左右留白（與一般文章左右邊界對齊）*/
+    --pad-y: 12px;        /* 圖片上下留白 */
+    --bg: #1d1e20;        /* 深色背景（PaperMod 暗色主題標準底色）*/
+    --card-bg: #2e2e33;   /* 懸浮目錄與按鈕底色 */
+    --ink: #ffffff;       /* 白色文字 */
+    --accent: #ff8a3d;    /* 主視覺色（目錄的目前章節、引言線條）*/
+    --fade: .6s;          /* 圖片切換的淡入淡出時間 */
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+  }
+
+  /* ============ 版面 ============ */
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.8 var(--font); }
+  main { max-width: calc(var(--content-w) + 2 * var(--pad-x)); margin: 0 auto; padding: 1.5rem var(--pad-x); }
+  main img { max-width: 100%; height: auto; }
+
+  .stage, .toc { display: none; }
+  .js .stage { display: block; }
+  .js .toc { display: block; }
+  .js main { max-width: none; margin: 0; padding: 0; }
+  .js main:not(.ready) { visibility: hidden; }
+
+  .stage {
+    position: sticky; top: 0; z-index: 2; overflow: hidden; background: var(--bg);
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    height: calc(var(--stage) * 1vh);
+    height: calc(var(--stage) * 1dvh);
+  }
+  .shot { position: absolute; inset: 0; opacity: 0; transition: opacity var(--fade) ease; }
+  .shot.on { opacity: 1; }
+  .shot img {
+    display: block; margin: 0 auto; height: 100%;
+    padding: var(--pad-y) var(--pad-x);
+    width: min(100%, calc(var(--content-w) + 2 * var(--pad-x)));
+    object-fit: var(--fit); transform: scale(1); transition: transform 1.4s ease;
+  }
+  .shot.on img { transform: scale(var(--z, 1)); }
+
+  .chapter {
+    scroll-margin-top: calc(var(--stage) * 1vh);
+    scroll-margin-top: calc(var(--stage) * 1dvh);
+  }
+  .step {
+    min-height: calc((100 - var(--stage)) * var(--step-min) / 100 * 1vh);
+    min-height: calc((100 - var(--stage)) * var(--step-min) / 100 * 1dvh);
+    display: flex; flex-direction: column; justify-content: center;
+    max-width: calc(var(--content-w) + 2 * var(--pad-x));
+    margin: 0 auto;
+    padding: 4vh var(--pad-x);
+  }
+  .step.beat { min-height: calc(var(--beat) * 1vh); min-height: calc(var(--beat) * 1dvh); padding-top: 0; padding-bottom: 0; }
+  .step > :first-child { margin-top: 0; }
+  .step > :last-child { margin-bottom: 0; }
+  .step h1, .step h2, .step h3 { line-height: 1.3; color: #ffffff; }
+  .step p { color: rgba(255, 255, 255, 0.92); }
+  .step blockquote {
+    margin: 1em 0; padding-left: 1em;
+    border-left: 3px solid var(--accent);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .step a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+
+  .toc {
+    position: fixed; top: .6rem; left: .6rem; z-index: 5; max-width: min(15rem, 70vw);
+    background: var(--card-bg); color: var(--ink);
+    border: 1px solid rgba(255, 255, 255, .15); border-radius: 10px;
+    font: 14px/1.4 system-ui, sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+  }
+  .toc summary { cursor: pointer; padding: .45rem .8rem; font-weight: 700; list-style: none; }
+  .toc summary::-webkit-details-marker { display: none; }
+  .toc nav { display: grid; padding: 0 .4rem .5rem; }
+  .toc a {
+    padding: .25rem .6rem; border-left: 3px solid transparent;
+    color: inherit; text-decoration: none; opacity: .7;
+  }
+  .toc a:hover { opacity: 1; }
+  .toc a.on { border-left-color: var(--accent); opacity: 1; font-weight: 700; }
+
+  .back {
+    position: fixed; top: .6rem; right: .6rem; z-index: 5; padding: .45rem .8rem;
+    background: var(--card-bg); border: 1px solid rgba(255, 255, 255, .15); border-radius: 10px;
+    font: 14px/1.4 system-ui, sans-serif; color: var(--ink); text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+  }
+  .back:hover { border-color: var(--accent); }
+
+  @media (max-width: 640px) {
+    .shot img { padding-top: calc(var(--pad-y) + 2.6rem); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .shot, .shot img { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stage"></div>
+
+<details class="toc" open>
+  <summary>目錄</summary>
+  <nav aria-label="章節目錄"></nav>
+</details>
+
+<a class="back" href="{{ site.Home.RelPermalink }}">← {{ site.Title }}</a>
+
+<main id="src" data-intro="{{ .Params.intro | default "序" }}">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</main>
+
+{{ partial "badges.html" . }}
+
+<script>
+(() => {
+  /* ============ 可調整的參數 ============ */
+  const AHEAD = 1;     // 預先載入「目前這張」之後幾張圖片（前一張也會保留）
+  const MOBILE = 640;  // 視窗寬度小於這個值（px）時，目錄預設收合
+  const JOIN_CJK = true; // 中文字之間的換行不要顯示成空格（Markdown 段落裡的單一換行，瀏覽器會顯示成空格）
+
+  const root = document.documentElement;
+  const main = document.getElementById('src');
+  const stage = document.querySelector('.stage');
+  const toc = document.querySelector('.toc');
+  const nav = toc.querySelector('nav');
+  const label = toc.querySelector('summary');
+
+  // 1. 把 Markdown 輸出切成「章節 → 段落」：## 開新章節，--- 開新段落
+  const chapters = [];
+  let chapter, step;
+  const addStep = () => { step = document.createElement('div'); step.className = 'step'; chapter.append(step); };
+  const addChapter = (title, id) => {
+    chapter = document.createElement('section');
+    chapter.className = 'chapter';
+    chapter.dataset.title = title;
+    chapter.id = id;
+    chapters.push(chapter);
+    addStep();
+  };
+  addChapter(main.dataset.intro, 'intro');
+  [...main.children].forEach(n => {
+    if (n.tagName === 'H2') {
+      addChapter(n.textContent, n.id || 'ch' + chapters.length);
+      n.removeAttribute('id');
+    }
+    if (n.tagName === 'HR') return addStep();
+    step.append(n);
+  });
+  main.replaceChildren(...chapters);
+  document.querySelectorAll('.step:empty').forEach(s => s.remove());
+  let steps = [...document.querySelectorAll('.step')];
+
+  // 2. 每一段的第一張圖，變成舞台圖片（文字裡不再顯示）
+  steps.forEach(s => {
+    const im = s.querySelector('img');
+    if (!im) return;
+    s.dataset.img = im.getAttribute('src');
+    s.dataset.alt = im.alt;
+    const pos = /pos=([\d.]+%?\s+[\d.]+%?)/.exec(im.title);
+    const zoom = /zoom=([\d.]+)/.exec(im.title);
+    if (pos) s.dataset.pos = pos[1];
+    if (zoom) s.dataset.zoom = zoom[1];
+    // 連同「只包著這張圖」的外層（p、a、div、figure…）一起移除，不留下空的區塊
+    const onlyChild = (parent, c) => [...parent.childNodes].every(n => n === c || n.nodeName === 'BR' || (n.nodeType === 3 && !n.nodeValue.trim()));
+    let gone = im;
+    while (gone.parentElement !== s && onlyChild(gone.parentElement, gone)) gone = gone.parentElement;
+    gone.remove();
+  });
+  // 2a. 只剩圖片、沒有文字的段落，不要單獨佔滿一屏：下一段沒有圖片時，圖交給下一段；否則縮成短短一拍（--beat）
+  steps.forEach((s, i) => {
+    if (s.children.length) return;
+    const next = steps[i + 1];
+    if (s.dataset.img && next && !next.dataset.img) { Object.assign(next.dataset, s.dataset); s.remove(); }
+    else if (s.dataset.img) s.classList.add('beat');
+    else s.remove();
+  });
+  steps = [...document.querySelectorAll('.step')];
+
+  // 2b. 去掉中文字之間多出來的空格：只處理「前後都是中日韓文字」的換行，英文單字之間的空格不動，程式碼區塊不動
+  if (JOIN_CJK) {
+    const cjk = '[\\u2e80-\\u9fff\\uf900-\\ufaff\\uff00-\\uffef]';
+    const inside = new RegExp('(' + cjk + ')[ \\t]*\\n[ \\t]*(?=' + cjk + ')', 'g');
+    const atStart = new RegExp('^[ \\t]*\\n[ \\t]*(?=' + cjk + ')');
+    const atEnd = new RegExp('(' + cjk + ')[ \\t]*\\n[ \\t]*$');
+    const isCJK = ch => new RegExp(cjk).test(ch);
+    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
+    const texts = [];
+    while (walker.nextNode()) if (!walker.currentNode.parentElement.closest('pre')) texts.push(walker.currentNode);
+    texts.forEach(t => {
+      let v = t.nodeValue.replace(inside, '$1');
+      // 換行剛好落在粗體、連結等行內標籤的邊界時，看相鄰節點的文字
+      if (t.previousSibling && isCJK(t.previousSibling.textContent.slice(-1))) v = v.replace(atStart, '');
+      if (t.nextSibling && isCJK(t.nextSibling.textContent.charAt(0))) v = v.replace(atEnd, '$1');
+      if (v !== t.nodeValue) t.nodeValue = v;
+    });
+  }
+  main.classList.add('ready');
+
+  // 3. 建立舞台圖片（先不載入，輪到才載）
+  const shots = steps.map(s => {
+    if (!s.dataset.img) return null;
+    const box = document.createElement('div');
+    const im = new Image();
+    box.className = 'shot';
+    im.alt = s.dataset.alt || '';
+    im.decoding = 'async';
+    im.dataset.src = s.dataset.img;
+    im.style.objectPosition = im.style.transformOrigin = s.dataset.pos || 'center';
+    im.style.setProperty('--z', s.dataset.zoom || 1);
+    box.append(im);
+    stage.append(box);
+    return box;
+  });
+  const load = j => {
+    const box = shots[j];
+    if (!box || box.firstChild.src) return;
+    const im = box.firstChild;
+    im.src = im.dataset.src;
+  };
+
+  // 4. 建立目錄
+  const links = chapters.map(c => {
+    const a = document.createElement('a');
+    a.href = '#' + c.id;
+    a.textContent = c.dataset.title;
+    nav.append(a);
+    return a;
+  });
+  if (innerWidth < MOBILE) toc.open = false;
+  nav.addEventListener('click', e => { if (e.target.closest('a') && innerWidth < MOBILE) toc.open = false; });
+
+  // 5. 切換到第 i 段：換圖、預載、更新目錄
+  let cur = -1;
+  function show(i) {
+    if (i === cur) return;
+    cur = i;
+    for (let j = i - 1; j <= i + AHEAD; j++) load(j);
+    if (shots[i]) shots.forEach((box, j) => box && box.classList.toggle('on', j === i));
+    const c = steps[i].closest('.chapter');
+    links.forEach((a, k) => {
+      const on = chapters[k] === c;
+      a.classList.toggle('on', on);
+      on ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current');
+      if (on) label.textContent = '目錄｜' + a.textContent;
+    });
+  }
+
+  // 6. 監看：哪一段文字經過「文字區的垂直中線」，就切換到那一段
+  const pct = parseFloat(getComputedStyle(root).getPropertyValue('--stage')) || 50;
+  const line = pct + (100 - pct) / 2;
+  const io = new IntersectionObserver(
+    es => es.forEach(e => e.isIntersecting && show(steps.indexOf(e.target))),
+    { rootMargin: '-' + line + '% 0px -' + (100 - line - 1) + '% 0px' }
+  );
+  steps.forEach(s => io.observe(s));
+})();
+</script>
+</body>
+</html>
