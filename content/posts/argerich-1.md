@@ -36,7 +36,7 @@ fit = 'contain'
 ---
 ## 高雄
 
-![高雄車站](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-2.jpg)
+![高雄車站](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-2.jpg "pos=50% 60% zoom=1.4")
 
 高雄車站。小時候滿常來南部玩的，但其實我都沒什麼印象。不過我依稀記得，上一次來的時候，這座車站還在建設中。超大穹頂，植栽遍布，加上詭異的動線，以及保留特色古蹟——不說我還以為回到了臺中車站！
 
@@ -96,9 +96,11 @@ fit = 'contain'
 
 ---
 
-![黃仁勳傳](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-7.jpg)
+![黃仁勳傳](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-7.jpg "pos=50% 50% zoom=1.5")
 
 書會不會滯銷啊……
+
+關於黃仁勳，我不看新聞、不聽八卦、不在乎國家大事。總之可以參考[〈如何看待英伟达 CEO 黄仁勋在致员工内部信中承认婚外情？〉](https://www.zhihu.com/question/2102997392886911090/answer/2103855373169997399)，轉引自[I'm Marcus —〈黃仁勳醜聞的邏輯不合之處〉](https://immarcus.com/blog/logical-inconsistency-in-jensen-huang-scandal)。
 
 ---
 
@@ -172,7 +174,7 @@ Speedrun 高雄捷運！離開總圖的時候已經 18 : 40 了，我估計去�
 ---
 ## 阿格麗希
 
-![阿格麗希謝幕](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-17.jpg)
+![阿格麗希謝幕](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-17.jpg "pos=40% 90% zoom=1.5")
 
 本場音樂會「[阿格麗希音樂節在台灣—高雄場](https://www.opentix.life/event/2079132570898259969)」，由[新象文創](https://www.newaspect.org.tw/)主辦。為了訂票我還要註冊會員……
 
@@ -213,7 +215,7 @@ Speedrun 高雄捷運！離開總圖的時候已經 18 : 40 了，我估計去�
 
 ---
 
-![謝幕](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-18.jpg)
+![謝幕](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-18.jpg "pos=60% 80% zoom=1.4")
 
 下半場藍色狂想曲，由希臘鋼琴家 Theodosia Ntokou 擔任獨奏，聽說她是阿格麗希的學生。
 
@@ -221,7 +223,7 @@ Speedrun 高雄捷運！離開總圖的時候已經 18 : 40 了，我估計去�
 
 ---
 
-![阿格麗希謝幕](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-19.jpg)
+![阿格麗希謝幕](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-19.jpg "pos=50% 80% zoom=1.4")
 
 普朗克雙鋼琴協奏曲，由阿格麗希和她的孫子 David Chen Sverdlov 搭檔。因為是比較現代的作品，所以音響效果非常特別！其實我聽音樂會，都當作首演在欣賞，不會特別去研究曲子的創作背景和總譜（因為我懶）。我聽這首不是看它旋律多動聽，而是看看作曲家能創造出什麼特別的音響效果來？
 
@@ -233,6 +235,8 @@ Speedrun 高雄捷運！離開總圖的時候已經 18 : 40 了，我估計去�
 ## 睡覺
 
 ![青旅房間](https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/kaohsiung-24.jpg)
+
+>剛進飯店時拍的，天還亮的時候。這個包本來是給 iPad 用的，我拿來裝書，深怕它受了一點傷。
 
 回到飯店已經十點半了！因為是青年旅館，衛浴共用，我本來就沒有洗澡的打算。請聽我解釋，我整天都沒有流汗，而且我有帶牙膏牙刷和乳液，我還是很注重個人衛生和形象的。
 
