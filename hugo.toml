@@ -4,6 +4,7 @@ title = 'Carrot Blog'
 theme = "PaperMod"
 hasCJKLanguage = true
 timeZone = "Asia/Taipei"
+canonifyURLs = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
