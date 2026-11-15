@@ -1,0 +1,256 @@
+{{/* 1. 取得所有文章日期與計數 (維持不變) */}}
+{{ $dates := dict }}
+{{ range .Site.RegularPages }}
+    {{ $dateStr := .Date.Format "2006-01-02" }}
+    {{ $count := index $dates $dateStr | default 0 }}
+    {{ $dates = merge $dates (dict $dateStr (add $count 1)) }}
+{{ end }}
+
+{{/* 2. 智能對齊時間軸範圍，確保第一行永遠是週一 */}}
+{{ $now := now }}
+{{ $rawStartDate := $now.AddDate 0 0 -147 }}
+{{ $startWeekday := int $rawStartDate.Weekday }}
+
+{{ $daysToMonday := 0 }}
+{{ if eq $startWeekday 0 }}
+    {{ $daysToMonday = 6 }}
+{{ else }}
+    {{ $daysToMonday = sub $startWeekday 1 }}
+{{ end }}
+
+{{ $startOffset := sub -147 $daysToMonday }}
+{{ $endOffset := add 188 $startOffset }}
+
+{{/* 3. 貪吃蛇設定 */}}
+{{ $showSnake := true }}
+{{ $snakeRow := 4 }}
+{{ $snakeLen := 3 }}
+{{ $todayCol := add (div (sub 0 $startOffset) 7) 1 }}
+{{ $runway := sub 27 $todayCol }}
+{{ $travel := sub $runway $snakeLen }}
+{{ if lt $travel 1 }}{{ $travel = 1 }}{{ end }}
+{{ $headCol := sub 28 $snakeLen }}
+
+<style>
+  /* ===== 貪吃蛇（強化包覆與層級定位）===== */
+  .gcs-calendar-wrapper {
+    position: relative !important;
+    display: inline-block;
+    width: 100%;
+  }
+  .gcs-grid-base {
+    display: grid;
+    grid-template-columns: repeat(27, 1fr);
+    grid-auto-flow: column;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 4px;
+    width: 100%;
+  }
+  .gcs-layer {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(27, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 4px;
+    pointer-events: none !important;
+  }
+  .gcs-seg {
+    grid-row: var(--row);
+    display: grid;
+    place-items: center;
+    animation: gcs-move 6s infinite;
+    animation-delay: var(--d, 0s);
+  }
+  .gcs-seg i {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 32%;
+    background: #ff8a3d;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .18);
+    animation: gcs-squash 6s infinite;
+    animation-delay: var(--d, 0s);
+  }
+  .gcs-tail i { width: 70%; height: 70%; }
+  .gcs-head i { background: #f2711c; transform-origin: 0% 50%; }
+  .gcs-head i::before, .gcs-head i::after {
+    content: "";
+    position: absolute;
+    left: 16%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background: #2b1b0e;
+    animation: gcs-eye 6s infinite;
+  }
+  .gcs-head i::before { top: 20%; }
+  .gcs-head i::after { bottom: 20%; }
+  .gcs-head b {
+    position: absolute;
+    right: 92%;
+    top: 46%;
+    width: 38%;
+    height: 9%;
+    border-radius: 2px;
+    background: #e2373f;
+    transform-origin: 100% 50%;
+    animation: gcs-tongue 1.4s infinite;
+  }
+
+  .gcs-fx {
+    grid-column: var(--hit-col);
+    grid-row: var(--row);
+    position: relative;
+    pointer-events: none;
+  }
+  .gcs-fx s {
+    position: absolute;
+    text-decoration: none;
+    color: #ffc107;
+    line-height: 1;
+    opacity: 0;
+    font-size: max(9px, 2.6cqw);
+    animation: gcs-star 6s infinite;
+  }
+  .gcs-fx s:nth-child(1) { left: 70%; top: -45%; }
+  .gcs-fx s:nth-child(2) { left: 20%; top: -95%; animation-delay: .1s; }
+  .gcs-fx s:nth-child(3) { left: -40%; top: -50%; animation-delay: .2s; }
+  
+  .gcs-say {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 115%;
+    white-space: nowrap;
+    padding: 1px 6px;
+    border-radius: 6px;
+    background: #fff;
+    color: #3b2410;
+    border: 1px solid rgba(0, 0, 0, .2);
+    font: 700 10px/1.4 system-ui, sans-serif;
+    opacity: 0;
+    animation: gcs-say 6s infinite;
+  }
+
+  @keyframes gcs-move {
+    0%, 8% { transform: translateX(0); animation-timing-function: ease-in; }
+    22%, 24% { transform: translateX(calc((100% + 4px) * var(--travel) * -1)); animation-timing-function: ease-out; }
+    29% { transform: translateX(calc((100% + 4px) * (var(--travel) - .45) * -1)); animation-timing-function: ease-in; }
+    38%, 40% { transform: translateX(calc((100% + 4px) * var(--travel) * -1)); animation-timing-function: ease-out; }
+    45% { transform: translateX(calc((100% + 4px) * (var(--travel) - .35) * -1)); animation-timing-function: ease-in; }
+    52%, 54% { transform: translateX(calc((100% + 4px) * var(--travel) * -1)); animation-timing-function: ease-out; }
+    60% { transform: translateX(calc((100% + 4px) * (var(--travel) - .3) * -1)); animation-timing-function: ease-in-out; }
+    86%, 100% { transform: translateX(0); }
+  }
+  @keyframes gcs-squash {
+    0%, 23% { transform: scale(1, 1); }
+    24% { transform: scale(.55, 1.15); }
+    28%, 39% { transform: scale(1, 1); }
+    40% { transform: scale(.55, 1.15); }
+    44%, 53% { transform: scale(1, 1); }
+    54% { transform: scale(.55, 1.15); }
+    58%, 100% { transform: scale(1, 1); }
+  }
+  @keyframes gcs-eye {
+    0%, 23% { transform: scale(1, 1); }
+    24%, 29% { transform: scale(1.4, .2); }
+    30%, 39% { transform: scale(1, 1); }
+    40%, 45% { transform: scale(1.4, .2); }
+    46%, 53% { transform: scale(1, 1); }
+    54%, 60% { transform: scale(1.4, .2); }
+    61%, 100% { transform: scale(1, 1); }
+  }
+  @keyframes gcs-tongue {
+    0%, 55% { transform: scaleX(0); }
+    65%, 85% { transform: scaleX(1); }
+    100% { transform: scaleX(0); }
+  }
+  @keyframes gcs-star {
+    0%, 23% { opacity: 0; transform: translateY(3px) scale(.5); }
+    24% { opacity: 1; transform: translateY(0) scale(.8); }
+    29% { opacity: 0; transform: translateY(-.8em) scale(1.2) rotate(-40deg); }
+    30%, 39% { opacity: 0; transform: translateY(3px) scale(.5); }
+    40% { opacity: 1; transform: translateY(0) scale(.8); }
+    45% { opacity: 0; transform: translateY(-.8em) scale(1.2) rotate(-40deg); }
+    46%, 53% { opacity: 0; transform: translateY(3px) scale(.5); }
+    54% { opacity: 1; transform: translateY(0) scale(.8); }
+    59%, 100% { opacity: 0; transform: translateY(-.8em) scale(1.2) rotate(-40deg); }
+  }
+  @keyframes gcs-say {
+    0%, 23% { opacity: 0; transform: translate(-50%, 4px) scale(.8); }
+    24.5% { opacity: 1; transform: translate(-50%, 0) scale(1); }
+    35% { opacity: 1; }
+    40%, 100% { opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .gcs-seg, .gcs-seg i, .gcs-head i::before, .gcs-head i::after, .gcs-head b, .gcs-fx s, .gcs-say { animation: none; }
+    .gcs-seg { transform: translateX(calc((100% + 4px) * var(--travel) * -1)); }
+    .gcs-say { opacity: 1; }
+  }
+</style>
+
+<div class="github-calendar-container" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Monospace; font-size: 12px; margin: 30px 0; display: flex; gap: 8px; align-items: flex-start;">
+    <div style="flex-grow: 1;">
+        <div class="gcs-calendar-wrapper">
+            {{/* 主日曆本體格子群 */}}
+            <div class="gcs-grid-base">
+                {{ range seq $startOffset $endOffset }}
+                    {{ $targetDate := $now.AddDate 0 0 . }}
+                    {{ $targetDateStr := $targetDate.Format "2006-01-02" }}
+                    {{ $articleCount := index $dates $targetDateStr | default 0 }}
+                    
+                    {{ $isFuture := $targetDate.After $now }}
+                    {{ $isToday := eq $targetDateStr ($now.Format "2006-01-02") }}
+
+                    {{ $bgColor := "#ebedf0" }}
+                    {{ if gt $articleCount 0 }}
+                        {{ if $isFuture }}
+                            {{ $bgColor = "#8dd792" }}
+                        {{ else }}
+                            {{ $bgColor = "#216e39" }}
+                        {{ end }}
+                    {{ else if $isToday }}
+                        {{ $bgColor = "#fff9db" }}
+                    {{ end }}
+
+                    <div onclick="alert('📅 日期：{{ $targetDateStr }}\n✍️ 狀態：{{ if gt $articleCount 0 }}有 {{ $articleCount }} 篇文章{{ else }}無文章{{ end }}{{ if $isFuture }} [預寫排程]{{ end }}{{ if $isToday }} [今天]{{ end }}')" 
+                         style="background-color: {{ $bgColor }}; 
+                                aspect-ratio: 1; 
+                                border-radius: 2px; 
+                                cursor: pointer;
+                                pointer-events: auto !important;
+                                {{ if $isToday }}border: 2px solid #ffc107; box-sizing: border-box;{{ end }}"
+                         class="calendar-square">
+                    </div>
+                {{ end }}
+            </div>
+
+            {{/* 貪吃蛇動畫圖層 */}}
+            {{ if $showSnake }}
+            <div class="gcs-layer" aria-hidden="true" style="--row: {{ $snakeRow }}; --travel: {{ $travel }}; --hit-col: {{ $todayCol }};">
+                <div class="gcs-seg gcs-head" style="grid-column: {{ $headCol }};"><i><b></b></i></div>
+                <div class="gcs-seg" style="grid-column: {{ add $headCol 1 }}; --d: .14s;"><i></i></div>
+                <div class="gcs-seg gcs-tail" style="grid-column: {{ add $headCol 2 }}; --d: .28s;"><i></i></div>
+                <div class="gcs-fx">
+                    <s>✦</s><s>★</s><s>✦</s>
+                  
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+        {{/* 下方圖例說明 */}}
+        <div style="display: flex; gap: 15px; margin-top: 12px; color: var(--secondary); justify-content: flex-end; font-size: 11px; align-items: center;">
+            <div><span style="background: #ebedf0; display:inline-block; width:10px; height:10px; border-radius:2px; vertical-align: middle; margin-right: 4px;"></span>無文章</div>
+            <div><span style="background: #216e39; display:inline-block; width:10px; height:10px; border-radius:2px; vertical-align: middle; margin-right: 4px;"></span>已發布</div>
+            <div><span style="background: #8dd792; display:inline-block; width:10px; height:10px; border-radius:2px; vertical-align: middle; margin-right: 4px;"></span>預寫排程 (下月)</div>
+            <div><span style="background: #fff9db; display:inline-block; width:10px; height:10px; border-radius:2px; border:1px solid #ffc107; vertical-align: middle; margin-right: 4px;"></span>今天</div>
+        </div>
+    </div>
+</div>
