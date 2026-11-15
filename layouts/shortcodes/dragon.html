@@ -1,0 +1,411 @@
+{{/*
+  3D 每日字數柱狀圖（可切換年度）
+  用法：layouts/partials/word-bars-3d.html，在版型中 {{ partial "word-bars-3d.html" . }}
+  字數由 layouts/partials/word-count.html 計算（需與此檔一起放入）。
+  圖表裡養了一隻終界龍，在柱子上方穿梭；參數在「終界龍」那一段（DRAGON），圖表上方有 🐉 按鈕可開關。
+*/}}
+{{ $posts := slice }}
+{{ range .Site.RegularPages }}
+  {{/* 沒有設定日期的頁面（Hugo 會當成 0001-01-01）直接略過 */}}
+  {{ if not .Date.IsZero }}
+    {{/* 字數改由共用的 word-count.html 計算，文章頁的統計也請改用同一個，數字才會一致 */}}
+    {{ $w := partialCached "word-count.html" .Page .Page.RelPermalink }}
+    {{ $posts = $posts | append (dict "d" (.Date.Format "2006-01-02") "ts" .Date.Unix "t" .Title "w" $w "u" .RelPermalink) }}
+  {{ end }}
+{{ end }}
+
+<div id="wc3d" data-posts='{{ $posts | jsonify }}' style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;margin:30px 0;">
+  <div class="wc3d-tabs" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;"></div>
+  <div class="wc3d-stats" style="display:flex;gap:16px;flex-wrap:wrap;color:var(--secondary);margin-bottom:8px;"></div>
+  <div class="wc3d-canvas" style="position:relative;width:100%;height:clamp(320px,48vw,520px);touch-action:pan-y;cursor:grab;">
+    <div class="wc3d-tip" style="display:none;position:absolute;z-index:5;pointer-events:none;max-width:260px;padding:8px 10px;border-radius:6px;background:rgba(30,30,30,.92);color:#fff;font-size:12px;line-height:1.5;"></div>
+    <div class="wc3d-msg" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--secondary);">載入 3D 圖表中…</div>
+  </div>
+  <div class="wc3d-legend" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;color:var(--secondary);font-size:11px;align-items:center;justify-content:flex-end;"></div>
+  <div style="color:var(--secondary);font-size:11px;margin-top:6px;text-align:right;">拖曳旋轉 · 滾輪縮放 · 點擊柱子前往文章</div>
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById('wc3d');
+  var posts;
+  try { posts = JSON.parse(root.getAttribute('data-posts')); }
+  catch (e) { root.querySelector('.wc3d-msg').textContent = '資料讀取失敗：此檔案需由 Hugo 處理（請以 partial 引入並用 hugo server 檢視）'; return; }
+  posts = posts.filter(function (p) { return p.d >= '1971-01-01'; });
+  var wrap = root.querySelector('.wc3d-canvas');
+  var tip = root.querySelector('.wc3d-tip');
+  var msg = root.querySelector('.wc3d-msg');
+
+  function loadScript(src) {
+    return new Promise(function (ok, fail) {
+      var s = document.createElement('script');
+      s.src = src; s.onload = ok; s.onerror = fail;
+      document.head.appendChild(s);
+    });
+  }
+  function ensureThree() {
+    if (window.THREE && THREE.OrbitControls) return Promise.resolve();
+    return loadScript('https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js')
+      .then(function () { return loadScript('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js'); });
+  }
+  ensureThree().then(init).catch(function () { msg.textContent = '3D 函式庫載入失敗'; });
+
+  function init() {
+    msg.style.display = 'none';
+
+    /* ---------- 常數與資料 ---------- */
+    var COLOR_A = '#216e39', COLOR_B = '#2f81f7';           // 第 1、3、5… 篇 / 第 2、4、6… 篇
+    var colorOf = function (idx) { return idx % 2 === 0 ? COLOR_A : COLOR_B; };
+    var PITCH = 1.2, MAXH = 9, ROWS = 7;
+    var WD = ['日', '一', '二', '三', '四', '五', '六'];
+    var pad = function (n) { return String(n).padStart(2, '0'); };
+    var fmt = function (d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); };
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var todayStr = fmt(today);
+    var addDays = function (n) { return new Date(today.getFullYear(), today.getMonth(), today.getDate() + n); };
+
+    var byDate = {}, yearSet = {};
+    yearSet[today.getFullYear()] = true;
+    posts.forEach(function (p) { (byDate[p.d] = byDate[p.d] || []).push(p); yearSet[p.d.slice(0, 4)] = true; });
+    Object.keys(byDate).forEach(function (k) { byDate[k].sort(function (a, b) { return a.ts - b.ts; }); });
+    var years = Object.keys(yearSet).map(Number).sort(function (a, b) { return b - a; });
+
+    /* ---------- 場景 ---------- */
+    var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    wrap.insertBefore(renderer.domElement, wrap.firstChild);
+    renderer.domElement.style.display = 'block';
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 400);
+    scene.add(new THREE.AmbientLight(0xffffff, 0.75));
+    var sun = new THREE.DirectionalLight(0xffffff, 0.8);
+    sun.position.set(12, 22, 14); scene.add(sun);
+    var controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true; controls.enablePan = false;
+    controls.minDistance = 12; controls.maxDistance = 200;
+    controls.minPolarAngle = 0.15; controls.maxPolarAngle = Math.PI / 2.05;
+
+    function resize() {
+      var w = wrap.clientWidth, h = wrap.clientHeight;
+      renderer.setSize(w, h);
+      camera.aspect = w / h; camera.updateProjectionMatrix();
+    }
+    resize();
+    if (window.ResizeObserver) new ResizeObserver(resize).observe(wrap); else window.addEventListener('resize', resize);
+
+    function isDark() {
+      var m = getComputedStyle(document.body).backgroundColor.match(/\d+/g);
+      return m ? (0.299 * m[0] + 0.587 * m[1] + 0.114 * m[2]) < 128 : false;
+    }
+    var tileMat = new THREE.MeshLambertMaterial({ color: 0xebedf0 });
+    var todayMat = new THREE.MeshLambertMaterial({ color: 0xff8a3d });
+    function applyTheme() { tileMat.color.set(isDark() ? 0x2d333b : 0xebedf0); }
+    applyTheme();
+    new MutationObserver(applyTheme).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+    var group = new THREE.Group(); scene.add(group);
+    var pickables = [], dayBars = {};
+
+    function label(text, w, h) {
+      var c = document.createElement('canvas'); c.width = 128; c.height = 64;
+      var g = c.getContext('2d'); g.fillStyle = '#8b8f94'; g.font = 'bold 34px sans-serif';
+      g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(text, 64, 32);
+      var s = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c), transparent: true, depthWrite: false }));
+      s.scale.set(w || 2.4, h || 1.2, 1); return s;
+    }
+    function clearGroup() {
+      group.children.slice().forEach(function (o) {
+        group.remove(o);
+        if (o.geometry) o.geometry.dispose();
+        if (o.material && o.material !== tileMat && o.material !== todayMat) { if (o.material.map) o.material.map.dispose(); o.material.dispose(); }
+      });
+      pickables = []; dayBars = {};
+    }
+
+    /* 終界龍會用到：每個格子的柱子高度（build 時更新），以及龍的函式（稍後定義） */
+    var hmInfo = null, dragonRoot = null, dragonRefresh = function () {}, animateDragon = function () {};
+
+    /* ---------- 建立某個檢視（recent 或某一年） ---------- */
+    var currentKey = null;
+    function build(key) {
+      currentKey = key;
+      clearGroup(); tip.style.display = 'none'; hovered = null;
+
+      var start, cols, inRange;
+      if (key === 'recent') {
+        var wdRaw = addDays(-147).getDay();
+        start = addDays(-147 - (wdRaw === 0 ? 6 : wdRaw - 1)); cols = 27;
+        inRange = function () { return true; };
+      } else {
+        var y = Number(key), jan1 = new Date(y, 0, 1), dow = jan1.getDay();
+        start = new Date(y, 0, 1 - (dow === 0 ? 6 : dow - 1));
+        var span = Math.round((new Date(y, 11, 31) - start) / 864e5) + 1;
+        cols = Math.ceil(span / 7);
+        inRange = function (d) { return d.getFullYear() === y; };
+      }
+
+      var days = [], maxTotal = 0, sum = 0, active = 0, best = null;
+      for (var i = 0; i < cols * ROWS; i++) {
+        var date = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+        if (!inRange(date)) { days.push(null); continue; }
+        var ds = fmt(date), items = byDate[ds] || [];
+        var total = items.reduce(function (s, p) { return s + (p.w || 0); }, 0);
+        var d = { date: date, ds: ds, col: Math.floor(i / ROWS), row: i % ROWS, items: items, total: total, future: ds > todayStr, today: ds === todayStr };
+        days.push(d);
+        if (!d.future) { sum += total; if (total > 0) active++; if (!best || total > best.total) best = d; }
+        if (total > maxTotal) maxTotal = total;
+      }
+      var scale = maxTotal > 0 ? MAXH / maxTotal : 1;
+
+      var stats = root.querySelector('.wc3d-stats'); stats.innerHTML = '';
+      [['總字數', sum.toLocaleString()], ['輸出天數', active + ' 天'],
+       ['單日最高', best && best.total ? best.total.toLocaleString() + ' 字（' + best.ds + '）' : '—']]
+        .forEach(function (x) { var s = document.createElement('span'); s.textContent = x[0] + '：' + x[1]; stats.appendChild(s); });
+
+      var offX = -(cols - 1) * PITCH / 2, offZ = -(ROWS - 1) * PITCH / 2;
+      hmInfo = { cols: cols, offX: offX, offZ: offZ, halfW: (cols - 1) * PITCH / 2, halfD: (ROWS - 1) * PITCH / 2, h: new Float32Array(cols * ROWS).fill(0.1) };
+      days.forEach(function (d) {
+        if (!d) return;
+        var x = offX + d.col * PITCH, z = offZ + d.row * PITCH;
+        var tile = new THREE.Mesh(new THREE.BoxGeometry(1, 0.1, 1), d.today ? todayMat : tileMat);
+        tile.position.set(x, 0.05, z); tile.userData = { day: d };
+        group.add(tile); pickables.push(tile);
+        var y0 = 0.1; dayBars[d.ds] = [];
+        d.items.forEach(function (p, idx) {
+          var h = Math.max((p.w || 0) * scale, 0.06);
+          var mat = new THREE.MeshLambertMaterial({ color: colorOf(idx), transparent: d.future, opacity: d.future ? 0.55 : 1 });
+          var bar = new THREE.Mesh(new THREE.BoxGeometry(0.86, h, 0.86), mat);
+          bar.position.set(x, y0 + h / 2, z);
+          bar.userData = { day: d, post: p, idx: idx };
+          group.add(bar); pickables.push(bar); dayBars[d.ds].push(bar);
+          y0 += h;
+        });
+        hmInfo.h[d.col * ROWS + d.row] = y0;   // 這一格柱子疊起來的高度（給終界龍避開）
+      });
+
+      var prevMonth = -1;
+      for (var c = 0; c < cols; c++) {
+        var first = null;
+        for (var r = 0; r < ROWS; r++) { if (days[c * ROWS + r]) { first = days[c * ROWS + r]; break; } }
+        if (!first) continue;
+        var m = first.date.getMonth();
+        if (m !== prevMonth) { var s = label((m + 1) + '月'); s.position.set(offX + c * PITCH, 0.1, -offZ + 1.3); group.add(s); prevMonth = m; }
+      }
+      ['一', '三', '五'].forEach(function (t, k) { var s = label(t, 1.2, 0.6); s.position.set(offX - 1.5, 0.1, offZ + k * 2 * PITCH); group.add(s); });
+
+      /* 圖例 */
+      var legend = root.querySelector('.wc3d-legend'); legend.innerHTML = '';
+      var sw = function (color, text, extra) {
+        var dv = document.createElement('div'), ic = document.createElement('span');
+        ic.style.cssText = 'display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:middle;margin-right:4px;background:' + color + ';' + (extra || '');
+        dv.appendChild(ic); dv.appendChild(document.createTextNode(text)); legend.appendChild(dv);
+      };
+      sw(COLOR_A, '當日第 1、3、5… 篇'); sw(COLOR_B, '當日第 2、4、6… 篇');
+      sw('#888', '預寫排程（半透明）', 'opacity:.55'); sw('#ff8a3d', '今天');
+
+      /* 鏡頭 */
+      var dist = 36 * (cols / 27) * Math.max(1, 1.8 / camera.aspect);
+      camera.position.set(0, dist * 0.55, dist * 0.8);
+      controls.target.set(0, 0, 0); controls.update();
+      dragonRefresh();
+      renderTabs();
+    }
+
+    /* ---------- 年度切換 ---------- */
+    function renderTabs() {
+      var box = root.querySelector('.wc3d-tabs'); box.innerHTML = '';
+      [['recent', '近半年']].concat(years.map(function (y) { return [String(y), y + ' 年']; })).forEach(function (t) {
+        var b = document.createElement('button'); b.type = 'button'; b.textContent = t[1];
+        var on = t[0] === currentKey;
+        b.style.cssText = 'cursor:pointer;padding:3px 12px;border-radius:14px;font-size:12px;border:1px solid ' + (on ? COLOR_A : '#8b8f94') +
+          ';background:' + (on ? COLOR_A : 'transparent') + ';color:' + (on ? '#fff' : 'inherit');
+        b.addEventListener('click', function () { if (t[0] !== currentKey) build(t[0]); });
+        box.appendChild(b);
+      });
+      var dg = document.createElement('button'); dg.type = 'button'; dg.textContent = '🐉 終界龍';
+      dg.style.cssText = 'cursor:pointer;padding:3px 12px;border-radius:14px;font-size:12px;border:1px solid #8b8f94;background:transparent;color:inherit;margin-left:auto;opacity:' + (dragonRoot.visible ? 1 : 0.5);
+      dg.addEventListener('click', function () { dragonRoot.visible = !dragonRoot.visible; dg.style.opacity = dragonRoot.visible ? 1 : 0.5; });
+      box.appendChild(dg);
+    }
+
+    /* ---------- 互動 ---------- */
+    var ray = new THREE.Raycaster(), ptr = new THREE.Vector2(), hovered = null, downXY = null;
+    function pick(ev) {
+      var r = renderer.domElement.getBoundingClientRect();
+      ptr.set(((ev.clientX - r.left) / r.width) * 2 - 1, -((ev.clientY - r.top) / r.height) * 2 + 1);
+      ray.setFromCamera(ptr, camera);
+      var hit = ray.intersectObjects(pickables, false)[0];
+      return hit ? hit.object : null;
+    }
+    function setGlow(ds, on) { (dayBars[ds] || []).forEach(function (b) { b.material.emissive.setHex(on ? 0x333333 : 0x000000); }); }
+    function showTip(obj, ev) {
+      var d = obj.userData.day;
+      tip.innerHTML = '';
+      var h = document.createElement('div'); h.style.fontWeight = 'bold';
+      h.textContent = d.ds + '（週' + WD[d.date.getDay()] + '）' + (d.today ? ' [今天]' : '') + (d.future ? ' [預寫排程]' : '');
+      tip.appendChild(h);
+      var t = document.createElement('div'); t.textContent = d.items.length ? '共 ' + d.items.length + ' 篇，' + d.total.toLocaleString() + ' 字' : '無文章';
+      tip.appendChild(t);
+      d.items.forEach(function (p, i) {
+        var l = document.createElement('div'), dot = document.createElement('span');
+        dot.style.cssText = 'display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px;background:' + colorOf(i);
+        l.appendChild(dot); l.appendChild(document.createTextNode(p.t + ' · ' + (p.w || 0).toLocaleString() + ' 字'));
+        tip.appendChild(l);
+      });
+      tip.style.display = 'block';
+      var r = wrap.getBoundingClientRect();
+      var x = ev.clientX - r.left + 14, y = ev.clientY - r.top + 14;
+      if (x + tip.offsetWidth > r.width) x = ev.clientX - r.left - tip.offsetWidth - 14;
+      if (y + tip.offsetHeight > r.height) y = ev.clientY - r.top - tip.offsetHeight - 14;
+      tip.style.left = Math.max(0, x) + 'px'; tip.style.top = Math.max(0, y) + 'px';
+    }
+    renderer.domElement.addEventListener('pointermove', function (ev) {
+      if (ev.buttons) { tip.style.display = 'none'; return; }
+      var o = pick(ev), ds = o ? o.userData.day.ds : null;
+      if (ds !== hovered) { if (hovered) setGlow(hovered, false); if (ds) setGlow(ds, true); hovered = ds; }
+      if (o) { showTip(o, ev); renderer.domElement.style.cursor = o.userData.post ? 'pointer' : 'grab'; }
+      else { tip.style.display = 'none'; renderer.domElement.style.cursor = 'grab'; }
+    });
+    renderer.domElement.addEventListener('pointerleave', function () {
+      tip.style.display = 'none'; if (hovered) setGlow(hovered, false); hovered = null;
+    });
+    renderer.domElement.addEventListener('pointerdown', function (ev) { downXY = [ev.clientX, ev.clientY]; });
+    renderer.domElement.addEventListener('pointerup', function (ev) {
+      if (!downXY || Math.hypot(ev.clientX - downXY[0], ev.clientY - downXY[1]) > 5) return;
+      var o = pick(ev);
+      if (o && o.userData.post && o.userData.post.u) window.location.href = o.userData.post.u;
+    });
+
+    /* DRAGON-START */
+    /* ---------- 終界龍：在柱子上方穿梭的 Minecraft 風格方塊龍 ---------- */
+    var DRAGON = {
+      scale: 1,        // 整隻龍的大小倍率
+      speed: 4.5,      // 飛行速度（格子單位／秒）
+      clearance: 2.0   // 飛行高度：至少高出附近最高柱子多少
+    };
+    dragonRoot = new THREE.Group();
+    dragonRoot.visible = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+    scene.add(dragonRoot);
+
+    var dm = {
+      body: new THREE.MeshLambertMaterial({ color: 0x1b1b1f }),
+      belly: new THREE.MeshLambertMaterial({ color: 0x2c2c33 }),
+      spike: new THREE.MeshLambertMaterial({ color: 0x3b3b44 }),
+      wing: new THREE.MeshLambertMaterial({ color: 0x2b2036 }),
+      eye: new THREE.MeshBasicMaterial({ color: 0xe08bff }),
+      mouth: new THREE.MeshBasicMaterial({ color: 0xb04fd8 })
+    };
+    function dragonTheme() {                                   // 深色主題時把龍調亮一點，才不會和背景混在一起
+      var dk = isDark();
+      dm.body.color.setHex(dk ? 0x3a3a45 : 0x1b1b1f); dm.belly.color.setHex(dk ? 0x4c4c58 : 0x2c2c33);
+      dm.spike.color.setHex(dk ? 0x6d6d7c : 0x3b3b44); dm.wing.color.setHex(dk ? 0x54406b : 0x2b2036);
+    }
+    dragonTheme();
+    new MutationObserver(dragonTheme).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+    function cube(parent, mat, w, h, d, x, y, z) {
+      var m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+      m.position.set(x, y, z); parent.add(m); return m;
+    }
+    var parts = [];                                            // 每一節身體：{ g: 物件, d: 在頭後面多遠, bank: 會不會跟著轉彎傾斜 }
+    function piece(d, bank) {
+      var g = new THREE.Group(); g.rotation.order = 'YZX';     // 先轉向、再抬頭低頭、最後傾斜
+      dragonRoot.add(g); parts.push({ g: g, d: d, bank: bank }); return g;
+    }
+    var i, s;
+    var head = piece(0, 0.5);                                  // 頭：頭骨、口鼻、會開合的下顎、兩支角、發光的眼睛
+    cube(head, dm.body, 0.85, 0.62, 0.8, 0, 0, 0);
+    cube(head, dm.body, 0.6, 0.3, 0.5, 0.72, -0.1, 0);
+    cube(head, dm.body, 0.14, 0.32, 0.12, -0.28, 0.42, 0.28); cube(head, dm.body, 0.14, 0.32, 0.12, -0.28, 0.42, -0.28);
+    cube(head, dm.eye, 0.1, 0.1, 0.08, 0.3, 0.12, 0.41); cube(head, dm.eye, 0.1, 0.1, 0.08, 0.3, 0.12, -0.41);
+    var jaw = new THREE.Group(); jaw.position.set(0.05, -0.3, 0); head.add(jaw);
+    cube(jaw, dm.body, 0.8, 0.14, 0.46, 0.4, -0.02, 0); cube(jaw, dm.mouth, 0.5, 0.04, 0.3, 0.4, 0.06, 0);
+    for (i = 0; i < 4; i++) {                                  // 脖子：四節，背上有尖刺
+      s = 0.46 + i * 0.04; var neck = piece(0.55 * (i + 1), 0);
+      cube(neck, dm.body, s, s, s, 0, 0, 0); cube(neck, dm.spike, 0.13, 0.24, 0.12, 0, s / 2 + 0.1, 0);
+    }
+    var body = piece(4.1, 1);                                  // 身體：一大塊，背上三根刺、肚子一條淺色、四隻縮起來的腳
+    cube(body, dm.body, 3.2, 1.2, 1.2, 0, 0, 0); cube(body, dm.belly, 3.0, 0.25, 0.9, 0, -0.55, 0);
+    for (i = -1; i <= 1; i++) cube(body, dm.spike, 0.16, 0.3, 0.14, i * 1.1, 0.72, 0);
+    [1.0, -1.0].forEach(function (fx) { [-1, 1].forEach(function (sz) { cube(body, dm.body, 0.28, 0.55, 0.28, fx, -0.88, sz * 0.45); }); });
+    var wings = [];                                            // 兩片翅膀：主骨、翼膜、兩根指骨
+    [1, -1].forEach(function (side) {
+      var w = new THREE.Group(); w.position.set(0.9, 0.55, side * 0.55); body.add(w);
+      cube(w, dm.spike, 0.24, 0.2, 2.6, 0, 0, side * 1.3);
+      cube(w, dm.wing, 1.9, 0.04, 2.3, -1.0, -0.02, side * 1.25);
+      cube(w, dm.spike, 0.1, 0.1, 2.5, -0.7, 0.02, side * 1.3).rotation.y = side * 0.32;
+      cube(w, dm.spike, 0.1, 0.1, 2.3, -1.3, 0.02, side * 1.25).rotation.y = side * 0.55;
+      wings.push(w);
+    });
+    for (i = 0; i < 8; i++) {                                  // 尾巴：八節，越來越細
+      s = 0.52 - i * 0.04; var tail = piece(6.0 + i * 0.5, 0);
+      cube(tail, dm.body, s, s, s, 0, 0, 0); cube(tail, dm.spike, 0.12, 0.2, 0.1, 0, s / 2 + 0.08, 0);
+    }
+
+    /* 飛行路線：繞著整個圖表飛「8」字，高度跟著下方最高的柱子起伏（遇到高柱子爬升、遇到低處俯衝） */
+    var P = null;
+    function terrain(x, z) {                                   // 這個位置附近 7×7 格裡最高的柱子（連翅膀掃過的範圍一起算）
+      var ci = Math.round((x - hmInfo.offX) / PITCH), ri = Math.round((z - hmInfo.offZ) / PITCH), m = 0.1, c, r;
+      for (c = ci - 3; c <= ci + 3; c++) for (r = ri - 3; r <= ri + 3; r++) {
+        if (c < 0 || c >= hmInfo.cols || r < 0 || r >= ROWS) continue;
+        m = Math.max(m, hmInfo.h[c * ROWS + r]);
+      }
+      return m;
+    }
+    dragonRefresh = function () {
+      if (!hmInfo) return;
+      var N = 240, A = Math.max(hmInfo.halfW * 0.92, 8), B = hmInfo.halfD + 2, xs = [], zs = [], ms = [], ys = [], k, j, m, sum;
+      for (k = 0; k < N; k++) {
+        var th = k / N * Math.PI * 2;
+        xs.push(A * Math.cos(th)); zs.push(B * Math.sin(2 * th)); ms.push(terrain(xs[k], zs[k]));
+      }
+      for (k = 0; k < N; k++) { m = 0; for (j = -8; j <= 8; j++) m = Math.max(m, ms[(k + j + N) % N]); ys.push(m + DRAGON.clearance); }
+      for (var pass = 0; pass < 2; pass++) {                   // 磨平，讓上下起伏順順的
+        var sm = [];
+        for (k = 0; k < N; k++) { sum = 0; for (j = -3; j <= 3; j++) sum += ys[(k + j + N) % N]; sm.push(sum / 7); }
+        ys = sm;
+      }
+      var cum = [0];
+      for (k = 1; k < N; k++) cum.push(cum[k - 1] + Math.hypot(xs[k] - xs[k - 1], ys[k] - ys[k - 1], zs[k] - zs[k - 1]));
+      P = { n: N, x: xs, y: ys, z: zs, cum: cum, len: cum[N - 1] + Math.hypot(xs[0] - xs[N - 1], ys[0] - ys[N - 1], zs[0] - zs[N - 1]) };
+    };
+    function at(s, o) {                                        // 路線上走了 s 的位置（繞一圈會接回起點）
+      var L = P.len, lo = 0, hi = P.n - 1, mid;
+      s = ((s % L) + L) % L;
+      while (lo < hi) { mid = (lo + hi + 1) >> 1; if (P.cum[mid] <= s) lo = mid; else hi = mid - 1; }
+      var b = (lo + 1) % P.n, seg = (b === 0 ? L : P.cum[b]) - P.cum[lo], f = seg > 0 ? (s - P.cum[lo]) / seg : 0;
+      o.x = P.x[lo] + (P.x[b] - P.x[lo]) * f; o.y = P.y[lo] + (P.y[b] - P.y[lo]) * f; o.z = P.z[lo] + (P.z[b] - P.z[lo]) * f;
+    }
+    var pa = {}, pb = {}, pc = {};
+    var wrapPi = function (a) { return a - Math.PI * 2 * Math.round(a / (Math.PI * 2)); };
+    animateDragon = function (t) {
+      if (!P || !dragonRoot.visible) return;
+      var S = DRAGON.scale, sHead = t * DRAGON.speed, flap = Math.sin(t * 4.5) * 0.45 + 0.45;
+      parts.forEach(function (pt) {
+        var s0 = sHead - pt.d * S, tx, ty, tz, yaw, bank = 0;
+        at(s0, pa); at(s0 + 0.9, pb); at(s0 - 0.9, pc);
+        tx = pb.x - pc.x; ty = pb.y - pc.y; tz = pb.z - pc.z; yaw = Math.atan2(-tz, tx);
+        if (pt.bank) {                                         // 轉彎的時候身體往內側傾斜
+          at(s0 + 3.5, pb); at(s0 + 1.7, pc);
+          bank = -Math.max(-0.4, Math.min(0.4, wrapPi(Math.atan2(-(pb.z - pc.z), pb.x - pc.x) - yaw) * 2.2)) * pt.bank;
+        }
+        pt.g.position.set(pa.x, pa.y + Math.sin(t * 1.8 - pt.d * 0.5) * 0.1 * S, pa.z);
+        pt.g.rotation.y = yaw; pt.g.rotation.z = Math.atan2(ty, Math.hypot(tx, tz)); pt.g.rotation.x = bank;
+        pt.g.scale.set(S, S, S);
+      });
+      wings[0].rotation.x = -flap; wings[1].rotation.x = flap;  // 兩片翅膀一起拍動
+      jaw.rotation.z = -Math.max(0, Math.sin(t * 0.9)) * 0.45;  // 偶爾張嘴
+    };
+    /* DRAGON-END */
+
+    build('recent');
+    (function loop(now) {
+      requestAnimationFrame(loop);
+      if (document.hidden) return;
+      controls.update();
+      animateDragon((now || performance.now()) / 1000);
+      renderer.render(scene, camera);
+    })();
+  }
+})();
+</script>
