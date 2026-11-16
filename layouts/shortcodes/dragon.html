@@ -3,6 +3,7 @@
   用法：layouts/partials/word-bars-3d.html，在版型中 {{ partial "word-bars-3d.html" . }}
   字數由 layouts/partials/word-count.html 計算（需與此檔一起放入）。
   圖表裡養了一隻終界龍，在柱子上方穿梭；參數在「終界龍」那一段（DRAGON），圖表上方有 🐉 按鈕可開關。
+  最高的前十根柱子上各有一顆終界水晶，會用光束替龍補血；點水晶可以摧毀、點龍可以攻擊，龍死了會掉龍蛋。
 */}}
 {{ $posts := slice }}
 {{ range .Site.RegularPages }}
@@ -22,7 +23,7 @@
     <div class="wc3d-msg" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--secondary);">載入 3D 圖表中…</div>
   </div>
   <div class="wc3d-legend" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;color:var(--secondary);font-size:11px;align-items:center;justify-content:flex-end;"></div>
-  <div style="color:var(--secondary);font-size:11px;margin-top:6px;text-align:right;">拖曳旋轉 · 滾輪縮放 · 點擊柱子前往文章</div>
+  <div style="color:var(--secondary);font-size:11px;margin-top:6px;text-align:right;">拖曳旋轉 · 滾輪縮放 · 點擊柱子前往文章 · 點擊終界水晶／龍可以攻擊</div>
 </div>
 
 <script>
@@ -122,8 +123,12 @@
       pickables = []; dayBars = {};
     }
 
-    /* 終界龍會用到：每個格子的柱子高度（build 時更新），以及龍的函式（稍後定義） */
+    /* 終界龍會用到：每個格子的柱子高度（build 時更新），以及龍與水晶的函式（稍後定義） */
     var hmInfo = null, dragonRoot = null, dragonRefresh = function () {}, animateDragon = function () {};
+    var placeCrystals = function () {};                        // build 時把水晶擺到最高的幾根柱子上
+    var specialHit = function () { return null; };             // 滑鼠底下有沒有水晶／龍
+    var specialClick = function () { return false; };          // 點到水晶／龍就處理，回傳 true
+    var dragonDead = false, dragonToggle = function () {}, dragonRespawn = function () {};
 
     /* ---------- 建立某個檢視（recent 或某一年） ---------- */
     var currentKey = null;
@@ -164,6 +169,7 @@
 
       var offX = -(cols - 1) * PITCH / 2, offZ = -(ROWS - 1) * PITCH / 2;
       hmInfo = { cols: cols, offX: offX, offZ: offZ, halfW: (cols - 1) * PITCH / 2, halfD: (ROWS - 1) * PITCH / 2, h: new Float32Array(cols * ROWS).fill(0.1) };
+      var stacks = [];                                         // 有文章的那幾天：{ d: 該日, top: 柱子疊起來的高度 }，給終界水晶挑最高的前幾根
       days.forEach(function (d) {
         if (!d) return;
         var x = offX + d.col * PITCH, z = offZ + d.row * PITCH;
@@ -181,7 +187,9 @@
           y0 += h;
         });
         hmInfo.h[d.col * ROWS + d.row] = y0;   // 這一格柱子疊起來的高度（給終界龍避開）
+        if (d.items.length) stacks.push({ d: d, top: y0 });
       });
+      placeCrystals(stacks);                                   // 前十高的柱子上擺終界水晶（也會把水晶的高度算進 hmInfo.h，龍才不會撞上去）
 
       var prevMonth = -1;
       for (var c = 0; c < cols; c++) {
@@ -201,12 +209,9 @@
         dv.appendChild(ic); dv.appendChild(document.createTextNode(text)); legend.appendChild(dv);
       };
       sw(COLOR_A, '當日第 1、3、5… 篇'); sw(COLOR_B, '當日第 2、4、6… 篇');
-      sw('#888', '預寫排程（半透明）', 'opacity:.55'); sw('#ff8a3d', '今天');
+      sw('#888', '預寫排程（半透明）', 'opacity:.55'); sw('#ff8a3d', '今天'); sw('#c27bff', '終界水晶（最高的前十根）');
 
-      /* 鏡頭 */
-      var dist = 36 * (cols / 27) * Math.max(1, 1.8 / camera.aspect);
-      camera.position.set(0, dist * 0.55, dist * 0.8);
-      controls.target.set(0, 0, 0); controls.update();
+      fitCamera();
       dragonRefresh();
       renderTabs();
     }
@@ -222,11 +227,74 @@
         b.addEventListener('click', function () { if (t[0] !== currentKey) build(t[0]); });
         box.appendChild(b);
       });
-      var dg = document.createElement('button'); dg.type = 'button'; dg.textContent = '🐉 終界龍';
-      dg.style.cssText = 'cursor:pointer;padding:3px 12px;border-radius:14px;font-size:12px;border:1px solid #8b8f94;background:transparent;color:inherit;margin-left:auto;opacity:' + (dragonRoot.visible ? 1 : 0.5);
-      dg.addEventListener('click', function () { dragonRoot.visible = !dragonRoot.visible; dg.style.opacity = dragonRoot.visible ? 1 : 0.5; });
+      var dg = document.createElement('button'); dg.type = 'button';
+      dg.textContent = dragonDead ? '🥚 重生終界龍' : '🐉 終界龍';   // 龍死了以後，這顆按鈕變成「重生」
+      dg.style.cssText = 'cursor:pointer;padding:3px 12px;border-radius:14px;font-size:12px;border:1px solid #8b8f94;background:transparent;color:inherit;margin-left:auto;opacity:' + ((dragonDead || dragonRoot.visible) ? 1 : 0.5);
+      dg.addEventListener('click', function () {
+        if (dragonDead) { dragonRespawn(); return; }
+        dragonToggle(); dg.style.opacity = dragonRoot.visible ? 1 : 0.5;
+      });
       box.appendChild(dg);
+      var fb = document.createElement('button'); fb.type = 'button';
+      fb.textContent = fsOn ? '✕ 離開全螢幕' : '⛶ 全螢幕';
+      fb.style.cssText = 'cursor:pointer;padding:3px 12px;border-radius:14px;font-size:12px;border:1px solid #8b8f94;background:transparent;color:inherit;';
+      fb.addEventListener('click', fsToggle);
+      box.appendChild(fb);
     }
+
+    /* ---------- 鏡頭：依圖表寬度與畫面比例擺好位置（建立檢視、進出全螢幕時會呼叫） ---------- */
+    function fitCamera() {
+      var dist = 36 * (hmInfo.cols / 27) * Math.max(1, 1.8 / camera.aspect);
+      camera.position.set(0, dist * 0.55, dist * 0.8);
+      controls.target.set(0, 0, 0); controls.update();
+    }
+
+    /* ---------- 全螢幕：優先用瀏覽器的全螢幕 API；iPhone Safari 不支援，就退而求其次用蓋滿視窗的方式 ---------- */
+    var fsOn = false, fsNative = false, rootCss = root.style.cssText, wrapCss = wrap.style.cssText;
+    var fsReq = root.requestFullscreen || root.webkitRequestFullscreen;
+    function fsBg() {                                          // 全螢幕時沒有頁面背景可以透出來，所以抓目前主題的背景色鋪上去
+      var els = [document.body, document.documentElement];
+      for (var k = 0; k < els.length; k++) {
+        var c = getComputedStyle(els[k]).backgroundColor;
+        if (c && c !== 'transparent' && !/^rgba.*,\s*0\)$/.test(c)) return c;
+      }
+      return '#fff';
+    }
+    function fsApply(on) {
+      fsOn = on;
+      if (on) {
+        root.style.cssText = rootCss + ';margin:0;padding:12px;box-sizing:border-box;width:100%;height:100%;display:flex;flex-direction:column;background:' + fsBg() + ';' +
+          (fsNative ? '' : 'position:fixed;inset:0;z-index:99999;');
+        wrap.style.cssText = wrapCss + ';flex:1;min-height:0;height:auto;overflow:hidden;touch-action:none;';
+      } else {
+        root.style.cssText = rootCss; wrap.style.cssText = wrapCss;
+      }
+      document.documentElement.style.overflow = (on && !fsNative) ? 'hidden' : '';
+      tip.style.display = 'none';
+      requestAnimationFrame(function () { requestAnimationFrame(function () { resize(); fitCamera(); renderTabs(); }); });
+    }
+    function fsToggle() {
+      if (fsOn) {
+        if (fsNative) { (document.exitFullscreen || document.webkitExitFullscreen).call(document); }
+        else fsApply(false);
+        return;
+      }
+      if (!fsReq) { fsNative = false; fsApply(true); return; }
+      fsNative = true;
+      try {
+        var pr = fsReq.call(root);
+        if (pr && pr.catch) pr.catch(function () { fsNative = false; fsApply(true); });
+      } catch (e) { fsNative = false; fsApply(true); }
+    }
+    function fsChange() {
+      var el = document.fullscreenElement || document.webkitFullscreenElement;
+      if (el === root) fsApply(true);
+      else if (fsOn && fsNative) { fsNative = false; fsApply(false); }   // 使用者按 Esc 或系統退出
+    }
+    document.addEventListener('fullscreenchange', fsChange);
+    document.addEventListener('webkitfullscreenchange', fsChange);
+    document.addEventListener('keydown', function (e) { if (fsOn && !fsNative && e.key === 'Escape') fsApply(false); });
+    new MutationObserver(function () { if (fsOn) root.style.background = fsBg(); }).observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
     /* ---------- 互動 ---------- */
     var ray = new THREE.Raycaster(), ptr = new THREE.Vector2(), hovered = null, downXY = null;
@@ -261,6 +329,10 @@
     }
     renderer.domElement.addEventListener('pointermove', function (ev) {
       if (ev.buttons) { tip.style.display = 'none'; return; }
+      if (specialHit(ev)) {                                    // 指著水晶或龍：準星游標，不顯示柱子提示
+        if (hovered) setGlow(hovered, false);
+        hovered = null; tip.style.display = 'none'; renderer.domElement.style.cursor = 'crosshair'; return;
+      }
       var o = pick(ev), ds = o ? o.userData.day.ds : null;
       if (ds !== hovered) { if (hovered) setGlow(hovered, false); if (ds) setGlow(ds, true); hovered = ds; }
       if (o) { showTip(o, ev); renderer.domElement.style.cursor = o.userData.post ? 'pointer' : 'grab'; }
@@ -272,6 +344,7 @@
     renderer.domElement.addEventListener('pointerdown', function (ev) { downXY = [ev.clientX, ev.clientY]; });
     renderer.domElement.addEventListener('pointerup', function (ev) {
       if (!downXY || Math.hypot(ev.clientX - downXY[0], ev.clientY - downXY[1]) > 5) return;
+      if (specialClick(ev)) return;                            // 打到水晶或龍，就不要跳去文章
       var o = pick(ev);
       if (o && o.userData.post && o.userData.post.u) window.location.href = o.userData.post.u;
     });
@@ -281,7 +354,15 @@
     var DRAGON = {
       scale: 1,        // 整隻龍的大小倍率
       speed: 4.5,      // 飛行速度（格子單位／秒）
-      clearance: 2.0   // 飛行高度：至少高出附近最高柱子多少
+      clearance: 2.0,  // 飛行高度：至少高出附近最高柱子多少
+      /* 終界水晶與戰鬥（數值取自遊戲，但距離依圖表大小縮短） */
+      crystals: 10,    // 水晶數量：擺在最高的前 N 根柱子上
+      range: 16,       // 水晶能補血的距離（遊戲是 32 格；圖表比較小，所以縮短）
+      hp: 200,         // 龍的血量（遊戲是 200）
+      healEvery: 0.5,  // 每隔幾秒補一次血（遊戲是 10 tick = 0.5 秒）
+      healAmount: 1,   // 每次補多少（遊戲是 1 點 = 半顆心；同時間只有最近的那一顆水晶在補）
+      hit: 10,         // 點龍頭一下的傷害（點身體、翅膀只算 25%）
+      blast: 10        // 摧毀「正在補血的那顆水晶」時，龍吃到的爆炸傷害（遊戲是 10）
     };
     dragonRoot = new THREE.Group();
     dragonRoot.visible = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
@@ -342,6 +423,12 @@
       cube(tail, dm.body, s, s, s, 0, 0, 0); cube(tail, dm.spike, 0.12, 0.2, 0.1, 0, s / 2 + 0.08, 0);
     }
 
+    /* 可以被打到的部位：頭吃全額傷害，身體、翅膀、脖子、尾巴只吃 25%（跟遊戲一樣） */
+    var dragonMeshes = [];
+    parts.forEach(function (pt) {
+      pt.g.traverse(function (o) { if (o.isMesh) { o.userData.hitMul = pt.g === head ? 1 : 0.25; dragonMeshes.push(o); } });
+    });
+
     /* 飛行路線：繞著整個圖表飛「8」字，高度跟著下方最高的柱子起伏（遇到高柱子爬升、遇到低處俯衝） */
     var P = null;
     function terrain(x, z) {                                   // 這個位置附近 7×7 格裡最高的柱子（連翅膀掃過的範圍一起算）
@@ -378,8 +465,7 @@
     }
     var pa = {}, pb = {}, pc = {};
     var wrapPi = function (a) { return a - Math.PI * 2 * Math.round(a / (Math.PI * 2)); };
-    animateDragon = function (t) {
-      if (!P || !dragonRoot.visible) return;
+    function fly(t) {
       var S = DRAGON.scale, sHead = t * DRAGON.speed, flap = Math.sin(t * 4.5) * 0.45 + 0.45;
       parts.forEach(function (pt) {
         var s0 = sHead - pt.d * S, tx, ty, tz, yaw, bank = 0;
@@ -395,6 +481,234 @@
       });
       wings[0].rotation.x = -flap; wings[1].rotation.x = flap;  // 兩片翅膀一起拍動
       jaw.rotation.z = -Math.max(0, Math.sin(t * 0.9)) * 0.45;  // 偶爾張嘴
+    }
+
+    /* ---------- 特效：爆炸碎塊、飄字、經驗球（共用一個小小的粒子系統） ---------- */
+    var geoBox = new THREE.BoxGeometry(1, 1, 1), geoEdge = new THREE.EdgesGeometry(geoBox), geoSph = new THREE.SphereGeometry(1, 12, 8);
+    var fxRoot = new THREE.Group(); dragonRoot.add(fxRoot);
+    var fx = [];
+    function addFx(o, vx, vy, vz, life, grav, grow) {          // grow：每秒縮放比例（正的變大、負的縮小）
+      fxRoot.add(o);
+      fx.push({ o: o, v: new THREE.Vector3(vx, vy, vz), life: life, max: life, g: grav, grow: grow || 0, op: o.material.opacity });
+    }
+    function stepFx(dt) {
+      for (var k = fx.length - 1; k >= 0; k--) {
+        var f = fx[k]; f.life -= dt;
+        if (f.life <= 0) { fxRoot.remove(f.o); if (f.o.material.map) f.o.material.map.dispose(); f.o.material.dispose(); fx.splice(k, 1); continue; }
+        f.v.y -= f.g * dt; f.o.position.addScaledVector(f.v, dt);
+        if (f.grow) f.o.scale.multiplyScalar(1 + f.grow * dt);
+        f.o.material.opacity = f.op * f.life / f.max;
+      }
+    }
+    function explode(x, y, z, n, size) {
+      var fl = new THREE.Mesh(geoSph, new THREE.MeshBasicMaterial({ color: 0xffe9ff, transparent: true, opacity: 0.85, depthWrite: false }));
+      fl.position.set(x, y, z); fl.scale.setScalar(size * 0.4); addFx(fl, 0, 0, 0, 0.4, 0, 4);
+      for (var k = 0; k < n; k++) {
+        var col = [0xffffff, 0xcfcfd6, 0x8e8e99, 0xd9a5ff, 0xffa24d][(Math.random() * 5) | 0];
+        var p = new THREE.Mesh(geoBox, new THREE.MeshBasicMaterial({ color: col, transparent: true }));
+        p.scale.setScalar(size * (0.18 + Math.random() * 0.22)); p.position.set(x, y, z);
+        var a = Math.random() * 6.283, u = Math.random() * 2 - 1, r = Math.sqrt(1 - u * u), sp = (2 + Math.random() * 4) * size;
+        addFx(p, r * Math.cos(a) * sp, u * sp + 1.5, r * Math.sin(a) * sp, 0.7 + Math.random() * 0.5, 9, -0.8);
+      }
+    }
+    function popup(text, pos, color) {                         // 飄起來的傷害數字
+      var c = document.createElement('canvas'); c.width = 128; c.height = 64;
+      var g = c.getContext('2d'); g.font = 'bold 40px sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.lineWidth = 6; g.strokeStyle = '#000'; g.strokeText(text, 64, 32); g.fillStyle = color; g.fillText(text, 64, 32);
+      var sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(c), transparent: true, depthTest: false }));
+      sp.scale.set(2.4, 1.2, 1); sp.position.copy(pos); sp.position.y += 1.2; sp.renderOrder = 10;
+      addFx(sp, 0, 2.2, 0, 1.1, 0, 0);
+    }
+    function xpOrb(pos) {
+      var m = new THREE.Mesh(geoBox, new THREE.MeshBasicMaterial({ color: 0xb6ff3c, transparent: true }));
+      m.scale.setScalar(0.18); m.position.copy(pos);
+      addFx(m, (Math.random() - 0.5) * 5, 2 + Math.random() * 4, (Math.random() - 0.5) * 5, 2.5, 6, 0);
+    }
+
+    /* ---------- 終界水晶：擺在最高的前十根柱子上，用光束替龍補血 ---------- */
+    var CH = 1.4;                                              // 水晶（含底座）的高度，會加進 hmInfo.h 讓龍飛高一點
+    var TILT = new THREE.Vector3(Math.SQRT1_2, 0, Math.SQRT1_2);  // 遊戲裡水晶內部方塊是沿這條斜軸一層一層轉開的
+    var cMat = {
+      base: new THREE.MeshLambertMaterial({ color: 0x4a4a52 }),          // 基岩底座
+      glass: new THREE.MeshBasicMaterial({ color: 0xe9c6ff, transparent: true, opacity: 0.32, depthWrite: false }),
+      mid: new THREE.MeshBasicMaterial({ color: 0xc27bff, transparent: true, opacity: 0.5, depthWrite: false }),
+      core: new THREE.MeshBasicMaterial({ color: 0xffd1ff }),
+      edge: new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.55 })
+    };
+    var crystalRoot = new THREE.Group(); dragonRoot.add(crystalRoot);
+    var crystals = [], crystalHits = [], healing = null, lastStacks = [];
+    function makeCrystal(x, top, z) {
+      var g = new THREE.Group(); g.position.set(x, 0, z); crystalRoot.add(g);
+      var base = new THREE.Mesh(geoBox, cMat.base); base.scale.set(0.9, 0.2, 0.9); base.position.y = top + 0.1; g.add(base);
+      var spin = new THREE.Group(); spin.position.y = top + 0.85; g.add(spin);
+      var outer = new THREE.Mesh(geoBox, cMat.glass); outer.scale.setScalar(0.8); spin.add(outer);
+      var mid = new THREE.Mesh(geoBox, cMat.mid); mid.scale.setScalar(0.62); mid.setRotationFromAxisAngle(TILT, Math.PI / 3); spin.add(mid);
+      var core = new THREE.Mesh(geoBox, cMat.core); core.scale.setScalar(0.44); core.setRotationFromAxisAngle(TILT, Math.PI * 2 / 3); spin.add(core);
+      outer.add(new THREE.LineSegments(geoEdge, cMat.edge)); mid.add(new THREE.LineSegments(geoEdge, cMat.edge));
+      var c = { g: g, spin: spin, hit: outer, x: x, z: z, top: top, ph: Math.random() * 6.283, alive: true };
+      outer.userData.crystal = c;
+      crystalHits.push(outer); crystals.push(c);
+    }
+    var eggMesh = new THREE.Mesh(new THREE.SphereGeometry(0.5, 16, 12), new THREE.MeshLambertMaterial({ color: 0x15101f, emissive: 0x2a0d44 }));
+    eggMesh.scale.set(1, 1.35, 1);
+    var eggBeam = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, 40, 10, 1, true),
+      new THREE.MeshBasicMaterial({ color: 0xb04fd8, transparent: true, opacity: 0.22, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide }));
+    function placeEgg() {                                      // 龍死了以後，圖表正中央會掉一顆龍蛋（外加出口傳送門的光柱）
+      var col = Math.round((hmInfo.cols - 1) / 2), top = hmInfo.h[col * ROWS + 3], x = hmInfo.offX + col * PITCH;
+      eggMesh.position.set(x, top + 0.7, 0); eggBeam.position.set(x, top + 20, 0);
+      crystalRoot.add(eggMesh); crystalRoot.add(eggBeam);
+    }
+    placeCrystals = function (stacks) {
+      lastStacks = stacks;
+      while (crystalRoot.children.length) crystalRoot.remove(crystalRoot.children[0]);
+      crystals = []; crystalHits = []; healing = null;
+      stacks.slice().sort(function (a, b) { return b.top - a.top; }).slice(0, DRAGON.crystals).forEach(function (st) {
+        makeCrystal(hmInfo.offX + st.d.col * PITCH, st.top, hmInfo.offZ + st.d.row * PITCH);
+        hmInfo.h[st.d.col * ROWS + st.d.row] = st.top + CH;
+      });
+      if (dragonDead) placeEgg();
+    };
+
+    /* 補血光束：水晶核心 → 龍的身體（兩層圓柱，粗的那層半透明、會脈動） */
+    var beam = new THREE.Group(); beam.visible = false; dragonRoot.add(beam);
+    beam.add(new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, 1, 6, 1, true), new THREE.MeshBasicMaterial({ color: 0xff8cff })));
+    beam.add(new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 1, 8, 1, true),
+      new THREE.MeshBasicMaterial({ color: 0xb04fd8, transparent: true, opacity: 0.3, blending: THREE.AdditiveBlending, depthWrite: false })));
+    var UP = new THREE.Vector3(0, 1, 0), bv = new THREE.Vector3();
+
+    /* 死亡時從龍身上放射出去的光芒 */
+    var rayRoot = new THREE.Group(); rayRoot.visible = false; dragonRoot.add(rayRoot);
+    var rayMat = new THREE.MeshBasicMaterial({ color: 0xe6b3ff, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false });
+    var rays = [];
+    for (i = 0; i < 28; i++) {
+      var pv = new THREE.Group(); pv.rotation.set(Math.random() * 6.283, Math.random() * 6.283, Math.random() * 6.283);
+      var rm = new THREE.Mesh(geoBox, rayMat); rm.scale.set(0.08, 1, 0.08); rm.position.y = 0.5; pv.add(rm);
+      pv.userData.ph = Math.random() * 6.283; rayRoot.add(pv); rays.push(pv);
+    }
+
+    /* ---------- 血條（跟遊戲的 Boss 血條一樣：紫色、二十格） ---------- */
+    var hp = DRAGON.hp, flash = 0, dying = false, deathT = 0, lastBoom = 0, healT = 0;
+    var bossEl = document.createElement('div');
+    bossEl.style.cssText = 'position:absolute;top:6px;left:50%;transform:translateX(-50%);width:min(62%,340px);pointer-events:none;z-index:4;text-align:center;color:#fff;font-size:12px;text-shadow:0 1px 3px #000;';
+    var bossName = document.createElement('div'); bossName.textContent = '終界龍';
+    var bossTrack = document.createElement('div');
+    bossTrack.style.cssText = 'height:7px;margin-top:2px;background:rgba(20,10,30,.75);border:1px solid rgba(0,0,0,.6);position:relative;overflow:hidden;';
+    var bossFill = document.createElement('div'); bossFill.style.cssText = 'height:100%;width:100%;background:#c04df0;transition:width .15s;';
+    var bossNotch = document.createElement('div');
+    bossNotch.style.cssText = 'position:absolute;inset:0;background:repeating-linear-gradient(to right,transparent 0,transparent calc(5% - 1px),rgba(0,0,0,.55) calc(5% - 1px),rgba(0,0,0,.55) 5%);';
+    bossTrack.appendChild(bossFill); bossTrack.appendChild(bossNotch); bossEl.appendChild(bossName); bossEl.appendChild(bossTrack); wrap.appendChild(bossEl);
+    function syncBar() {
+      bossFill.style.width = (hp / DRAGON.hp * 100) + '%';
+      bossEl.style.display = (dragonRoot.visible && !dragonDead) ? 'block' : 'none';
+    }
+    syncBar();
+
+    /* ---------- 戰鬥：受傷、死亡、重生 ---------- */
+    function hurt(n) {
+      if (dying || dragonDead) return;
+      hp = Math.max(0, hp - n); flash = 0.2; syncBar();
+      popup('-' + Math.round(n * 10) / 10, body.position, '#ff6b6b');
+      if (hp <= 0) { dying = true; deathT = 0; lastBoom = 0; rayRoot.visible = true; }
+    }
+    function breakCrystal(c) {
+      if (!c.alive) return;
+      c.alive = false; crystalRoot.remove(c.g);
+      crystalHits.splice(crystalHits.indexOf(c.hit), 1);
+      explode(c.x, c.spin.position.y, c.z, 16, 1.2);
+      if (c === healing) { healing = null; hurt(DRAGON.blast); }   // 只有「正在替龍補血」的那顆被炸掉，龍才會吃到爆炸傷害
+    }
+    function finishDeath() {                                   // 死亡演出 10 秒後：大爆炸、經驗球、龍消失、掉龍蛋
+      dying = false; dragonDead = true; rayRoot.visible = false;
+      explode(body.position.x, body.position.y, body.position.z, 30, 2);
+      for (var k = 0; k < 40; k++) xpOrb(body.position);
+      parts.forEach(function (pt) { pt.g.visible = false; });
+      placeEgg(); syncBar(); renderTabs();
+    }
+    dragonToggle = function () { dragonRoot.visible = !dragonRoot.visible; syncBar(); };
+    dragonRespawn = function () {                              // 重生：血量補滿、水晶重新擺好、龍蛋消失
+      dragonDead = false; dying = false; hp = DRAGON.hp; flash = 0;
+      parts.forEach(function (pt) { pt.g.visible = true; });
+      placeCrystals(lastStacks);
+      dragonRoot.visible = true; syncBar(); renderTabs();
+    };
+
+    /* 滑鼠／觸控：先看有沒有打到水晶或龍，而且前面沒有被柱子擋住 */
+    specialHit = function (ev) {
+      if (!dragonRoot.visible) return null;
+      var r = renderer.domElement.getBoundingClientRect();
+      ptr.set(((ev.clientX - r.left) / r.width) * 2 - 1, -((ev.clientY - r.top) / r.height) * 2 + 1);
+      ray.setFromCamera(ptr, camera);
+      var list = (dying || dragonDead) ? crystalHits : crystalHits.concat(dragonMeshes);
+      var h = ray.intersectObjects(list, false)[0];
+      if (!h) return null;
+      var b = ray.intersectObjects(pickables, false)[0];
+      return (b && b.distance < h.distance) ? null : h;
+    };
+    specialClick = function (ev) {
+      var h = specialHit(ev);
+      if (!h) return false;
+      var u = h.object.userData;
+      if (u.crystal) breakCrystal(u.crystal); else hurt(DRAGON.hit * u.hitMul);
+      return true;
+    };
+
+    /* ---------- 每一幀 ---------- */
+    function stepCombat(t, dt) {
+      var k, bp = body.position;
+      crystals.forEach(function (c) {                          // 水晶自轉、上下飄浮
+        if (!c.alive) return;
+        c.spin.rotation.y = t * 1.6 + c.ph; c.spin.position.y = c.top + 0.85 + Math.sin(t * 2 + c.ph) * 0.12;
+      });
+
+      healing = null;                                          // 範圍內最近的水晶就是「正在補血的那顆」
+      if (!dragonDead) {
+        var bd = DRAGON.range;
+        crystals.forEach(function (c) {
+          if (!c.alive) return;
+          var dd = Math.hypot(c.x - bp.x, c.spin.position.y - bp.y, c.z - bp.z);
+          if (dd < bd) { bd = dd; healing = c; }
+        });
+      }
+      if (healing) {
+        bv.set(bp.x - healing.x, bp.y + 0.2 - healing.spin.position.y, bp.z - healing.z);
+        var len = bv.length(), pulse = 0.5 + 0.5 * Math.sin(t * 12);
+        beam.position.set(healing.x + bv.x / 2, healing.spin.position.y + bv.y / 2, healing.z + bv.z / 2);
+        beam.quaternion.setFromUnitVectors(UP, bv.normalize());
+        beam.scale.set(1 + pulse * 0.5, len, 1 + pulse * 0.5);
+        beam.visible = true;
+      } else beam.visible = false;
+
+      if (!dying && !dragonDead) {                             // 每 0.5 秒補 1 點，補到滿血為止
+        healT += dt;
+        if (healT >= DRAGON.healEvery) {
+          healT = 0;
+          if (healing && hp < DRAGON.hp) { hp = Math.min(DRAGON.hp, hp + DRAGON.healAmount); syncBar(); }
+        }
+      }
+
+      flash = Math.max(0, flash - dt);                         // 受傷時泛紅，垂死時紫白閃爍
+      var er = flash * 3, eg = 0, eb = 0;
+      if (dying) { var q = (0.3 + 0.3 * Math.sin(deathT * 16)) * Math.min(1, deathT / 3 + 0.3); er = q; eg = q * 0.5; eb = q; }
+      [dm.body, dm.belly, dm.spike, dm.wing].forEach(function (m) { m.emissive.setRGB(er, eg, eb); });
+
+      if (dying) {
+        deathT += dt;
+        if (deathT - lastBoom > 0.3) {
+          lastBoom = deathT;
+          explode(bp.x + (Math.random() - 0.5) * 4, bp.y + (Math.random() - 0.5) * 1.5, bp.z + (Math.random() - 0.5) * 3, 6, 0.6);
+        }
+        rayRoot.position.copy(bp); rayMat.opacity = Math.min(0.8, deathT / 4);
+        for (k = 0; k < rays.length; k++) rays[k].scale.y = Math.min(1, deathT / 6) * (3 + 3 * Math.abs(Math.sin(t * 3 + rays[k].userData.ph)));
+        if (deathT >= 10) finishDeath();
+      }
+    }
+    var lastT = null;
+    animateDragon = function (t) {
+      var dt = lastT === null ? 0 : Math.min(Math.max(t - lastT, 0), 0.1); lastT = t;
+      stepFx(dt);
+      if (!P || !dragonRoot.visible) return;
+      if (!dragonDead) fly(t);
+      stepCombat(t, dt);
     };
     /* DRAGON-END */
 
