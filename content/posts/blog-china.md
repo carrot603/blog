@@ -205,16 +205,26 @@ tags = ["blog","網路"]
 也正巧 Eltrac 發布了[〈再见 IndieWeb，你好 indie web〉](https://www.geedea.pro/article/iiwd/)，我因而了解了一些社群的生態和運作模式。當然除了以上還有更多社群，族繁不及備載！茲列出如下，供各位參考：
 
 - [Indi · 中文独立博客](https://indi.blog/)
+- [FRDLINK](https://www.frdlink.link/)
 - [RSSBlog](https://rssblog.imcbc.cn/)
+- [MoreRSS](https://www.morerss.com/zh)
 - [UTC+8 Times](https://utc8times.elsetech.app/?page=1)
+- [揪蝉](https://hi.jiuchan.org/)
 - [笔墨迹](https://blogscn.fun/)
 - [博客录](https://boke.lu/)
-- [有个站](https://www.ygz.ink/)
+- [博客圈](https://bokequan.cn/)
 - [博客汇](https://bloghui.com/)
+- [博客集](https://bloginc.cn/)
+- [有个站](https://www.ygz.ink/)
 - [个站商店](https://storeweb.cn/)
+- [浪海导航](https://www.langhai.net/)
+- [博客中心](https://bokehub.com/home)
+- [博客宇宙](https://links.needhelp.icu/)
 - [博客大联盟](https://bo.ke/)
 - [中文博客琅琊榜](https://github.com/qianguyihao/blog-list)
 - [独立个人博客推荐导航](https://github.com/shidenggui/bloghub)
+- [无聊湾 🥱 The Boring Bay](https://boringbay.com/)
+- [WebTeleporter | 独立博客传送门](https://webteleporter.top/about)
 
 ---
 
