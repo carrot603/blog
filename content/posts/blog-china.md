@@ -208,7 +208,7 @@ tags = ["blog","網路"]
 - [FRDLINK](https://www.frdlink.link/)
 - [RSSBlog](https://rssblog.imcbc.cn/)
 - [MoreRSS](https://www.morerss.com/zh)
-- [UTC+8 Times](https://utc8times.elsetech.app/?page=1)
+- [UTC+8 Times](https://utc8times.elsetech.app)
 - [揪蝉](https://hi.jiuchan.org/)
 - [笔墨迹](https://blogscn.fun/)
 - [博客录](https://boke.lu/)
