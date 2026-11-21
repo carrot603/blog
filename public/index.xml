@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 21 Nov 2026 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>2026-11-20 日記</title><link>http://localhost:1313/posts/2026-11-20/</link><pubDate>Sat, 21 Nov 2026 10:00:00 +0800</pubDate><guid>http://localhost:1313/posts/2026-11-20/</guid><description>&lt;p>晚上搞到十二點，訂六點的鬧鐘，賴床到八點半。建築史是來不及上了，本想直接翹掉，但不去感覺有點對不起老師——她講解得很仔細，但我不太有興趣。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Carrot Blog</title><link>http://localhost:1313/</link><description>Recent content on Carrot Blog</description><image><title>Carrot Blog</title><url>http://localhost:1313/share.png</url><link>http://localhost:1313/share.png</link></image><generator>Hugo</generator><language>zh-tw</language><lastBuildDate>Sat, 21 Nov 2026 10:50:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>《1 cm 的起點》</title><link>http://localhost:1313/posts/1cm/</link><pubDate>Sat, 21 Nov 2026 10:50:00 +0800</pubDate><guid>http://localhost:1313/posts/1cm/</guid><description>&lt;img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-11-21.jpg" style="width: 75%; max-width: 100%; height: auto;" alt="《1 cm 的起點》">
+&lt;blockquote>
+&lt;p>&lt;a href="https://book.tpml.edu.tw/bookDetail/798878">《1 cm 的起點》&lt;/a>金銀珠著，金材娟繪，林育帆譯。大是，2021-11。&lt;/p>&lt;/blockquote>
+&lt;p>作者金銀珠，著有許多「1 cm」系列書籍，感興趣的讀者可以到圖書館看看，我不會跟你們搶的（X&lt;/p></description><content:encoded><![CDATA[<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-11-21.jpg" style="width: 75%; max-width: 100%; height: auto;" alt="《1 cm 的起點》">
+<blockquote>
+<p><a href="https://book.tpml.edu.tw/bookDetail/798878">《1 cm 的起點》</a>金銀珠著，金材娟繪，林育帆譯。大是，2021-11。</p></blockquote>
+<p>作者金銀珠，著有許多「1 cm」系列書籍，感興趣的讀者可以到圖書館看看，我不會跟你們搶的（X</p>
+<hr>
+<p>昨天早上讀 Noa<a href="https://noa.bearblog.dev/1cm/">〈看《1cm的起點》走走停停〉</a>，中午去借書，晚上就看完了！</p>
+<p>這是一本充滿生活感的樸實散文集，搭配上超級無敵可愛的插畫，我都想買一本來收藏了！</p>
+<p>可能是我平常都過得太開心了（？，反正這是好事）老實說沒怎麼被療癒到。在此引用一句：「
+要是刪掉回憶中的情感，回憶就會變成記憶。」（頁 106）我不理解，可能要長大一點才有更多體悟。</p>
+<hr>
+<h3 id="防雷注意">⚠️防雷注意💥</h3>
+<div class="spoiler-image" onclick="this.classList.toggle('active')">
+    <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-11-21-1.jpg" alt="防雷圖片">
+</div>
+<details style="border: 1px solid #ccc; padding: 10px; border-radius: 6px;">
+  <summary style="font-weight: bold; cursor: pointer;">劇透警告</summary>
+  <p>它說要 surprise，啊紙就透過去了是要怎麼 surprise？不過作者還埋了一個轉折，想看自己去找（或者寫信問我🤔）這就讓我想起了某部透明的小說。紙張的磅數要高一點啊！不然就是真劇「透」了！</p>
+</details>
+<hr>
+<p>再靠近我
+<span style="display:inline-flex; flex-direction:column; align-items:center; vertical-align:middle; margin:0 4px; font-family:monospace; font-size:10px; line-height:1;">
+<span style="width:1cm; height:8px; border-bottom:1.5px solid currentColor; border-left:1.5px solid currentColor; border-right:1.5px solid currentColor; box-sizing:border-box; position:relative; display:inline-block;">
+<span style="position:absolute; left:50%; bottom:0; width:1px; height:4px; background:currentColor; transform:translateX(-50%);"></span>
+</span>
+<span style="margin-top:2px;">1 cm</span>
+</span>
+<a href="/posts/about/">沒錯就是這裡</a>！</p>
+<style>
+  .spoiler-image img {
+      filter: blur(20px) brightness(0.7);
+      transition: all 0.5s ease;
+      cursor: pointer;
+  }
+
+  /* 支援滑鼠懸停 (Hover) 與手機點擊 (Active) */
+  .spoiler-image:hover img,
+  .spoiler-image.active img {
+      filter: none;
+  }
+</style>]]></content:encoded></item><item><title>2026-11-20 日記</title><link>http://localhost:1313/posts/2026-11-20/</link><pubDate>Sat, 21 Nov 2026 10:00:00 +0800</pubDate><guid>http://localhost:1313/posts/2026-11-20/</guid><description>&lt;p>晚上搞到十二點，訂六點的鬧鐘，賴床到八點半。建築史是來不及上了，本想直接翹掉，但不去感覺有點對不起老師——她講解得很仔細，但我不太有興趣。&lt;/p>
 &lt;p>早上臨時生出一篇&lt;a href="http://localhost:1313/posts/book-stamp/">〈藏書章〉&lt;/a>，本題材醞釀已久，本來打算和其他讀書心得一起發的，但目前手邊也沒庫存，只好倉促成文。&lt;/p></description><content:encoded><![CDATA[<p>晚上搞到十二點，訂六點的鬧鐘，賴床到八點半。建築史是來不及上了，本想直接翹掉，但不去感覺有點對不起老師——她講解得很仔細，但我不太有興趣。</p>
 <p>早上臨時生出一篇<a href="/posts/book-stamp/">〈藏書章〉</a>，本題材醞釀已久，本來打算和其他讀書心得一起發的，但目前手邊也沒庫存，只好倉促成文。</p>
 <p>只吃一個果凍就出門了，捷運上讀部落格。</p>
