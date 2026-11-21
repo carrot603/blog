@@ -8,7 +8,13 @@ tags = ["蘿蔔","散文","相簿"]
 
 <div class="gallery">
 
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-11-06-2.jpg" alt="2026-11-06<br>爸爸送我的 mojo！">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-11-01-13.jpg" alt="2026-11-01<br>媽媽去日本拍給我的(4)">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-11-01-12.jpg" alt="2026-11-01<br>媽媽去日本拍給我的(3)">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-11-01-11.jpg" alt="2026-11-01<br>媽媽去日本拍給我的(2)">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-11-01-10.jpg" alt="2026-11-01<br>媽媽去日本拍給我的(1)">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-10-20.jpg" alt="2026-10-20<br>買菜看到。">
+<img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-09-13-1.jpg" alt="2026-09-13<br>在基隆車站看到">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-29-12.jpg" alt="2026-08-29<br>路過信義空橋。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-24.jpg" alt="2026-08-24<br>在遠百誠品看到的餐盒。">
 <img src="https://pub-cbe0ce0485dd4255ac47a58d28e50e0d.r2.dev/2026-08-17-2.jpg" alt="2026-08-17<br>幫午餐加料——最愛吃蘿蔔了！">

@@ -64,3 +64,14 @@ tags = ["散文","about"]
 ### 2026-11-08
 
 修正字數統計問題，只算中文字、英文單字，不包含程式碼、表格以及特效等等。
+
+### 2026-11-17
+
+收錄於 [indieblog.page](https://indieblog.page/all)。
+
+### 2026-11-19
+
+收錄於 https://personalsit.es/ 、 https://wiby.me/ 。
+
+
+
