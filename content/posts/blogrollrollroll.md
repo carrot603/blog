@@ -23,6 +23,8 @@ tags = ["blog","code","about"]
 - Curated Directories（精選目錄／通訊錄）：就像古早的電話簿，列出各種獨立網站。
 - RSS & Feed Aggregators（RSS 與動態聚合器）：自動抓取多個獨立網站 RSS / Atom 訂閱源，並將最新發布的文章匯集成單一頁面的服務。
 - Search Engines（獨立網路搜尋引擎）：專注於索引個人網站、獨立部落格與非商業網頁的搜尋工具。
-- Random Discovery（隨機探索／漫遊工具）：無需輸入關鍵字或瀏覽分類目錄，只需要點擊一顆隨機按鈕（或透過網站環〔Webring〕的「下一站」連結），就能跳轉到某個陌生網站的機制。
+- Random Discovery（隨機探索）：無需輸入關鍵字或瀏覽分類目錄，只需要點擊一顆隨機按鈕（或透過網站環〔Webring〕的「下一站」連結），就能跳轉到某個陌生網站的機制。
+- IndieWeb Tools（獨立網路工具）：涵蓋網站環（Webrings）、跨站引用通知（Webmention）、個人近況頁（`/now` pages）等等實用工具。
 
 這個想法和網站還相當稚嫩，未來也許會擴充網站的介紹，例如收錄原則、規模大小等等。如有任何建議，歡迎來信 carrot603&#64;proton.me！
+
