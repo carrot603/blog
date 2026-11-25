@@ -46,8 +46,8 @@ https://carrot.tw/index.xml
 [臺北走透透](/posts/taipei-trip/)  
 [開學日](/posts/2026-09-07-1)  
 [/when-i-die](/posts/when-i-die)  
-[tags](/tags/)  
-[柱狀圖](/posts/word-count/)
+[柱狀圖](/posts/word-count/)  
+[《巨人思維》](/posts/bigman/)
 
 ---
 
@@ -57,8 +57,6 @@ https://carrot.tw/index.xml
 
 ---
 
-我的更新日曆：
+來玩玩終界龍！
 
-{{< day >}}
-
----
+{{< dragon >}}
